@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcs_engineering=self.webpackChunkcs_engineering||[]).push([[8592],{753:e=>{e.exports=JSON.parse('{"permalink":"/cs-engineering.github.io/blog/tags/hola","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

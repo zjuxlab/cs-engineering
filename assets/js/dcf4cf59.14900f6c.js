@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcs_engineering=self.webpackChunkcs_engineering||[]).push([[9327],{3784:e=>{e.exports=JSON.parse('{"permalink":"/cs-engineering.github/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,8 +1,8 @@
-# docker入门
+# Docker入门
 
 作者: @pacman
 
-## 1. docker简介
+## 1. Docker简介
 
 > Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same way you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.
 
@@ -23,7 +23,7 @@
 
 > 关于如何安装 Docker，这里我们直接略过，请自行搜索如何在你使用的操作系统上安装 Docker。
 
-## 2. docker核心概念
+## 2. Docker核心概念
 
 - Image
   - Docker Image 是用来构建 Docker Container 的一系列资源，你可以当它是一个“模板”，而 Container 是其实例化。其本质是一堆静态文件，并不具备执行能力。
@@ -34,7 +34,7 @@
 
 https://hub.docker.com/
 
-## 3. docker使用
+## 3. Docker使用
 
 - 关于命令行的说明，我将融合在之后的内容中在对应的使用场景中介绍，如果想要查看列表类型的命令说明，可以查看：
   - https://docs.docker.com/engine/reference/commandline/cli/

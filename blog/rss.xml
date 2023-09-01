@@ -4,7 +4,7 @@
         <title>My Site Blog</title>
         <link>https://your-docusaurus-test-site.com/cs-engineering/blog</link>
         <description>My Site Blog</description>
-        <lastBuildDate>Fri, 01 Sep 2023 12:24:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 12 Aug 2023 08:48:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[index]]></title>
             <link>https://your-docusaurus-test-site.com/cs-engineering/blog/index</link>
             <guid>https://your-docusaurus-test-site.com/cs-engineering/blog/index</guid>
-            <pubDate>Fri, 01 Sep 2023 12:24:00 GMT</pubDate>
+            <pubDate>Sat, 12 Aug 2023 08:48:24 GMT</pubDate>
         </item>
     </channel>
 </rss>

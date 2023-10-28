@@ -2,46 +2,33 @@
 sidebar_position: 0
 ---
 
-# Intro
+# 摸鱼者说
 
-Let's discover **Docusaurus in less than 5 minutes**.
+> CS-Engineering：对[CSDIY](https://csdiy.wiki/)的拙劣模仿
 
-## Getting Started
+我从上大学开始正式接触编程，一开始什么也不会，以至于在在浙江大学计院分流时被面试官爆杀，面试以惨痛且羞辱的失败告终
 
-Get started by **creating a new site**.
+后来接触到[CSDIY](https://csdiy.wiki/)，自学了上面的课程，这才走出了当时的困境，找到了自己的方向
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+因此我对CSDIY一直是存有感激之心的，也常常想象自己也弄出一个文档
 
-### What you'll need
+能够帮助那些彷徨的人，帮助曾经的自己
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+在我自学生涯的第三年，时机逐渐成熟起来：
 
-## Generate a new site
+* CSDIY的方向偏基础理论，没有关于工程、开发的内容。市面上的开发教程过于杂乱，质量参差不齐。
 
-Generate a new Docusaurus site using the **classic template**.
+* 在ZJU X-Lab，知识库里沉淀了成员们用心写作的一篇篇优质文章，却只能被尘封在飞书文档中，不能被更多人看到。
 
-The classic template will automatically be added to your project after you run the command:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+我觉得机会来了，于是准备开始把想象变为现实，开源X-Lab知识库里面的优质文章，并接受开源社区的批评指正和贡献。
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+打造一个完全开源、免费、优质的CS工程指南。
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+如果这本书能对大家有哪怕一丝一毫的帮助，都是对我们极大的鼓励和慰藉。
 
-## Start your site
+---
 
-Run the development server:
+如果你也想加入到贡献者的行列，可以直接在项目中发起 Pull Request，也欢迎和我们邮件联系(contact@zjuxlab.com)
 
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+如有侵权，也请联系contact@zjuxlab.com

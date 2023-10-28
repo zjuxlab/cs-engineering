@@ -29,6 +29,6 @@ sidebar_position: 0
 
 ---
 
-如果你也想加入到贡献者的行列，可以直接在项目中发起 Pull Request，也欢迎和我们邮件联系(contact@zjuxlab.com)
+如果你也想加入到贡献者的行列，可以直接在项目中发起 Pull Request，也欢迎和我们邮件联系(github@zjuxlab.com)
 
-如有侵权，也请联系contact@zjuxlab.com
+如有侵权，也请联系github@zjuxlab.com

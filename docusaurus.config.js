@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CS-Engineering',
-  tagline: 'ZJU XLab',
+  tagline: '浙江大学启真交叉学科创新创业实验室',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -129,7 +129,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ZJU XLab, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 浙江大学启真交叉学科创新创业实验室, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,

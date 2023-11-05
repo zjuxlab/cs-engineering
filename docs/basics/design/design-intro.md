@@ -179,11 +179,11 @@ public class Address
 
 出现正交的扩展方向，是一个类有多个职责的信号。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=OTE4MTA5ZjA3MzNjNjdiMDA5MmM5NWJmZjM0NGY4NDNfQ1c5bU41aW1PMmFaaDJiQVBnTGFqaXYxVEQzTUFlbW5fVG9rZW46Ym94Y245OHdMSUoxMUU1M0JvVXFzRWRRTjlnXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![img](static/img/../../../../../static/img/basic/design-intro-1.png)
 
 例如上图中的 shape 和 color 明显是两个不同维度的扩展，如果两者在同一类中扩展，任一方向的扩展都将影响到另一个方向。故将两者抽离才是正确的选择：
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjMwMDVhYTVkZDc1NTE2YzE3MDJjMmMwMzE0OTc5ODVfOFRENGk4S3BSV2lOZTZBelh4U1Rmd0NGUTByUEhKNEpfVG9rZW46Ym94Y251MXluZ01RNGV2TTBZZ0I1anU4UGJmXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![img](static/img/../../../../../static/img/basic/design-intro-2.png)
 
 这种将一部分功能委托给另一个类的做法称为 **delegation。**
 
@@ -232,7 +232,7 @@ public class Address
 
 优雅的做法是两者之间通过一个 `Developer` 接口进行对接，这样两层之间的耦合就大大降低了。
 
-暂时无法在飞书文档外展示此内容
+![img](../../../static/img/basic/design-intro-3.jpg)
 
 原来的结构是上层依赖于下层，往往上层开发要等待下层完成再进行。而新的结构中，上层不再依赖于具体的下层对象，故称依赖“倒置”。
 
@@ -451,7 +451,7 @@ print ins_c.getName()
 
 也就是说，一个类真正被依赖的是它的方法。因此，使用 interface 来表示依赖就显得非常自然。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=OWUxOGY4MGFlZDRmMmMxNDRlNWRmNzY1NGYxMTE0MmRfQzN1SEp3NlhzbmNZU3ZaUzA1NmE1TmZ1aEpFcHRaMFJfVG9rZW46Ym94Y25BQUVmdXhwVFhHbFhsYkRVM1E0cGRnXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![img](../../../static/img/basic/design-intro-4.png)
 
 回顾我们之前提到的 **DIP** ，interface 使得上层依赖于一个下层的抽象，几乎将上下层的耦合降至最小。
 

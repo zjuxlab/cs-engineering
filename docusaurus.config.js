@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'CS-Engineering',
+  tagline: '浙江大学启真交叉学科创新创业实验室',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -66,7 +66,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'CS-Engineering',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -80,7 +80,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/zjuxlab/cs-engineering',
             label: 'GitHub',
             position: 'right',
           },
@@ -124,12 +124,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/zjuxlab/cs-engineering',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 浙江大学启真交叉学科创新创业实验室, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,

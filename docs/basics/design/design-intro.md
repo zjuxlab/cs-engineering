@@ -1,5 +1,6 @@
 # 设计模式概述
-- 文章有很大一部分参考了 https://refactoring.guru/ 
+
+- 文章有很大一部分参考了 https://refactoring.guru/
 - **不过不建议通过这个网站进行设计模式的学习**。可能是为了给设计模式进行准确定义，其内容经常比较抽象，让人难以了解到模式的目的。并且它在介绍时还顺便介绍了很多变体和综合，常常让读者觉得毫无重点，有点强行分类和定义。**但是可以当作目录使用。**
 - 比较建议的学习方式是去 StackOverflow 上询问实际场景
 - 您可以先了解一下 [UML 图](https://cloud.tencent.com/developer/article/1684161) 的常用图标含义
@@ -17,9 +18,9 @@
 3. **Accept change**
    1. 接受一定的修改和扩展
 4. **Pass all test**
-   1. 当然，好的代码必须（至少看起来）工作良好x
+   1. 当然，好的代码必须（至少看起来）工作良好 x
 
-> 关于更多 clean code 的内容，可以参考 [《Clean Code》阅读与总结](https://xn4zlkzg4p.feishu.cn/wiki/wikcn4Dkcyyu5KfA5R0MgYP8y6f)  
+> 关于更多 clean code 的内容，可以参考 [《Clean Code》阅读与总结](https://xn4zlkzg4p.feishu.cn/wiki/wikcn4Dkcyyu5KfA5R0MgYP8y6f)
 
 ## Refactoring
 
@@ -54,34 +55,34 @@ Clean code 的准则定义得十分模糊，我们很难对着一份代码争辩
 def BigFunc():
     # ...
     do something
-    
+
     # ...
     # logic about variable qwq
     # ...
-    
+
     if a > 100 or b < 1000:
         return qwq
     else:
         return 0
-   
-#   ⇩⇩⇩   
+
+#   ⇩⇩⇩
 #  refactoring
-#   ⇩⇩⇩   
- 
-# after       
+#   ⇩⇩⇩
+
+# after
 def func():
     # ...
     dosomething()
     # ...
-    
+
     if checkRangeOfAB(a,b):
         return queryQwQ()
     else
         return 0
-    
+
 def dosomething():
     pass
-    
+
 ```
 
 借此，我们能将庞大交错的逻辑区分的清晰明了。同时，你会发现很多情况下，过度膨胀的代码包含了许多重复的部分，重构也是在解决 duplicate 的问题。
@@ -97,7 +98,7 @@ public class Person
 {
     public string ID {get;set;}
     public string Name {get;set;}
-    
+
     public string Address {get;set;}
     public string PostCode {get;set;}
     public string Country {get;set;}
@@ -121,8 +122,8 @@ public class Person
 
     public PersonID ID {get;set;}
     public string Name {get;set;}
-    
-    public Address Address {get;set;} 
+
+    public Address Address {get;set;}
 }
 
 // strong-type & read-only id
@@ -130,7 +131,7 @@ public readonly struct PersonID : IComparable<PersonID>,
 IEquatable<PersionID>
 {
     public string ID {get;}
-    
+
     // overload equals compare new .....,
 }
 
@@ -141,7 +142,7 @@ public class Address
     {
         // parse
     }
-    
+
     public string Address {get;set;}
     public string PostCode {get;set;}
     public string Country {get;set;}
@@ -232,7 +233,7 @@ public class Address
 
 优雅的做法是两者之间通过一个 `Developer` 接口进行对接，这样两层之间的耦合就大大降低了。
 
-![img](../../../static/img/basic/design-intro-3.jpg)
+![img](../../../static/img/basic/design-intro-3.png)
 
 原来的结构是上层依赖于下层，往往上层开发要等待下层完成再进行。而新的结构中，上层不再依赖于具体的下层对象，故称依赖“倒置”。
 
@@ -242,7 +243,7 @@ public class Address
 
 开闭原则要求代码提供高扩展性，当需要增加功能时，通过扩展而不是修改原来的类或接口来增加功能。
 
-不过这里的修改，一般指不修改 public 成员，对private也限制就太过严苛了，而且从 ducktype 角度来说，我们一般也只关心对象对外展现的性质。
+不过这里的修改，一般指不修改 public 成员，对 private 也限制就太过严苛了，而且从 ducktype 角度来说，我们一般也只关心对象对外展现的性质。
 
 开闭原则其实是进一步强调多使用接口，其建议将整个代码结构建立在接口上。这样当我们需要扩展时，就可以重新实现一个接口，而不是修改原来的类。
 
@@ -258,7 +259,7 @@ class Course(IEducation):
    def __init__(self):
        self.classname = "";
        self.teachername = "";
-       
+
 class VideoCourse(Course):
     def __init__(self):
         super().__init__()
@@ -275,25 +276,25 @@ class VideoCourse(Course):
 
 最常见的例子就是 “正方形是一类特殊的长方形”。
 
-我们确实可以很容易地通过继承和 override 实现一个正方形类（这个实现其实违背了开闭原则）。但是，如果我们要求长方形有设置长和宽的能力，正方形类是无法满足的。从这个角度上来看，正方形不能继承长方形类！**我们的继承要求从 “is” 强化成了 “****act** **exactly like”。**
+我们确实可以很容易地通过继承和 override 实现一个正方形类（这个实现其实违背了开闭原则）。但是，如果我们要求长方形有设置长和宽的能力，正方形类是无法满足的。从这个角度上来看，正方形不能继承长方形类！**我们的继承要求从 “is” 强化成了 “\*\***act\*\* **exactly like”。**
 
 ```Python
 class Rectangle:
     def __init__(self):
         self.width = 0
         self.height = 0
-    
+
     def setW(self,w):
         self.width = w
-    
+
     def setH(self,h):
         self.height = h
-    
+
 class Square(Rectangle):
     def setW(self,w):
         self.width = w
         self.height = w
-    
+
     def setH(self,h):
         self.width = h
         self.height = h
@@ -336,7 +337,7 @@ def test(x : Rectangle):
 class Employee:
     def work(self):
         pass
-    
+
     def getSalary(self):
         pass
 ```
@@ -372,14 +373,14 @@ class FinancialApartment:
 ```Python
 class ICustomer(Interface):
     def order(self):
-        pass   
+        pass
     def orderOnline(self):
         pass
-    
+
     def pay(self):
         pass
     def payOnline(self):
-        pass        
+        pass
 ```
 
 这个接口就显得冗余且不够抽象。实际使用时，实现该接口的新类会相应变得繁琐，而且会经常出现不能实现一部分接口的类。上层代码与下层代码的耦合程度，也因为不够抽象而提高。
@@ -389,11 +390,11 @@ class ICustomer(Interface):
 ```Python
 class IOrder(Interface):
     def order(self):
-        pass   
-        
-class IPayment(Interface):    
+        pass
+
+class IPayment(Interface):
     def pay(self):
-        pass       
+        pass
 ```
 
 和单一职责原则相似，这个原则的评定也比较主观。
@@ -415,15 +416,15 @@ class IPayment(Interface):
 class C:
     def __init__(self):
         self.component = B()
-        
+
     def getName(self):
         return self.component.name
-    
+
 class B:
     def __init__(self):
         self.name = "qwq"
 
-ins_c = C()        
+ins_c = C()
 # 这是不合理的使用方式
 print ins_c.component.name
 # 这是合理的方式，即 "tell instead of ask"
@@ -467,11 +468,11 @@ print ins_c.getName()
 
 命令模式将 “调用” 依赖的过程封装进一个 `command` 类中。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=MTE3ZDJjMDdiNTVjODU4Nzg2YzRjMTM0NWNlMzRiYjdfZTQybThEbkV0RVdqMVdyS3VjeFg3cXVHckpDNVlGVVhfVG9rZW46Ym94Y25NbkJrTmR4ckR0MG40RlZzRkw1OERmXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![img](../../../static/img/basic/design-intro-5.png)
 
 你可以想象它实现了一个控制编辑器的 “遥控器”， GUI 将不直接调用依赖，而是通过 “遥控器” 的命令来控制依赖。
 
-暂时无法在飞书文档外展示此内容
+![design-intro-6](../../../static/img/basic/design-intro-6.jpg)
 
 如上图所示，底层编辑器作为命令的接收方注入到 command 中，命令参数可以作为 command 的成员进行设置，而 command 的 execute 方法就是具体的底层调用逻辑。
 
@@ -481,13 +482,13 @@ print ins_c.getName()
 
 而 client code 这边也可以选择直接依赖于具体的 command 类。也可以为 command 再抽象一层接口，方便统一对 command 进行操作和实现 factory.
 
->  [Factory](https://xn4zlkzg4p.feishu.cn/docx/Kf2Gd8GcTob1iUxiw2ScwN0anGh#VcCudk0ysomKCGxAnG4cPq6an8e) 模式见后文
+> [Factory](https://xn4zlkzg4p.feishu.cn/docx/Kf2Gd8GcTob1iUxiw2ScwN0anGh#VcCudk0ysomKCGxAnG4cPq6an8e) 模式见后文
 
 Command 模式有一些非常有趣的应用，因为具体的 command 可以被实例化成单独的对象，我们可以对每一个命令进行操作。比如，在 command 接口上实现一个 `undo` 方法来进行撤销操作。
 
 这种应用可以用来实现编辑器的历史功能：
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=MjNiOTY5ZTNkZGI5NTA5M2I2MTk5YTYzNDAyYmRiNThfbG1BTXRScFZNOWxzZmI1YkpwUTBUb084d2l5ZThacWNfVG9rZW46Ym94Y25NdGhzTUNoaVBrRjdqaXdYWUFhWFRiXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![design-intro-6](../../../static/img/basic/design-intro-7.png)
 
 #### Visitor
 
@@ -499,7 +500,7 @@ Visitor 是一种牺牲了一定扩展性的设计模式。
 
 但是问题来了，如果这些兵种里不仅有作战的士兵，还有医疗兵等等，他们的功能和作战兵种的差别太大，难以抽象成 “进攻” 这个接口。若是统一成一个更抽象的接口 “行动”，我们又要在给接口传参上下一番功夫，而且这种过于抽象的接口也失去了接口本应有的 “协约” 功效。
 
-当然，我们还有一个充满 bad smell 的原始做法 —— **big  switch**！既然无法用接口进行抽象，不妨尝试对这种方法进行改进。
+当然，我们还有一个充满 bad smell 的原始做法 —— **big switch**！既然无法用接口进行抽象，不妨尝试对这种方法进行改进。
 
 ```Python
 # client code
@@ -515,7 +516,7 @@ else:
 
 但其实，在使用 switch 时，每个对象还是知道自己的类型的。那么，我们不妨不主动判断其类型，然后分配正确的方法，而是将所有的方法都提供给对象，让对象自己选择正确的调用方法。
 
-暂时无法在飞书文档外展示此内容
+![design-intro-8](../../../static/img/basic/design-intro-8.png)
 
 通过将判断和选择工作委托给类本身，我们实现了一次静态的分配。而通过实现 `Visitor`接口，我们也能进行方法的扩展。这种结构被称为 **double dispatch.**
 
@@ -529,7 +530,7 @@ else:
 >
 > 而且通过继承来扩展产生的全新的扩展对象，要对现有的对象做扩展不如通过 compose 来的方便。
 
-暂时无法在飞书文档外展示此内容
+![design-intro-9](../../../static/img/basic/design-intro-9.png)
 
 而在类足够稳定，基本不会进行扩展的情况下，我们可以用 Visitor 实现功能扩展。在实现了 Visitor 模式的基本结构之后，扩展新的 Visitor 是非常方便的。我们只需新实现一个具体的 `Visitor` 类，从步骤来说比一般的方法简便，而且增加一个功能只需要实现一个类，避免了代码中的类快速增加，变得冗长。
 
@@ -575,7 +576,7 @@ class IProduct(ABC):
 class ProductA(IProduct):
     def getName(self):
         return "A"
-        
+
 class ProductB(IProduct):
     def getName(self):
         return "B"
@@ -611,19 +612,19 @@ class Creator(ABC):
     def clientCode(self):
         product = self.createProduct()
         # ...
-    
+
     @abstractmethod
     def createProduct():
         pass
 
 class CreatorA(Creator):
     def createProduct():
-        return ProductA()  
+        return ProductA()
 ```
 
 这样我们就能够通过扩展抽象类 `Creator` 和接口 `IProduct` 来实现对原结构的无痕扩展。因为将原来的静态函数变成了类的方法，我们称这种模式为 **Factory Method**。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmE4ZDg4NzBjM2RmZTVkZmRlNTQ4ODQ3YmE5MmYzZmJfMmlucGV3eWNPSUlZYTd3Y3lMQ29hWjdCdFcxV0dBQkNfVG9rZW46Ym94Y25lQWUzdUd3dWZnYzdCMmhacEhSSlllXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![design-intro-10](../../../static/img/basic/design-intro-10.png)
 
 Factory method 确实解决了扩展能力的问题，在仅有少数增加的种类时(比如第三方库留给用户的扩展功能)，其表现非常好。
 
@@ -641,7 +642,7 @@ Factory method 确实解决了扩展能力的问题，在仅有少数增加的�
 - 得益于这个接口的统一，原来多个抽象 Product 依赖变成了一个抽象 Factory 依赖。
 - 这个 Factory 就类似于原来 Factory Method 中的 Product 。我们的 Creator 类就不需要那么多 factory method，只需要一个生产 “factory” 的 factory method 就够了。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTc5NGI2NmUwYzk0YTNkNWJhYzY5MzgwZGY2ODU2OTZfaDM2bXdtb1d5MXFMZEtaQk1GTWZKUDZFblpCZnh5djhfVG9rZW46Ym94Y242MlNMSWFoUmhKdlVQdEoyOW1BZ1hlXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![design-intro-11](../../../static/img/basic/design-intro-11.png)
 
 这便是所谓的 **Abstract Factory** 模式。
 
@@ -666,7 +667,7 @@ var car = CarBuilder.setWheels(4)
 
 上图这种链式调用是 builder 模式的一种常见形式。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDI4MTQ5NTE4MDNjZDMwNTMxODlhMjZkY2JjMjhiYzlfRWs0ZTN1UlhyWlBVeW5hZmRsNVFnakdaUDkwU0g2bFNfVG9rZW46Ym94Y25LcmZxTGxJaHlzWUtBMmV2cnp4dnZhXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![design-intro-12](../../../static/img/basic/design-intro-12.png)
 
 Builder 模式将创建过程分步进行，相比一次性接收所有初始化参数后返回对象的 constructor，这种形式显然更清晰易懂，便于维护。对于有多种 “可选创建模式” 的类，使用 builder 构建可以避免出现大量的 constructor。而对于创建逻辑比较复杂的类，譬如链状或者树状组合的类，builder 能将复杂的创建流程简化成人能看的地步。
 
@@ -676,22 +677,20 @@ Builder 模式的一个缺点是其没法从语法上确保创建流程的完整
 public class Builder
 {
     // ...
-    
+
     public IProduct build()
     {
         if(checkIntegrity(this))
         {
             throw Exception("Incomplete product");
         }
-        
-        return new Product(this);        
+
+        return new Product(this);
     }
-    
+
     // ...
 }
 ```
-
- 
 
 Builder 模式不止能用来创建新实例，还可以应用在很多创建场合增加易读性。使用过 gorm 的人应该不陌生，gorm 的链式调用其实就是一个 builder. 其中，`where` 等方法相当于在设置最终的 sql 语句，而执行性的 `find` 等方法调用时，gorm 才会生成一个 sql 语句交给数据库执行。
 
@@ -712,7 +711,7 @@ class Prototype:
     def __init__(self):
         self.int_member = 1
         self.list_member = []
-    
+
     def clone(self):
         newObj = self.__class__()
         newObj.int_member = self.int_member
@@ -733,17 +732,17 @@ class Prototype:
 
 如果不想修改接口和接入的代码，一般会选择对接口进行一个 “包装”。使用一个 `Wrapper` 类来实现所需要的接口，然后将实际功能 delegate 给原来的组件。
 
-暂时无法在飞书文档外展示此内容
+![design-intro-13](../../../static/img/basic/design-intro-13.png)
 
 有很多设计模式本质都是一个 wrapper。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=N2NjNWI1NzdjN2E5OGUxOWJmN2UyNjA3MjVjNGM0OGFfZWVsamNaaFJHeFdVVDc5Y3FSZDdMNjRQYk5uME1vT2ZfVG9rZW46Ym94Y25lS0hXcVQ5WnJNbVNDMGd6Y2ZJU1FmXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=OWU5ZGRmYjZmODM1ZjU2M2M4MzI5OWJiOWRiYzVhOWZfZVdCM0FGRFNVWlVRQnVZSEpOSVk2NHVDM3hoTGw5dkdfVG9rZW46Ym94Y25YaUM5dnUyYklrdEdXbEw2U0QybHBnXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![design-intro-14](../../../static/img/basic/design-intro-14.png)![design-intro-15](../../../static/img/basic/design-intro-15.png)
 
 **Adapter** 通过一个 wrapper 类来对接两个接口之间的功能。**Facade** 类似于用一个较简单的接口调用一个复杂组件的功能。**Proxy** 模式则是利用 wrapper 进行一些统一管理，比如进行 log 或者控制缓存。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=N2I1MGYzNTQwMzJkNWVkMTViNzFlZWVjMzFlYTBjYmNfUlI0aTJmclN5a1REY1dVV09DY005VFQ3T3ZjT29ubkdfVG9rZW46Ym94Y256NVkwUFRXZVdaV2tLSmpGYTJJMkZjXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![design-intro-16](../../../static/img/basic/design-intro-16.png)
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=M2YwZjgxYWI3Y2VlM2JhZDNlMjBhZGUyYTk4OTE4YThfdFhhVWxZZVEwU1c3OGpROGdYOHhLeUt5alNNeGM5MXJfVG9rZW46Ym94Y25uUUZ4REtzbHFGcEZVNnA0ZUdTS25lXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![design-intro-17](../../../static/img/basic/design-intro-17.png)
 
 有时候，包装前后的接口其实是一样的，我们只是想在原来接口执行的前后增加功能，这种模式被称为 **Decorator.**
 
@@ -753,7 +752,7 @@ class Prototype:
 
 这种模式将一个需要处理的事件抽象成一个 `event` 接口，然后再将处理事件的函数通进行链状储存。每当有一个新的事件需要处理时，一个 `event` 实例会被从链头的方法开始被处理，然后逐个交给之后的处理方法处理。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=YWU2Mzk2M2Q2OWYzNzc5MWJlMmI1YWU5NDUyM2U4YTBfT3lEMjJNVm9WeVVZUEE1TGpVVktCYTJxTERwMkdhT0VfVG9rZW46Ym94Y25QNURiUkpnOUk4N1p3MWJVTHNtMUZoXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![design-intro-18](../../../static/img/basic/design-intro-18.png)
 
 上图的处理方法之间是单向关系，我们也可以使用类似 **decorator**的形式，让整个处理链变成包含关系。
 
@@ -765,4 +764,4 @@ Composite 是一种树状结构。
 
 这种结构类似于一个军队的管理体系，整个军队的士兵和编制都实现同一个 “行动” 接口，对于士兵来说，这个接口就是执行进攻命令，对于军官来说，这个接口需要先将命令传达给下级士兵，然后再执行命令。而指挥官进行指挥时，只需要对比较顶层的编制进行下令，就能命令整个军队。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ODc4OTgyM2ZhNWQ2NGQ3NTlhNDNiM2U0M2E1NTY0OThfVFRCSWxVelNocVRTYkpDeGdWMkVDMnh5czRIOHRrMXhfVG9rZW46Ym94Y25uanFZbTA5WDdIblRaTlJvdU54bDBZXzE2OTY3NzQ5MDA6MTY5Njc3ODUwMF9WNA)
+![design-intro-19](../../../static/img/basic/design-intro-19.png)

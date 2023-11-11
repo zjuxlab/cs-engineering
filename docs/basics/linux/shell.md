@@ -30,7 +30,7 @@ It is named a **shell** because it is the outermost layer around the **operating
 
 在现代的计算机系统中，想要使用 Shell，你需要借助 Terminal，即终端（更准确的说，是 terminal emulator，不过在本文中我们并不会就此展开）。Terminal 之于 Shell，就好像电话之于通讯服务。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=MTAzMGI1ZTYyOGU4M2Y2NWUzMmE2N2M1NTU1OWNlMTVfSjQ0clFkMHpkRW5NbXNubEZaNmZEZXZLQlNHQUxEbkhfVG9rZW46Ym94Y25MQ1pheWtuam5XQkZ2aHZkS0RRelNmXzE2OTgzMjcxOTc6MTY5ODMzMDc5N19WNA)
+![img](../../../static/img/basic/shell-1.png)
 
 例如，图中打开的这个“窗口”就是一个叫做 iTerm2 的 terminal emulator，而我使用的 `fish` 则是一种 Shell。
 
@@ -140,7 +140,7 @@ $ pwd
 # 表示我当前的位置是 /Users/isshikih
 ```
 
-**一切皆文件**是 Linux 的设计理念，而 Shell 的使用有相当一部分是基于文件体系的。而如何**索引**一个文件呢？我们需要提供这个文件的路径和文件名！例如，您需要去一台 Windows 电脑中找到您上学期的课程作业，它的文件名为 `myHomework.pdf` ，也许你需要打开D盘中的 Homework 文件夹。那么抽象地来说，这个文件的路径为 `D:\\Homework\\myHomework.pdf` （这是在 Windows 上的写法）。这种形式的“位置”被称为**绝对路径**，即我们需要填写文件的完整路径才能找到这个文件。在之后的部分中，我们提到的`<filename><dirname>`等都包括了文件的路径。
+**一切皆文件**是 Linux 的设计理念，而 Shell 的使用有相当一部分是基于文件体系的。而如何**索引**一个文件呢？我们需要提供这个文件的路径和文件名！例如，您需要去一台 Windows 电脑中找到您上学期的课程作业，它的文件名为 `myHomework.pdf` ，也许你需要打开 D 盘中的 Homework 文件夹。那么抽象地来说，这个文件的路径为 `D:\\Homework\\myHomework.pdf` （这是在 Windows 上的写法）。这种形式的“位置”被称为**绝对路径**，即我们需要填写文件的完整路径才能找到这个文件。在之后的部分中，我们提到的`<filename><dirname>`等都包括了文件的路径。
 
 **👉 事实上，有相当一部分 Shell 语法是围绕着文件展开的。**
 
@@ -285,8 +285,6 @@ $ tail -c 20 <filename>
 $ tail -f <filename>
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ODg1OGUyZTYwM2RlZGVkNDdjYWQxZTBlNzkzZGFjZTJfTkZ6blc3cldMRHNGVzIwNXF1S0h0VkVVQ3lNMGxadUlfVG9rZW46Ym94Y25ucjdrOTV5aGRDWDllZWJ5VnppbW1kXzE2OTgzMjcxOTc6MTY5ODMzMDc5N19WNA)
-
 注意，这里的 echo 开头的语句是在做追加操作，之后会讲到。
 
 而至于具体的引用场景，比如有些工具的日志会不断追加到某个日志文件中，这时候就可以用 `tail -f` 来实时跟踪日志信息。
@@ -427,7 +425,7 @@ $ tree           # 该指令会显示当前的文件结构
 
 ### 删除 | rm
 
-把`rm`放在最后讲是有原因的，或许你听说过 `rm / -rf` 这条指令，却不知道它的含义，那么看完这一小节你就知道这个指令有多恐怖了（千万不要跑这条指令`rm -rf ``/ -``-no-preserve-root`）。
+把`rm`放在最后讲是有原因的，或许你听说过 `rm / -rf` 这条指令，却不知道它的含义，那么看完这一小节你就知道这个指令有多恐怖了（千万不要跑这条指令` rm -rf ``/ -``-no-preserve-root `）。
 
 首先我们需要知道，Linux 下`rm`指令并不存在“垃圾箱”这个机制，即用`rm`删掉的东西是没法通过正常手段复原的，而上面那条指令的意思就是强制递归删除系统根目录下所有内容，也就是**啥都删光了**。
 
@@ -483,7 +481,7 @@ remove dir2/? y                                                                 
 
 ```Plain
 flowchart TD;
-input["file, keyboard, etc"] 
+input["file, keyboard, etc"]
 command
 output["file, screen, etc"]
 error["file, screen, etc"]
@@ -565,7 +563,7 @@ Hello isshikh!
 # 综合起来，我们还可以这样
 $ a.exe < in.txt > out.txt
 $ cat out.txt
-Hello isshikih! 
+Hello isshikih!
 ```
 
 #### 标准错误流重定向 | 2> 2>>
@@ -654,7 +652,7 @@ $ command 2> /dev/null
 > mksh: <&0 : bad file descriptor
 > $ zsh -c 'cat file - <&0' <&-
 > zsh:1: 0: bad file descriptor
-> 
+>
 > $ bash -c 'cat file - <&0' <&-
 > contents of file
 > cat: -: Bad file descriptor
@@ -701,11 +699,11 @@ $ find . -name "xxx"  | xargs rm -f
 
 可以发现，重定向的功能非常强大。同时，这里也有很多筛选器供你选择，他们经常搭配管道符使用，以辅助管道符进行一些更复杂的工作。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDNiNDQxMGJjMzE2MWMyYzMzMzA4ZTUyMzZhMGFlNjFfcmZEWXRvQWkwNDMyMlJqN1h5ajFsb1U4ZUZWZDd0Y3ZfVG9rZW46Ym94Y25oTXh1TDdCemxwTUV5blVVWGNQeGhnXzE2OTgzMjcxOTc6MTY5ODMzMDc5N19WNA)
+![img](../../../static/img/basic/shell-2.png)
 
 Source: https://linuxcommand.org/lc3_lts0070.php
 
-### Shell脚本
+### Shell 脚本
 
 简单来说，Shell 脚本可以看作一条条 Shell 指令的集合，我们在运行 Shell 脚本时，Shell 脚本中的指令按照特定顺序一行一行的被执行下来。
 
@@ -729,18 +727,18 @@ then
     commands
 elif condition2
 then
-                commands 
+                commands
 else
                 commands
 fi
 # 当 $var 为 "A" 时执行第一块，当 $var 为 "B" 时执行第二块，*) 即其他情况
-case $var in 
+case $var in
     "A")
         commands
     ;;
     "B")
         commands
-    ;; 
+    ;;
     *)
         commands
     ;;
@@ -869,7 +867,7 @@ C
 ```Bash
 for var in `cat file`
 do
-    echo - var 
+    echo - var
 done
 ```
 
@@ -912,13 +910,13 @@ cd $curDir
 
 ## 其他
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=NGRjYTE5ZWQzZTg1OWUzMTY3MjY3NGJjZGM1Y2NkNWJfYlRrUGc3UjJaOEpDaWpsYTBiemlZaU1pT0w5VXNXZGdfVG9rZW46Ym94Y25RbVI0Nm9DTTlOMlpHdTVpZGZ1bnNOXzE2OTgzMjcxOTc6MTY5ODMzMDc5N19WNA)
+![img](../../../static/img/basic/shell-3.png)
 
 命令行常见快捷键，Source: https://lym.readthedocs.io/en/latest/startingcommands.html?highlight=mkdir#moving-around-in-the-command-line
 
 ## 相关资料
 
-- [Shell (computing) - Wikipedia](https://en.wikipedia.org/wiki/Shell_(computing))
+- [Shell (computing) - Wikipedia](<https://en.wikipedia.org/wiki/Shell_(computing)>)
 - [Terminal emulator - Wikipedia](https://en.wikipedia.org/wiki/Terminal_emulator)
 - [Introducing the Shell – Introduction to the Command Line for Genomics (datacarpentry.org)](https://datacarpentry.org/shell-genomics/01-introduction/)
 - [LinuxCommand.org: Learning the shell.](https://linuxcommand.org/lc3_learning_the_shell.php)

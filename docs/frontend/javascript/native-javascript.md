@@ -64,7 +64,7 @@ JavaScript 是一种**弱类型**的面向对象的脚本语言，可以给前�
 
 观察以下两段代码，它们的执行结果分别是什么（提示：闭包）？在这两段代码中，分别产生了几个闭包，闭包分别是在哪一行产生的？
 
-```JavaScript
+```js
 function func1(){
     var a = 2;
     setInterval(function(){
@@ -76,7 +76,7 @@ func1();
 func1();
 ```
 
-```JavaScript
+```js
 function func1(){
     var a = 2;
     var f = function(){

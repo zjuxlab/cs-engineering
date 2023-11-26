@@ -50,7 +50,7 @@ Clean code 的准则定义得十分模糊，我们很难对着一份代码争辩
 
 而解决这个问题的重构方法也很简单，概括为一个字就是“拆”，将长函数分隔为短函数，将巨大的类分为几个小类。遇到复杂的条件句，就将其拆成一个 checker 函数，发现纠缠不清的变量，就用一个 query 函数来替代它。
 
-```Python
+```py
 # before
 def BigFunc():
     # ...
@@ -93,7 +93,7 @@ def dosomething():
 
 (感觉 python 因为动态类型不好举例，换成了 C#)
 
-```C#
+```cs
 public class Person
 {
     public string ID {get;set;}
@@ -112,7 +112,7 @@ public class Person
 
 因此，我们要将 primitive 包装成新的结构体（我们姑且先称结构体，因为这里还不想提及它们作为 “类” 的特点），一方面，这样**强化了 primitive 的意义**，另一方面，这样使得 primitive 有了**类型安全**性：
 
-```C#
+```cs
 public class Person
 {
     public Person(string Name, Address adress)
@@ -247,7 +247,7 @@ public class Address
 
 开闭原则其实是进一步强调多使用接口，其建议将整个代码结构建立在接口上。这样当我们需要扩展时，就可以重新实现一个接口，而不是修改原来的类。
 
-```Python
+```py
 class IEducation(Interface):
     def start(self):
         pass
@@ -278,7 +278,7 @@ class VideoCourse(Course):
 
 我们确实可以很容易地通过继承和 override 实现一个正方形类（这个实现其实违背了开闭原则）。但是，如果我们要求长方形有设置长和宽的能力，正方形类是无法满足的。从这个角度上来看，正方形不能继承长方形类！**我们的继承要求从 “is” 强化成了 “\*\***act\*\* **exactly like”。**
 
-```Python
+```py
 class Rectangle:
     def __init__(self):
         self.width = 0
@@ -333,7 +333,7 @@ def test(x : Rectangle):
 
 例如我们要实现一个员工类，同时要实现计算工资的功能。如果我们这样设计：
 
-```Python
+```py
 class Employee:
     def work(self):
         pass
@@ -348,7 +348,7 @@ class Employee:
 
 如果我们再实现一个类似于“财务部门”的类，由其计算工资，将会优雅许多：
 
-```Python
+```py
 class Employee:
     def work(self):
         pass
@@ -370,7 +370,7 @@ class FinancialApartment:
 
 譬如要实现餐馆的线上/线下点餐功能，如果这样定义接口：
 
-```Python
+```py
 class ICustomer(Interface):
     def order(self):
         pass
@@ -387,7 +387,7 @@ class ICustomer(Interface):
 
 首先解决抽象的问题，我们可以不关心操作的途径，只抽象出支付和下单方法，具体细节交由实际类实现。在抽象完之后，我们可以再考虑进行职责的拆分，将原接口分为两个：
 
-```Python
+```py
 class IOrder(Interface):
     def order(self):
         pass
@@ -412,7 +412,7 @@ class IPayment(Interface):
 
 换言之，LKP 要求在 `M` 中能够访问的只有和其“直接接触”的类，通过降低不必要的非直接沟通来降低类之间的耦合。直观来讲就是 “尽量少用 `.`”。
 
-```Python
+```py
 class C:
     def __init__(self):
         self.component = B()
@@ -502,7 +502,7 @@ Visitor 是一种牺牲了一定扩展性的设计模式。
 
 当然，我们还有一个充满 bad smell 的原始做法 —— **big switch**！既然无法用接口进行抽象，不妨尝试对这种方法进行改进。
 
-```Python
+```py
 # client code
 if isinstance(obj,classA):
     # ...
@@ -564,7 +564,7 @@ Factory (工厂)，是一种关于创建实例的设计模式。
 
 这个 static creation method 就是 Factory 模式的原型，被称为 **Simple Factory**。
 
-```Python
+```py
 # Product
 from abc import ABC,abstractmethod
 
@@ -604,7 +604,7 @@ def factory(name):
 
 （步骤 3 可以斟酌保留相似的 Product 在同一个 Creator 类中，使用 `switch` 进行区分）
 
-```Python
+```py
 # Creator
 # import ...
 
@@ -658,7 +658,7 @@ Builder 模式用于优化创建实例的复杂逻辑。
 
 这种模式其实很常见：
 
-```C#
+```cs
 var car = CarBuilder.setWheels(4)
                     .setSeats(1)
                     .setEngine(new engine)
@@ -673,7 +673,7 @@ Builder 模式将创建过程分步进行，相比一次性接收所有初始化
 
 Builder 模式的一个缺点是其没法从语法上确保创建流程的完整，需要调用者自己记住 build 的流程。一般来说，我们会在最后的 build 步骤加上一些完整性检验作为最后保险。
 
-```C#
+```cs
 public class Builder
 {
     // ...
@@ -694,7 +694,7 @@ public class Builder
 
 Builder 模式不止能用来创建新实例，还可以应用在很多创建场合增加易读性。使用过 gorm 的人应该不陌生，gorm 的链式调用其实就是一个 builder. 其中，`where` 等方法相当于在设置最终的 sql 语句，而执行性的 `find` 等方法调用时，gorm 才会生成一个 sql 语句交给数据库执行。
 
-```Go
+```go
 db.Table("tableName").Where("id = ?",id).Limit(10).Find(&result)
 ```
 
@@ -706,7 +706,7 @@ db.Table("tableName").Where("id = ?",id).Limit(10).Find(&result)
 
 但是，对象本身拥有其所有成员的访问权限，可以直接遍历字段进行复制。所以，不如把复制工作交给对象本身。
 
-```Python
+```py
 class Prototype:
     def __init__(self):
         self.int_member = 1

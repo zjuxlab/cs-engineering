@@ -55,7 +55,7 @@ It is named a **shell** because it is the outermost layer around the **operating
 
 当您完成这些工作后，您可能看到类似于如下列举的内容的情况：
 
-```Bash
+```bash
 # 也许是这样
 xxx:~$ {你的光标在这里}
 # 或者这样
@@ -108,7 +108,7 @@ DESCRIPTION
 
 `echo` 即回响，这个单词非常形象地描述了这个命令的作用，将其接受到的内容“回响”出来。
 
-```Bash
+```bash
 # echo 会将它拿到的参数全都当作字符串打印出来，但成对引号并不会
 $ echo <something>
 $ echo "something 1 2 3"
@@ -133,7 +133,7 @@ isshikih
 
 在这里我们想介绍的第二个指令是 `pwd`，它的效果是输出您当前的位置。
 
-```Bash
+```bash
 $ pwd
 # 比如我的环境下，在 ~ 下输出如下
 /Users/isshikih
@@ -148,7 +148,7 @@ $ pwd
 
 `cd` 是 **c**hange **d**irectory 的缩写，它的效果是将您当前的位置转移到目标目录中。它的写法如下：
 
-```Bash
+```bash
 cd {target directory}
 
 # eg 1: =========================================
@@ -193,7 +193,7 @@ $ pwd
 
 具体写法如下：
 
-```Bash
+```bash
 # 假设我们当前在文件夹 my_ 下，文件夹内有两个文件和一个文件夹
 # 文件 .hidden 和文件 file1.md
 # 文件夹 dir1，里面有个文件 file2.md
@@ -223,7 +223,7 @@ file2.md
 - 有时，我们会为 `ls -l` 设置一个 alias，即 `alias ll="ls -l"` ，这样，我们就可以更方便的 `ll` 了。
 - 其中， `l` 中的具体格式如下：
 
-```Bash
+```bash
 -rw-------   1 me       me            576 Apr 17  2019 weather.txt
 drwxr-xr-x   6 me       me           1024 Oct  9  2019 web_page
 -rw-rw-r--   1 me       me         276480 Feb 11 20:41 web_site.tar
@@ -252,7 +252,7 @@ drwxr-xr-x   6 me       me           1024 Oct  9  2019 web_page
 
 `cat` 指令会连接文件并将内容打印到标准输出流。
 
-```Bash
+```bash
 # <filename> 是目标文件的名字。
 $ cat <filename>
 ```
@@ -263,7 +263,7 @@ $ cat <filename>
 
 `head` 和 `tail` 语法类似，功能类似，分别为查看目标文件的开头部分的内容和结尾部分的内容。不过由于我们对文本文件除了读写，还有一个叫做“追加”的操作（类比 C 语言中 `fopen()` 的 `‘a’` 模式） `tail` 会持续打印新追加进文件的内容，所以花样稍微比 `head` 多一点。
 
-```Bash
+```bash
 # `head` 和 `tail` 都有默认参数 `-n 10`
 # 也就是，下面两个指令是等价的，它们都会打印目标文件的前 10 行
 $ head <filename>
@@ -293,7 +293,7 @@ $ tail -f <filename>
 
 `less` 则是真正用来显示文件内容的指令，它会以文本文件的形式展示文件内容——这意味着你如果强行使用 `less` 来查看一个二进制文件，则会得到一堆乱码。
 
-```Bash
+```bash
 # <textFilename> 为目标文件的名字
 $ less <textFilename>
 ```
@@ -314,7 +314,7 @@ $ less <textFilename>
 
 `touch`实际上是用来修改文件和目录的时间属性的，但是由于它具有“如果文件不存在则创建一个”的特性，所以也常常用来创建一个新档案。
 
-```Bash
+```bash
 $ ls -l
 total 0
 
@@ -336,7 +336,7 @@ total 0
 
 `mkdir`是 make directory 的缩写，也就是创建一个“文件夹”。
 
-```Bash
+```bash
 # <dirname> 可以是一个复杂路径下的目录，但是一定要求其前置目录都存在
 $ mkdir <dirname>
 $ ls -l
@@ -382,7 +382,7 @@ $ tree           # 该指令会显示当前的文件结构
 
 NOTE: `mv` doesn't move `.XXX` hidden files or folders by default
 
-```Bash
+```bash
 # 注意，我们在这一节临时把 <path> 从 <filename> 和 <dirname> 中拆出来
 # 该指令会将 <target1> 移动到 <path2> 并改名为 <target2>，当然允许同名
 $ mv <path1>/<target1> <path2>/<target2>
@@ -399,7 +399,7 @@ $ mv <path1>/<target1> <path1>/<target2>
 
 `cp`即 copy，用来复制文件或目录，基本语法和`mv`类似，我们再多介绍一个`-r`参数。
 
-```Bash
+```bash
 # 该指令会复制一个文件 <filename> 到 <path> 下
 $ cp <filename> <path>
 
@@ -433,7 +433,7 @@ $ tree           # 该指令会显示当前的文件结构
 
 `rm`即 remove，顾名思义就是用来删除东西的，这是个非常危险的指令。常用的参数有`-r`和`-f`，分别表示递归删除和强制删除；此外，我们还将介绍一个`-i`参数。
 
-```Bash
+```bash
 # 删除一个文件
 $ rm <filename>
 
@@ -509,7 +509,7 @@ command -->|"Standard Error (stderr)"| error
 
 我们再次回忆整个过程中数据的流动：程序中的数据 → `stdout` → screen，而重定向做的事情就是改变 `stdout` → screen 这个步骤。
 
-```Bash
+```bash
 # "command" 的输出会被覆写进 "file"
 $ command > file
 
@@ -535,7 +535,7 @@ $ ls -al > index.txt
 
 现在，如果你想让你的 `a.exe` 输出的东西被写入 `out.txt` 中，也可以尝试这样运行它：
 
-```Bash
+```bash
 $ a.exe > out.txt
 ```
 
@@ -543,7 +543,7 @@ $ a.exe > out.txt
 
 与输出相对应，如果我们想从文件中读取数据而非从 Keyboard 写入的缓冲区读取内容，而是从某个文件，我们也可以使用 `<` 来重定向输入。
 
-```C
+```c
 // 假设 a.exe 的源码是这样的
 #include <stdio.h>
 int main(){
@@ -570,7 +570,7 @@ Hello isshikih!
 
 `stderr` 的重定向基本上和 `stdout` 是一样的。
 
-```Bash
+```bash
 # "command" 的错误流会被覆写进 "file"
 $ command 2> file
 
@@ -582,7 +582,7 @@ $ command >> file
 
 这里需要介绍一个特殊的“文件”， `/dev/null` ——任何写入到它的内容都会被丢弃。也就是说，只要我们将 `stderr` 重定向到 `/dev/null` ，就能实现类似于“忽略错误流”的效果。
 
-```Bash
+```bash
 # "command" 的错误信息都会被丢弃
 $ command 2> /dev/null
 ```
@@ -611,27 +611,27 @@ $ command 2> /dev/null
 >
 > One place where `n>&n` makes sense is with zsh and its `mult_IOs` feature. In `zsh`:
 >
-> ```Bash
+> ```bash
 > some-cmd >&1 > some-file
 > # that is: some-cmd 1>&1 1> some-file
 > ```
 >
 > Redirects the standard output of `some-cmd` to both whatever stdout was before (&1) and `some-file`, as if you had written:
 >
-> ```Bash
+> ```bash
 > some-cmd | tee some-file
 > ```
 >
 > While
 >
-> ```Bash
+> ```bash
 > some-cmd <&0 < some-file
 > # that is: some-cmd 0<&0 0< some-file
 > ```
 >
 > would feed first the original stdin and then `some-file` as input to `some-cmd` as if you had written:
 >
-> ```Bash
+> ```bash
 > cat - some-file | some-cmd
 > ```
 >
@@ -639,13 +639,13 @@ $ command 2> /dev/null
 >
 > `n>&n` can also have an interesting side effect in some shells (`ksh`, `zsh`, not `dash`, `bash` nor `yash`) in that it triggers an error and gives up running the command if the file descriptor `n` is not open. So, in those shells,
 >
-> ```Bash
+> ```bash
 > cmd 0<&0
 > ```
 >
 > would avoid running `cmd` in the pathological condition where `stdin` is closed:
 >
-> ```Bash
+> ```bash
 > $ ksh -c 'cat file - <&0' <&-
 > ksh: 0: cannot open [Bad file descriptor]
 > $ mksh -c 'cat file - <&0' <&-
@@ -665,7 +665,7 @@ $ command 2> /dev/null
 
 前面讲了如何将输入输出重定向至**文件**，即数据的流动是 **从命令到文件** 或是 **从文件到命令**。而管道符 `|` 则实现了将数据的流动定向为 **从命令到命令**。
 
-```Bash
+```bash
 # "command_1" 的输出会作为 "command_2" 的输入
 $ command_1 | command_2
 
@@ -720,7 +720,7 @@ Shell 脚本一般是以 `.sh` 为后缀的纯文本文件，而执行 Shell 脚
 
 #### 流程控制 - 条件语句
 
-```Bash
+```bash
 # 条件分支语句
 if condition1
 then
@@ -747,7 +747,7 @@ esac
 
 #### 流程控制 - 循环语句
 
-```Bash
+```bash
 # 依次枚举若干 item，var 表示正在枚举的内容
 for var in item1 item2 ... itemN
 do
@@ -767,7 +767,7 @@ done
 
 #### 流程控制 - 函数
 
-```Bash
+```bash
 # 定义了一个叫做 foo 的函数，function 可以不写
 function foo(){
           commands
@@ -780,7 +780,7 @@ function foo(){
 
 - 假设 `script.sh` 的内容如下
 
-```Bash
+```bash
 #! /bin/bash
 echo $1
 echo $2
@@ -797,7 +797,7 @@ echo ${10}
 
 - 则如下运行结果如下：
 
-```Bash
+```bash
 $ ./foo.sh a b c d e f g h i j
 a
 b
@@ -814,7 +814,7 @@ j
 
 - 假设 `script.sh` 的内容如下
 
-```Bash
+```bash
 #! /bin/bash
 function foo(){
                 echo $1
@@ -835,7 +835,7 @@ foo a b c d e f g h i j
 
 - 则如下运行结果如下：
 
-```Bash
+```bash
 $ ./script.sh
 a
 b
@@ -856,7 +856,7 @@ j
 
 - 假设 `file` 的内容如下
 
-```Bash
+```bash
 A
 B
 C
@@ -864,7 +864,7 @@ C
 
 - 执行下列语句
 
-```Bash
+```bash
 for var in `cat file`
 do
     echo - var
@@ -873,7 +873,7 @@ done
 
 - 结果为
 
-```Bash
+```bash
 - A
 - B
 - C
@@ -883,7 +883,7 @@ done
 
 可以发现，在前面给出的若干脚本样例中，我们的第一行都有一行奇怪的注释：
 
-```Bash
+```bash
 #! /bin/bash
 ```
 
@@ -893,7 +893,7 @@ done
 
 这里再贴一个我自己写 Shell 脚本的时候会采用的模板。
 
-```Bash
+```bash
 #! /bin/bash
 
 # get current direction

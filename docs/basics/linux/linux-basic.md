@@ -77,7 +77,7 @@ linux系统运行时有一个运行级别（runlevel），有以下几种：
 
 这里介绍几条命令
 
-```Bash
+```sh
 # 显示当前的运行级别
 runlevel
 # 更改运行级别 (需要sudo）
@@ -105,7 +105,7 @@ shell 是Linux系统的用户界面，提供了用户与内核进行交互操作
 
 内部命令（builtin）就是shell本身包含的一些命令，外部命令是指存放起来的一些二进制文件或者shell脚本
 
-```Bash
+```sh
 # 查看一个命令是内部还是外部命令
 # 比如查看cd命令是什么命令
 type cd
@@ -115,7 +115,7 @@ type cd
 
 那么shell的搜索目录是什么呢？它存在一个shell变量中 PATH
 
-```Bash
+```sh
 # 查看PATH变量
 echo $PATH
 # 查看所有环境变量
@@ -320,7 +320,7 @@ pstree命令可以用图的形式显示当前系统中执行进程的进程树�
 
 如果方便显示，可以配合more指令使用
 
-> pstree –a | more
+> `pstree –a | more`
 
 ### 重定向
 
@@ -338,7 +338,7 @@ linux的三种类型的标准流
 
 如果我们要重定向stdin使用<，比如cat < myFile，还有一种重定向是内联输入重定向，要求有一个标记来区分输入数据的开始和结尾，所以我们可以这样用
 
-```Bash
+```bash
 wc << EOF
  > hello
  > wolrd
@@ -383,7 +383,7 @@ standard error (sderr) — 2
 
 > 如果我们就想要输出和错误都输出到一个文件里怎么办？
 >
-> ```
+> ```sh
 > cat lab1 lab2 lab3 1> cat.output.errors 2>&1
 > cat lab1 lab2 lab3 2> cat.output.errors 1>&2
 > ```
@@ -428,7 +428,7 @@ Linux允许一条命令的标准输出成为另外一条命令的标准输入
 
 > tee命令
 >
-> 语法：tee [options] file-list
+> 语法：`tee [options] file-list`
 >
 > 用途：从标准输入中得到输入然后送到标准输出和file-list中
 

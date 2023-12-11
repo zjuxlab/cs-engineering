@@ -1,6 +1,8 @@
 # Shell
 
-@pacman
+@Isshiki修
+
+原文链接: https://note.isshikih.top/tech_accu/tool/Shell
 
 ## 文章目标
 

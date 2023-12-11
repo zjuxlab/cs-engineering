@@ -1,5 +1,6 @@
 # CSS pseudo elements
-@fyx 2022 10 月
+
+@firethefart
 
 ## outline
 

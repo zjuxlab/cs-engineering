@@ -1,6 +1,6 @@
 # Docker入门
 
-作者: @pacman
+@Isshiki修
 
 ## 1. Docker简介
 

@@ -1,6 +1,6 @@
 # React
 
-@thy
+@biu9
 
 ## react 及其生态简介
 

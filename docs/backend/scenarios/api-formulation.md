@@ -1,6 +1,6 @@
 # API的制定
 
-@cy
+@Chenyan
 
 针对前后端交互使用的HTTP上API进行介绍
 

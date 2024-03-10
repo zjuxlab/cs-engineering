@@ -6,7 +6,7 @@ Css selector一般被叫做css选择器，它是一段CSS语言中处于最前�
 
 举一个应该是最为大家所熟知的例子：
 
-```HTML
+```html
 <div class="example"></div>  <!--一个div块，其class属性名被定义为example!--> 
 .example {
     /*为class名为example的html元素制定CSS规则，并写在这里*/
@@ -23,7 +23,7 @@ CSS代码段中的`.example`就被叫做**CSS选择器**。选择器选择哪些
 
 Universal selector被称为通用选择器或通配符选择器。顾名思义，该选择器下的CSS规则会对所有的html元素生效。
 
-```CSS
+```css
  * {
      /* 这里的CSS规则对所有html元素生效 */
  }
@@ -35,7 +35,7 @@ Universal selector被称为通用选择器或通配符选择器。顾名思义�
 
 ID selector被称为ID选择器，它为ID为某个特定值的对象设置CSS样式，用#表示
 
-```HTML
+```html
 <div id="NAME"></div>  <!--一个div块，其id为NAME!--> 
  #NAME {
      /* 这里的CSS规则对id="NAME"的元素生效*/ 
@@ -48,7 +48,7 @@ ID selector被称为ID选择器，它为ID为某个特定值的对象设置CSS�
 
 ID selector被称为类选择器，它为属于某个class的所有对象设置CSS样式，用.表示
 
-```HTML
+```html
 <div class="example"></div>  <!--一个div块，其类为example!--> 
  .example {
      /* 这里的CSS规则对class中包含"example"的元素生效*/ 
@@ -59,7 +59,7 @@ ID selector被称为类选择器，它为属于某个class的所有对象设置C
 
 1. class选择器是选择包含该属性的元素应用CSS样式，包含的意义我们看下面这个例子：
 
-```HTML
+```html
 <div class="never gonna give you up"></div>  
 <!--它将应用never、gonna、give、you、up五个类中的CSS规则!-->
 ```
@@ -68,7 +68,7 @@ ID selector被称为类选择器，它为属于某个class的所有对象设置C
 
 1. 既然有了1这种用法，我们当然也可以仅对“同时包含某些类名”的元素作出限定
 
-```CSS
+```css
  .never.gonna.give {
      /* 这里的CSS规则仅对class中同时包含never、gonna和give的所有元素生效*/ 
  }
@@ -78,7 +78,7 @@ ID selector被称为类选择器，它为属于某个class的所有对象设置C
 
 1. 有了并集就一定会有交集。有地方将这两天归纳于组合器中，属于后文[other combinator](https://xn4zlkzg4p.feishu.cn/wiki/wikcn7KLkQ4bF1twmLr48rLBAdh#ZauYdkCw8o2U42xaMV1cbDX9nnd)中提到的部分。
 
-```CSS
+```css
  .never,.gonna {
      /* 这里的CSS规则对class中包含never或gonna的元素生效*/ 
  }
@@ -89,7 +89,7 @@ ID selector被称为类选择器，它为属于某个class的所有对象设置C
 1. `.example`的详细写法应为`*.example`，意为对类为example的所有html元素应用一套CSS样式。略去通配标识符没有任何关系。
 2. 相信由1的启发，你已经发现了类选择器前面这个神奇的**`.`**前面是可以加东西的。我们还可以对类进行更深层的分类，将类选择器和元素选择器共用：
 
-```CSS
+```css
  p.snow.fall {
      /* 这里的CSS规则对class中同时包含snow和fall的所有p元素生效*/ 
  }
@@ -104,7 +104,7 @@ ID selector被称为类选择器，它为属于某个class的所有对象设置C
 
 Type selector被称为元素选择器，它为属于某个type的所有对象设置CSS样式
 
-```CSS
+```css
  p {
      /* 这里的CSS规则所有p元素生效*/
  }
@@ -116,7 +116,7 @@ Type selector被称为元素选择器，它为属于某个type的所有对象设
 
 Attribute selector被称为属性选择器，它为符合属性内容要求的的对象设置CSS样式。属性选择器的语法较多，我们首先看一个最常见的例子。
 
-```HTML
+```html
 <p lang="en">Hello!</p>
 <p lang="en-us">Hi!</p>
 <!--这两条都将应用下面的CSS规则!-->
@@ -135,7 +135,7 @@ Attribute selector被称为属性选择器，它为符合属性内容要求的�
    7. `[attribute$=value]`选择拥有`attribute="string"`，且string以子串“value”结尾的元素。同样只要能摘出子串就好。
 2. 相信你同样也注意到了，属性选择器的前面可以加上元素选择器。
 
-```CSS
+```css
  p[lang] {
      /* 这里的CSS规则对拥有lang属性的所有p元素生效*/ 
  }
@@ -145,7 +145,7 @@ Attribute selector被称为属性选择器，它为符合属性内容要求的�
 
 1. 可以同时对多个属性做出要求
 
-```CSS
+```css
  p[href][title] {
      /* 这里的CSS规则只对同时拥有href属性和title属性的所有p元素生效*/ 
  }
@@ -155,7 +155,7 @@ Attribute selector被称为属性选择器，它为符合属性内容要求的�
 
 1. 需要特别提出的是，我们在类选择器中说到了class的属性匹配要求只要求包含，但当你在属性选择器中选择class的值时，class与其他的属性是一样的，
 
-```HTML
+```html
 <p class="never gonna">give you up</p>
  p[class="never"] {
      /* 这里的CSS规则并不能对上面的html元素生效*/ 
@@ -173,7 +173,7 @@ Pseudo-class，更一般地被称为CSS伪类，是用于添加到选择器的�
 
 伪类由冒号（`:`）后跟着伪类名称组成（例如，`:hover`）。函数式伪类还包含一对括号来定义参数（例如，`:dir()`）。附上了伪类的元素被定义为*锚元素*（例如，`button:hover` 中的 `button`）。
 
-```CSS
+```css
 p:hover {    /* selector后跟伪类pseudo-class*/
     color: blue;
 }
@@ -212,7 +212,7 @@ Pseudo-element，CSS伪元素，也是用于添加到选择器末尾的关键字
 
 ![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=YTBhYTc1MWFiZDFiMThiOTY2ZWE2ZjAyYTc5YzFmMDBfU2hrbUlKNUhyM3VFNExjeFJxQVEzazZhSlh2MHBnWVRfVG9rZW46Ym94Y24zaWVQc2lPVFk0OFBxQ3R0aGZpNjVkXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
 
-```HTML
+```html
 <template>
   <div class="web"> <!--第一层，最外层，蓝色边框!-->
     <p>在外层框架之外的p</p>
@@ -256,7 +256,7 @@ h1 {
 
 **后代**是什么意思呢？在HTML元素当中后代形象地表现为被该元素的起始标志和结束标志囊括起来的所有html元素：
 
-```HTML
+```html
 <div id="I">  <!--我们以这个div为基准点开始看，这是起始标志，为了形象点给它命名I!-->
     <div>    <!--这是I的第一个子代，因为它在I的起始标志之后，结束标志之前！-->
         <p>?</p>   <!--这是第一个子代div的第一个子代，对于I而言这就是孙辈了！-->
@@ -269,7 +269,7 @@ h1 {
 
 因此后代组合器就是以element1框里的所有元素为对象，用element2选择器挑出其中符合要求的，例如：
 
-```CSS
+```css
 .out_frame p {
     color:green;   /*将out_frame这个div内所有的p元素字体变绿 */
 }
@@ -281,7 +281,7 @@ h1 {
 
 后代选择器是可以嵌套使用的，供我们方便的选择应用范围，如下例：
 
-```CSS
+```css
 .out_frame div p {
   color: green;   /*将out_frame这个div内所有的div内的p元素字体变绿 */
 }
@@ -297,7 +297,7 @@ h1 {
 
 子代组合器和后代组合器非常相像，可以看作是后代组合器的子集，因为**子代**就是表示第一层后代，这一点在上面介绍后代的例子时也提到了。例如：
 
-```CSS
+```css
 .out_frame>p {
   color: green;   /*将out_frame内所有的p子元素字体变绿 */
 }
@@ -315,7 +315,7 @@ h1 {
 
 理解了后代和子代的含义，兄弟（同辈）的含义相信也很好懂。不过CSS中有一个雷点：**element1的兄弟必然是在其之后的**。也就是说，CSS中**不存在互为兄弟这种说法**。详细地可以见下例：
 
-```HTML
+```html
 <div>  <!--I的父辈!-->
     <div></div>
     <p></p>    <!--不熟。上面的div和p不是I的兄弟！！-->
@@ -330,7 +330,7 @@ h1 {
 
 因此后代组合器就是以和element1同辈的所有元素为对象，用element2选择器挑出其中符合要求的，例如
 
-```CSS
+```css
 p~.out_frame {
   color: green;   /*将所有的p元素的兄弟中class为out_frame的字体变绿 */
 }
@@ -342,7 +342,7 @@ p~.out_frame {
 
 但是反过来就不行，“在外层框架之外的p”就不是out_frame这个div的兄弟：
 
-```CSS
+```css
 .out_frame~p {
   color: green;   /*将class为out_frame的元素的兄弟中的所有p元素的字体变绿 */
 }
@@ -360,7 +360,7 @@ p~.out_frame {
 
 它也可以看作通用兄弟组合器的一种子集，只是限定在了必须是紧挨着该元素的下一个元素。看例子之前，为了有所区别需要稍微修改一下html代码
 
-```HTML
+```html
   <div class="web">
     <p>在外层框架之外的p</p>
     <div class="out_frame">
@@ -377,7 +377,7 @@ p~.out_frame {
 
 然后增加我们的相邻兄弟组合器CSS代码，看效果：
 
-```CSS
+```css
 p+h1 {
   color: green;   /*看所有的p元素。如果紧挨着它的那个元素是h1，就应用这个规则 */
 }
@@ -399,7 +399,7 @@ p+h1 {
 
 并集选择器，其实前面谈Class Selector的时候提到过了，就是用逗号隔开表示：只要满足列出的选择器之中的任意一个，就应用该规则。
 
-```CSS
+```css
 h1,
 p,
 .section,#ddd{
@@ -429,7 +429,7 @@ p{color:green;}
 
 我们假设有一个class名为never的div类被用上了这两条规则：
 
-```CSS
+```css
 .never {
   background-color: green;  /*理论上这条会被选用*/
 }
@@ -462,7 +462,7 @@ div {
 
 经过简单的测试，我得出的结论如下：对于一个`element1 combinator element2`的组合器，在组合器优先级相同的情况下，如果element1或element2有哪一个是相同的，那就看另一个element的优先级；否则需要进行**权重计算**。直观地用例子解释吧：
 
-```HTML
+```html
   <div class="web">
     <p class="text">文字文字文字</p>
   </div>
@@ -481,7 +481,7 @@ div {
 
 1. 
 
-```CSS
+```css
 div > .text{  /* 子代选择器 */
   color: yellow;
 }
@@ -497,7 +497,7 @@ div .text{  /* 后代选择器 */
 
 1. 
 
-```CSS
+```css
 .web > .text{
   color: yellow;
 }
@@ -513,7 +513,7 @@ element2相同的情况下，选择element1优先级高的黄色
 
 1. 
 
-```CSS
+```css
 div > .text{
   color: yellow;
 }
@@ -529,7 +529,7 @@ element1相同的情况下，选择element2优先级高的黄色
 
 1. 
 
-```CSS
+```css
 div > .text{
   color: yellow;
 }
@@ -545,7 +545,7 @@ div > .text{
 
 1. 
 
-```CSS
+```css
 .web > .text{
   color: yellow;
 }
@@ -561,7 +561,7 @@ div p{
 
 1. 后代和相邻兄弟比较
 
-```HTML
+```html
   <div class="web">
     <p class="text">文字文字文字</p>
     <h1 class="title">标题标题标题</h1>
@@ -576,7 +576,7 @@ div h1{
 
 ![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTMwYTdjMmY3OGFlMmY1OTcxMmUzNWU4YTZhOGM3ZTNfZnNxaHRienM2ZFZHektXT1ZqczR1blJJOTVIV1BHV0hfVG9rZW46Ym94Y25TUW5lenEwZGRzY1dwYUhGS1hzNFVkXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
 
-```CSS
+```css
 div h1{
   color: green;
 }
@@ -600,7 +600,7 @@ ID 远大于 class 远大于 type 远大于 universal
 
 并且权重计算应该做的是加法，比如：
 
-```CSS
+```css
 div .text{
   color: green;
 }
@@ -629,7 +629,7 @@ BEM是一种前端命名方法论，是块（block）、元素（element）、�
 
 比如：
 
-```CSS
+```css
 .block{ /*一个div的class名*/;}
 .block__element{ /*这个div的子元素，比如p的class名*/;}
 .block--state{ /*这个div的不同状态，比如隐藏、点击等等*/;}
@@ -653,7 +653,7 @@ https://www.w3cplus.com/css/css-architecture-2.html
 
 1. 在写并集选择器时，一般每个选择器占一行，方便阅读浏览
 
-```CSS
+```css
 h1,
 .section,
 #ddd,

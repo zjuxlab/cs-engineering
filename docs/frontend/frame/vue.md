@@ -42,7 +42,7 @@ Vue 是尤雨溪在吸收了 React、Angular 的部分内容后开发的轻量�
 
 ### 入口 App.vue
 
-```HTML
+```html
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
@@ -81,7 +81,7 @@ export default {
 
 ### 组件(Component)HelloWorld.vue
 
-```HTML
+```html
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
@@ -155,7 +155,7 @@ h3 {
 
 ### main.js
 
-```JavaScript
+```js
 import { createApp } from 'vue'
 import App from './App.vue'//这里就调用了我们的App.vue作为入口
 import router from './router'
@@ -192,7 +192,7 @@ app.mount('#app')
 
 index.html 中留有
 
-```HTML
+```html
 <div id="app"></div>
 ```
 

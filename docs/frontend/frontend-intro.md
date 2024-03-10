@@ -54,7 +54,7 @@ JavaScript是一种轻量级的编程语言（HTML 只是一种标记语言）�
 
 可以用这段代码进行感性认知（**JSX =** **JS** **+** **HTML**）：
 
-```JavaScript
+```js
     return (
         <div className='container'>
             <Form addComment={addComment}></Form>
@@ -113,7 +113,7 @@ Fetch API 提供了一个全局 **`fetch()`** 方法，该方法提供了一种�
 
 举例一个`fetch()`的使用例子：
 
-```JavaScript
+```js
 const arg = { userId: 1 };
 const data = await fetch('https://example.com/profile', {
   method: 'POST', // or 'PUT'请求方法
@@ -141,7 +141,7 @@ SWR 是由 [Next.js](https://nextjs.org/)（React 框架）背后的同一团队
 
 一个简单的示例：
 
-```JavaScript
+```js
 // ./components/Avatar.jsx
 import { useUser } from '../modal.js';
 const { user, isLoading, isError } = useUser(id)

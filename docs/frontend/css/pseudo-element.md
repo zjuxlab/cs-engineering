@@ -99,7 +99,7 @@ https://css-tricks.com/the-shapes-of-css/
 
 举个例子
 
-```CSS
+```css
  .group:before,
  .group:after {
    content: "";
@@ -117,7 +117,7 @@ https://css-tricks.com/the-shapes-of-css/
 
 例如在你的超文本链接后面贴上网址：
 
-```CSS
+```css
  @media print {
    a[href]:after {
      content: " (" attr(href) ") ";
@@ -127,7 +127,7 @@ https://css-tricks.com/the-shapes-of-css/
 
 例如标记一下代码的语言
 
-```CSS
+```css
  pre::after {
    content: attr(rel);
    //position: ...
@@ -136,7 +136,7 @@ https://css-tricks.com/the-shapes-of-css/
 
 例如创建你的tooltips
 
-```CSS
+```css
 a[data-tooltip] {
      display: inline-block;/*bug fix*/
      position: relative;
@@ -198,7 +198,7 @@ a[data-tooltip] {
 
 又例如,很随手的分割符，也可以不添加新元素做出来
 
-```CSS
+```css
  .menu li:before {
    content: "// ";
    position: relative;
@@ -236,7 +236,7 @@ Everybody loves ribbons !
 
 你只需要这些html：
 
-```HTML
+```html
  <h1 class="ribbon">
     <strong class="ribbon-content">Everybody loves ribbons</strong>
  </h1>
@@ -335,7 +335,7 @@ https://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/
 
 自己的demo集合：
 
-```CSS
+```css
 //闪闪按钮
    .shining-button{
     position:relative;
@@ -455,7 +455,7 @@ https://css-tricks.com/pseudo-element-roundup/
 #### 任务三（自己的版本）
 只用这些html怎么完成如下网页的制作呢
 
-```HTML
+```html
 <body>
    <div class="navbar">
       <li class="link-group">
@@ -476,7 +476,7 @@ https://css-tricks.com/pseudo-element-roundup/
 
 彩带的答案👇
 
-```CSS
+```css
 .ribbon {
  font-size: 16px !important;
  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */

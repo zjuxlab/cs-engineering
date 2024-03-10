@@ -28,23 +28,26 @@
 
 这个属性非常的直观，大家也很好理解，这里汇总一下可能的写法
 
-| 写法        | 含义                                                         |
-| ----------- | ------------------------------------------------------------ |
-| 数值        | 用绝对值数值定义（带单位）                                   |
-| 百分数      | 按照外层容器的长宽百分比地为元素分配长宽                     |
-| auto        | 按浏览器的默认分配长宽                                       |
+| 写法        | 含义                                                               |
+| ----------- | ------------------------------------------------------------------ |
+| 数值        | 用绝对值数值定义（带单位）                                         |
+| 百分数      | 按照外层容器的长宽百分比地为元素分配长宽                           |
+| auto        | 按浏览器的默认分配长宽                                             |
 | max-content | 内容有多宽，盒子就有多宽，不会顾及父级盒子有多宽，只满足自己的需求 |
-| min-content | 装得下盒子内单个最大内容的最小宽度                           |
-| fit-content | 跟max比较像，但是会顾及父级盒子的宽度尽量撑开                |
+| min-content | 装得下盒子内单个最大内容的最小宽度                                 |
+| fit-content | 跟max比较像，但是会顾及父级盒子的宽度尽量撑开                      |
 
 可能几个content不是很好理解，给出几个例子演示一下：
 
 基础代码：
 
-```HTML
+```html
   <div class="web">
     <p class="text">文字文字文字文字文字文字文字文字文字</p>
   </div>
+```
+
+```css
 .web {
   height: 50px;
   width: 10%;
@@ -60,7 +63,7 @@
 
 ![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWE4MGQzZTZlZmFlY2E1MjYyYzg3YTZmNzQyOTVkZmZfeWpMN0p3RkdpVENHMERtTVFvZUM0SmpRdkd1dWlFSEpfVG9rZW46Ym94Y25jb0NzTFRDY1VNelByTVdqWVVZaEVlXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
 
-```CSS
+```css
 .text {
   width: max-content;
 }
@@ -70,7 +73,7 @@
 
 ![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=MTdmMDBhMmM0NWQ3ZWIzZDYzY2U5YTgyMWE2ZDEyZGFfZWNzRFlQeXZFMTJiT3hGdVdjcG5rWFZ0dG5JYU1XVHNfVG9rZW46Ym94Y250bm5RNVJ0bXNoazZoWkJ6OUtUMnJlXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
 
-```CSS
+```css
 .text {
   width: min-content;
 }
@@ -80,7 +83,7 @@
 
 ![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWQ3ZjQyZjFkOThhZGMwNDI1ODE1ZWZhNGM2MTc3Y2ZfU2V0djhzVE1sd05YaHVpVlU0NXpEeWJ5QVhab0lMQk1fVG9rZW46Ym94Y25BZXN3ZTFKMXZJSDNzeEtrNzdVa0hoXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
 
-```CSS
+```css
 .text {
   width: fit-content;
 }
@@ -123,7 +126,7 @@ border即盒模型的边框，这个想必非常直观。border有非常多的�
 
 ![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=OWRmNGY2OWNmY2MyMzg3MWI1ZTc3Zjc1MjJmNzRkYzRfcDYwMmVoZ3FXY3pCQUJ1MzNaT3BmVXRXb0tGSU9pZ0xfVG9rZW46Ym94Y251RUhhU0I2OEM5UW5pR0l2azNtUWRlXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
 
-```CSS
+```css
 .borderex{
     border-bottom: 100px solid pink; 
     border-left: 100px solid red; 
@@ -136,7 +139,7 @@ border即盒模型的边框，这个想必非常直观。border有非常多的�
 
 ![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ODRhYzk3ZGU2YjdhYWIyZGVhMTZmNTgwMGJiMTU1MjFfaEhkMlZQSlJwS0JjVDNqVXZEeWhRaERpdDRBZE9xcFNfVG9rZW46Ym94Y25abTJoa2I0ZUw3RjRCRFVvdVppRVBjXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
 
-```CSS
+```css
 .borderex{
     border-bottom: 100px solid pink; 
     border-left: 100px solid transparent; 

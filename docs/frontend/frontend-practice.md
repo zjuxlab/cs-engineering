@@ -45,7 +45,7 @@
 5. 在`App.js`文件中输入以下代码:
     
 
-```JavaScript
+```js
 export default function App() {
      return (
          <div>
@@ -58,7 +58,7 @@ export default function App() {
 6. 在`index.js`文件中输入以下代码
     
 
-```JavaScript
+```js
 import { createRoot } from 'react-dom/client';
  import App from './pages/App';
 

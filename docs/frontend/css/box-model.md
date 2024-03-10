@@ -6,7 +6,7 @@
 
 让我们回忆一下，在HTML&CSS的学习过程中，我们会接触到各种各样的html元素：段落、区块、标题、表格……数不胜数。而相信大家也一定都对元素的排布规律有了感觉：每个html元素的CSS规则都可以规定其长、宽，都有边框和间距这些东西来帮助我们进行页面布局的排版，就跟下面这张图一样。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=NjRhNzZmNzc2ZTQ3YmM5Y2FlNGNkZDk1MjM1NTQ4ZGVfVVFGZlg2aDVySlU2Y0ZQazNtTjhTVXhwd3J5d2JWN0hfVG9rZW46Ym94Y254WXlkZjdiUlRKUjRQbjJncGdaOGRnXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![](../img/box-model-1.PNG)
 
 （图源自https://blog.csdn.net/boring_cat/article/details/50950357）
 
@@ -16,7 +16,7 @@
 
 对于IE和标准这两种浏览器的盒模型来说，它们的边距计算略有区别，但是包含的元素以及排布方式是不变的：一个盒模型从内到外拥有其`width&height，padding，border，margin`这几种大小和布局元素。接下来将对这些元素做出介绍。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=YTM0NTlhZWRiZjljY2Q5OWQ1YmEyYzg2NzNjZjQwZTFfQzU0UXM0V1RtekVvdGd3ck1xNzdoeWFldUpiN2pYOUlfVG9rZW46Ym94Y25OUVFZR3cwMDhEWlJwMnRJMWlyaHRiXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![](../img/box-model-2.PNG)
 
 （例：chrome中的盒模型）
 
@@ -61,7 +61,7 @@
 
 ①max-content：只管自己，不管父级
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWE4MGQzZTZlZmFlY2E1MjYyYzg3YTZmNzQyOTVkZmZfeWpMN0p3RkdpVENHMERtTVFvZUM0SmpRdkd1dWlFSEpfVG9rZW46Ym94Y25jb0NzTFRDY1VNelByTVdqWVVZaEVlXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![img](../img/box-model-3.PNG)
 
 ```css
 .text {
@@ -71,7 +71,7 @@
 
 ②min-content：尽量缩小父级的体型
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=MTdmMDBhMmM0NWQ3ZWIzZDYzY2U5YTgyMWE2ZDEyZGFfZWNzRFlQeXZFMTJiT3hGdVdjcG5rWFZ0dG5JYU1XVHNfVG9rZW46Ym94Y250bm5RNVJ0bXNoazZoWkJ6OUtUMnJlXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![img](../img/box-model-4.png)
 
 ```css
 .text {
@@ -81,7 +81,7 @@
 
 ③fit-content：体型跟父亲和睦相处
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWQ3ZjQyZjFkOThhZGMwNDI1ODE1ZWZhNGM2MTc3Y2ZfU2V0djhzVE1sd05YaHVpVlU0NXpEeWJ5QVhab0lMQk1fVG9rZW46Ym94Y25BZXN3ZTFKMXZJSDNzeEtrNzdVa0hoXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![img](../img/box-model-5.png)
 
 ```css
 .text {
@@ -95,17 +95,17 @@ padding用于定义元素边框与元素内容之间的空间，即上下左右�
 
 内边距还是可以看这张图
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=MjEzM2E3NGQxYTEwMWJkMGM5MDA0MjU2MWYyNDM5YTlfT0JQaEFzRkZteE9nQTRuOXhtd29xOFVGeWFiTFIwaVlfVG9rZW46Ym94Y25OUHZUSTEzcUN4TUNqSlg1SHdaT0RoXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![img](../img/box-model-6.png)
 
 盒子的内容和边框的距离就是padding，比较好理解，也可以从例子看看：
 
 这是初始状态：
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=YzZlYjhiN2JlYWYwMTdjYTFiMDE0ZDY5YmQ5ZmRjMTBfOGtQUEVpZUlXMHdLTm5nYnF6bkZXbFJ0MjF1YWx3RUJfVG9rZW46Ym94Y254Qm1CTkpXdE1Ta2MyQ3JpU2RYT1hlXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![img](../img/box-model-7.png)
 
 增加了padding后，可以发现隔开了：
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGMzOGU0ZTYwYjNlZDg1YTZmMzY1MTIwZmExNmIzODhfU0c4V2ZJazBvQm54UGtaYm53QWpzQUZIYkkxRFA3M01fVG9rZW46Ym94Y25BN3lSMHdNSHk0c01hMFpHdWNWbTZiXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![img](../img/box-model-8.png)
 
 padding为设置四个方位的padding，分padding-top、padding-left、padding-right、padding-bottom，各自设置各自方位的padding值。
 
@@ -119,12 +119,12 @@ border即盒模型的边框，这个想必非常直观。border有非常多的�
 - 如果想让border的各类设置可见，我们首先应该使`border-style`不为默认值`none`，否则`border`将一直不可见
 - 不同类型的border-style可以见下。垄状应为向屏幕外凸起，对应凹槽向屏幕内凹陷；而嵌入则是斜面向元素中央屏幕内部凹陷，外凸是斜面向元素中央屏幕内部凸出。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=M2UwZTEyNTBhZDA2NmExMTkzYjQ5MzAyNjIzYjA2NTVfMzhFN1dmVlBjRW5YZ20wT01wdmU2b1puYUxBRXhrNGtfVG9rZW46Ym94Y250eG5WMlhwc01ralE1ejZuNXZZVkFiXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![img](../img/box-model-9.png)
 
 - bottom同样可以单独对top、left、right、bottom进行设置。
 - 有一个有趣的现象是我们必须明白的：上述四类型的边框连接处是一条45度的斜线。如下图：
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=OWRmNGY2OWNmY2MyMzg3MWI1ZTc3Zjc1MjJmNzRkYzRfcDYwMmVoZ3FXY3pCQUJ1MzNaT3BmVXRXb0tGSU9pZ0xfVG9rZW46Ym94Y251RUhhU0I2OEM5UW5pR0l2azNtUWRlXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![img](../img/box-model-10.png)
 
 ```css
 .borderex{
@@ -137,7 +137,7 @@ border即盒模型的边框，这个想必非常直观。border有非常多的�
 
 利用这一点我们可以画一些斜线图形。比如将height变为0再将red的部分变为隐藏色后：
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ODRhYzk3ZGU2YjdhYWIyZGVhMTZmNTgwMGJiMTU1MjFfaEhkMlZQSlJwS0JjVDNqVXZEeWhRaERpdDRBZE9xcFNfVG9rZW46Ym94Y25abTJoa2I0ZUw3RjRCRFVvdVppRVBjXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![img](../img/box-model-11.png)
 
 ```css
 .borderex{
@@ -157,7 +157,7 @@ margin用于定义元素边框与其他元素边框之间的空间，即上下�
 
 逻辑和用法与padding完全相同。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=OWNmMTMxODgzOWI0NWU0Y2E0YTRiNzgzYThmZTRiNzlfQTJGbFI0OHVLOXVPd2p6Z29JREhjM1hFM1Z6UFpIU05fVG9rZW46Ym94Y25DVzlNTDRFT3pRdk1vNzhoeHg3S1piXzE2OTc5ODU3NDY6MTY5Nzk4OTM0Nl9WNA)
+![img](../img/box-model-12.png)
 
 盒子的和其他元素（或者是屏幕边界）的距离就是margin
 

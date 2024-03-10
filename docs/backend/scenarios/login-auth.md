@@ -2,7 +2,7 @@
 
 ## Cookie
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=Mjg4MTI3NTU0YjNhYWU1YzM3MjQ0MTkxZjI5ODM4ZGZfVDEwUHZqVWxkaUJRM3JiR2V5enlsWHNGUTRhWXpUMFZfVG9rZW46Q2dubWJRYXRLb1B2OVd4OGFPbmNZNkg3blRlXzE2OTg0MTE2NDM6MTY5ODQxNTI0M19WNA)
+![img](../img/login-auth-1.PNG)
 
 [Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) 是浏览器的一种本地储存的方式。
 
@@ -219,7 +219,7 @@ Access-Control-Expose-Headers: X-Header
 
 ### Strawman Example
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=NTQzNTUwNWZhZGNjZWJmNjFkMzk1MzZhOGU2ZTE1ZWRfN3pFS1p0TE9uanF2RzVhbTNKQmxLVHlRZElOM2JHNVZfVG9rZW46VFJ0T2I3eWlzb202eFh4cUVFeGM1cWFWbjJlXzE2OTg0MTE2NDM6MTY5ODQxNTI0M19WNA)
+![img](../img/login-auth-2.png)
 
 如上是一个非常离谱的登录实现，我们可以以此为例想象一下登录过程可能会出现什么问题。
 
@@ -247,7 +247,7 @@ Token 是最常见的一种鉴权方式，有很多鉴权规范其实都是在�
 
 此处以 postman 中提供的预设方式为例，其实 API Key, Bearer Token, Basic Auth 都是一种 token，后面的 session 其实也是一种 token，只是具体如何生成，如何在请求中传递等等细节不同而已。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGQzNGFkMmNmOThmMWY4MDk5YmJmNjhjMjgyM2FiNzVfNElZeUkxQ0Y0SkNhMkFhUnR5dzVVSXpjYVlvOTUyRkFfVG9rZW46U2Y4WGJxcGJabzVUaHR4c1ZHdWNHb2hIbm5nXzE2OTg0MTE2NDM6MTY5ODQxNTI0M19WNA)
+![img](../img/login-auth-3.png)
 
 使用 token 鉴权的流程一般是这样的：用户在登录后，服务端生成一个代表其身份的令牌，这就是 token。然后服务端将这个 token 返回给客户端，之后的请求，客户端只需要携带这个 token 进行请求即可。服务端通过 token 验证用户的身份。
 
@@ -285,7 +285,7 @@ Oauth2 规范是一种用于第三方授权的鉴权方式。
 
 Oauth 的核心内容是 “如何让用户经由一个权限管理中心来赋予客户端权限”。其标准定义了[四种方式](https://auth0.com/docs/authenticate/protocols/oauth#grant-types)，以适应不同的运用场景。我们这里就以 web 应用最常见的工作方式来说明。
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=MzllOGI4ODM3YTI3NGQ2OWQxNDQxYzJkODc0NTAxODFfbFJnVm1MS2UyR0JHNTdSeHkxQTgzZ3cxQTJUQjNHZ1ZfVG9rZW46TEFXVGJqd3VQb2NaRjZ4V1hTbGNSN084bnhiXzE2OTg0MTE2NDM6MTY5ODQxNTI0M19WNA)
+![img](../img/login-auth-4.png)
 
 如上图，在这张图中有四个角色。其中，Regular Web App 就是我们的应用，而 Auth Tenant 是所谓的权限管理中心，API 则是其负责管理的资源 API。而我们的应用需要请求这些 API 获取用户能够取得的资源。
 

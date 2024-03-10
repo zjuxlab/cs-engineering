@@ -44,7 +44,7 @@ Eg  `https://api.abc.com/PROG/user/get`  【GET】
 
 为了直观，直接上示例：When login
 
-```JSON
+```json
 // if fail
 {
     "errcode": 10001,
@@ -159,7 +159,7 @@ https://spec.graphql.org/October2021/#sec-Overview
   - 查询用户：/list
     - 传入：
       - 某些过滤器字段（约定：不传某一项表示忽略某一项）
-      - ```JSON
+      - ```json
         {
             "name": Optional[string],     // 模糊搜索
             "phone":Optional[string]，    // 精确匹配 
@@ -190,12 +190,6 @@ COMBO：简述OOP中的类-方法与HTTP API的关联
 - 对于对象的操作至少包含增删查改的API各一个
 - 简化模型和逻辑的具体细节，只体现能说明问题的对象和操作即可
 - DDL：最晚8.10提交给@陈岩 | 咕咕晓 
-
-## 实战讲解
-
-[「一节课搞定API接口制定（图文详解，实例剖析，超详细，一学就会）」CSDN风格标题](https://xn4zlkzg4p.feishu.cn/minutes/obcnd3tc86859u8yqwvfa8zg)
-
-（草 我差点当真了 这标题）
 
 ## 思考题
 

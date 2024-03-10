@@ -38,7 +38,7 @@ Cookie 只是存在客户端本地的一段文本信息，本身十分不安全�
 
 一般来说，cookie 是通过 http 请求设置和传递的，在一个请求头中携带 Header `Set-Cookie`就能让浏览器自动设置好 cookie，已经设置过的 cookie 会被携带在`Cookie` 中发送/返回：
 
-```HTTP
+```http
 HTTP/2.0 200 OK
 Content-Type: text/html
 Set-Cookie: yummy_cookie=choco
@@ -52,7 +52,7 @@ Cookie: yummy_cookie=choco; tasty_cookie=strawberry
 
 这个过程中 cookie 的管理全部由浏览器完成，但是，前端也可以主动访问并设置 cookie，比如，js 可以通过 `document` 访问这个页面的 cookie:
 
-```JavaScript
+```js
 document.cookie="username=John Doe; expires=Thu, 18 Dec 2043 12:00:00 GMT";
 ```
 
@@ -130,7 +130,7 @@ CORS 将请求分为两类，一种是 [simple request](https://developer.mozill
 
 我们以一个 non-simple request 来举例。在实际发送请求前，需要先发送一个 **OPTION** 请求作为 preflight：
 
-```HTTP
+```http
 OPTIONS /doc HTTP/1.1
 ...
 Origin: http://example.com
@@ -142,7 +142,7 @@ Access-Control-Request-Headers: X-PINGOTHER, Content-Type
 
 由服务器接收到请求后，服务器在返回中设置以下字段，来告诉发送方自己接受的请求类型：
 
-```HTTP
+```http
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST, GET, OPTIONS
 Access-Control-Allow-Credentials: true
@@ -160,7 +160,7 @@ Access-Control-Max-Age: 86400  // 对options的缓存
 
 发送方接收到响应后，验证服务端是否能够接受实际要发送的 CORS 请求，如果不满足服务端的要求，就不再发送实际的请求。如果 preflight 请求通过了，则继续发送正式的请求，这回只用携带 Origin 就行了
 
-```HTTP
+```http
 POST /cors HTTP/1.1
 Origin: http://example.com
 Host: example.com
@@ -171,7 +171,7 @@ User-Agent: Mozilla/5.0...
 
 服务器接收到正式请求后，按照正常方式响应，但是多加了几个 Hedaer:
 
-```HTTP
+```http
 Access-Control-Allow-Origin: http://example.com
 Access-Control-Allow-Credentials: true
 Access-Control-Expose-Headers: X-Header

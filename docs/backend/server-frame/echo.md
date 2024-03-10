@@ -24,13 +24,13 @@
 
  初始化一个go项目
 
-```PowerShell
+```powershell
 go mod init helloworld
 ```
 
 添加如下代码
 
-```Go
+```go
 package main
 
 import (
@@ -64,7 +64,7 @@ go run helloworld
 
  下面我们需要监听其它路由，只需要继续添加就好了，比如我们想要下面这些：
 
-```Go
+```go
     e.POST("/users", saveUser)
     e.GET("/users/:id", getUserByIdFromPathParameters)
     e.GET("/users", getUserByIdFromQueryParameters)
@@ -77,7 +77,7 @@ go run helloworld
 
 这样就可以监听这些路由，在运行之前，我们需要完成相应的处理函数。
 
-```Go
+```go
 type User struct {
     Id   int64  `json:"id"`
     Name string `json:"name"`
@@ -128,7 +128,7 @@ func getUserByIdFromQueryParameters(c echo.Context) error {
 
 请求有得到预期的结果吗？对于现在这样比较简单的api，应该是很容易的。如果api多起来呢？查找错误就不太容易了，为此，我们可以为 echo 加上日志。
 
-```Go
+```go
     e.Use(middleware.Logger())
 ```
 
@@ -136,7 +136,7 @@ func getUserByIdFromQueryParameters(c echo.Context) error {
 
 这样是不是就清晰多啦。本例中，我们使用了 echo 自带的Logger，当然，你也可以用其他的日志管理包，比如 logrus 。
 
-```Go
+```go
     log := logrus.New()
     e.Use(middleware.RequestLoggerWithConfig(middleware.RequestLoggerConfig{
         LogURI:    true,
@@ -158,7 +158,7 @@ func getUserByIdFromQueryParameters(c echo.Context) error {
 
 中间件可以用在不同级别，需要根据具体业务场景进行选择。
 
-```Go
+```go
 // Root level middleware
 e.Use(middleware.Logger())
 e.Use(middleware.Recover())
@@ -226,7 +226,7 @@ Route level 中间件，只对特定路由有效。
 
 ### [Binding](https://echo.labstack.com/guide/binding)
 
-```Go
+```go
 type User struct {
   ID string `param:"id" query:"id" form:"id" json:"id" xml:"id"`
 }
@@ -238,7 +238,7 @@ err := (&DefaultBinder{}).BindHeaders(c, &payload)
 
 ### [Cookies](https://echo.labstack.com/guide/cookies)
 
-```Go
+```go
 func writeCookie(c echo.Context) error {
         cookie := new(http.Cookie)
         cookie.Name = "username"
@@ -272,7 +272,7 @@ Https 需要证书和密钥
 
 - HTTPS
 
-```Go
+```go
 func main() {
   e := echo.New()
   // add middleware and routes
@@ -285,7 +285,7 @@ func main() {
 
 - HTTP2
 
-```Go
+```go
 func main() {
   e := echo.New()
   // add middleware and routes
@@ -355,7 +355,7 @@ func main() {
 
 *Example*
 
-```Go
+```go
 e.GET("/users/:id", func(c echo.Context) error {return c.String(http.StatusOK, "/users/:id")})
 
 e.GET("/users/new", func(c echo.Context) error {return c.String(http.StatusOK, "/users/new")})
@@ -373,7 +373,7 @@ Above routes would resolve in the following order:
 
 实际开发中，通常将所有路由放在一个文件内，并使用 Group 合并相同前缀。
 
-```Go
+```go
 g := e.Group("/api")
 g.GET("/getUser", getUser) /* /api/getUser */
 g.POST("/newUser", newUser) /* /api/newUser */
@@ -387,7 +387,7 @@ CORS 中间件实现了[CORS](http://www.w3.org/TR/cors)规范。CORS 为 Web �
 
 *用法：*
 
-```Go
+```go
 //默认配置
 e.Use(middleware.CORS())    
 
@@ -408,7 +408,7 @@ e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
 
 Example：
 
-```Go
+```go
 package main
 
 import (

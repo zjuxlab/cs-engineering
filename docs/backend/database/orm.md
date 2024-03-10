@@ -54,7 +54,7 @@ go唯一可以被视作null的就是nil值，所以当然可以用指针解决�
 
 基本的crud接口：（这里的Debug是为了打印sql语句）
 
-```Go
+```go
 //improt (
 //    . "gopkg.in/guregu/null.v3"
 //)
@@ -119,7 +119,7 @@ func main() {
 
 可以这样进行join：
 
-```Go
+```go
 joinTable := testDB.Table("users as u").Joins("LEFT JOIN records as r ON u.id = r.user_id")
 joinTable.Find(...)
 ```
@@ -134,7 +134,7 @@ joinTable.Find(...)
 
 gorm并非所有接口都会连接数据库并执行操作，像`Select`，`Where`等接口只是在叠sql语句，返回一个有状态的`*gorm.DB`。
 
-```Go
+```go
 tx := db.Where("name LIKE ?","%vista%")
 tx = tx.Not("name = ?","vista")
 tx.Find(&user)
@@ -148,7 +148,7 @@ tx.Find(&user)
 
 非常简单方便，返回任何错误都会自动回滚
 
-```Go
+```go
 err = testDB.Transaction(func(tx *gorm.DB) error {
                 err := tx.DoSomething.Error
             if err != nil {
@@ -174,7 +174,7 @@ err = testDB.Transaction(func(tx *gorm.DB) error {
 
 gorm提供了四种关联方式，以Has One举例：
 
-```Go
+```go
 type Class struct {
         Class     string
         Credit    int
@@ -196,7 +196,7 @@ type User struct {
 
 但是查询时默认是不查询关联的，需要进行 `Preload`才会返回关联。
 
-```Go
+```go
 err := testDB.Preload("Class").Find(&user).Error
 ```
 
@@ -210,7 +210,7 @@ err := testDB.Preload("Class").Find(&user).Error
 
 比如将上面的定义改成：
 
-```Go
+```go
 type User struct {
         ID    int
         Name  String

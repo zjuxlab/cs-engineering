@@ -56,7 +56,7 @@ JavaScript 是一种**弱类型**的面向对象的脚本语言，可以给前�
 
 即：一个经典的js笑话
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ODRlYTdmMGRiMjRmZjUzODJmYzNhZmMxNTA2NjY3M2ZfZ0NhemxwWWtQZ05nRGZkdEVwTjVlVk1HdTlucmtwb1BfVG9rZW46Ym94Y25CTkk0RFk2NFB3eXl0elB1WXlXRU1kXzE2OTg0MDkyMTQ6MTY5ODQxMjgxNF9WNA)
+![img](../img/naive-js.PNG)
 
 ## 思考题
 

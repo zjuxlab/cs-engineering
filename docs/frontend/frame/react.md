@@ -70,7 +70,7 @@ scr 文件夹下可以分成以下几个目录
 2. `./node_modules/.bin/eslint --init`
 3. 在 package.json 的 scripts 中添加:
 
-```JSON
+```json
 {
      "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
     "lint-fix": "eslint --ext .js,.jsx,.ts,.tsx src/ --fix"
@@ -81,7 +81,7 @@ scr 文件夹下可以分成以下几个目录
 
 如果你需要自定义 eslint 检查的内容，你可以编辑.eslintrc.js 文件,大部分规则定义在 rules 字段中，下面是一个例子
 
-```JavaScript
+```js
 {
     "rules": {
         "semi": ["error", "always"],
@@ -112,7 +112,7 @@ scr 文件夹下可以分成以下几个目录
 
 为 commitlint.config.js 添加以下内容
 
-```JavaScript
+```js
 /* eslint-disable no-undef */
 module.exports = {
     extends: ["@commitlint/config-conventional"],
@@ -170,7 +170,7 @@ Jest 是 Facebook 开源的一套 JavaScript 测试框架， 它集成了断言�
 
 在 test 目录下新建一个 example 文件夹,在 example 文件夹中新建 sum.js 与 sum.jest.js
 
-```JavaScript
+```js
 // sum.js
 function sum(a,b) {
     return a+b;
@@ -223,7 +223,7 @@ craco.config.js 文件中需要将 postcss 改为 postcssOptions
 
 在 tailwind 中，你只需要下面三行代码即可创建一个垂直居中的黑色矩形
 
-```JavaScript
+```js
 <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
     <div className="w-10 h-10 rounded-lg bg-black flex justify-center items-center"/>
 </div>
@@ -241,7 +241,7 @@ react-query 被提出用于解决这一系列问题,通过使用 react-query,你
 
 这里是 react-query 的一个 sample:
 
-```JavaScript
+```js
 const { isLoading, error, data } = useQuery(["repoData"], () =>
 fetch("https://api.github.com/repos/tannerlinsley/react-query").then(
     (res) => res.json(),
@@ -308,14 +308,14 @@ good: `const currentDate = moment().format("YYYY/MM/DD");`
 
 bad:
 
-```JavaScript
+```js
 // What the heck is 86400000 for?
 setTimeout(blastOff, 86400000);
 ```
 
 good:
 
-```JavaScript
+```js
 // Declare them as capitalized named constants.
 const MILLISECONDS_PER_DAY = 60 * 60 * 24 * 1000; //86400000;
 
@@ -326,7 +326,7 @@ setTimeout(blastOff, MILLISECONDS_PER_DAY);
 
 bad:
 
-```JavaScript
+```js
 [1,2,3,4].forEach(i => {
     //...
 })
@@ -334,7 +334,7 @@ bad:
 
 good:
 
-```JavaScript
+```js
 [1,2,3,4].forEach(item => {
     // replace item with other meaningful name related to origin array
 })
@@ -344,7 +344,7 @@ good:
 
 bad:
 
-```JavaScript
+```js
 const Car = {
     carColor:"blue"
 }
@@ -352,7 +352,7 @@ const Car = {
 
 good:
 
-```JavaScript
+```js
 const Car = {
     color:"blue"
 }
@@ -362,7 +362,7 @@ const Car = {
 
 bad:
 
-```JavaScript
+```js
 function tutorialExample(param) {
         const tmpParam = param || "default param";
 }
@@ -370,7 +370,7 @@ function tutorialExample(param) {
 
 good:
 
-```JavaScript
+```js
 function tutorialExample(param = "default param") {
         //...
 }
@@ -386,7 +386,7 @@ function tutorialExample(param = "default param") {
 
 Bad:
 
-```JavaScript
+```js
 // Global variable referenced by following function.
 // If we had another function that used this name, now it'd be an array and it could break it.
 let name = "Ryan McDermott";
@@ -405,7 +405,7 @@ const addItemToCart = (cart, item) => {
 
 Good:
 
-```JavaScript
+```js
 function splitIntoFirstAndLastName(name) {
   return name.split(" ");
 }

@@ -210,7 +210,7 @@ Pseudo-element，CSS伪元素，也是用于添加到选择器末尾的关键字
 
 示例会用到这个内容，为了表现力更强一点（没活了），使用了大气脱俗清新的大号文字+五颜六色的缤纷框框来做演示：最外层的div使用蓝色框起，第二层用黄色，第三层（最内层）用红色。每层中间都插入了一段**p段落和h1主标题**。我们将用组合器去方便地改变想改变的内容的字体颜色。代码在图片下方贴出
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=YTBhYTc1MWFiZDFiMThiOTY2ZWE2ZjAyYTc5YzFmMDBfU2hrbUlKNUhyM3VFNExjeFJxQVEzazZhSlh2MHBnWVRfVG9rZW46Ym94Y24zaWVQc2lPVFk0OFBxQ3R0aGZpNjVkXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-1.png)
 
 ```html
 <template>
@@ -277,7 +277,7 @@ h1 {
 
 效果如下，可以看到out_frame也就是黄色框下所有的子代元素中的p元素，字体都变成了绿色；而黄色框外的p元素并没有受到影响，这样就起到了很好的范围性选择作用
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=NjI2NTQ0OWRkNzZjZTA4ZTFjMzk0NDZmMjQ0YzA0MjdfYVRBcWR2OFd1dE9mM0piWG16WGpxYzB4Tm1FNWVzZHZfVG9rZW46Ym94Y25BMnYxczlrc1NDRnV4YWVlUGJwa0ljXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-2.png)
 
 后代选择器是可以嵌套使用的，供我们方便的选择应用范围，如下例：
 
@@ -287,7 +287,7 @@ h1 {
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=NDFjNDUxODk0YWYzYjcwM2I2MjllYzgyOTQ0OGI4ZDJfc0RneDhZNnBmNVVjM2VldDVBNUNYR3hEbU96SFkxUDFfVG9rZW46Ym94Y25lWFdiRTdjOVdtOFh6b051SDJrenRjXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-3.png)
 
 此时，out_frame中的p或者除了div以外的其他子代的后代p就不会受到这个规则的影响了。
 
@@ -303,7 +303,7 @@ h1 {
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGVmZDM2ZTk4YTU5OTBlM2E3NzU2MGU3ZjY1Y2UxNjZfakNsZnIwV0IwSURQaE54Wmw3QVl2YXZHVVU4YVF6c1FfVG9rZW46Ym94Y255Qm5yeTFtdTduNEhrYkk3c0d0QnViXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-4.png)
 
 可以看到，只有子元素的p变成了绿色，而孙辈的p元素（红框内的p）就没有变色
 
@@ -336,7 +336,7 @@ p~.out_frame {
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=NmYwMzhiYmIyYWE3NGIxOTY1NTA0YjUyNzdhNGRkNTdfVk9LMG5LUGE5eWNkMkpKd3lWV1pvckRkM2VLMTd1c2NfVG9rZW46Ym94Y255UTV1ZnFNZVB2QWFKajVWdVdMa2JkXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-5.png)
 
 可以看到out_frame框内的文字都变绿了，因为它是“在外层框架之外的p”的兄弟，受到了上述编写的CSS规则的影响。
 
@@ -348,7 +348,7 @@ p~.out_frame {
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=MDRiMzU0N2VhYzBmMmI2MDkxZjcwMWM2ODhmNTY2NDZfREFWa2VpaW9rSFdjUGVQY2U1c1hUczlZdm8xd1JIYzlfVG9rZW46Ym94Y25nTXVGVzFHNDQ4M1ZscGZ4bjVHMjBkXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-6.png)
 
 可以看到没发生任何变化，因为看前面的代码，在class为out_frame的这个div**下面**并没有任何的p元素，也就是没有p元素是它的兄弟。
 
@@ -383,7 +383,7 @@ p+h1 {
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=YWYyYWQxMDM1YTRmYjAwMGM4NTQzMzg5Y2FmYzg4NWRfNnE2cEFEQUJ1aWlMNmxlT1FIb0NaOElyYjZ2R0w4TElfVG9rZW46Ym94Y255aTl4Z0VjbVNqVGVraDUyRVVLM1ZmXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-7.png)
 
 可以看到里面两层都是p的下面紧挨着h1的，而最外层的p和h1中间隔着一个div，也就是最外层p的相邻兄弟为div，div的相邻兄弟才是h1，故最外层没有对h1应用规则。
 
@@ -473,7 +473,7 @@ div {
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=OWNlN2M5OWYwYTU1OGI4Y2M5ZTE0MWFiM2FiMjc0YjdfQWRidDZZU0pJbklzeThScDNxcmlXMGEyRGZGdTNiWEVfVG9rZW46Ym94Y25zR0xEWVVWMmVQd0M5NHFqWjExVlFlXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-8.png)
 
 首先说明，子代选择器、后代选择器、通常兄弟选择器和相邻兄弟选择器是同等级的（在element相同的情况下）。在同级别的情况下，**越后面写的选择器优先级更高**
 
@@ -491,7 +491,7 @@ div .text{  /* 后代选择器 */
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=NDQ5YzJkMTM1MjZiOWUzYjYzZDYwYjU3Y2VkZWRmMzhfSG5FTG04QzBQUndlYVhmazBFZ3dBeW1RdDVYbEM4bkpfVG9rZW46Ym94Y25EakhldFhiTU8zb1RXVzhXNTdEQ0pjXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-9.png)
 
 同等级，选择下面的绿色
 
@@ -507,7 +507,7 @@ div .text{
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=YmM1NzZjZDFiNmMwMDQyZWNkNzMxYWM3YTM1NzM0MDZfdk1ISUoycFFINlgydzZuQnJZQjBFWGh2dkxWV0ZTOFRfVG9rZW46Ym94Y25ObWpzWEZ4eHJ5WENRRzhTV3NIVHNnXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-10.png)
 
 element2相同的情况下，选择element1优先级高的黄色
 
@@ -523,7 +523,7 @@ div p{
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=OWEyNDg5ODg4NGQ1NzdhMGY0NmY3ZDljNDIzMmNjMGJfRm1XUGh4ZWsyOExub2VQNThtTFVJampxTzFsaGs5UGpfVG9rZW46Ym94Y25LYkY1dWRaNGlVZllmVVNpbk8zTHNlXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-11.png)
 
 element1相同的情况下，选择element2优先级高的黄色
 
@@ -539,7 +539,7 @@ div > .text{
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjBlN2ViODQwNjUwMmI5OGRmNzllNTY4YWNiMDY4MDRfQzJ2SmxDNUU3SlIwN295ZDFYMnlHUWZvR2RiVmRNQkdfVG9rZW46Ym94Y25qUmp2Vm1rNVZEb3JIbWlOODJ3SGVjXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-12.png)
 
 两个元素都不同，且权重计算得到的权重相同（都是class+type），用默认规则选择下面的绿色
 
@@ -555,7 +555,7 @@ div p{
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=YjkyMzhkYjYxNDZlZWUxODhkMDYxNDIxNGRhODQ5ZDJfRVBaVXhCMjB1TkdPdVpPUGdvbWZ6Q3phU3RKd3lCa2RfVG9rZW46Ym94Y25Zb2RWaWJIdkxoQXh4Z3RDeFg0UUpMXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-13.png)
 
 两个元素都不同，权重计算上面的高（class >> type），故黄色
 
@@ -574,7 +574,7 @@ div h1{
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTMwYTdjMmY3OGFlMmY1OTcxMmUzNWU4YTZhOGM3ZTNfZnNxaHRienM2ZFZHektXT1ZqczR1blJJOTVIV1BHV0hfVG9rZW46Ym94Y25TUW5lenEwZGRzY1dwYUhGS1hzNFVkXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-14.png)
 
 ```css
 div h1{
@@ -586,7 +586,7 @@ p+h1{
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=NTBjZDUwMTNlODVkZDJkMDhhZTM4ODI2OTMwZjhkZTBfZTJNYUp6c1ZVTHNSUmhPTGV3bE03Wm5jNFlzdkhZcWdfVG9rZW46Ym94Y25ZNjluaVc2bWl4c0RFY0Zhbm85eWhkXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-15.png)
 
 可以看到都是type的情况下，运用的是默认规则
 
@@ -609,7 +609,7 @@ div .text{
 }
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=N2Y1NGViMGNiZWUxNDc2NjIzOTEzMzQ5MzliOTJjNGJfMmdZZXlpcFFUc3oyMzhpRmh1b2hIQmpITVVUbUlqMExfVG9rZW46Ym94Y25uc1N0cWNMRHFSOVRVZDRqVnpQb3hiXzE2OTgzMjg0NDA6MTY5ODMzMjA0MF9WNA)
+![img](../img/css-selector-16.png)
 
 type+class > class，选用了绿色
 

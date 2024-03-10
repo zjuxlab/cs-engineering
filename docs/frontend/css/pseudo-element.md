@@ -53,11 +53,11 @@ information that lies outside the document tree.
 
 而且，前三个伪元素非常的直观（当然用起来很顺手），这里放一个样例，一看就行（x
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=NzAyNzUyZjhkNmRjMGIyN2YyNmQxYzJhZGM2ODMyNzZfdGlSZnpqMnp5OWEwd1dLeXBENVNHaTdLQmhVU1JaNzFfVG9rZW46Ym94Y25CRmFWdmRiZzZUQzVBeWoyc3M0VHRlXzE2OTgzMzAwMDg6MTY5ODMzMzYwOF9WNA)
+![img](../img/pseudo-element-1.PNG)
 
 \#效果belike
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=YWVhYjZlOTA3ZmQ0NzMyNzgzZWFkMWU4MGZkZGNkMjFfUTZOT1BYQjcyWGhxR29YSHZqdTFGblF3S0oxSnhPaGtfVG9rZW46Ym94Y240eEtKSk9ZQkVpUUJKbUpaQWMxSUdiXzE2OTgzMzAwMDg6MTY5ODMzMzYwOF9WNA)
+![img](../img/pseudo-element-2.PNG)
 
 那么事实上，伪元素最为人熟知的用途还是::before 和 ::after 两种，从伪元素出现至今已经有很多基于这两个的骚操作了，下面来一一康康。
 
@@ -79,7 +79,7 @@ information that lies outside the document tree.
 
 \#作为第二种直觉的一个直观展示
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTAxM2Y0NmZhZDJmMDNlNjQwZTQwZGVlYTkzZWQzNjhfNlh6cEF5VzZBUVFGd2pEZEhQTW1oeU1XcXpOV0lGeHhfVG9rZW46Ym94Y254Z0JSTGxQQllRUGJDRFFwZ2dTbnBoXzE2OTgzMzAwMDg6MTY5ODMzMzYwOF9WNA)
+![img](../img/box-model-3.PNG)
 
  
 
@@ -194,7 +194,7 @@ a[data-tooltip] {
 
 \#效果（x
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDAxNmQ1N2RhYTM4YmU2M2VkNTIwMzBmYzc3M2ZiMzRfZHNHU3djc0hDU3FyVU0xQ2VwMDRyc2dQQU00TGRYU1JfVG9rZW46Ym94Y25XU0F4MUJObUo4VEszU1RiR2hBQlliXzE2OTgzMzAwMDg6MTY5ODMzMzYwOF9WNA)
+![img](../img/pseudo-element-4.png)
 
 又例如,很随手的分割符，也可以不添加新元素做出来
 
@@ -208,7 +208,7 @@ a[data-tooltip] {
 
 又例如添加一点flourish
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmVhMDdkMWRmZGQ4OTY4YmQ0ZmUyNGM5NzZmYzQxZjVfZlZxNzVJY2Q3S3VMVTRSVk8wSXl6ZzhKb2d0YXFqQ2ZfVG9rZW46Ym94Y24wYUREV3VyZWRCSkRDcUVPcnZmNjJiXzE2OTgzMzAwMDg6MTY5ODMzMzYwOF9WNA)
+![img](../img/pseudo-element-5.png)
 
 \#(注意标题两边的东西，花花的那种符号其实是某种字体下的英语，也许你还记得，伪元素是可以override父元素的字体的，当然直接贴图片也是可以的)
 
@@ -218,7 +218,7 @@ a[data-tooltip] {
 
 \#例图，三个彩色bar都可以伪元素解决
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=MWI4NTY0ZDJlMmU4NzQ3NGU2N2NjYWM2Y2I2OGVmZGVfalpmbUN5NThSNjBnNkU1enc4OGQ5clhjdVp3SWxCRnBfVG9rZW46Ym94Y24yamZGVXhid3dTTm1QbTJHUTNMbjVjXzE2OTgzMzAwMDg6MTY5ODMzMzYwOF9WNA)
+![img](../img/pseudo-element-6.png)
 
 ### 总结
 
@@ -242,7 +242,7 @@ Everybody loves ribbons !
  </h1>
 ```
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=YzNlODAwNTYwZjVlNzIwNWNmNzhkODI2OGQxODEzYjNfQ29UOUZoNDY3bGZlb2RlVU9abmU2R1gyWUdjSXhab1JfVG9rZW46Ym94Y25NRG5sSG1YNFEydFlNbXdZVWcwWFhlXzE2OTgzMzAwMDg6MTY5ODMzMzYwOF9WNA)
+![img](../img/pseudo-element-7.png)
 
 就可以获得一条丝带啦（想像一个很空的纯色网页，来上这样一条丝带岂不美哉），这题的css是一个task哦，可以先思考一下怎么画出这么一个丝带（具体配色下面的task会给出的，你先别急.jpg）
 
@@ -266,13 +266,13 @@ https://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/
 
 我们假如说你想要插入一张400*500 的图片到一个双column的文本中间，那就用伪元素在左右两段文本上面挖两个洞，伪元素高度就是图片高度（500），宽度**大概**是图片的一半（考虑到文本中间会有个缝）然后记得float和父元素相反，就会得到这么个效果
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=NjA0ZmRjNDJkMDdhMmM2ODVlNjU2MjczMWVkNDAxYTJfUVRCSExhSUpFUXhoNmk3R0hJQzhwVXFYTTVvV1AzYktfVG9rZW46Ym94Y25WN0tPNEFwRGtDR29nRHhWRWZuOHhkXzE2OTgzMzAwMDg6MTY5ODMzMzYwOF9WNA)
+![img](../img/pseudo-element-8.png)
 
 \#中间就是你挖的洞
 
 然后塞个图进去
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=YzE0ZWExNmM3Y2E4OGIzZjRiNDcyOTJkZjA3NmMyN2VfdGxOWkNjM1BvUHY2NGZUR1I4UWxYSnZSNzZyeDhXb2tfVG9rZW46Ym94Y25JdGdVZlRkZDN2VFMzNWlJSGNlSmRoXzE2OTgzMzAwMDg6MTY5ODMzMzYwOF9WNA)
+![img](../img/pseudo-element-9.png)
 
 \#挖洞才是关键，把文字挤开，图片定位小问题
 
@@ -292,7 +292,7 @@ https://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/
 
 这个讲真帅爆，思路是将一个子元素设为 透明-> 某种亮色->透明的梯度渐变，然后把它移到父元素外面然后overflow:hidden，然后给`：hover`加动画。思路很简单吧，但是没有伪元素的话，光布局和新增无关元素就很劝退了，伪元素没有这种顾虑，更是直接实现了单元素可重用，（改下class整个页面所有按钮都闪闪发光）非常的爽（
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=MWNmZDM1NDI1MmI5ZDdlYWNkZGMyMTNkNWZhMDdmYzdfS2tEbnR5bGx0dVRobjI5MHQyZkJ0bkN1WEc2OU05RGFfVG9rZW46Ym94Y24wREVsRlJXWjZ6NFNJbmlCbFlWMWdiXzE2OTgzMzAwMDg6MTY5ODMzMzYwOF9WNA)
+![img](../img/pseudo-element-10.png)
 
 \#换成金色有奇效
 
@@ -331,7 +331,7 @@ https://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/
 #### 任务三（组合任务）
 实现这个网页效果，完成后再添加一些动画让网页更生动吧 （记得使用伪元素）
 
-![img](https://xn4zlkzg4p.feishu.cn/space/api/box/stream/download/asynccode/?code=NGE0YjZiZGZlNmZlMjMwNTgwNGE5NzJhYmMxOGZmNjZfZXI2T1JCUW1WS1ZEVVJ6ZmZKUGNYRmNiWWR3U3R3ZGVfVG9rZW46Ym94Y25Lc3hiQzZJWmdSeVR1Z2ZwdE9DWk9jXzE2OTgzMzAwMDg6MTY5ODMzMzYwOF9WNA)
+![img](../img/pseudo-element-11.png)
 
 自己的demo集合：
 

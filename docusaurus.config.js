@@ -23,6 +23,7 @@ const config = {
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
+  // onBrokenLinks: 'throw', 权宜之计
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 

@@ -41,8 +41,26 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          exclude: [
+            // 使用glob模式排除目录
+            '**/项目积累文档/**', 
+            '**/待清理的文档/**',
+            // 可添加更多排除规则
+          ],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
+            const items = await defaultSidebarItemsGenerator(args);
+            return items.map(item => {
+              if (item.type === 'doc') {
+                return {
+                  ...item,
+                  id: encodeURI(item.id) // 显式编码路径
+                };
+              }
+              return item;
+            });
+          },
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -74,9 +92,9 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'sidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutoria',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -93,7 +111,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Tutoria',
                 to: '/docs/intro',
               },
             ],

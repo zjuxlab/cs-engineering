@@ -4,9 +4,13 @@
 # Production
 /build
 
+/docs_old
+/dist
+sidebars_old.js
 # Generated files
 .docusaurus
 .cache-loader
+.cache
 
 # Misc
 .DS_Store
@@ -14,6 +18,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*

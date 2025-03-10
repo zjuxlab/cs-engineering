@@ -1,0 +1,20 @@
+---
+title: Python基础
+slug: >-
+  ynzowezexiygx0kbdlyco9pgnxe-dfifwii6ri7cnjkbttrcqd8xnch-vfpuwmb9sion01kbbmpcfwbvnfc-lq3zwnuaeigwvvkicclct2jqnzf-nwzpwgtbriymf4knzwacfecqnld-nwzpwg
+sidebar_position: 3
+---
+
+
+# Python基础
+
+[函数式编程](/YNZoweZexiYgx0kBdLYcO9PGnxe\DFIfwII6ri7CNJkBTtRcqD8xnch\VfpuwMB9SiOn01kbBmPcFWBVnFc\LQ3ZwnUaEiGWVvkiCCLct2JQnzf\NWZpwgtbriYMF4knZWAcfecQnLd\G10zww6hriGV4ykNRIJc17Rxntc)
+
+[数据类型](/YNZoweZexiYgx0kBdLYcO9PGnxe\DFIfwII6ri7CNJkBTtRcqD8xnch\VfpuwMB9SiOn01kbBmPcFWBVnFc\LQ3ZwnUaEiGWVvkiCCLct2JQnzf\NWZpwgtbriYMF4knZWAcfecQnLd\C3sXwzB34iGEDXk2dQucWgXonPf)
+
+[面向对象](/YNZoweZexiYgx0kBdLYcO9PGnxe\DFIfwII6ri7CNJkBTtRcqD8xnch\VfpuwMB9SiOn01kbBmPcFWBVnFc\LQ3ZwnUaEiGWVvkiCCLct2JQnzf\NWZpwgtbriYMF4knZWAcfecQnLd\PoKPwBYRIiY5oZkGXoEcLLLznrg)
+
+[文件操作](/YNZoweZexiYgx0kBdLYcO9PGnxe\DFIfwII6ri7CNJkBTtRcqD8xnch\VfpuwMB9SiOn01kbBmPcFWBVnFc\LQ3ZwnUaEiGWVvkiCCLct2JQnzf\NWZpwgtbriYMF4knZWAcfecQnLd\LTHBwrXZviUlvHkWgLVcBYDLnrg)
+
+[多线程编程](/YNZoweZexiYgx0kBdLYcO9PGnxe\DFIfwII6ri7CNJkBTtRcqD8xnch\VfpuwMB9SiOn01kbBmPcFWBVnFc\LQ3ZwnUaEiGWVvkiCCLct2JQnzf\NWZpwgtbriYMF4knZWAcfecQnLd\RIhnwl87viVTZFkTSWUc29SYnNg)
+

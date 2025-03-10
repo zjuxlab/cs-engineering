@@ -26,8 +26,8 @@ function createSafeDirName(title) {
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-')
     .substring(0, 50)
-    .replace(/^[-]+|[-]+$/g, '')
-    .toLowerCase();
+    .replace(/^[-]+|[-]+$/g, '');
+    // .toLowerCase();
 }
 /**
  * 模拟文档处理器生成路径的逻辑

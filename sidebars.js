@@ -4,7 +4,7 @@ module.exports = {
     {
       "label": "新人必看：CS工程指南介绍",
       "type": "doc",
-      "id": "新人必看cs工程指南介绍/新人必看cs工程指南介绍"
+      "id": "新人必看CS工程指南介绍/新人必看CS工程指南介绍"
     },
     {
       "label": "软件工程技能树",
@@ -30,7 +30,7 @@ module.exports = {
                     {
                       "label": "Cookies",
                       "type": "doc",
-                      "id": "软件工程技能树/基础入门/基础课程/计算机网络/cookies/cookies"
+                      "id": "软件工程技能树/基础入门/基础课程/计算机网络/Cookies/Cookies"
                     }
                   ],
                   "link": {
@@ -56,7 +56,7 @@ module.exports = {
                 {
                   "label": "面向对象语言 OOP",
                   "type": "doc",
-                  "id": "软件工程技能树/基础入门/基础课程/面向对象语言oop/面向对象语言oop"
+                  "id": "软件工程技能树/基础入门/基础课程/面向对象语言OOP/面向对象语言OOP"
                 }
               ],
               "link": {
@@ -71,17 +71,17 @@ module.exports = {
                 {
                   "label": "Git 配置",
                   "type": "doc",
-                  "id": "软件工程技能树/基础入门/git与giteegithub/git配置/git配置"
+                  "id": "软件工程技能树/基础入门/Git与GiteeGithub/Git配置/Git配置"
                 },
                 {
                   "label": "Git 使用",
                   "type": "doc",
-                  "id": "软件工程技能树/基础入门/git与giteegithub/git使用/git使用"
+                  "id": "软件工程技能树/基础入门/Git与GiteeGithub/Git使用/Git使用"
                 }
               ],
               "link": {
                 "type": "doc",
-                "id": "软件工程技能树/基础入门/git与giteegithub/git与giteegithub"
+                "id": "软件工程技能树/基础入门/Git与GiteeGithub/Git与GiteeGithub"
               }
             },
             {
@@ -91,12 +91,12 @@ module.exports = {
                 {
                   "label": "Vim",
                   "type": "doc",
-                  "id": "软件工程技能树/基础入门/常见工具/vim/vim"
+                  "id": "软件工程技能树/基础入门/常见工具/Vim/Vim"
                 },
                 {
                   "label": "VPN",
                   "type": "doc",
-                  "id": "软件工程技能树/基础入门/常见工具/vpn/vpn"
+                  "id": "软件工程技能树/基础入门/常见工具/VPN/VPN"
                 },
                 {
                   "label": "IDE",
@@ -105,22 +105,22 @@ module.exports = {
                     {
                       "label": "Vscode",
                       "type": "doc",
-                      "id": "软件工程技能树/基础入门/常见工具/ide/vscode/vscode"
+                      "id": "软件工程技能树/基础入门/常见工具/IDE/Vscode/Vscode"
                     },
                     {
                       "label": "IntelliJ IDEA",
                       "type": "doc",
-                      "id": "软件工程技能树/基础入门/常见工具/ide/intellijidea/intellijidea"
+                      "id": "软件工程技能树/基础入门/常见工具/IDE/IntelliJIDEA/IntelliJIDEA"
                     },
                     {
                       "label": "HBuilderX",
                       "type": "doc",
-                      "id": "软件工程技能树/基础入门/常见工具/ide/hbuilderx/hbuilderx"
+                      "id": "软件工程技能树/基础入门/常见工具/IDE/HBuilderX/HBuilderX"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/基础入门/常见工具/ide/ide"
+                    "id": "软件工程技能树/基础入门/常见工具/IDE/IDE"
                   }
                 }
               ],
@@ -136,12 +136,12 @@ module.exports = {
                 {
                   "label": "Makefile",
                   "type": "doc",
-                  "id": "软件工程技能树/基础入门/构建工具/makefile/makefile"
+                  "id": "软件工程技能树/基础入门/构建工具/Makefile/Makefile"
                 },
                 {
                   "label": "CMake",
                   "type": "doc",
-                  "id": "软件工程技能树/基础入门/构建工具/cmake/cmake"
+                  "id": "软件工程技能树/基础入门/构建工具/CMake/CMake"
                 },
                 {
                   "label": "现代脚本：scons，xmake",
@@ -170,27 +170,27 @@ module.exports = {
                     {
                       "label": "整洁代码",
                       "type": "doc",
-                      "id": "软件工程技能树/基础入门/设计模式/cleancode/整洁代码/整洁代码"
+                      "id": "软件工程技能树/基础入门/设计模式/CleanCode/整洁代码/整洁代码"
                     },
                     {
                       "label": "有意义的命名",
                       "type": "doc",
-                      "id": "软件工程技能树/基础入门/设计模式/cleancode/有意义的命名/有意义的命名"
+                      "id": "软件工程技能树/基础入门/设计模式/CleanCode/有意义的命名/有意义的命名"
                     },
                     {
                       "label": "函数",
                       "type": "doc",
-                      "id": "软件工程技能树/基础入门/设计模式/cleancode/函数/函数"
+                      "id": "软件工程技能树/基础入门/设计模式/CleanCode/函数/函数"
                     },
                     {
                       "label": "注释",
                       "type": "doc",
-                      "id": "软件工程技能树/基础入门/设计模式/cleancode/注释/注释"
+                      "id": "软件工程技能树/基础入门/设计模式/CleanCode/注释/注释"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/基础入门/设计模式/cleancode/cleancode"
+                    "id": "软件工程技能树/基础入门/设计模式/CleanCode/CleanCode"
                   }
                 }
               ],
@@ -202,7 +202,7 @@ module.exports = {
             {
               "label": "正则表达式 Regex",
               "type": "doc",
-              "id": "软件工程技能树/基础入门/正则表达式regex/正则表达式regex"
+              "id": "软件工程技能树/基础入门/正则表达式Regex/正则表达式Regex"
             },
             {
               "label": "Linux 入门",
@@ -211,17 +211,17 @@ module.exports = {
                 {
                   "label": "Linux 基础",
                   "type": "doc",
-                  "id": "软件工程技能树/基础入门/linux入门/linux基础/linux基础"
+                  "id": "软件工程技能树/基础入门/Linux入门/Linux基础/Linux基础"
                 },
                 {
                   "label": "Shell 基础",
                   "type": "doc",
-                  "id": "软件工程技能树/基础入门/linux入门/shell基础/shell基础"
+                  "id": "软件工程技能树/基础入门/Linux入门/Shell基础/Shell基础"
                 }
               ],
               "link": {
                 "type": "doc",
-                "id": "软件工程技能树/基础入门/linux入门/linux入门"
+                "id": "软件工程技能树/基础入门/Linux入门/Linux入门"
               }
             },
             {
@@ -236,7 +236,7 @@ module.exports = {
                 {
                   "label": "Docker",
                   "type": "doc",
-                  "id": "软件工程技能树/基础入门/虚拟化/docker/docker"
+                  "id": "软件工程技能树/基础入门/虚拟化/Docker/Docker"
                 }
               ],
               "link": {
@@ -251,7 +251,7 @@ module.exports = {
                 {
                   "label": "BT种子",
                   "type": "doc",
-                  "id": "软件工程技能树/基础入门/杂项常识/bt种子/bt种子"
+                  "id": "软件工程技能树/基础入门/杂项常识/BT种子/BT种子"
                 },
                 {
                   "label": "搜索与提问",
@@ -295,22 +295,22 @@ module.exports = {
                     {
                       "label": "<audio>",
                       "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/html5/audio/audio"
+                      "id": "软件工程技能树/前端技术/前端三件套/HTML5/audio/audio"
                     },
                     {
                       "label": "<video>",
                       "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/html5/video/video"
+                      "id": "软件工程技能树/前端技术/前端三件套/HTML5/video/video"
                     },
                     {
                       "label": "<svg>",
                       "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/html5/svg/svg"
+                      "id": "软件工程技能树/前端技术/前端三件套/HTML5/svg/svg"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/前端技术/前端三件套/html5/html5"
+                    "id": "软件工程技能树/前端技术/前端三件套/HTML5/HTML5"
                   }
                 },
                 {
@@ -320,28 +320,28 @@ module.exports = {
                     {
                       "label": "flex",
                       "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/css3/flex/flex"
+                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/flex/flex"
                     },
                     {
                       "label": "Grid",
                       "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/css3/grid/grid"
+                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/grid/grid"
                     },
                     {
                       "label": "Animations module",
                       "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/css3/animationsmodule/animationsmodule"
+                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/Animationsmodule/Animationsmodule"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/前端技术/前端三件套/css3/css3"
+                    "id": "软件工程技能树/前端技术/前端三件套/CSS3/CSS3"
                   }
                 },
                 {
                   "label": "JavaScript",
                   "type": "doc",
-                  "id": "软件工程技能树/前端技术/前端三件套/javascript/javascript"
+                  "id": "软件工程技能树/前端技术/前端三件套/JavaScript/JavaScript"
                 }
               ],
               "link": {
@@ -356,12 +356,12 @@ module.exports = {
                 {
                   "label": "JavaScript",
                   "type": "doc",
-                  "id": "软件工程技能树/前端技术/开发语言/javascript/javascript"
+                  "id": "软件工程技能树/前端技术/开发语言/JavaScript/JavaScript"
                 },
                 {
                   "label": "Typescript",
                   "type": "doc",
-                  "id": "软件工程技能树/前端技术/开发语言/typescript/typescript"
+                  "id": "软件工程技能树/前端技术/开发语言/Typescript/Typescript"
                 }
               ],
               "link": {
@@ -380,7 +380,7 @@ module.exports = {
                     {
                       "label": "React hooks",
                       "type": "doc",
-                      "id": "软件工程技能树/前端技术/框架入门/react/reacthooks/reacthooks"
+                      "id": "软件工程技能树/前端技术/框架入门/React/Reacthooks/Reacthooks"
                     },
                     {
                       "label": "功能框架",
@@ -389,43 +389,43 @@ module.exports = {
                         {
                           "label": "React Router",
                           "type": "doc",
-                          "id": "软件工程技能树/前端技术/框架入门/react/功能框架/reactrouter/reactrouter"
+                          "id": "软件工程技能树/前端技术/框架入门/React/功能框架/ReactRouter/ReactRouter"
                         },
                         {
                           "label": "Redux",
                           "type": "doc",
-                          "id": "软件工程技能树/前端技术/框架入门/react/功能框架/redux/redux"
+                          "id": "软件工程技能树/前端技术/框架入门/React/功能框架/Redux/Redux"
                         },
                         {
                           "label": "Zustand",
                           "type": "doc",
-                          "id": "软件工程技能树/前端技术/框架入门/react/功能框架/zustand/zustand"
+                          "id": "软件工程技能树/前端技术/框架入门/React/功能框架/Zustand/Zustand"
                         },
                         {
                           "label": "SWR",
                           "type": "doc",
-                          "id": "软件工程技能树/前端技术/框架入门/react/功能框架/swr/swr"
+                          "id": "软件工程技能树/前端技术/框架入门/React/功能框架/SWR/SWR"
                         },
                         {
                           "label": "MobX",
                           "type": "doc",
-                          "id": "软件工程技能树/前端技术/框架入门/react/功能框架/mobx/mobx"
+                          "id": "软件工程技能树/前端技术/框架入门/React/功能框架/MobX/MobX"
                         },
                         {
                           "label": "NextJS",
                           "type": "doc",
-                          "id": "软件工程技能树/前端技术/框架入门/react/功能框架/nextjs/nextjs"
+                          "id": "软件工程技能树/前端技术/框架入门/React/功能框架/NextJS/NextJS"
                         }
                       ],
                       "link": {
                         "type": "doc",
-                        "id": "软件工程技能树/前端技术/框架入门/react/功能框架/功能框架"
+                        "id": "软件工程技能树/前端技术/框架入门/React/功能框架/功能框架"
                       }
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/前端技术/框架入门/react/react"
+                    "id": "软件工程技能树/前端技术/框架入门/React/React"
                   }
                 },
                 {
@@ -435,7 +435,7 @@ module.exports = {
                     {
                       "label": "脚手架环境搭建",
                       "type": "doc",
-                      "id": "软件工程技能树/前端技术/框架入门/vue/脚手架环境搭建/脚手架环境搭建"
+                      "id": "软件工程技能树/前端技术/框架入门/Vue/脚手架环境搭建/脚手架环境搭建"
                     },
                     {
                       "label": "功能框架",
@@ -444,44 +444,44 @@ module.exports = {
                         {
                           "label": "Vue Router",
                           "type": "doc",
-                          "id": "软件工程技能树/前端技术/框架入门/vue/功能框架/vuerouter/vuerouter"
+                          "id": "软件工程技能树/前端技术/框架入门/Vue/功能框架/VueRouter/VueRouter"
                         },
                         {
                           "label": "VueX",
                           "type": "doc",
-                          "id": "软件工程技能树/前端技术/框架入门/vue/功能框架/vuex/vuex"
+                          "id": "软件工程技能树/前端技术/框架入门/Vue/功能框架/VueX/VueX"
                         },
                         {
                           "label": "Vite",
                           "type": "doc",
-                          "id": "软件工程技能树/前端技术/框架入门/vue/功能框架/vite/vite"
+                          "id": "软件工程技能树/前端技术/框架入门/Vue/功能框架/Vite/Vite"
                         },
                         {
                           "label": "Vue Pinia",
                           "type": "doc",
-                          "id": "软件工程技能树/前端技术/框架入门/vue/功能框架/vuepinia/vuepinia"
+                          "id": "软件工程技能树/前端技术/框架入门/Vue/功能框架/VuePinia/VuePinia"
                         },
                         {
                           "label": "NuxtJS",
                           "type": "doc",
-                          "id": "软件工程技能树/前端技术/框架入门/vue/功能框架/nuxtjs/nuxtjs"
+                          "id": "软件工程技能树/前端技术/框架入门/Vue/功能框架/NuxtJS/NuxtJS"
                         }
                       ],
                       "link": {
                         "type": "doc",
-                        "id": "软件工程技能树/前端技术/框架入门/vue/功能框架/功能框架"
+                        "id": "软件工程技能树/前端技术/框架入门/Vue/功能框架/功能框架"
                       }
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/前端技术/框架入门/vue/vue"
+                    "id": "软件工程技能树/前端技术/框架入门/Vue/Vue"
                   }
                 },
                 {
                   "label": "Angular",
                   "type": "doc",
-                  "id": "软件工程技能树/前端技术/框架入门/angular/angular"
+                  "id": "软件工程技能树/前端技术/框架入门/Angular/Angular"
                 }
               ],
               "link": {
@@ -496,17 +496,17 @@ module.exports = {
                 {
                   "label": "Uni-app",
                   "type": "doc",
-                  "id": "软件工程技能树/前端技术/多端开发/uniapp/uniapp"
+                  "id": "软件工程技能树/前端技术/多端开发/Uniapp/Uniapp"
                 },
                 {
                   "label": "Taro",
                   "type": "doc",
-                  "id": "软件工程技能树/前端技术/多端开发/taro/taro"
+                  "id": "软件工程技能树/前端技术/多端开发/Taro/Taro"
                 },
                 {
                   "label": "Ionic",
                   "type": "doc",
-                  "id": "软件工程技能树/前端技术/多端开发/ionic/ionic"
+                  "id": "软件工程技能树/前端技术/多端开发/Ionic/Ionic"
                 }
               ],
               "link": {
@@ -545,22 +545,22 @@ module.exports = {
                     {
                       "label": "SQLite",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/数据库操作/sql/sqlite/sqlite"
+                      "id": "软件工程技能树/后端技术/数据库操作/SQL/SQLite/SQLite"
                     },
                     {
                       "label": "MySQL",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/数据库操作/sql/mysql/mysql"
+                      "id": "软件工程技能树/后端技术/数据库操作/SQL/MySQL/MySQL"
                     },
                     {
                       "label": "PostgreSQL",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/数据库操作/sql/postgresql/postgresql"
+                      "id": "软件工程技能树/后端技术/数据库操作/SQL/PostgreSQL/PostgreSQL"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/后端技术/数据库操作/sql/sql"
+                    "id": "软件工程技能树/后端技术/数据库操作/SQL/SQL"
                   }
                 },
                 {
@@ -570,17 +570,17 @@ module.exports = {
                     {
                       "label": "MongoDB",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/数据库操作/nosql/mongodb/mongodb"
+                      "id": "软件工程技能树/后端技术/数据库操作/NoSQL/MongoDB/MongoDB"
                     },
                     {
                       "label": "Redis",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/数据库操作/nosql/redis/redis"
+                      "id": "软件工程技能树/后端技术/数据库操作/NoSQL/Redis/Redis"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/后端技术/数据库操作/nosql/nosql"
+                    "id": "软件工程技能树/后端技术/数据库操作/NoSQL/NoSQL"
                   }
                 }
               ],
@@ -596,7 +596,7 @@ module.exports = {
                 {
                   "label": "Golang",
                   "type": "doc",
-                  "id": "软件工程技能树/后端技术/开发语言/golang/golang"
+                  "id": "软件工程技能树/后端技术/开发语言/Golang/Golang"
                 },
                 {
                   "label": "Java",
@@ -605,12 +605,12 @@ module.exports = {
                     {
                       "label": "Springboot",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/开发语言/java/springboot/springboot"
+                      "id": "软件工程技能树/后端技术/开发语言/Java/Springboot/Springboot"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/后端技术/开发语言/java/java"
+                    "id": "软件工程技能树/后端技术/开发语言/Java/Java"
                   }
                 },
                 {
@@ -620,17 +620,17 @@ module.exports = {
                     {
                       "label": "Django",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/开发语言/python/django/django"
+                      "id": "软件工程技能树/后端技术/开发语言/Python/Django/Django"
                     },
                     {
                       "label": "Flask",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/开发语言/python/flask/flask"
+                      "id": "软件工程技能树/后端技术/开发语言/Python/Flask/Flask"
                     },
                     {
                       "label": "FastAPI",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/开发语言/python/fastapi/fastapi"
+                      "id": "软件工程技能树/后端技术/开发语言/Python/FastAPI/FastAPI"
                     },
                     {
                       "label": "Python基础",
@@ -639,44 +639,44 @@ module.exports = {
                         {
                           "label": "函数式编程",
                           "type": "doc",
-                          "id": "软件工程技能树/后端技术/开发语言/python/python基础/函数式编程/函数式编程"
+                          "id": "软件工程技能树/后端技术/开发语言/Python/Python基础/函数式编程/函数式编程"
                         },
                         {
                           "label": "数据类型",
                           "type": "doc",
-                          "id": "软件工程技能树/后端技术/开发语言/python/python基础/数据类型/数据类型"
+                          "id": "软件工程技能树/后端技术/开发语言/Python/Python基础/数据类型/数据类型"
                         },
                         {
                           "label": "面向对象",
                           "type": "doc",
-                          "id": "软件工程技能树/后端技术/开发语言/python/python基础/面向对象/面向对象"
+                          "id": "软件工程技能树/后端技术/开发语言/Python/Python基础/面向对象/面向对象"
                         },
                         {
                           "label": "文件操作",
                           "type": "doc",
-                          "id": "软件工程技能树/后端技术/开发语言/python/python基础/文件操作/文件操作"
+                          "id": "软件工程技能树/后端技术/开发语言/Python/Python基础/文件操作/文件操作"
                         },
                         {
                           "label": "并行计算",
                           "type": "doc",
-                          "id": "软件工程技能树/后端技术/开发语言/python/python基础/并行计算/并行计算"
+                          "id": "软件工程技能树/后端技术/开发语言/Python/Python基础/并行计算/并行计算"
                         }
                       ],
                       "link": {
                         "type": "doc",
-                        "id": "软件工程技能树/后端技术/开发语言/python/python基础/python基础"
+                        "id": "软件工程技能树/后端技术/开发语言/Python/Python基础/Python基础"
                       }
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/后端技术/开发语言/python/python"
+                    "id": "软件工程技能树/后端技术/开发语言/Python/Python"
                   }
                 },
                 {
                   "label": "Rust",
                   "type": "doc",
-                  "id": "软件工程技能树/后端技术/开发语言/rust/rust"
+                  "id": "软件工程技能树/后端技术/开发语言/Rust/Rust"
                 },
                 {
                   "label": "NodeJS",
@@ -685,18 +685,18 @@ module.exports = {
                     {
                       "label": "NestJS",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/开发语言/nodejs/nestjs/nestjs"
+                      "id": "软件工程技能树/后端技术/开发语言/NodeJS/NestJS/NestJS"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/后端技术/开发语言/nodejs/nodejs"
+                    "id": "软件工程技能树/后端技术/开发语言/NodeJS/NodeJS"
                   }
                 },
                 {
                   "label": "C#",
                   "type": "doc",
-                  "id": "软件工程技能树/后端技术/开发语言/c/c"
+                  "id": "软件工程技能树/后端技术/开发语言/C/C"
                 }
               ],
               "link": {
@@ -715,22 +715,22 @@ module.exports = {
                     {
                       "label": "RESTful",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/常见场景/api制定/restful/restful"
+                      "id": "软件工程技能树/后端技术/常见场景/API制定/RESTful/RESTful"
                     },
                     {
                       "label": "GraphQL",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/常见场景/api制定/graphql/graphql"
+                      "id": "软件工程技能树/后端技术/常见场景/API制定/GraphQL/GraphQL"
                     },
                     {
                       "label": "OpenAPI",
                       "type": "doc",
-                      "id": "软件工程技能树/后端技术/常见场景/api制定/openapi/openapi"
+                      "id": "软件工程技能树/后端技术/常见场景/API制定/OpenAPI/OpenAPI"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/后端技术/常见场景/api制定/api制定"
+                    "id": "软件工程技能树/后端技术/常见场景/API制定/API制定"
                   }
                 },
                 {
@@ -810,23 +810,23 @@ module.exports = {
                     {
                       "label": "Latex Packages",
                       "type": "doc",
-                      "id": "软件工程技能树/开发工具/写作报告/latex/latexpackages/latexpackages"
+                      "id": "软件工程技能树/开发工具/写作报告/Latex/LatexPackages/LatexPackages"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/开发工具/写作报告/latex/latex"
+                    "id": "软件工程技能树/开发工具/写作报告/Latex/Latex"
                   }
                 },
                 {
                   "label": "Markdown",
                   "type": "doc",
-                  "id": "软件工程技能树/开发工具/写作报告/markdown/markdown"
+                  "id": "软件工程技能树/开发工具/写作报告/Markdown/Markdown"
                 },
                 {
                   "label": "Pandoc",
                   "type": "doc",
-                  "id": "软件工程技能树/开发工具/写作报告/pandoc/pandoc"
+                  "id": "软件工程技能树/开发工具/写作报告/Pandoc/Pandoc"
                 }
               ],
               "link": {
@@ -847,12 +847,12 @@ module.exports = {
             {
               "label": "WEB3：区块链",
               "type": "doc",
-              "id": "软件工程技能树/进阶技术/web3区块链/web3区块链"
+              "id": "软件工程技能树/进阶技术/WEB3区块链/WEB3区块链"
             },
             {
               "label": "GUI开发：Qt",
               "type": "doc",
-              "id": "软件工程技能树/进阶技术/gui开发qt/gui开发qt"
+              "id": "软件工程技能树/进阶技术/GUI开发Qt/GUI开发Qt"
             },
             {
               "label": "量子计算",
@@ -896,22 +896,22 @@ module.exports = {
                 {
                   "label": "搜索算法",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(ai)/机器学习ml/搜索算法/搜索算法"
+                  "id": "软件科研技能树/人工智能(AI)/机器学习ML/搜索算法/搜索算法"
                 },
                 {
                   "label": "机器推理",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(ai)/机器学习ml/机器推理/机器推理"
+                  "id": "软件科研技能树/人工智能(AI)/机器学习ML/机器推理/机器推理"
                 },
                 {
                   "label": "分类算法",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(ai)/机器学习ml/分类算法/分类算法"
+                  "id": "软件科研技能树/人工智能(AI)/机器学习ML/分类算法/分类算法"
                 }
               ],
               "link": {
                 "type": "doc",
-                "id": "软件科研技能树/人工智能(ai)/机器学习ml/机器学习ml"
+                "id": "软件科研技能树/人工智能(AI)/机器学习ML/机器学习ML"
               }
             },
             {
@@ -921,7 +921,7 @@ module.exports = {
                 {
                   "label": "CS231n",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(ai)/深度学习dl/cs231n/cs231n"
+                  "id": "软件科研技能树/人工智能(AI)/深度学习DL/CS231n/CS231n"
                 },
                 {
                   "label": "框架",
@@ -930,23 +930,23 @@ module.exports = {
                     {
                       "label": "Pytorch",
                       "type": "doc",
-                      "id": "软件科研技能树/人工智能(ai)/深度学习dl/框架/pytorch/pytorch"
+                      "id": "软件科研技能树/人工智能(AI)/深度学习DL/框架/Pytorch/Pytorch"
                     },
                     {
                       "label": "TensorFlow",
                       "type": "doc",
-                      "id": "软件科研技能树/人工智能(ai)/深度学习dl/框架/tensorflow/tensorflow"
+                      "id": "软件科研技能树/人工智能(AI)/深度学习DL/框架/TensorFlow/TensorFlow"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件科研技能树/人工智能(ai)/深度学习dl/框架/框架"
+                    "id": "软件科研技能树/人工智能(AI)/深度学习DL/框架/框架"
                   }
                 }
               ],
               "link": {
                 "type": "doc",
-                "id": "软件科研技能树/人工智能(ai)/深度学习dl/深度学习dl"
+                "id": "软件科研技能树/人工智能(AI)/深度学习DL/深度学习DL"
               }
             },
             {
@@ -956,53 +956,53 @@ module.exports = {
                 {
                   "label": "线代基础",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(ai)/计算机视觉cv/线代基础/线代基础"
+                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/线代基础/线代基础"
                 },
                 {
                   "label": "光度图像",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(ai)/计算机视觉cv/光度图像/光度图像"
+                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/光度图像/光度图像"
                 },
                 {
                   "label": "图像处理",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(ai)/计算机视觉cv/图像处理/图像处理"
+                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/图像处理/图像处理"
                 },
                 {
                   "label": "模型拟合和优化",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(ai)/计算机视觉cv/模型拟合和优化/模型拟合和优化"
+                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/模型拟合和优化/模型拟合和优化"
                 }
               ],
               "link": {
                 "type": "doc",
-                "id": "软件科研技能树/人工智能(ai)/计算机视觉cv/计算机视觉cv"
+                "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/计算机视觉CV"
               }
             },
             {
               "label": "自然语言处理 NLP",
               "type": "doc",
-              "id": "软件科研技能树/人工智能(ai)/自然语言处理nlp/自然语言处理nlp"
+              "id": "软件科研技能树/人工智能(AI)/自然语言处理NLP/自然语言处理NLP"
             },
             {
               "label": "信息检索与挖掘",
               "type": "doc",
-              "id": "软件科研技能树/人工智能(ai)/信息检索与挖掘/信息检索与挖掘"
+              "id": "软件科研技能树/人工智能(AI)/信息检索与挖掘/信息检索与挖掘"
             },
             {
               "label": "时间序列数据",
               "type": "doc",
-              "id": "软件科研技能树/人工智能(ai)/时间序列数据/时间序列数据"
+              "id": "软件科研技能树/人工智能(AI)/时间序列数据/时间序列数据"
             },
             {
               "label": "强化学习",
               "type": "doc",
-              "id": "软件科研技能树/人工智能(ai)/强化学习/强化学习"
+              "id": "软件科研技能树/人工智能(AI)/强化学习/强化学习"
             },
             {
               "label": "Transformer",
               "type": "doc",
-              "id": "软件科研技能树/人工智能(ai)/transformer/transformer"
+              "id": "软件科研技能树/人工智能(AI)/Transformer/Transformer"
             },
             {
               "label": "Diffusion",
@@ -1011,28 +1011,28 @@ module.exports = {
                 {
                   "label": "Diffusion从入门到放弃",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(ai)/diffusion/diffusion从入门到放弃/diffusion从入门到放弃"
+                  "id": "软件科研技能树/人工智能(AI)/Diffusion/Diffusion从入门到放弃/Diffusion从入门到放弃"
                 },
                 {
                   "label": "浅谈Diffusion微调",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(ai)/diffusion/浅谈diffusion微调/浅谈diffusion微调"
+                  "id": "软件科研技能树/人工智能(AI)/Diffusion/浅谈Diffusion微调/浅谈Diffusion微调"
                 },
                 {
                   "label": "DPM-Solver: A Fast ODE Solver for Diffusion",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(ai)/diffusion/dpmsolverafastodesolverfordiffusion/dpmsolverafastodesolverfordiffusion"
+                  "id": "软件科研技能树/人工智能(AI)/Diffusion/DPMSolverAFastODESolverforDiffusion/DPMSolverAFastODESolverforDiffusion"
                 }
               ],
               "link": {
                 "type": "doc",
-                "id": "软件科研技能树/人工智能(ai)/diffusion/diffusion"
+                "id": "软件科研技能树/人工智能(AI)/Diffusion/Diffusion"
               }
             }
           ],
           "link": {
             "type": "doc",
-            "id": "软件科研技能树/人工智能(ai)/人工智能(ai)"
+            "id": "软件科研技能树/人工智能(AI)/人工智能(AI)"
           }
         },
         {
@@ -1042,37 +1042,37 @@ module.exports = {
             {
               "label": "计算机网络",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(system)/计算机网络/计算机网络"
+              "id": "软件科研技能树/计算机系统(System)/计算机网络/计算机网络"
             },
             {
               "label": "高性能计算",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(system)/高性能计算/高性能计算"
+              "id": "软件科研技能树/计算机系统(System)/高性能计算/高性能计算"
             },
             {
               "label": "数据库",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(system)/数据库/数据库"
+              "id": "软件科研技能树/计算机系统(System)/数据库/数据库"
             },
             {
               "label": "操作系统",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(system)/操作系统/操作系统"
+              "id": "软件科研技能树/计算机系统(System)/操作系统/操作系统"
             },
             {
               "label": "计算机体系结构",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(system)/计算机体系结构/计算机体系结构"
+              "id": "软件科研技能树/计算机系统(System)/计算机体系结构/计算机体系结构"
             },
             {
               "label": "MLsys",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(system)/mlsys/mlsys"
+              "id": "软件科研技能树/计算机系统(System)/MLsys/MLsys"
             }
           ],
           "link": {
             "type": "doc",
-            "id": "软件科研技能树/计算机系统(system)/计算机系统(system)"
+            "id": "软件科研技能树/计算机系统(System)/计算机系统(System)"
           }
         },
         {
@@ -1082,17 +1082,17 @@ module.exports = {
             {
               "label": "密码学",
               "type": "doc",
-              "id": "软件科研技能树/计算机理论(theory)/密码学/密码学"
+              "id": "软件科研技能树/计算机理论(Theory)/密码学/密码学"
             },
             {
               "label": "算法与复杂性",
               "type": "doc",
-              "id": "软件科研技能树/计算机理论(theory)/算法与复杂性/算法与复杂性"
+              "id": "软件科研技能树/计算机理论(Theory)/算法与复杂性/算法与复杂性"
             }
           ],
           "link": {
             "type": "doc",
-            "id": "软件科研技能树/计算机理论(theory)/计算机理论(theory)"
+            "id": "软件科研技能树/计算机理论(Theory)/计算机理论(Theory)"
           }
         },
         {
@@ -1102,32 +1102,32 @@ module.exports = {
             {
               "label": "AI4Science",
               "type": "doc",
-              "id": "软件科研技能树/交叉领域(interdisciplinary)/ai4science/ai4science"
+              "id": "软件科研技能树/交叉领域(Interdisciplinary)/AI4Science/AI4Science"
             },
             {
               "label": "计算机图形学 CG",
               "type": "doc",
-              "id": "软件科研技能树/交叉领域(interdisciplinary)/计算机图形学cg/计算机图形学cg"
+              "id": "软件科研技能树/交叉领域(Interdisciplinary)/计算机图形学CG/计算机图形学CG"
             },
             {
               "label": "人机交互 HCI",
               "type": "doc",
-              "id": "软件科研技能树/交叉领域(interdisciplinary)/人机交互hci/人机交互hci"
+              "id": "软件科研技能树/交叉领域(Interdisciplinary)/人机交互HCI/人机交互HCI"
             },
             {
               "label": "可视化",
               "type": "doc",
-              "id": "软件科研技能树/交叉领域(interdisciplinary)/可视化/可视化"
+              "id": "软件科研技能树/交叉领域(Interdisciplinary)/可视化/可视化"
             },
             {
               "label": "机器人学 Robotics",
               "type": "doc",
-              "id": "软件科研技能树/交叉领域(interdisciplinary)/机器人学robotics/机器人学robotics"
+              "id": "软件科研技能树/交叉领域(Interdisciplinary)/机器人学Robotics/机器人学Robotics"
             }
           ],
           "link": {
             "type": "doc",
-            "id": "软件科研技能树/交叉领域(interdisciplinary)/交叉领域(interdisciplinary)"
+            "id": "软件科研技能树/交叉领域(Interdisciplinary)/交叉领域(Interdisciplinary)"
           }
         }
       ],

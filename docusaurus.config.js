@@ -30,8 +30,13 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh',
+    locales: ['zh'],
+    localeConfigs: {
+      zh: {
+        path: 'zh'  // 将中文路径映射到 /zh/ 目录下
+      }
+    }
   },
 
   presets: [
@@ -40,6 +45,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          onBrokenLinks: 'ignore',
           sidebarPath: require.resolve('./sidebars.js'),
           exclude: [
             // 使用glob模式排除目录
@@ -47,7 +53,6 @@ const config = {
             '**/待清理的文档/**',
             // 可添加更多排除规则
           ],
-          onBrokenLinks: 'ignore',  // 改为 'warn' 可查看但不阻断构建
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {

@@ -319,5 +319,4 @@ import filename from 'xxx/xxx/xxx'
 
 （也就是说，.txt 等等不在上述之列的文件类型是不能直接引用的，会报错“找不到相应的类型声明”，在`shim.d.ts`中添加了 .txt 也没用，应该是 webpack 本身就无法处理这类文件，比较常见的处理方式是用脚本逐行改写成 JSON 格式然后导入）
 
-> [Taro开发综合知识](wikcnmCps9Yo8927tXo2K3Ba2jd)
 

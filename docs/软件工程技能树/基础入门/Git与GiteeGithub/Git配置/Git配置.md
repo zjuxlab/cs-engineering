@@ -1,12 +1,12 @@
 ---
 title: Git 配置
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-jahiwo9tziyhqskzxoyc1wfrntb-h1tyw44vzixzl5kh6w2cnn5hn5g-h1tyw4
+slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/git-yu-giteegithub/git-pei-zhi/git-pei-zhi
 sidebar_position: 0
 ---
 
-
 # Git 配置
+
+Author：NA
 
 For Windows 10+、MacOS and Linux - 你的电脑上会预装 OpenSSH 或类似物。并且电脑上应当有支持 SOCKS5 协议的代理工具，假设它监听在 1080 端口。
 
@@ -24,6 +24,4 @@ git config --global https.proxy "socks5://127.0.0.1:1080"
 ```
 
 1. `git clone git@github.com:username:repo.git` ，开工
-
-> [Git 配置](wikcnLlluLSi2y5CS3aVM2Yv3sd)
 

@@ -1,12 +1,12 @@
 ---
 title: Makefile
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-ifdswto0qitzdtkk7pychxqpnvc-pa8ewjstoihk4ek2jdtcuwmvnph-pa8ewj
+slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/gou-jian-gong-ju/makefile/makefile
 sidebar_position: 0
 ---
 
-
 # Makefile
+
+Author：NA
 
 # What's Makefile?
 
@@ -415,6 +415,4 @@ $(basename <names...>)
 
 - 功能： 从文件名序列 &lt;names&gt; 中取出前缀部分。
 - 返回： 各文件的前缀。
-
-> [Makefile](wikcneQgnonJEgoGV4duqBlYv5g)
 

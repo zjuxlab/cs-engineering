@@ -1,12 +1,12 @@
 ---
 title: Zustand
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-ik6qw0wh1idsu8kvyzccmcgnnfe-rphyw3cepiebzvkfkekcb45ln7g-raizwqo3wiublckjv0ocqagonik-raizwq
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/gong-neng-kuang-jia/zustand/zustand
 sidebar_position: 2
 ---
 
-
 # Zustand
+
+Author：NA
 
 Zustand 是一个基于 Reack Hooks API 的轻量级、无偏见的 React 状态管理库。
 
@@ -187,6 +187,4 @@ export const useBoundStore = create((...a) => ({
 ```
 
 还有更多高级功能，可参见 zustand 的 GitHub README。
-
-> [zustand](wikcn95S9fI7nOByck8hQG65TXc)
 

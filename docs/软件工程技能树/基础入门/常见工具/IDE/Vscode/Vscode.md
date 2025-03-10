@@ -1,12 +1,12 @@
 ---
 title: Vscode
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-t6mwwxlvbi6qcrkwa4tct9xqn0g-nbmjwg2iuil4tukavjqcwv9jnce-ralnwzamgijhebkrxqec0jzqncf-ralnwz
+slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/chang-jian-gong-ju/ide/vscode/vscode
 sidebar_position: 0
 ---
 
-
 # Vscode
+
+Author：NA
 
 # 什么是VS Code
 
@@ -108,6 +108,4 @@ VSCode对于项目的组织形式是文件夹，在项目文件夹中会生成�
 前置要求：
 
 - 熟悉 TypeScript
-
-> [VS Code](wikcnZCKUFkEqSkYrqDGE9zkGUd)
 

@@ -1,12 +1,12 @@
 ---
 title: MobX
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-ik6qw0wh1idsu8kvyzccmcgnnfe-rphyw3cepiebzvkfkekcb45ln7g-nfgaw6ol4ifosnkfbq7claznnhe-nfgaw6
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/gong-neng-kuang-jia/mobx/mobx
 sidebar_position: 4
 ---
 
-
 # MobX
+
+Author：NA
 
 MobX是一个简单、可扩展的状态管理库，它可以帮助我们管理React应用中的状态。
 
@@ -227,6 +227,4 @@ export default observer(App);
 ```js
 npm run start
 ```
-
-> [MobX](BZsuwCRUTi8nqskCvdIchHR3n6f)
 

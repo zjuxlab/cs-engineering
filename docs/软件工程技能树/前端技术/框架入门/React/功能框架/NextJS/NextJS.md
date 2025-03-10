@@ -1,12 +1,12 @@
 ---
 title: NextJS
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-ik6qw0wh1idsu8kvyzccmcgnnfe-rphyw3cepiebzvkfkekcb45ln7g-zlq5wo7zuifc3okado4ckguznwg-zlq5wo
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/gong-neng-kuang-jia/nextjs/nextjs
 sidebar_position: 5
 ---
 
-
 # NextJS
+
+Author：NA
 
 next.js是一个react框架，它主要提供了以下几个功能
 
@@ -226,6 +226,4 @@ y
 完成后的监控台截图如下
 
 <img src="/assets/YLBubb8LRonGv1xp3mVcJV9xnvb.png" src-width="2518" src-height="825" align="center"/>
-
-> [next.js](wikcnGdbavy6QRwOZdzFxfShwFe)
 

@@ -1,10 +1,8 @@
 ---
 title: FastAPI
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-dfifwii6ri7cnjkbttrcqd8xnch-vfpuwmb9sion01kbbmpcfwbvnfc-lq3zwnuaeigwvvkicclct2jqnzf-xlk9whtwkinxsgkqxanc8pi7nte-xlk9wh
+slug: ruan-jian-gong-cheng-ji-neng-shu/hou-duan-ji-shu/kai-fa-yu-yan/python/fastapi/fastapi
 sidebar_position: 2
 ---
-
 
 # FastAPI
 

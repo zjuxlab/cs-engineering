@@ -1,12 +1,12 @@
 ---
 title: MySQL
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-dfifwii6ri7cnjkbttrcqd8xnch-a1xyw4touiczudkdexdc4sqqnfh-svdqwahzeijzvsktok7c9jdwnjg-cr9zwfopkizf3dkcb3jc7r6jnde-cr9zwf
+slug: ruan-jian-gong-cheng-ji-neng-shu/hou-duan-ji-shu/shu-ju-ku-cao-zuo/sql/mysql/mysql
 sidebar_position: 1
 ---
 
-
 # MySQL
+
+Author：NA
 
 ## 什么是MySQL
 
@@ -291,7 +291,4 @@ mysql -h 127.0.0.1 -u root -P 3307 -p
   为了管理方便，人们把`连接管理`、`查询缓存`、`语法解析`、`查询优化`这些并不涉及真实数据存储的功能划分为`MySQL server`的功能，把真实存取数据的功能划分为`存储引擎`的功能。各种不同的存储引擎向上面的`MySQL server`层提供统一的调用接口（也就是存储引擎API），包含了几十个底层函数，像"读取索引第一条内容"、"读取索引下一条内容"、"插入记录"等等。
 
   所以在`MySQL server`完成了查询优化后，只需按照生成的执行计划调用底层存储引擎提供的API，获取到数据后返回给客户端就好了。
-
-> [Intro](wikcnwO0laFzDCaRWqL3RnXRCub)
-> [服务端与客户端](wikcnHx9qf4nOQlZQ1gcXVfffOh)
 

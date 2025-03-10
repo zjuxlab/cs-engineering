@@ -1,12 +1,12 @@
 ---
 title: CMake
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-ifdswto0qitzdtkk7pychxqpnvc-y1g4wsc2pioh4gkjq22cjxy7ntc-y1g4ws
+slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/gou-jian-gong-ju/cmake/cmake
 sidebar_position: 1
 ---
 
-
 # CMake
+
+Author：龙毅豪
 
 https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 
@@ -127,6 +127,4 @@ target_include_directories(MathFunctions
 - 主目录就可以省略`target_include_directories(Tutorial.exe PUBLIC    "${PROJECT_SOURCE_DIR}/MathFunctions")  #添加库头文件目录`
 
 `target_link_libraries(Tutorial.exe PUBLIC 库头文件目录)` 不能省略
-
-> [Cmake](XYuzwuPeUiQH5qk2B5fcfEYZne1)
 

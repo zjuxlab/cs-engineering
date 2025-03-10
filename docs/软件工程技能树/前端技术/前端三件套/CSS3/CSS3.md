@@ -8,6 +8,8 @@ sidebar_position: 1
 
 # CSS 3
 
+Author：葛芸曦
+
 <b>CSS3</b> 引入了大量的新特性和模块，如动画、过渡、响应式布局、Web 字体支持、渐变、阴影、2D/3D 变换等，使得网页设计更加丰富和互动。
 
 ### 1. <b>新特性和模块化</b>
@@ -111,7 +113,6 @@ CSS3 引入了 <b>动画</b> 和 <b>过渡</b> 的功能，让开发者能更加
 
 ### 3. <b>布局</b>
 
-- 详见子文档 [flex](/YNZoweZexiYgx0kBdLYcO9PGnxe\Ejb3wlAAeiqIumkxPozcbVOPnFh\IT1gwwgjRiq0w0k7BpTcBR4Bn8g\RUHYwtY6RisXg9kbQU4ceUwYnmd\QzyvwwWpBiLTZBk1YR9ckb8jnhq), [grid](/YNZoweZexiYgx0kBdLYcO9PGnxe\Ejb3wlAAeiqIumkxPozcbVOPnFh\IT1gwwgjRiq0w0k7BpTcBR4Bn8g\RUHYwtY6RisXg9kbQU4ceUwYnmd\Fsy1wgAediQ7PrkPwaocHqLBn6e)
 - <b>Flexbox</b>：一种新的布局模型，允许创建响应式的、动态的网页布局。它简化了许多布局任务，如居中对齐、自动分配空间、响应式设计等。
 - <b>Grid Layout</b>：CSS 网格布局是一种更强大的布局模型，允许开发者定义多行多列的布局，并且可以精确控制元素的位置和尺寸。
 

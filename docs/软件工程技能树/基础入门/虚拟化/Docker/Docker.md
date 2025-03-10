@@ -1,10 +1,8 @@
 ---
 title: Docker
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-glh5wolssizkqtk1fwvctmxbnid-k21zwb6rrioalokxvmacqz1yndc-k21zwb
+slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/xu-ni-hua/docker/docker
 sidebar_position: 0
 ---
-
 
 # Docker
 

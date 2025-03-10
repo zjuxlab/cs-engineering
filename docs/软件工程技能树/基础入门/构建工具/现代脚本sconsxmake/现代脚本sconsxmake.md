@@ -1,10 +1,8 @@
 ---
 title: 现代脚本：scons，xmake
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-ifdswto0qitzdtkk7pychxqpnvc-bvikwczybiwhskketawc1yqbn3g-bvikwc
+slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/gou-jian-gong-ju/xian-dai-jiao-ben-sconsxmake/xian-dai-jiao-ben-sconsxmake
 sidebar_position: 2
 ---
-
 
 # 现代脚本：scons，xmake
 

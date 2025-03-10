@@ -1,12 +1,12 @@
 ---
 title: 正则表达式 Regex
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-luvcwxxfqixum5k7x8mcaifunnf-luvcwx
+slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/zheng-ze-biao-da-shi-regex/zheng-ze-biao-da-shi-regex
 sidebar_position: 5
 ---
 
-
 # 正则表达式 Regex
+
+Author：潘瑞哲
 
 > 推荐在电脑端浏览以获得最佳阅读体验。
 
@@ -404,6 +404,4 @@ true
 如果您还希望看一些更加 intuitive 的教程，可以参考 https://deerchao.cn/tutorials/regex/regex.htm
 
 最后，推荐一个好玩的正则表达式游戏：[Regex Golf](http://alf.nu/RegexGolf)（想当年，我也是做出了差不多二十道题的人，哈哈！）
-
-> [正则表达式](wikcnAaN8RMrbZozMGTqFNay9Yb)
 

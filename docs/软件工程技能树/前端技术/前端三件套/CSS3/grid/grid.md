@@ -1,12 +1,12 @@
 ---
-title: grid
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-it1gwwgjriq0w0k7bptcbr4bn8g-ruhywty6risxg9kbqu4ceuwynmd-fsy1wgaediq7prkpwaochqlbn6e-fsy1wg
+title: Grid
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/css3/grid/grid
 sidebar_position: 1
 ---
 
+# Grid
 
-# grid
+Author：符一笑
 
 ### <b>CSS grid</b>
 

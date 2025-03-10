@@ -53,7 +53,7 @@ LaTeX (发音为“ <em>LAY</em> -tek”或“ <em>LAH</em> -tek”) 是一种�
 - 使用 TikZ 在 LaTeX 中绘图
 - 使用 todonotes 跟踪更改和评论
 
-[free-online-introduction-to-latex-part-3.pdf](/assets/JOuZbHVPGoA5Tlx4OeRccGSQn4T.pdf)
+
 
 # <b>课内作业文档的 LaTeX 模板</b>
 
@@ -68,6 +68,4 @@ LaTeX (发音为“ <em>LAY</em> -tek”或“ <em>LAH</em> -tek”) 是一种�
 <img src="/assets/Il3Lb9CZyomH6vxyNgVcHJownz9.png" src-width="132" src-height="129" align="center"/>
 
 <img src="/assets/WCjBbrUJhoN9R5xJ9pZcKz8Ln3c.png" src-width="408" src-height="102" align="center"/>
-
-> [Latex](/YNZoweZexiYgx0kBdLYcO9PGnxe\Q8RUwYObvi82KUkYKUTcO0E5nqb\ZDcOwMsSZilyKMkzbn5czmlEn2b\D72iwAGnsitXYlkAYtEcUCPHnnh)
 

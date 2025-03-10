@@ -1,10 +1,8 @@
 ---
 title: 自然语言处理 NLP
-slug: >-
-  l3nnwj3ftiporjkfsqacaj4znl4-thmlw28zjigez1kgotycuenonrc-irykwvqipilsrpkeinvcow4gnqc-irykwv
+slug: ruan-jian-ke-yan-ji-neng-shu/ren-gong-zhi-neng-ai/zi-ran-yu-yan-chu-li-nlp/zi-ran-yu-yan-chu-li-nlp
 sidebar_position: 3
 ---
-
 
 # 自然语言处理 NLP
 

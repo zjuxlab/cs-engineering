@@ -1,12 +1,12 @@
 ---
 title: WEB3：区块链
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-unyhwewjoi2jg2khjyxczv5mndf-hou8whi7iiietkkj5iccc83enbc-hou8wh
+slug: ruan-jian-gong-cheng-ji-neng-shu/jin-jie-ji-shu/web3-qu-kuai-lian/web3-qu-kuai-lian
 sidebar_position: 0
 ---
 
-
 # WEB3：区块链
+
+Author：NA
 
 <div class="callout callout-bg-2 callout-border-2">
 <div class='callout-emoji'>❗</div>

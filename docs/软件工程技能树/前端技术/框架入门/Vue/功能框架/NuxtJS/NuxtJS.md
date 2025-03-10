@@ -1,10 +1,8 @@
 ---
 title: NuxtJS
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-deqcwvlndiaindkf0ikczjaunwq-enhswbxfmixo48khcrtcjz3dnde-fl0jwqnx6innzckymwkckyrkn1g-fl0jwq
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/vue/gong-neng-kuang-jia/nuxtjs/nuxtjs
 sidebar_position: 4
 ---
-
 
 # NuxtJS
 

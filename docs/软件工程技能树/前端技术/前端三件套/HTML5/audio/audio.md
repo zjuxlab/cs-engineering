@@ -1,12 +1,12 @@
 ---
 title: <audio>
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-it1gwwgjriq0w0k7bptcbr4bn8g-vdpkwydvti5nuxkq4eaclkdzndg-dnrywksnjirizmk3nc7c09y7n7c-dnrywk
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/html5/audio/audio
 sidebar_position: 0
 ---
 
-
 # &lt;audio&gt;
+
+Author：徐旻昶
 
 在html中，<b> </b><b>&lt;audio&gt;</b><b> </b>元素用于在文档中嵌入音频内容，可以包含一个或多个音频资源，浏览器将会从中选择一个最合适的。我最常见直观的audio元素应该是这种：
 

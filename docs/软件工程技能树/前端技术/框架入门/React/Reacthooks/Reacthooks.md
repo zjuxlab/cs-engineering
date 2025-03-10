@@ -1,12 +1,12 @@
 ---
 title: React hooks
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-ik6qw0wh1idsu8kvyzccmcgnnfe-o0cjwusk9iv66ckqo3ickjnonag-o0cjwu
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/reacthooks/reacthooks
 sidebar_position: 0
 ---
 
-
 # React hooks
+
+Author：NA
 
 <div class="callout callout-bg-2 callout-border-2">
 <div class='callout-emoji'>🔔</div>
@@ -1059,6 +1059,4 @@ function App() {
 
 - https://overreacted.io/a-complete-guide-to-useeffect/
 - https://www.robinwieruch.de/react-hooks-fetch-data/
-
-> [[必读] React Hooks](wikcnAj97pK5WexPjxFZ3AUEWRc)
 

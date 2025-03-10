@@ -1,12 +1,12 @@
 ---
 title: VueX
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-deqcwvlndiaindkf0ikczjaunwq-enhswbxfmixo48khcrtcjz3dnde-g2hlwltvlic46dknqwycmponnic-g2hlwl
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/vue/gong-neng-kuang-jia/vuex/vuex
 sidebar_position: 1
 ---
 
-
 # VueX
+
+Author：李予谦
 
 注意：阅读本篇文档需要一定 <b>Vue3</b> 基础。
 
@@ -305,8 +305,4 @@ store.state.b // -> moduleB 的状态
 ```
 
 默认情况下，模块内部的 action 和 mutation 仍然是注册在全局命名空间的——这样使得多个模块能够对同一个 action 或 mutation 作出响应。如果希望你的模块具有更高的封装度和复用性，你可以通过添加 `namespaced: true` 的方式使其成为带命名空间的模块。
-
-# 其他
-
-> [vuex](wikcnxW0CAHxPf2LTScI0fVgTsf)
 

@@ -1,14 +1,12 @@
 ---
 title: flex
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-it1gwwgjriq0w0k7bptcbr4bn8g-ruhywty6risxg9kbqu4ceuwynmd-qzyvwwwpbiltzbk1yr9ckb8jnhq-qzyvww
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/css3/flex/flex
 sidebar_position: 0
 ---
 
-
 # flex
 
-再看一遍内训文档觉得符一笑学长写的真挺好qwq
+Author：符一笑
 
 ## <b>css布局方法的演变</b>
 

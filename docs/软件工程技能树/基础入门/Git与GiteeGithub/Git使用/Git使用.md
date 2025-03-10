@@ -1,12 +1,12 @@
 ---
 title: Git 使用
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-jahiwo9tziyhqskzxoyc1wfrntb-tmm1wuiy6ivytskarz2cxslqnzd-tmm1wu
+slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/git-yu-giteegithub/git-shi-yong/git-shi-yong
 sidebar_position: 1
 ---
 
-
 # Git 使用
+
+Author：NA
 
 ## 一、速查版
 
@@ -47,6 +47,4 @@ git add --all
 git commit -m "commit" // commit 之后就不能用 git stash 了，只能cv了
 git push
 ```
-
-> [Git 使用](wikcnUXd77HmAUzfOnM41XOLcef)
 

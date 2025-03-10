@@ -161,8 +161,43 @@ module.exports = {
             },
             {
               "label": "设计模式",
-              "type": "doc",
-              "id": "软件工程技能树/基础入门/设计模式/设计模式"
+              "type": "category",
+              "items": [
+                {
+                  "label": "Clean Code",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "整洁代码",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/设计模式/CleanCode/整洁代码/整洁代码"
+                    },
+                    {
+                      "label": "有意义的命名",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/设计模式/CleanCode/有意义的命名/有意义的命名"
+                    },
+                    {
+                      "label": "函数",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/设计模式/CleanCode/函数/函数"
+                    },
+                    {
+                      "label": "注释",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/设计模式/CleanCode/注释/注释"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/基础入门/设计模式/CleanCode/CleanCode"
+                  }
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/基础入门/设计模式/设计模式"
+              }
             },
             {
               "label": "正则表达式 Regex",
@@ -207,6 +242,26 @@ module.exports = {
               "link": {
                 "type": "doc",
                 "id": "软件工程技能树/基础入门/虚拟化/虚拟化"
+              }
+            },
+            {
+              "label": "杂项常识",
+              "type": "category",
+              "items": [
+                {
+                  "label": "BT种子",
+                  "type": "doc",
+                  "id": "软件工程技能树/基础入门/杂项常识/BT种子/BT种子"
+                },
+                {
+                  "label": "搜索与提问",
+                  "type": "doc",
+                  "id": "软件工程技能树/基础入门/杂项常识/搜索与提问/搜索与提问"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/基础入门/杂项常识/杂项常识"
               }
             }
           ],
@@ -268,9 +323,9 @@ module.exports = {
                       "id": "软件工程技能树/前端技术/前端三件套/CSS3/flex/flex"
                     },
                     {
-                      "label": "grid",
+                      "label": "Grid",
                       "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/grid/grid"
+                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/Grid/Grid"
                     },
                     {
                       "label": "Animations module",
@@ -625,8 +680,18 @@ module.exports = {
                 },
                 {
                   "label": "NodeJS",
-                  "type": "doc",
-                  "id": "软件工程技能树/后端技术/开发语言/NodeJS/NodeJS"
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "NestJS",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/开发语言/NodeJS/NestJS/NestJS"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/后端技术/开发语言/NodeJS/NodeJS"
+                  }
                 },
                 {
                   "label": "C#",
@@ -644,9 +709,29 @@ module.exports = {
               "type": "category",
               "items": [
                 {
-                  "label": "API 的指定",
-                  "type": "doc",
-                  "id": "软件工程技能树/后端技术/常见场景/API的指定/API的指定"
+                  "label": "API制定",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "RESTful",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/常见场景/API制定/RESTful/RESTful"
+                    },
+                    {
+                      "label": "GraphQL",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/常见场景/API制定/GraphQL/GraphQL"
+                    },
+                    {
+                      "label": "OpenAPI",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/常见场景/API制定/OpenAPI/OpenAPI"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/后端技术/常见场景/API制定/API制定"
+                  }
                 },
                 {
                   "label": "登录 & 鉴权",
@@ -671,8 +756,33 @@ module.exports = {
           "items": [
             {
               "label": "测试调试",
-              "type": "doc",
-              "id": "软件工程技能树/开发工具/测试调试/测试调试"
+              "type": "category",
+              "items": [
+                {
+                  "label": "网络测试",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "抓包工具",
+                      "type": "doc",
+                      "id": "软件工程技能树/开发工具/测试调试/网络测试/抓包工具/抓包工具"
+                    },
+                    {
+                      "label": "自动化测试",
+                      "type": "doc",
+                      "id": "软件工程技能树/开发工具/测试调试/网络测试/自动化测试/自动化测试"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/开发工具/测试调试/网络测试/网络测试"
+                  }
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/开发工具/测试调试/测试调试"
+              }
             },
             {
               "label": "开发管理",
@@ -738,6 +848,26 @@ module.exports = {
               "label": "WEB3：区块链",
               "type": "doc",
               "id": "软件工程技能树/进阶技术/WEB3区块链/WEB3区块链"
+            },
+            {
+              "label": "GUI开发：Qt",
+              "type": "doc",
+              "id": "软件工程技能树/进阶技术/GUI开发Qt/GUI开发Qt"
+            },
+            {
+              "label": "量子计算",
+              "type": "category",
+              "items": [
+                {
+                  "label": "量子信息基础",
+                  "type": "doc",
+                  "id": "软件工程技能树/进阶技术/量子计算/量子信息基础/量子信息基础"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/进阶技术/量子计算/量子计算"
+              }
             }
           ],
           "link": {
@@ -760,19 +890,94 @@ module.exports = {
           "type": "category",
           "items": [
             {
+              "label": "机器学习 ML",
+              "type": "category",
+              "items": [
+                {
+                  "label": "搜索算法",
+                  "type": "doc",
+                  "id": "软件科研技能树/人工智能(AI)/机器学习ML/搜索算法/搜索算法"
+                },
+                {
+                  "label": "机器推理",
+                  "type": "doc",
+                  "id": "软件科研技能树/人工智能(AI)/机器学习ML/机器推理/机器推理"
+                },
+                {
+                  "label": "分类算法",
+                  "type": "doc",
+                  "id": "软件科研技能树/人工智能(AI)/机器学习ML/分类算法/分类算法"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件科研技能树/人工智能(AI)/机器学习ML/机器学习ML"
+              }
+            },
+            {
               "label": "深度学习 DL",
-              "type": "doc",
-              "id": "软件科研技能树/人工智能(AI)/深度学习DL/深度学习DL"
+              "type": "category",
+              "items": [
+                {
+                  "label": "CS231n",
+                  "type": "doc",
+                  "id": "软件科研技能树/人工智能(AI)/深度学习DL/CS231n/CS231n"
+                },
+                {
+                  "label": "框架",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "Pytorch",
+                      "type": "doc",
+                      "id": "软件科研技能树/人工智能(AI)/深度学习DL/框架/Pytorch/Pytorch"
+                    },
+                    {
+                      "label": "TensorFlow",
+                      "type": "doc",
+                      "id": "软件科研技能树/人工智能(AI)/深度学习DL/框架/TensorFlow/TensorFlow"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件科研技能树/人工智能(AI)/深度学习DL/框架/框架"
+                  }
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件科研技能树/人工智能(AI)/深度学习DL/深度学习DL"
+              }
             },
             {
               "label": "计算机视觉 CV",
-              "type": "doc",
-              "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/计算机视觉CV"
-            },
-            {
-              "label": "机器学习 ML",
-              "type": "doc",
-              "id": "软件科研技能树/人工智能(AI)/机器学习ML/机器学习ML"
+              "type": "category",
+              "items": [
+                {
+                  "label": "线代基础",
+                  "type": "doc",
+                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/线代基础/线代基础"
+                },
+                {
+                  "label": "光度图像",
+                  "type": "doc",
+                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/光度图像/光度图像"
+                },
+                {
+                  "label": "图像处理",
+                  "type": "doc",
+                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/图像处理/图像处理"
+                },
+                {
+                  "label": "模型拟合和优化",
+                  "type": "doc",
+                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/模型拟合和优化/模型拟合和优化"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/计算机视觉CV"
+              }
             },
             {
               "label": "自然语言处理 NLP",
@@ -783,6 +988,46 @@ module.exports = {
               "label": "信息检索与挖掘",
               "type": "doc",
               "id": "软件科研技能树/人工智能(AI)/信息检索与挖掘/信息检索与挖掘"
+            },
+            {
+              "label": "时间序列数据",
+              "type": "doc",
+              "id": "软件科研技能树/人工智能(AI)/时间序列数据/时间序列数据"
+            },
+            {
+              "label": "强化学习",
+              "type": "doc",
+              "id": "软件科研技能树/人工智能(AI)/强化学习/强化学习"
+            },
+            {
+              "label": "Transformer",
+              "type": "doc",
+              "id": "软件科研技能树/人工智能(AI)/Transformer/Transformer"
+            },
+            {
+              "label": "Diffusion",
+              "type": "category",
+              "items": [
+                {
+                  "label": "Diffusion从入门到放弃",
+                  "type": "doc",
+                  "id": "软件科研技能树/人工智能(AI)/Diffusion/Diffusion从入门到放弃/Diffusion从入门到放弃"
+                },
+                {
+                  "label": "浅谈Diffusion微调",
+                  "type": "doc",
+                  "id": "软件科研技能树/人工智能(AI)/Diffusion/浅谈Diffusion微调/浅谈Diffusion微调"
+                },
+                {
+                  "label": "DPM-Solver: A Fast ODE Solver for Diffusion",
+                  "type": "doc",
+                  "id": "软件科研技能树/人工智能(AI)/Diffusion/DPMSolverAFastODESolverforDiffusion/DPMSolverAFastODESolverforDiffusion"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件科研技能树/人工智能(AI)/Diffusion/Diffusion"
+              }
             }
           ],
           "link": {

@@ -1,12 +1,12 @@
 ---
 title: Vite
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-deqcwvlndiaindkf0ikczjaunwq-enhswbxfmixo48khcrtcjz3dnde-g3t1wd3g5intmxkgdakcqueyntg-g3t1wd
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/vue/gong-neng-kuang-jia/vite/vite
 sidebar_position: 2
 ---
 
-
 # Vite
+
+Author：陈儒
 
 <div class="callout callout-bg-2 callout-border-2">
 <div class='callout-emoji'>📍</div>
@@ -198,6 +198,4 @@ location / {
     try_files $uri $uri/ /index.html;
 }
 ```
-
-> [vite](wikcnLErEIZLBOrnn6iYwssw0Lg)
 

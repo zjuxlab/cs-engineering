@@ -1,12 +1,12 @@
 ---
 title: <video>
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-it1gwwgjriq0w0k7bptcbr4bn8g-vdpkwydvti5nuxkq4eaclkdzndg-bdlvwkgyuir80xkbju5c0l28nde-bdlvwk
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/html5/video/video
 sidebar_position: 1
 ---
 
-
 # &lt;video&gt;
+
+Author：徐旻昶
 
 在html中，<b> </b><b>&lt;vedio&gt;</b><b> </b>元素用于嵌入视频（或音频？）内容。
 

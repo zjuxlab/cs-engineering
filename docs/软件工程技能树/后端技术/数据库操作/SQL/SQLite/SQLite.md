@@ -1,12 +1,12 @@
 ---
 title: SQLite
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-dfifwii6ri7cnjkbttrcqd8xnch-a1xyw4touiczudkdexdc4sqqnfh-svdqwahzeijzvsktok7c9jdwnjg-tlwlw2decitxjwkssarcgczdnye-tlwlw2
+slug: ruan-jian-gong-cheng-ji-neng-shu/hou-duan-ji-shu/shu-ju-ku-cao-zuo/sql/sqlite/sqlite
 sidebar_position: 0
 ---
 
-
 # SQLite
+
+Author：钱梓洋
 
 <div class="callout callout-bg-14 callout-border-7">
 <div class='callout-emoji'>📑</div>

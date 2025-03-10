@@ -1,10 +1,8 @@
 ---
 title: Uni-app
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmtcwkb0xii5cikhyt9cin4tnyf-srjsws80fi5fgek1zl6czpmanvd-srjsws
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/duo-duan-kai-fa/uniapp/uniapp
 sidebar_position: 0
 ---
-
 
 # Uni-app
 

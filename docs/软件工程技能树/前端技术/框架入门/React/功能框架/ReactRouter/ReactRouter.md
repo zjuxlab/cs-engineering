@@ -1,12 +1,12 @@
 ---
 title: React Router
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-ik6qw0wh1idsu8kvyzccmcgnnfe-rphyw3cepiebzvkfkekcb45ln7g-cewqwaomkim53gksgxwcovn0n0e-cewqwa
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/gong-neng-kuang-jia/reactrouter/reactrouter
 sidebar_position: 0
 ---
 
-
 # React Router
+
+Author：李予谦
 
 <div class="callout callout-bg-2 callout-border-2">
 <div class='callout-emoji'>📌</div>
@@ -292,6 +292,4 @@ function test() {
 以上这些只是React Router的简单应用。官方在新版本中还添加了类似于loader(实现异步加载）和action(类似一种拦截器）等等特性，也有各种hook来替代我们在上方说的各种使用组件的写法。
 
 React Router基础但并不简单，希望大家可以继续查阅其他资料进一步学习。
-
-> [[必读] React Router](wikcnz0vXuChaLN5PanrzEwJPm5)
 

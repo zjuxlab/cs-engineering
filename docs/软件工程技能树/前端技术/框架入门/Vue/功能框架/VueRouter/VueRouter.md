@@ -1,12 +1,12 @@
 ---
 title: Vue Router
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-deqcwvlndiaindkf0ikczjaunwq-enhswbxfmixo48khcrtcjz3dnde-nh1uwvziiiowcakiiygc9grpnkf-nh1uwv
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/vue/gong-neng-kuang-jia/vuerouter/vuerouter
 sidebar_position: 0
 ---
 
-
 # Vue Router
+
+Author：李予谦
 
 注意：阅读本篇文档需要一定 <b>Vue3</b> 基础。
 
@@ -355,6 +355,4 @@ router.beforeEach((to, from) => {
 # 其它
 
 本文从一个简单示例开始，逐步构建起一个完备可靠的路由系统。然而 Vue Router 提供的能力远不止于此。除了文章中涉及的功能以外，Vue Router 还提供了正则匹配、路由命名、视图命名、过渡动效、路由懒加载等等更加丰富的功能。读者可以自行阅读 Vue Router 的官方文档，了解更多相关知识。
-
-> [Vue Router](wikcnSH7RaqLCR2LM6LOkUOwbdh)
 

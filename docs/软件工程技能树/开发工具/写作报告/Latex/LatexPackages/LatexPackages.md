@@ -1,12 +1,12 @@
 ---
 title: Latex Packages
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-q8ruwyobvi82kukykutco0e5nqb-zdcowmsszilykmkzbn5czmlen2b-d72iwagnsitxylkaytecucphnnh-glykw6brbilwhmkorngcc9oeneg-glykw6
+slug: ruan-jian-gong-cheng-ji-neng-shu/kai-fa-gong-ju/xie-zuo-bao-gao/latex/latexpackages/latexpackages
 sidebar_position: 0
 ---
 
-
 # Latex Packages
+
+Author：周楷程
 
 # 为什么介绍宏包
 
@@ -578,6 +578,4 @@ pdflatex thesis.tex
 ```
 
 <b>备注：BibTeX </b>可以帮你迅速处理文献的引用，帮你编号并创建超链接。
-
-> [LaTeX Packages](wikcnVNpuCscCMGTHLo7OVvUPob)
 

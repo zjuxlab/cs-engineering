@@ -1,12 +1,12 @@
 ---
 title: SWR
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-ik6qw0wh1idsu8kvyzccmcgnnfe-rphyw3cepiebzvkfkekcb45ln7g-zwugwgtneidggckwk3xcwztxnzc-zwugwg
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/gong-neng-kuang-jia/swr/swr
 sidebar_position: 3
 ---
 
-
 # SWR
+
+Author：NA
 
 # 什么是 SWR
 
@@ -190,7 +190,6 @@ function useUser() {
   };
 }
 
-
 // 页面组件
 
 function Page() {
@@ -276,7 +275,7 @@ function Profile() {
 }
 ```
 
-但是，如果你仔细阅读过 [[必读] React Hooks](wikcnAj97pK5WexPjxFZ3AUEWRc) 的「<b>禁忌事项</b>」章节，那么就应当知道：这样是完全不正确的，甚至可能导致你的整个组件的状态直接崩掉。
+但是，如果你仔细阅读过 [必读] React Hooks的「<b>禁忌事项</b>」章节，那么就应当知道：这样是完全不正确的，甚至可能导致你的整个组件的状态直接崩掉。
 
 正确的做法有以下两种：
 
@@ -330,7 +329,6 @@ function MyProjects() {
 
 SWR 会在你重新聚焦页面的时候自动重新请求数据，来保证用户数据的实时性。
 
-[focus-revalidate.mp4](/assets/PByYbfzcro9n5jx1sVFcw7IGnLf.mp4)
 
 这个特性是默认开启的，你也可以通过 `revalidateOnFocus` 选项禁用它。
 
@@ -340,7 +338,6 @@ SWR 会在你重新聚焦页面的时候自动重新请求数据，来保证用�
 
 SWR 会为你提供自动重新请求数据的选项。而且只有与 hook 相关的组件 <b>在屏幕上</b> 时，才会重新请求。
 
-[refetch-interval.mp4](/assets/MrgdbB0Ahoi4aOxtX4VcjoThncA.mp4)
 
 你可以通过设置 `refreshInterval` 值来启用它：
 
@@ -520,6 +517,4 @@ SWR 支持 React 新的 Suspense 和 ErrorBoundary 功能，但官方文档目�
 > 1. React 仍然不建议在 SWR 这样的数据框架中使用 `Suspense` ([更多信息](https://reactjs.org/blog/2022/03/29/react-v18.html#suspense-in-data-frameworks))。根据我们的调查结果，这些 API 将来可能会发生变化。
 > 2. Suspense 模式会在数据准备就绪前暂停渲染，这意味着它很容易导致请求瀑布问题。为了避免这种情况，应该在渲染之前预请求获取资源。[更多信息](https://swr.vercel.app/zh-CN/docs/prefetching)
 > 3. 通常，当启用 `suspense` 时，可以确保 `data` 在渲染时始终是准备就绪的。但是，当它与条件请求或依赖请求一起使用时，如果请求被<b>暂停</b>，`data` 将会是 `undefined`。事实上，将条件请求或依赖请求和 Suspense Mode 一起使用被认为是一种反模式（anti-pattern）：https://github.com/vercel/swr/pull/357#issuecomment-627089889
-
-> [[必读] SWR](ORpMwVejjirhOMkNtszcAuLunnb)
 

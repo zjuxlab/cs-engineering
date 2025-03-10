@@ -1,10 +1,8 @@
 ---
 title: JavaScript
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-it1gwwgjriq0w0k7bptcbr4bn8g-p99jwam91if4fqko4uncori4ngc-p99jwa
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/javascript/javascript
 sidebar_position: 2
 ---
-
 
 # JavaScript
 

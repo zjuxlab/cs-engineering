@@ -1,12 +1,12 @@
 ---
 title: Shell 基础
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-pd7qwgyslifu8gkly2rcbggpneh-w97vwan0pioxwykt4zhcgmkqnac-w97vwa
+slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/linux-ru-men/shell-ji-chu/shell-ji-chu
 sidebar_position: 1
 ---
 
-
 # Shell 基础
+
+Author：NA
 
 # Shell
 
@@ -934,6 +934,4 @@ cd $curDir
 
 - Linux
 - vi / vim
-
-> [shell](wikcnKC5eA6PaXyP41vSpGZRBAe)
 

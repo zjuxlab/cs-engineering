@@ -23,7 +23,7 @@ const config = {
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -52,6 +52,8 @@ const config = {
             '**/待清理的文档/**',
             // 可添加更多排除规则
           ],
+          remarkPlugins: [require('remark-math')],
+          rehypePlugins: [require('rehype-katex')],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {

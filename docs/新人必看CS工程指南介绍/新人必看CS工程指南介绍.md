@@ -1,9 +1,8 @@
 ---
 title: 新人必看：CS工程指南介绍
-slug: gvpywcwokiqophkzxotckxylnld-gvpywc
+slug: xin-ren-bi-kan-cs-gong-cheng-zhi-nan-jie-shao/xin-ren-bi-kan-cs-gong-cheng-zhi-nan-jie-shao
 sidebar_position: 0
 ---
-
 
 # 新人必看：CS工程指南介绍
 

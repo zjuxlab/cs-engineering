@@ -1,10 +1,8 @@
 ---
 title: MongoDB
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-dfifwii6ri7cnjkbttrcqd8xnch-a1xyw4touiczudkdexdc4sqqnfh-xb4fwlaa8i7egtk2ka4crddanle-ub43wxys2ioolhkppbecwq5vnpe-ub43wx
+slug: ruan-jian-gong-cheng-ji-neng-shu/hou-duan-ji-shu/shu-ju-ku-cao-zuo/nosql/mongodb/mongodb
 sidebar_position: 0
 ---
-
 
 # MongoDB
 

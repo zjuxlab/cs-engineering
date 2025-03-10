@@ -1,12 +1,12 @@
 ---
 title: <svg>
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-it1gwwgjriq0w0k7bptcbr4bn8g-vdpkwydvti5nuxkq4eaclkdzndg-uufzwx9b7i5ixtksekrc4fpgnne-uufzwx
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/html5/svg/svg
 sidebar_position: 2
 ---
 
-
 # &lt;svg&gt;
+
+Author：葛芸曦
 
 ### <b>直接嵌入 HTML 中</b>
 

@@ -1,12 +1,12 @@
 ---
 title: Taro
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmtcwkb0xii5cikhyt9cin4tnyf-dbgwwfvf3iegczkch9tctqksnzb-dbgwwf
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/duo-duan-kai-fa/taro/taro
 sidebar_position: 1
 ---
 
-
 # Taro
+
+Author：徐毕颖
 
 建议配合官方文档食用
 
@@ -318,5 +318,4 @@ import filename from 'xxx/xxx/xxx'
 用这个方式可以直接引用的资源类型有：js文件、JSON文件、常规的图片（包括矢量图）/音频/字体/样式文件。
 
 （也就是说，.txt 等等不在上述之列的文件类型是不能直接引用的，会报错“找不到相应的类型声明”，在`shim.d.ts`中添加了 .txt 也没用，应该是 webpack 本身就无法处理这类文件，比较常见的处理方式是用脚本逐行改写成 JSON 格式然后导入）
-
 

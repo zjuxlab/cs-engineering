@@ -1,12 +1,12 @@
 ---
 title: Vim
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-t6mwwxlvbi6qcrkwa4tct9xqn0g-g4ipwruauiwbm5kgzzmctvhvn4g-g4ipwr
+slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/chang-jian-gong-ju/vim/vim
 sidebar_position: 0
 ---
 
-
 # Vim
+
+Author：NA
 
 ## Vim到底是什么？
 
@@ -48,6 +48,4 @@ Vim有四种模式：
 - 插入模式 (Insert-mode)
 - 命令模式 (Command-mode)
 - 可视模式 (Visual-mode)
-
-> [Vim](wikcny95IUnIOU71iLMlG5FCMRg)
 

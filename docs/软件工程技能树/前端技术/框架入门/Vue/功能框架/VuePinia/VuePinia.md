@@ -1,12 +1,12 @@
 ---
 title: Vue Pinia
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-deqcwvlndiaindkf0ikczjaunwq-enhswbxfmixo48khcrtcjz3dnde-ioxewaso9ijhd7k7546cbok6nqh-ioxewa
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/vue/gong-neng-kuang-jia/vuepinia/vuepinia
 sidebar_position: 3
 ---
 
-
 # Vue Pinia
+
+Author：NA
 
 #### <b>啥是pinia</b>
 
@@ -1415,6 +1415,3 @@ import { useStore } from '~/stores/myStore'
 #### <b>文档和引用</b>
 
 官方文档：[https://pinia.vuejs.org/core-concepts/#using-the-store](https://pinia.vuejs.org/core-concepts/#using-the-store)
-
-> [Vue Pinia](wikcnNlZuOD9XHpHZmwzdvTWUHf)
-

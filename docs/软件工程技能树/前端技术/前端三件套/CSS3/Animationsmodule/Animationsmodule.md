@@ -1,12 +1,12 @@
 ---
 title: Animations module
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-it1gwwgjriq0w0k7bptcbr4bn8g-ruhywty6risxg9kbqu4ceuwynmd-xemswwzvsidkzgktyktcf7hhnyh-xemsww
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/css3/animationsmodule/animationsmodule
 sidebar_position: 2
 ---
 
-
 # Animations module
+
+Author：符一笑
 
 #### <b>outline:</b>
 

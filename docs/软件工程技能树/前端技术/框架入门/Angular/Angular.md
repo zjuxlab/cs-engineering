@@ -1,10 +1,8 @@
 ---
 title: Angular
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-zrczwktyeittm8kjxn1cvrmnnye-zrczwk
+slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/angular/angular
 sidebar_position: 2
 ---
-
 
 # Angular
 

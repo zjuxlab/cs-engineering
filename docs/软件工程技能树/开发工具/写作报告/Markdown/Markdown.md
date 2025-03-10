@@ -1,14 +1,13 @@
 ---
 title: Markdown
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-q8ruwyobvi82kukykutco0e5nqb-zdcowmsszilykmkzbn5czmlen2b-v9aiwi6ocio83nkhp7ucnogbnve-v9aiwi
+slug: ruan-jian-gong-cheng-ji-neng-shu/kai-fa-gong-ju/xie-zuo-bao-gao/markdown/markdown
 sidebar_position: 1
 ---
 
-
 # Markdown
 
-[Markdown.pdf](/assets/NCYGbcwYuoZLwXxcBfHcR6sanNf.pdf)
+Author：NA
+
 
 ```text
 # Markdown 纯文本基本语法
@@ -514,8 +513,4 @@ $$
 E = mc^2
 $$
 ```
-
-[https://www.feishu.cn/hc/zh-CN/articles/360044024994](https://www.feishu.cn/hc/zh-CN/articles/360044024994)
-
-> [Markdown](wikcnXVzdSV6b4Hxc1tfkyHIbZg)
 

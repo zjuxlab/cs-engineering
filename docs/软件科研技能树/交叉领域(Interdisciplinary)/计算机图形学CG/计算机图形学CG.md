@@ -1,10 +1,8 @@
 ---
 title: 计算机图形学 CG
-slug: >-
-  l3nnwj3ftiporjkfsqacaj4znl4-ipx2wue6lixa6lkdqpacyzbqn0g-wwbswi6w7iyyccktgwfct0khndd-wwbswi
+slug: ruan-jian-ke-yan-ji-neng-shu/jiao-cha-ling-yu-interdisciplinary/ji-suan-ji-tu-xing-xue-cg/ji-suan-ji-tu-xing-xue-cg
 sidebar_position: 1
 ---
-
 
 # 计算机图形学 CG
 

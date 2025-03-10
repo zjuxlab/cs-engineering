@@ -1,12 +1,12 @@
 ---
 title: Cookies
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-a2mbwkue9ijsukkwoqwcpnsjnzc-u3nzwddmzioezgk38jmcolgwnfd-hgtdwbc2riylyiki8xscylrbnqb-hgtdwb
+slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/ji-chu-ke-cheng/ji-suan-ji-wang-luo/cookies/cookies
 sidebar_position: 0
 ---
 
-
 # Cookies
+
+Author：NA
 
 # 简介与定义
 
@@ -227,6 +227,4 @@ Set-Cookie: __Host-name=value; Secure; Path=/; SameSite=None; Partitioned;
 </div>
 
 所有开启了  `First-Party Sets` 域名下需要共享的 `Cookie` 都需要增加 `SameParty` 属性。这时我在 `taobao.com` 下发送 `.tmall.com` 域名的请求，`Cookie` 也可以被携带了，但是如果我在另外一个网站，例如 `eval.site` 下发送这个请求， `Cookie` 就不会被携带。
-
-> [Cookie](wikcnUhTI8QSpECcRHftE8rXpAc)
 

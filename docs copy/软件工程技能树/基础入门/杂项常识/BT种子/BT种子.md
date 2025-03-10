@@ -1,0 +1,116 @@
+---
+title: BT种子
+slug: >-
+  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-sdtewxcqxilbdbk3cigchqkencg-e1vwwuv0hiorzdk0pkmcrrcyn6d-e1vwwu
+sidebar_position: 0
+---
+
+
+# BT种子
+
+Author：NA
+
+## 1 相关释义
+
+### 1.1 什么是BT种子
+
+> BT：BitTorrent，是一种文件传输协议，具有下载的人越多下载速度越快的特点
+
+<b>“种子”</b>是一个形象的比喻，BT下载的原理就像春天种下一粒种子，到了秋天就会收获万粒稻菽一样滚雪球般的越来越大，于是人们就把<b>发出的下载文件叫做种子</b>。而<b>种子文件就是记载下载文件的存放位置、大小、下载服务器的地址、发布者的地址等数据的一个索引文件</b>。这个种子文件并不是你最终要下载的东西（如电影，软件等等），但是有了种子文件，你就能高速下载到你需要的文件。种子文件的扩展是`.torrent`
+
+BT首先在<b>上传者端</b>把一个文件分成了Z个部分，甲在服务器随机下载了第N个部分，乙在服务器随机下载了第M个部分，这样甲的BT就会根据情况到乙的电脑上去拿乙已经下载好的M部分，乙的BT就会根据情况去到甲的电脑上去拿甲已经下载好的N部分，这样就不但减轻了服务器端的负荷，也加快了<b>用户方</b>（甲乙）的下载速度，效率也提高了，更同样减少了地域之间的限制。比如说丙要连到服务器去下载的话可能才几K，但是要是到甲和乙的电脑上去拿就快得多了。所以说用的人越多，下载的人越多，大家也就越快，BT的优越性就在这里。而且，<b>在你下载的同时，你也在上传（别人从你的电脑上拿那个文件的某个部分），所以说在享受别人提供的下载的同时，你也在贡献。</b>
+
+BT把提供完整文件的档案称为<b>种子</b>`SEED`，正在下载的人称为<b>客户</b>`Client`，某一个文件有多少种子多少客户是可以看到的，只要有一个种子，就可以放心地下载，一定能抓完。当然，种子越多、客户越多的文件抓起来的速度会越快，下载以后的种子可能会因目标文件不存在而失效。
+
+BT 是通过BT种子文件进行下载部署的，BT种子文件放在一个普通的网络服务器上，它包含了要共享的文件的信息，包括文件名、大小、文件的分块信息和一个指向追踪器的超级链接url。被下载文件的拥有者也可以看成这个文件的“原始”下载者。要求文件下载的用户通过BT客户端软件分解`.torrent`文件，取得文件的信息和指向追踪器服务器的url，同 Tracker 进行通讯。
+
+> Tracker：用于追踪有多少人在同一时间下载同一个文件；客户端连上Tracker服务器，就会获得一个下载人员的名单，根据这个，BT会自动连上别人的机器进行下载。
+> 如何连上别人的机器？磁力链接👇
+
+### 1.2 什么是磁力链接 Magnet URI scheme
+
+以下面这行链接为例
+
+> magnet:?xt=urn:btih:53SWOUDWKG6ORSKTJHHE3QXTIBOGU5WU
+
+`magnet` 为协议名；`xt` 表示资源定位点； `urn:btih` 表示 Hash 方法名，最主要的就是后面唯一的一串 40 位 16 进制的数字。磁力链接利用 DHT 技术（分布式哈希表，Distributed Hash Table）和 PEX （Peer Exchange）实现了资源的 “随意” 传播，根本无法禁止。（咳咳
+
+> 补充：DHT 分布式哈希表
+> <img src="/assets/ORhjbA1Hcoo8RHxfSr6cOg0Knpb.png" src-width="1922" src-height="800" align="center"/>
+> 用于找到距离（逻辑距离而非物理距离，用异或算出）最近的 Tracker，例如1111的最近距离点为1110，距离为1111 xor 1110 = 0001 = (1)_{10}
+
+磁力链接下载的本质是将每一个人都变为 Tracker 服务器，将资源与下载者对应起来，每位下载者保存 部分 信息。这样，在下载资源时，只需寻找拥有所需资源的下载者。
+
+打个比方，A 认识 B，B 认识 C， C 认识 D 和 E；如果 A 想认识 E，就可以通过 B 和 C 的介绍来认识 D，而不需要 A 一个个去寻找 E。
+
+### 1.3 传统下载 vs BT下载
+
+<table>
+<colgroup>
+<col width="273"/>
+<col width="303"/>
+</colgroup>
+<tbody>
+<tr><td><p><b>传统下载</b></p></td><td><p><b>BT下载</b></p></td></tr>
+<tr><td><p>中心化</p></td><td><p>去中心化</p></td></tr>
+<tr><td><p>由一个人或一个服务器提供资源</p></td><td><p>所有人提供给所有人（P2P）</p></td></tr>
+<tr><td><p>下载的人过多就会导致速度变慢</p></td><td><p>下载的人越多下载速度越快</p></td></tr>
+<tr><td><p>中心可以审查资源，可以过滤掉某些（违法）资源</p></td><td><p>不会被封禁，由此也引发了盗版的传播</p></td></tr>
+</tbody>
+</table>
+
+## 2 基本操作
+
+### 2.1 相关工具
+
+BT客户端软件：<u>qbittorrent</u>
+
+附赠一个找种子网站：
+
+http://www.nexushd.org/torrents.php（需要校网）
+
+### 2.2 基本操作
+
+- 添加下载
+
+尽量使用种子链接下载，比添加磁力链接快；如果只有磁力链接，可以先添加到迅雷/百度网盘等软件另存为种子文件；但一般不建议使用百度网盘（中央整治
+
+<img src="/assets/LRkNbVmZdoKZp5xUXvMcGAHbnPg.png" src-width="327" src-height="191" align="center"/>
+
+- 制作BT种子
+
+点击qBittorrent<b>顶部菜单“工具”-“生成Torrent”</b>。
+
+然后，在制作Torrent界面，选择要分享的文件或者文件夹，根据需要进行设置，并可以根据需要添加<b>Tracker URL、web种子url、注释、源</b>等字段，当然也可以不添加，直接点击下面的“<b>制作torrent</b>”，即可将制作的BT种子文件保存到自己电脑中。如下图所示：
+
+<img src="/assets/I3Ikbr5JkowkWxxE5IZccbNDnLh.png" src-width="912" src-height="694" align="center"/>
+
+制作好的BT种子文件分享后，自己的电脑需要保持开机，才能使种子文件正常下载。
+
+### 2.3 优化下载速度
+
+> 安装完成后首次打开需要设置，以后直接使用即可。
+
+- 路由器开启 UPnP / NAT-PMP 功能
+    - 在qBittorrent的 “选项”-“连接” 中，选中“使用我的路由器的UPnP / HAT -PMP 端口转发”，再进入自己的路由器管理页面，开启路由器的“UPnP / NAT-PMP”功能。
+
+- 添加 trackers
+    - 获取 trackers 的网址：
+        https://newtrackon.com/list
+        https://torrents.io/tracker-list/
+        https://github.com/ngosang/trackerslist
+    - 复制以上网址的trackers地址，进入qBittorrent “<b>工具</b>”-“<b>选项</b>”-“<b>BitTorrent</b>”，粘贴进tracker输入框内，如下图所示：
+    <img src="/assets/C4zPbMiaYomFKmx7EWrci45ynVe.png" src-width="781" src-height="623" align="center"/>
+    - 同时，选中“<b>自动添加以下tracker 到新的torrent</b>”选项。
+
+- 连接 DHT 节点
+    - 软件底部状态栏有一个 “DHT 节点”，连接上后可以通过 DHT 网络进行下载，改善下载情况。
+    - 开启软件后会自动连接，连上 DHT 节点需要一定时间，<b>连上后尽量不要关闭客户端，因为每次重启都要重新连接。</b>
+    - 连不上可以进入选项 - 连接 - 点随机，修改下监听端口，建议使用高位端口，也可以勾选 “在每次启动时使用不同的端口”。
+
+参考资料：
+
+[youtube回形针](https://www.youtube.com/watch?v=jp0bF9Qu2Jw)
+
+[知乎 - qbittorrent](https://zhuanlan.zhihu.com/p/64254201)
+

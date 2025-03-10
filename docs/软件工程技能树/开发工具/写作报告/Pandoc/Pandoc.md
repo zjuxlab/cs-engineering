@@ -1,12 +1,12 @@
 ---
 title: Pandoc
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-q8ruwyobvi82kukykutco0e5nqb-zdcowmsszilykmkzbn5czmlen2b-agiawhz5kidr5ek8mlmccmltnvg-agiawh
+slug: ruan-jian-gong-cheng-ji-neng-shu/kai-fa-gong-ju/xie-zuo-bao-gao/pandoc/pandoc
 sidebar_position: 2
 ---
 
-
 # Pandoc
+
+Author：NA
 
 <div class="callout callout-bg-2 callout-border-2">
 <div class='callout-emoji'>🌰</div>
@@ -95,6 +95,3 @@ This is a test. 这是测试文本。**强调**
 ```
 
 # 使用技巧
-
-> [Pandoc](wikcnS7cy430EZEY3e6qy8f7rIf)
-

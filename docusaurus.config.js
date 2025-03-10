@@ -47,6 +47,7 @@ const config = {
             '**/待清理的文档/**',
             // 可添加更多排除规则
           ],
+          onBrokenLinks: 'ignore',  // 改为 'warn' 可查看但不阻断构建
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {

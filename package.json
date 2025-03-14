@@ -12,10 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "rename-files": "node renameFiles.js",
-    "generate-sidebar": "node generateSidebar.js",
-    "update-docs": "yarn feishu-pages && yarn rename-files && yarn generate-sidebar",
-    "sync-docs": "yarn feishu-pages && node scripts/convert_filenames && node scripts/generate_sidebar"
+    "sync-docs": "yarn feishu-pages && node scripts/convert_filenames && node scripts/generate_sidebar && node scripts/update_slug && node scripts/attachment.js"
   },
   "dependencies": {
     "@docusaurus/core": "^2.4.3",

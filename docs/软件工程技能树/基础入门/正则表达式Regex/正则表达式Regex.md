@@ -1,8 +1,9 @@
 ---
 title: 正则表达式 Regex
-slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/zheng-ze-biao-da-shi-regex/zheng-ze-biao-da-shi-regex
+slug: 正则表达式 Regex
 sidebar_position: 5
 ---
+
 
 # 正则表达式 Regex
 

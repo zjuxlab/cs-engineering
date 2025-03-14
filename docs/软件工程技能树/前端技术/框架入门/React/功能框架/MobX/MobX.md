@@ -1,8 +1,9 @@
 ---
 title: MobX
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/gong-neng-kuang-jia/mobx/mobx
+slug: MobX
 sidebar_position: 4
 ---
+
 
 # MobX
 
@@ -40,7 +41,7 @@ MobX 可以运行在任何支持 ES5 的环境中，包含浏览器和 Node。
 
 ## 工作流程
 
-<img src="/assets/KxH6bp2iRoyvxSxuV5FcZNFhnwf.png" src-width="2064" src-height="225" align="center"/>
+![](/assets/KxH6bp2iRoyvxSxuV5FcZNFhnwf.png)
 
 Mobx 使用单向数据流，利用 <em>action</em> 改变 <em>state</em> ，进而更新所有受影响的 <em>view。</em>
 

@@ -1,8 +1,9 @@
 ---
 title: Vscode
-slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/chang-jian-gong-ju/ide/vscode/vscode
+slug: Vscode
 sidebar_position: 0
 ---
+
 
 # Vscode
 
@@ -22,7 +23,7 @@ VScode全称是Visual Studio Code，是微软推出的一个跨平台的文本�
 
 主界面大概长这样（因为我装了一些插件，左侧会多几个选项）
 
-<img src="/assets/Wd7Qbm9e3odDpkxP3wJc7Tn0n7i.png" src-width="1920" src-height="1041" align="center"/>
+![](/assets/Wd7Qbm9e3odDpkxP3wJc7Tn0n7i.png)
 
 最左侧从上到下是资源管理器，搜索，git，调试，扩展。
 
@@ -30,7 +31,7 @@ VScode全称是Visual Studio Code，是微软推出的一个跨平台的文本�
 
 文件-首选项-设置打开设置界面，其中的设置选项可以通过最上面的搜索栏搜索关键字来定位。
 
-<img src="/assets/NcPZbHt5SoCDLMxJnvjcJBJjnkC.png" src-width="1257" src-height="938" align="center"/>
+![](/assets/NcPZbHt5SoCDLMxJnvjcJBJjnkC.png)
 
 几个新安装建议调整的选项：
 
@@ -52,7 +53,7 @@ VScode全称是Visual Studio Code，是微软推出的一个跨平台的文本�
 
 首先安装该语言的插件（一般常用语言都有官方插件，打开这个语言的源代码时会在右下角自动弹出安装提示）
 
-<img src="/assets/DbHrb3LQQoCcSVx5OzHcP3mwnEe.png" src-width="272" src-height="188" align="center"/>
+![](/assets/DbHrb3LQQoCcSVx5OzHcP3mwnEe.png)
 
 如果你安装了code runner，此时应该可以直接打开代码文件，右键run-code来编译运行了。如果找不到编译器，可以在code-runner.executorMap选项里面调整
 
@@ -64,11 +65,11 @@ VScode全称是Visual Studio Code，是微软推出的一个跨平台的文本�
 
 VSCode对于项目的组织形式是文件夹，在项目文件夹中会生成一个.vscode目录，里面是当前项目的配置文件。打开一个文件夹之后，进入运行和调试选项卡：
 
-<img src="/assets/KLl0bvgZ1oPGS7xT6cJcA71rnEd.png" src-width="316" src-height="274" align="center"/>
+![](/assets/KLl0bvgZ1oPGS7xT6cJcA71rnEd.png)
 
 点击运行和调试
 
-<img src="/assets/GLOxbSHeaoDI3Ax8Nl5c1KIfnxg.png" src-width="648" src-height="140" align="center"/>
+![](/assets/GLOxbSHeaoDI3Ax8Nl5c1KIfnxg.png)
 
 选择所需的编译器，vscode会自动生成一个调试配置文件，此时就可以进行调试了。
 
@@ -78,11 +79,11 @@ VSCode对于项目的组织形式是文件夹，在项目文件夹中会生成�
 
 如果你的项目文件夹是从git克隆下来的，打开源代码管理选项卡就能看到以下界面，可以查看当前更改，并且常用的git命令都有对应按钮
 
-<img src="/assets/EsAjb7vveo3rGexjvPwcrfDinre.png" src-width="490" src-height="479" align="center"/>
+![](/assets/EsAjb7vveo3rGexjvPwcrfDinre.png)
 
 如果项目没有.git目录，会看到以下界面，点击Initialize Repository即可初始化git文件夹
 
-<img src="/assets/K8YrbLLSooBJ4gxXtnDcAk76nCh.png" src-width="319" src-height="346" align="center"/>
+![](/assets/K8YrbLLSooBJ4gxXtnDcAk76nCh.png)
 
 ### 快捷键
 
@@ -97,7 +98,7 @@ VSCode对于项目的组织形式是文件夹，在项目文件夹中会生成�
 
 更多具体内容可以连续按ctrl+k, ctrl+s两组快捷键来查看快捷键设置面板
 
-<img src="/assets/UaGjb7AWio41MExD6kCcrq4unvc.png" src-width="1531" src-height="945" align="center"/>
+![](/assets/UaGjb7AWio41MExD6kCcrq4unvc.png)
 
 # VS Code 插件开发指南
 

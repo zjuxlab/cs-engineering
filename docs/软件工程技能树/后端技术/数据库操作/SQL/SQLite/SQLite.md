@@ -1,8 +1,9 @@
 ---
 title: SQLite
-slug: ruan-jian-gong-cheng-ji-neng-shu/hou-duan-ji-shu/shu-ju-ku-cao-zuo/sql/sqlite/sqlite
+slug: SQLite
 sidebar_position: 0
 ---
+
 
 # SQLite
 
@@ -40,7 +41,7 @@ Author：钱梓洋
 - <b>自给</b>(self-contained)：不需要操作系统或外部库提供很多资源，这使得它能够在任何环境下（包括嵌入式系统）运行，可移植性高。
 - <b>无需服务器</b>(severless)：一般的 RDBMS，比如 MySQL 和 PostgreSQL 需要一台单独的服务器，应用程序通过 TCP/IP 协议的发送和请求来访问数据库服务器。然而，SQLite 的数据库就集成在应用程序中，应用程序可以直接从数据库中读写数据。
 
-<img src="/assets/QX1Ab35PSoPCMsxpwXsco8OinWb.jpeg" src-width="407" src-height="112" align="center"/>
+![](/assets/QX1Ab35PSoPCMsxpwXsco8OinWb.jpeg)
 
 - <b>零配置</b>(zero-configuration)：正因为 SQLite 的无服务器架构，因此我们无须事先配置 SQLite
 - <b>事务处理的</b>(transactional)：SQLite 的事务遵守 ACID，即具备原子性(atomic)、一致性(consistent)、隔离性(isolated)和持久性(durable)的特征
@@ -75,32 +76,32 @@ Author：钱梓洋
 - Windows 11
 
     1. 在下载页中找到 Windows 版本，点击下图红色方框处的链接下载。
-<img src="/assets/CgOTbWQIho9d3oxrnt0c8FTMnxg.png" src-width="2225" src-height="414" align="center"/>
+![](/assets/CgOTbWQIho9d3oxrnt0c8FTMnxg.png)
 
     2. 下载好后解压压缩包，得到文件夹，然后点击进入。
-<img src="/assets/O6Q4bhMtCo2njpxYqb5cwoaLnxe.png" src-width="1128" src-height="243" align="center"/>
+![](/assets/O6Q4bhMtCo2njpxYqb5cwoaLnxe.png)
 
     3. 按住 Shift 键，然后右键点击文件夹里的空白部分，呼出 Windows 10 风格的菜单，点击带有“终端”字样的选项。
-<img src="/assets/WNSZbREcgoC0UaxQMbmc4X44nCg.png" src-width="1464" src-height="1060" align="center"/>
+![](/assets/WNSZbREcgoC0UaxQMbmc4X44nCg.png)
 
 > 熟悉命令行操作的小伙伴可以用 `cd` 命令切换到 sqlite 所在目录，无需遵守2, 3两步
 
     4. 在终端命令行中输入 `sqlite`，如果输出如下所示的信息，则说明 SQLite 可以正常运行。
-<img src="/assets/FS3YbHnSnowhqgxbZF6cCMRlnIg.png" src-width="2090" src-height="266" align="center"/>
+![](/assets/FS3YbHnSnowhqgxbZF6cCMRlnIg.png)
 
     5.（可选，但十分推荐）退出 SQLite 程序（输入 `.quit` 命令），将 sqlite 所在目录迁移到合适的位置，然后设置环境变量，使得 SQLite 在电脑的任何目录下都可以运行。
 - 按下 Win + R 键，打开“运行”界面，输入 sysdm.cpl 后敲回车，进入“系统属性”界面
-<img src="/assets/RsBwb9wzmopybixETGzc6ss9nWh.png" src-width="685" src-height="391" align="center"/>
+![](/assets/RsBwb9wzmopybixETGzc6ss9nWh.png)
 - 点击该界面的“高级”选项卡，然后点击“环境变量”按钮
 
-<img src="/assets/H1kVbLGMUoy77SxOKXKccBdYntg.png" src-width="816" src-height="1010" align="center"/>
+![](/assets/H1kVbLGMUoy77SxOKXKccBdYntg.png)
 
 - 在“环境变量”界面选中 Path 并双击，编辑该环境变量。然后在该界面新建项，内容为 SQLite 程序的目录（我这里放在 D:\sqlite 目录下）
-<img src="/assets/Pbt4bup75or7wfxpyQDcALhhnRc.png" src-width="1060" src-height="1123" align="center"/>
-<img src="/assets/El5ibS9cZo0qQqxain6cUN8BnAf.png" src-width="904" src-height="960" align="center"/>
+![](/assets/Pbt4bup75or7wfxpyQDcALhhnRc.png)
+![](/assets/El5ibS9cZo0qQqxain6cUN8BnAf.png)
 - 最后不要忘记点击三个“确定”按钮，依次退出上述打开的界面，这样才能保存我们的设置
 - 重新打开终端，输入 `sqlite3`，如果不出意外的话，在任何目录下应当都可以启动 SQLite 了（现在我在 HOME 目录下也能打开 SQLite 了）！
-<img src="/assets/Pq2RbR7bBoFGVXx2XekcitSqn3b.png" src-width="2066" src-height="335" align="center"/>
+![](/assets/Pq2RbR7bBoFGVXx2XekcitSqn3b.png)
 
 - Ubuntu 24.04 LTS
 
@@ -332,7 +333,7 @@ ORDER BY rank;
 
 返回结果：
 
-<img src="/assets/ULmQbs3qeomiDzxjUwyccW1nnyk.png" src-width="768" src-height="77" align="center"/>
+![](/assets/ULmQbs3qeomiDzxjUwyccW1nnyk.png)
 
 ## API
 

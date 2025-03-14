@@ -1,7 +1,6 @@
 ---
 title: React
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-ik6qw0wh1idsu8kvyzccmcgnnfe-ik6qw0
+slug: React
 sidebar_position: 0
 ---
 
@@ -157,7 +156,7 @@ module.exports = {
 
 之后每次执行git commit时，husky都会执行npm run commitlint检查你的提交规范,一次成功的提交示例如下:
 
-<img src="/assets/XRcpbRCkjodmMzxO2cecuG5rnfh.png" src-width="992" src-height="244" align="center"/>
+![](/assets/XRcpbRCkjodmMzxO2cecuG5rnfh.png)
 
 #### jest
 
@@ -197,7 +196,7 @@ test("adds 1 + 2 to equal 3", () => {
 
 运行npm test后你可以看到
 
-<img src="/assets/QkqMb8CDuouWYpxPYshcueOnnng.png" src-width="1524" src-height="266" align="center"/>
+![](/assets/QkqMb8CDuouWYpxPYshcueOnnng.png)
 
 ### <b>css预处理器</b>
 
@@ -269,7 +268,7 @@ if (error) return "An error has occurred: " + error.message;
 
 redux / mobx被提出用于解决这个问题
 
-<img src="/assets/ZV0ubJXtYoFnIuxL1PCci15enXg.png" src-width="468" src-height="373"/>
+![](/assets/ZV0ubJXtYoFnIuxL1PCci15enXg.png)
 
 #### redux
 
@@ -284,7 +283,7 @@ redux主要有以下几个核心概念:
     2. 支持订阅store的变更(subscribe(listener))
     3. 由于redux对store状态的变更都是通过action触发,对于异步任务,我们需要引入redux-thunk等插件来保证不将业务或者数据相关的任务混入react组件中
 
-<img src="/assets/MokJbOkx7oEQu1xnleMczBUznpf.png" src-width="907" src-height="301"/>
+![](/assets/MokJbOkx7oEQu1xnleMczBUznpf.png)
 
 另外我们还可以关注一下redux-toolkit,这是redux官方推出的为了简化redux使用的一个库,在redux-toolkit中,我们可以简单的通过useSelector()获取store中的数据,通过useDispatch(action)来修改store中的数据
 

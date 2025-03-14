@@ -1,7 +1,6 @@
 ---
 title: Git 与 Gitee/Github
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-jahiwo9tziyhqskzxoyc1wfrntb-jahiwo
+slug: Git 与 Gitee/Github
 sidebar_position: 1
 ---
 
@@ -21,7 +20,7 @@ Author：NA
 
 ## Git 是链表
 
-<img src="/assets/YbOHb1jawoafDFxD3wkcZLpnn7g.png" src-width="602" src-height="185" align="center"/>
+![](/assets/YbOHb1jawoafDFxD3wkcZLpnn7g.png)
 
 当你在 master 分支上 commit 三次后，git 的状态。我们可以看到，用蓝色标识出的三个commit ABC，都是链表上的节点。这是一个<b>单链表</b>，意味着<b>每一个节点有且仅有一个指向它父节点的指针</b>。
 

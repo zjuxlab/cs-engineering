@@ -1,8 +1,9 @@
 ---
 title: Vite
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/vue/gong-neng-kuang-jia/vite/vite
+slug: Vite
 sidebar_position: 2
 ---
+
 
 # Vite
 
@@ -29,17 +30,17 @@ nginx也是这么处理的，常见的规则就是匹配服务器当前目录下
 
 ## 看看不打包的后果：
 
-<img src="/assets/L0oibenNho5s0fxiuecchMDynKc.png" src-width="1624" src-height="985" align="center"/>
+![](/assets/L0oibenNho5s0fxiuecchMDynKc.png)
 
 众所周知啊，我们期末想查自己考试信息的时候都要看30s这个诚信承诺书，确实是有必要的，但是每次都得等30s也太若智了。我们查看网页源码可以发现，js是直接内联的裸代码，没有经过打包与丑化，一眼就能看出这个30s等待是如何实现的，如果我们要跳过这个过程要怎么做呢？很简单，console里输入x=0即可。
 
 那么打包之后的代码会是什么样的呢？在html部分基本上不会有什么变化，查看源码仍有一部分的可读性，js就比较难读了。
 
-<img src="/assets/I1Gob3nBMoF9cQxIlMNcFc5Kn7b.png" src-width="678" src-height="754" align="center"/>
+![](/assets/I1Gob3nBMoF9cQxIlMNcFc5Kn7b.png)
 
 首先我们可以看到，每一行js代码都非常非常长，即便我们使用chrome的格式化功能，还是能发现，这里的变量名、函数等等都不像是给人看的。
 
-<img src="/assets/ZXN8bLglWo7H70xZ3CHc0eQOnGc.png" src-width="722" src-height="804" align="center"/>
+![](/assets/ZXN8bLglWo7H70xZ3CHc0eQOnGc.png)
 
 而且我们可以看到，官网每个页面都有对应的js脚本，但是打包过后只剩下一个js，也就是说vite将所有js都整合到了一个文件里。
 
@@ -53,9 +54,9 @@ nginx也是这么处理的，常见的规则就是匹配服务器当前目录下
 
 我们使用 `npm init vue@latest` 命令来构建我们的vite项目（个人感觉这个是最好上手的）
 
-<img src="/assets/TajkbbxijoZmJXx9ZKocr7fnnef.png" src-width="639" src-height="234" align="center"/>
+![](/assets/TajkbbxijoZmJXx9ZKocr7fnnef.png)
 
-<img src="/assets/HaRrbQKgTo8MpixyQ7acJB8HnGh.png" src-width="664" src-height="226" align="center"/>
+![](/assets/HaRrbQKgTo8MpixyQ7acJB8HnGh.png)
 
 文件基本架构如图所示
 
@@ -71,11 +72,11 @@ nginx也是这么处理的，常见的规则就是匹配服务器当前目录下
 
 我们再来看一下打包后的文件
 
-<img src="/assets/BtzrbIK96oE6SXxp6duceebInrd.png" src-width="640" src-height="173" align="center"/>
+![](/assets/BtzrbIK96oE6SXxp6duceebInrd.png)
 
 其中index.html如下图所示
 
-<img src="/assets/ZmYtbNzwcoVdsVxxMNqcfNoCnPb.png" src-width="813" src-height="366" align="center"/>
+![](/assets/ZmYtbNzwcoVdsVxxMNqcfNoCnPb.png)
 
 index.html中留有
 

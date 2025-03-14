@@ -1,8 +1,9 @@
 ---
 title: React hooks
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/reacthooks/reacthooks
+slug: React hooks
 sidebar_position: 0
 ---
+
 
 # React hooks
 
@@ -372,7 +373,7 @@ function App() {
 
 ### <em>Obliviate!</em> 
 
-<img src="/assets/IJkAb1341otyKnxwqeJcNRALnJg.gif" src-width="245" src-height="155" align="center"/>
+![](/assets/IJkAb1341otyKnxwqeJcNRALnJg.gif)
 
 你或许在之前学过一些这样的东西：
 

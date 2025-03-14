@@ -1,8 +1,9 @@
 ---
 title: GUI开发：Qt
-slug: ruan-jian-gong-cheng-ji-neng-shu/jin-jie-ji-shu/gui-kai-fa-qt/gui-kai-fa-qt
+slug: GUI开发：Qt
 sidebar_position: 1
 ---
+
 
 # GUI开发：Qt
 
@@ -28,11 +29,11 @@ Qt 是一个跨平台的C++应用程序开发框架。它提供给开发者建�
 
 Qt的图形用户界面的基础是QWidget。Qt中所有类型的GUI组件如按钮、标签、工具栏等都派生自QWidget，而QWidget本身则为QObject的子类。Widget负责接收鼠标，键盘和来自窗口系统的其他事件，并描绘了自身显示在屏幕上。每一个GUI组件都是一个widget，widget还可以作为容器，在其内包含其他Widget。
 
-<img src="/assets/YNMgbso2hoTwAIxozLOcQgjHnXg.png" src-width="1307" src-height="593" align="center"/>
+![](/assets/YNMgbso2hoTwAIxozLOcQgjHnXg.png)
 
 左侧的列表是QT的控件列表，列表中的所有控件都可以放在QWidget上。QWidget显示能力包含了透明化等功能。设置透明化，有几种方式，我们这里用到的是设置样式表的方式，下面的例子是设置QLineEdit控件透明无边框，如图：
 
-<img src="/assets/Jr6ObLgqVoNp5BxH9uacHBsPnId.png" src-width="684" src-height="407" align="center"/>
+![](/assets/Jr6ObLgqVoNp5BxH9uacHBsPnId.png)
 
 Qt提供一种托管机制，当Widget于创建时指定父对象，就可把自己的生命周期交给上层对象管理，当上层对象被释放时，自己也被释放。确保对象不再使用时都会被删除。这个登陆窗口中的所有控件的父widget都是这个窗口，所以在窗口被销毁时，所有控件也同时被销毁，不需要自己去控制。所以析构函数的实现函数中可以不进行处理。
 
@@ -56,7 +57,7 @@ connect(ui.pushButton_close, SIGNAL(clicked()), this, SLOT(closeSlot()));
 
 Qt内置的布局管理类型有：QHBoxLayout、QVBoxLayout、QGridLayout和QFormLayout。这些类继承自QLayout，但QLayout非继承自QWidget而是直接源于QObject。他们负责widget的几何管理。想要创建更复杂的版面配置，可以继承QLayout来自定义版面配置管理员。
 
-<img src="/assets/GIH6bcvBgosCORxlLWGcLfSPnMh.png" src-width="1310" src-height="483" align="center"/>
+![](/assets/GIH6bcvBgosCORxlLWGcLfSPnMh.png)
 
 上图中被红框圈起来的，是页面中的布局，布局可以手写，这里只展示设计师中处理的布局。布局分为四种，这里用到了简单的两种，横向布局（QHBoxLayout）向布局（QVBoxLayout）。如上图所示。
 

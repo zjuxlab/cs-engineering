@@ -1,8 +1,9 @@
 ---
 title: Animations module
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/css3/animationsmodule/animationsmodule
+slug: Animations module
 sidebar_position: 2
 ---
+
 
 # Animations module
 
@@ -426,7 +427,7 @@ css动画使用得当，可以在不影响网页整体性能的情况下白赚�
 
 对了，你是否知道滚动也是可以个性化的，试试这些伪元素（离题）
 
-<img src="/assets/VSh4bIuGqouX3yx9bAmcR0I6nZc.png" src-width="1430" src-height="762" align="center"/>
+![](/assets/VSh4bIuGqouX3yx9bAmcR0I6nZc.png)
 
 搭嘎我自己是写不出纯css的实现，蹲一个不用js的方案，详见资源三
 
@@ -530,9 +531,9 @@ css动画使用得当，可以在不影响网页整体性能的情况下白赚�
 
 动画中是出现颜色渐变最多的情况，通常情况下随手弄出来的颜色过渡会不太好看，这时候一种方法是灵活使用时间函数，在不好看的地方狠狠加速，另一种方法是插入一个中间颜色把一个大过渡变成两个小渐变，绕过不好看的那片区域，简单但是有效，小技巧了属于是。
 
-<img src="/assets/ZryCb2E94oS8AQxqyqscQr7tnse.png" src-width="646" src-height="477" align="center"/>
+![](/assets/ZryCb2E94oS8AQxqyqscQr7tnse.png)
 
-<img src="/assets/AbVYb0X5xoZ7JTxdk3McBBpfnNj.png" src-width="644" src-height="475" align="center"/>
+![](/assets/AbVYb0X5xoZ7JTxdk3McBBpfnNj.png)
 
 ###### <b>利用无限动画</b>
 
@@ -540,7 +541,7 @@ css动画使用得当，可以在不影响网页整体性能的情况下白赚�
 
 比如可以做一个转转的唱片
 
-<img src="/assets/TUi7bSgL2oEaqpxUnLFcMFn3nZf.png" src-width="339" src-height="331" align="center"/>
+![](/assets/TUi7bSgL2oEaqpxUnLFcMFn3nZf.png)
 
 还有下面这种很有潜力的代码，想想一下叠放许多图片然后施加无限旋转，有点设计本领的人一定可以整出好活
 

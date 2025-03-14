@@ -1,7 +1,6 @@
 ---
 title: Linux 入门
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-pd7qwgyslifu8gkly2rcbggpneh-pd7qwg
+slug: Linux 入门
 sidebar_position: 6
 ---
 
@@ -202,7 +201,7 @@ linux内核提供了对设备处理和对文件处理的统一接口
 
 ### 系统目录结构
 
-<img src="/assets/CpCAbvsYborFl4x6IMGckLiCnYe.png" src-width="1531" src-height="583" align="center"/>
+![](/assets/CpCAbvsYborFl4x6IMGckLiCnYe.png)
 
 - 根目录（/）：根目录位于分层文件系统的最顶层，用斜线（/）表示。它包含一些标准文件和目录，因此可以说它包含了所有的目录和文件。 
 - /bin：也称二进制（binary）目录，包含了那些供系统管理员和普通用户使用的重要的Linux命令的可执行文件。一些常用的命令有：bash、cat、chmod、cp、date、echo、kill、ln、mail、 mkdir、more、mv、ps、pwd、rm、rmdir、sh、stty、su、tcsh、uname和vi。一些用于系统 恢复的命令如：tar、gzip、gunzip和zcat。还有一些网络命令如：domainname、hostname、 netstat和ping。目录/usr/bin下存放了大部分的用户命令。 
@@ -316,7 +315,7 @@ https://www.zhihu.com/tardis/zm/art/619264530?source_id=1005
 
 接下来我们讨论linux的进程之间关系如何？下面这张图是linux进程树
 
-<img src="/assets/OCdzb6S7momcJUxbeeqcYkedn8e.png" src-width="861" src-height="528" align="center"/>
+![](/assets/OCdzb6S7momcJUxbeeqcYkedn8e.png)
 
 pstree命令可以用图的形式显示当前系统中执行进程的进程树，勾勒出进程间的父子关系。
 
@@ -389,7 +388,7 @@ standard error (sderr) — 2
 >  在命令行的解析中，文件的重定向顺序是从左到右
 > 标准出错先设置成标准输出的拷贝，但是这个时候&1指的标准输出还是显示器，所以错误会打在屏幕上，然后标准输出才改为cat.output.errors，标准输出就输出到这个文件中了。 
 > example：
-> <img src="/assets/UIVBbOyK2ot2i3xQbwPcfSODnrf.png" src-width="1062" src-height="237" align="center"/>
+> ![](/assets/UIVBbOyK2ot2i3xQbwPcfSODnrf.png)
 
 如果要不覆盖内容的重定向输出和错误，可以用&gt;&gt;
 

@@ -20,8 +20,78 @@ module.exports = {
               "items": [
                 {
                   "label": "数据结构",
-                  "type": "doc",
-                  "id": "软件工程技能树/基础入门/基础课程/数据结构/数据结构"
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "树",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "线段树",
+                          "type": "doc",
+                          "id": "软件工程技能树/基础入门/基础课程/数据结构/树/线段树/线段树"
+                        },
+                        {
+                          "label": "可持久化数据结构",
+                          "type": "doc",
+                          "id": "软件工程技能树/基础入门/基础课程/数据结构/树/可持久化数据结构/可持久化数据结构"
+                        },
+                        {
+                          "label": "动态树",
+                          "type": "doc",
+                          "id": "软件工程技能树/基础入门/基础课程/数据结构/树/动态树/动态树"
+                        },
+                        {
+                          "label": "K-D树",
+                          "type": "doc",
+                          "id": "软件工程技能树/基础入门/基础课程/数据结构/树/KD树/KD树"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/基础入门/基础课程/数据结构/树/树"
+                      }
+                    },
+                    {
+                      "label": "图",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/基础课程/数据结构/图/图"
+                    },
+                    {
+                      "label": "基础算法",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "动态规划",
+                          "type": "category",
+                          "items": [
+                            {
+                              "label": "单调队列优化动态规划",
+                              "type": "doc",
+                              "id": "软件工程技能树/基础入门/基础课程/数据结构/基础算法/动态规划/单调队列优化动态规划/单调队列优化动态规划"
+                            }
+                          ],
+                          "link": {
+                            "type": "doc",
+                            "id": "软件工程技能树/基础入门/基础课程/数据结构/基础算法/动态规划/动态规划"
+                          }
+                        },
+                        {
+                          "label": "分块与莫队",
+                          "type": "doc",
+                          "id": "软件工程技能树/基础入门/基础课程/数据结构/基础算法/分块与莫队/分块与莫队"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/基础入门/基础课程/数据结构/基础算法/基础算法"
+                      }
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/基础入门/基础课程/数据结构/数据结构"
+                  }
                 },
                 {
                   "label": "计算机网络",
@@ -31,6 +101,31 @@ module.exports = {
                       "label": "Cookies",
                       "type": "doc",
                       "id": "软件工程技能树/基础入门/基础课程/计算机网络/Cookies/Cookies"
+                    },
+                    {
+                      "label": "三层|网络层",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/基础课程/计算机网络/三层网络层/三层网络层"
+                    },
+                    {
+                      "label": "四层|传输层",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/基础课程/计算机网络/四层传输层/四层传输层"
+                    },
+                    {
+                      "label": "五层|应用层",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "HTTP",
+                          "type": "doc",
+                          "id": "软件工程技能树/基础入门/基础课程/计算机网络/五层应用层/HTTP/HTTP"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/基础入门/基础课程/计算机网络/五层应用层/五层应用层"
+                      }
                     }
                   ],
                   "link": {
@@ -40,8 +135,43 @@ module.exports = {
                 },
                 {
                   "label": "操作系统",
-                  "type": "doc",
-                  "id": "软件工程技能树/基础入门/基础课程/操作系统/操作系统"
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "文件与设备",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "字符设备",
+                          "type": "doc",
+                          "id": "软件工程技能树/基础入门/基础课程/操作系统/文件与设备/字符设备/字符设备"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/基础入门/基础课程/操作系统/文件与设备/文件与设备"
+                      }
+                    },
+                    {
+                      "label": "进程与线程",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/基础课程/操作系统/进程与线程/进程与线程"
+                    },
+                    {
+                      "label": "容器虚拟化",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/基础课程/操作系统/容器虚拟化/容器虚拟化"
+                    },
+                    {
+                      "label": "多路复用",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/基础课程/操作系统/多路复用/多路复用"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/基础入门/基础课程/操作系统/操作系统"
+                  }
                 },
                 {
                   "label": "计算机组成原理",
@@ -235,8 +365,68 @@ module.exports = {
               "items": [
                 {
                   "label": "Docker",
-                  "type": "doc",
-                  "id": "软件工程技能树/基础入门/虚拟化/Docker/Docker"
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "Docker 基础使用",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/虚拟化/Docker/Docker基础使用/Docker基础使用"
+                    },
+                    {
+                      "label": "Docker Compose",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/虚拟化/Docker/DockerCompose/DockerCompose"
+                    },
+                    {
+                      "label": "Dockerfile",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/虚拟化/Docker/Dockerfile/Dockerfile"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/基础入门/虚拟化/Docker/Docker"
+                  }
+                },
+                {
+                  "label": "Kubernetes",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "Minikube",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/虚拟化/Kubernetes/Minikube/Minikube"
+                    },
+                    {
+                      "label": "Traefik",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/虚拟化/Kubernetes/Traefik/Traefik"
+                    },
+                    {
+                      "label": "应用实践",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/虚拟化/Kubernetes/应用实践/应用实践"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/基础入门/虚拟化/Kubernetes/Kubernetes"
+                  }
+                },
+                {
+                  "label": "虚拟机",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "应用实践",
+                      "type": "doc",
+                      "id": "软件工程技能树/基础入门/虚拟化/虚拟机/应用实践/应用实践"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/基础入门/虚拟化/虚拟机/虚拟机"
+                  }
                 }
               ],
               "link": {
@@ -293,17 +483,17 @@ module.exports = {
                   "type": "category",
                   "items": [
                     {
-                      "label": "<audio>",
+                      "label": "audio",
                       "type": "doc",
                       "id": "软件工程技能树/前端技术/前端三件套/HTML5/audio/audio"
                     },
                     {
-                      "label": "<video>",
+                      "label": "video",
                       "type": "doc",
                       "id": "软件工程技能树/前端技术/前端三件套/HTML5/video/video"
                     },
                     {
-                      "label": "<svg>",
+                      "label": "svg",
                       "type": "doc",
                       "id": "软件工程技能树/前端技术/前端三件套/HTML5/svg/svg"
                     }
@@ -325,7 +515,7 @@ module.exports = {
                     {
                       "label": "Grid",
                       "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/grid/grid"
+                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/Grid/Grid"
                     },
                     {
                       "label": "Animations module",
@@ -675,8 +865,28 @@ module.exports = {
                 },
                 {
                   "label": "Rust",
-                  "type": "doc",
-                  "id": "软件工程技能树/后端技术/开发语言/Rust/Rust"
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "Rust哲学与入门安利",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/开发语言/Rust/Rust哲学与入门安利/Rust哲学与入门安利"
+                    },
+                    {
+                      "label": "进阶：理解在类型系统中的生命周期",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/开发语言/Rust/进阶理解在类型系统中的生命周期/进阶理解在类型系统中的生命周期"
+                    },
+                    {
+                      "label": "一种Rust web技术栈",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/开发语言/Rust/一种Rustweb技术栈/一种Rustweb技术栈"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/后端技术/开发语言/Rust/Rust"
+                  }
                 },
                 {
                   "label": "NodeJS",
@@ -694,9 +904,24 @@ module.exports = {
                   }
                 },
                 {
-                  "label": "C#",
+                  "label": "C Sharp",
                   "type": "doc",
-                  "id": "软件工程技能树/后端技术/开发语言/C/C"
+                  "id": "软件工程技能树/后端技术/开发语言/CSharp/CSharp"
+                },
+                {
+                  "label": "Lua",
+                  "type": "doc",
+                  "id": "软件工程技能树/后端技术/开发语言/Lua/Lua"
+                },
+                {
+                  "label": "Swift",
+                  "type": "doc",
+                  "id": "软件工程技能树/后端技术/开发语言/Swift/Swift"
+                },
+                {
+                  "label": "Perl",
+                  "type": "doc",
+                  "id": "软件工程技能树/后端技术/开发语言/Perl/Perl"
                 }
               ],
               "link": {
@@ -737,17 +962,202 @@ module.exports = {
                   "label": "登录 & 鉴权",
                   "type": "doc",
                   "id": "软件工程技能树/后端技术/常见场景/登录鉴权/登录鉴权"
+                },
+                {
+                  "label": "消息队列",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "RabbitMQ",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/常见场景/消息队列/RabbitMQ/RabbitMQ"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/后端技术/常见场景/消息队列/消息队列"
+                  }
                 }
               ],
               "link": {
                 "type": "doc",
                 "id": "软件工程技能树/后端技术/常见场景/常见场景"
               }
+            },
+            {
+              "label": "分布式基础",
+              "type": "category",
+              "items": [
+                {
+                  "label": "分布式系统",
+                  "type": "doc",
+                  "id": "软件工程技能树/后端技术/分布式基础/分布式系统/分布式系统"
+                },
+                {
+                  "label": "分布式理论",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "一致性共识原则",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/分布式基础/分布式理论/一致性共识原则/一致性共识原则"
+                    },
+                    {
+                      "label": "CAP_BASE",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/分布式基础/分布式理论/CAP_BASE/CAP_BASE"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/后端技术/分布式基础/分布式理论/分布式理论"
+                  }
+                },
+                {
+                  "label": "分布式应用",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "分布式事务",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/分布式基础/分布式应用/分布式事务/分布式事务"
+                    },
+                    {
+                      "label": "DTM",
+                      "type": "doc",
+                      "id": "软件工程技能树/后端技术/分布式基础/分布式应用/DTM/DTM"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/后端技术/分布式基础/分布式应用/分布式应用"
+                  }
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/后端技术/分布式基础/分布式基础"
+              }
             }
           ],
           "link": {
             "type": "doc",
             "id": "软件工程技能树/后端技术/后端技术"
+          }
+        },
+        {
+          "label": "运营维护",
+          "type": "category",
+          "items": [
+            {
+              "label": "基础知识",
+              "type": "category",
+              "items": [
+                {
+                  "label": "路由器",
+                  "type": "doc",
+                  "id": "软件工程技能树/运营维护/基础知识/路由器/路由器"
+                },
+                {
+                  "label": "IP_NAT",
+                  "type": "doc",
+                  "id": "软件工程技能树/运营维护/基础知识/IP_NAT/IP_NAT"
+                },
+                {
+                  "label": "虚拟化",
+                  "type": "doc",
+                  "id": "软件工程技能树/运营维护/基础知识/虚拟化/虚拟化"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/运营维护/基础知识/基础知识"
+              }
+            },
+            {
+              "label": "计算机操作",
+              "type": "category",
+              "items": [
+                {
+                  "label": "Linux",
+                  "type": "doc",
+                  "id": "软件工程技能树/运营维护/计算机操作/Linux/Linux"
+                },
+                {
+                  "label": "Windows",
+                  "type": "doc",
+                  "id": "软件工程技能树/运营维护/计算机操作/Windows/Windows"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/运营维护/计算机操作/计算机操作"
+              }
+            },
+            {
+              "label": "负载均衡",
+              "type": "category",
+              "items": [
+                {
+                  "label": "NGINX",
+                  "type": "doc",
+                  "id": "软件工程技能树/运营维护/负载均衡/NGINX/NGINX"
+                },
+                {
+                  "label": "负载均衡器",
+                  "type": "doc",
+                  "id": "软件工程技能树/运营维护/负载均衡/负载均衡器/负载均衡器"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/运营维护/负载均衡/负载均衡"
+              }
+            },
+            {
+              "label": "NGINX",
+              "type": "doc",
+              "id": "软件工程技能树/运营维护/NGINX/NGINX"
+            },
+            {
+              "label": "爬虫",
+              "type": "category",
+              "items": [
+                {
+                  "label": "Request",
+                  "type": "doc",
+                  "id": "软件工程技能树/运营维护/爬虫/Request/Request"
+                },
+                {
+                  "label": "Beautiful Soup",
+                  "type": "doc",
+                  "id": "软件工程技能树/运营维护/爬虫/BeautifulSoup/BeautifulSoup"
+                },
+                {
+                  "label": "Scrapy",
+                  "type": "doc",
+                  "id": "软件工程技能树/运营维护/爬虫/Scrapy/Scrapy"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/运营维护/爬虫/爬虫"
+              }
+            },
+            {
+              "label": "网络管理",
+              "type": "doc",
+              "id": "软件工程技能树/运营维护/网络管理/网络管理"
+            },
+            {
+              "label": "存储管理",
+              "type": "doc",
+              "id": "软件工程技能树/运营维护/存储管理/存储管理"
+            }
+          ],
+          "link": {
+            "type": "doc",
+            "id": "软件工程技能树/运营维护/运营维护"
           }
         },
         {
@@ -788,51 +1198,6 @@ module.exports = {
               "label": "开发管理",
               "type": "doc",
               "id": "软件工程技能树/开发工具/开发管理/开发管理"
-            },
-            {
-              "label": "运营维护",
-              "type": "doc",
-              "id": "软件工程技能树/开发工具/运营维护/运营维护"
-            },
-            {
-              "label": "搜索与提问",
-              "type": "doc",
-              "id": "软件工程技能树/开发工具/搜索与提问/搜索与提问"
-            },
-            {
-              "label": "写作报告",
-              "type": "category",
-              "items": [
-                {
-                  "label": "Latex",
-                  "type": "category",
-                  "items": [
-                    {
-                      "label": "Latex Packages",
-                      "type": "doc",
-                      "id": "软件工程技能树/开发工具/写作报告/Latex/LatexPackages/LatexPackages"
-                    }
-                  ],
-                  "link": {
-                    "type": "doc",
-                    "id": "软件工程技能树/开发工具/写作报告/Latex/Latex"
-                  }
-                },
-                {
-                  "label": "Markdown",
-                  "type": "doc",
-                  "id": "软件工程技能树/开发工具/写作报告/Markdown/Markdown"
-                },
-                {
-                  "label": "Pandoc",
-                  "type": "doc",
-                  "id": "软件工程技能树/开发工具/写作报告/Pandoc/Pandoc"
-                }
-              ],
-              "link": {
-                "type": "doc",
-                "id": "软件工程技能树/开发工具/写作报告/写作报告"
-              }
             }
           ],
           "link": {
@@ -868,6 +1233,156 @@ module.exports = {
                 "type": "doc",
                 "id": "软件工程技能树/进阶技术/量子计算/量子计算"
               }
+            },
+            {
+              "label": "CG",
+              "type": "doc",
+              "id": "软件工程技能树/进阶技术/CG/CG"
+            },
+            {
+              "label": "客户端开发",
+              "type": "category",
+              "items": [
+                {
+                  "label": "游戏引擎",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "Unity",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "U3D",
+                          "type": "doc",
+                          "id": "软件工程技能树/进阶技术/客户端开发/游戏引擎/Unity/U3D/U3D"
+                        },
+                        {
+                          "label": "U2D",
+                          "type": "doc",
+                          "id": "软件工程技能树/进阶技术/客户端开发/游戏引擎/Unity/U2D/U2D"
+                        },
+                        {
+                          "label": "测试",
+                          "type": "category",
+                          "items": [
+                            {
+                              "label": "Unity Test Runner",
+                              "type": "doc",
+                              "id": "软件工程技能树/进阶技术/客户端开发/游戏引擎/Unity/测试/UnityTestRunner/UnityTestRunner"
+                            },
+                            {
+                              "label": "AltUnity",
+                              "type": "doc",
+                              "id": "软件工程技能树/进阶技术/客户端开发/游戏引擎/Unity/测试/AltUnity/AltUnity"
+                            }
+                          ],
+                          "link": {
+                            "type": "doc",
+                            "id": "软件工程技能树/进阶技术/客户端开发/游戏引擎/Unity/测试/测试"
+                          }
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/进阶技术/客户端开发/游戏引擎/Unity/Unity"
+                      }
+                    },
+                    {
+                      "label": "Unreal",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "UE5",
+                          "type": "doc",
+                          "id": "软件工程技能树/进阶技术/客户端开发/游戏引擎/Unreal/UE5/UE5"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/进阶技术/客户端开发/游戏引擎/Unreal/Unreal"
+                      }
+                    },
+                    {
+                      "label": "Cocos",
+                      "type": "doc",
+                      "id": "软件工程技能树/进阶技术/客户端开发/游戏引擎/Cocos/Cocos"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/进阶技术/客户端开发/游戏引擎/游戏引擎"
+                  }
+                },
+                {
+                  "label": "Android",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "开发语言",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "Kotlin",
+                          "type": "doc",
+                          "id": "软件工程技能树/进阶技术/客户端开发/Android/开发语言/Kotlin/Kotlin"
+                        },
+                        {
+                          "label": "Java",
+                          "type": "doc",
+                          "id": "软件工程技能树/进阶技术/客户端开发/Android/开发语言/Java/Java"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/进阶技术/客户端开发/Android/开发语言/开发语言"
+                      }
+                    },
+                    {
+                      "label": "UI 框架",
+                      "type": "doc",
+                      "id": "软件工程技能树/进阶技术/客户端开发/Android/UI框架/UI框架"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/进阶技术/客户端开发/Android/Android"
+                  }
+                },
+                {
+                  "label": "iOS",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "开发语言",
+                      "type": "doc",
+                      "id": "软件工程技能树/进阶技术/客户端开发/iOS/开发语言/开发语言"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/进阶技术/客户端开发/iOS/iOS"
+                  }
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/进阶技术/客户端开发/客户端开发"
+              }
+            },
+            {
+              "label": "大数据",
+              "type": "category",
+              "items": [
+                {
+                  "label": "Hadoop",
+                  "type": "doc",
+                  "id": "软件工程技能树/进阶技术/大数据/Hadoop/Hadoop"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/进阶技术/大数据/大数据"
+              }
             }
           ],
           "link": {
@@ -886,7 +1401,7 @@ module.exports = {
       "type": "category",
       "items": [
         {
-          "label": "人工智能（AI）",
+          "label": "人工智能 AI",
           "type": "category",
           "items": [
             {
@@ -896,22 +1411,22 @@ module.exports = {
                 {
                   "label": "搜索算法",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(AI)/机器学习ML/搜索算法/搜索算法"
+                  "id": "软件科研技能树/人工智能AI/机器学习ML/搜索算法/搜索算法"
                 },
                 {
                   "label": "机器推理",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(AI)/机器学习ML/机器推理/机器推理"
+                  "id": "软件科研技能树/人工智能AI/机器学习ML/机器推理/机器推理"
                 },
                 {
                   "label": "分类算法",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(AI)/机器学习ML/分类算法/分类算法"
+                  "id": "软件科研技能树/人工智能AI/机器学习ML/分类算法/分类算法"
                 }
               ],
               "link": {
                 "type": "doc",
-                "id": "软件科研技能树/人工智能(AI)/机器学习ML/机器学习ML"
+                "id": "软件科研技能树/人工智能AI/机器学习ML/机器学习ML"
               }
             },
             {
@@ -921,7 +1436,7 @@ module.exports = {
                 {
                   "label": "CS231n",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(AI)/深度学习DL/CS231n/CS231n"
+                  "id": "软件科研技能树/人工智能AI/深度学习DL/CS231n/CS231n"
                 },
                 {
                   "label": "框架",
@@ -930,23 +1445,23 @@ module.exports = {
                     {
                       "label": "Pytorch",
                       "type": "doc",
-                      "id": "软件科研技能树/人工智能(AI)/深度学习DL/框架/Pytorch/Pytorch"
+                      "id": "软件科研技能树/人工智能AI/深度学习DL/框架/Pytorch/Pytorch"
                     },
                     {
                       "label": "TensorFlow",
                       "type": "doc",
-                      "id": "软件科研技能树/人工智能(AI)/深度学习DL/框架/TensorFlow/TensorFlow"
+                      "id": "软件科研技能树/人工智能AI/深度学习DL/框架/TensorFlow/TensorFlow"
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件科研技能树/人工智能(AI)/深度学习DL/框架/框架"
+                    "id": "软件科研技能树/人工智能AI/深度学习DL/框架/框架"
                   }
                 }
               ],
               "link": {
                 "type": "doc",
-                "id": "软件科研技能树/人工智能(AI)/深度学习DL/深度学习DL"
+                "id": "软件科研技能树/人工智能AI/深度学习DL/深度学习DL"
               }
             },
             {
@@ -956,53 +1471,53 @@ module.exports = {
                 {
                   "label": "线代基础",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/线代基础/线代基础"
+                  "id": "软件科研技能树/人工智能AI/计算机视觉CV/线代基础/线代基础"
                 },
                 {
                   "label": "光度图像",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/光度图像/光度图像"
+                  "id": "软件科研技能树/人工智能AI/计算机视觉CV/光度图像/光度图像"
                 },
                 {
                   "label": "图像处理",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/图像处理/图像处理"
+                  "id": "软件科研技能树/人工智能AI/计算机视觉CV/图像处理/图像处理"
                 },
                 {
                   "label": "模型拟合和优化",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/模型拟合和优化/模型拟合和优化"
+                  "id": "软件科研技能树/人工智能AI/计算机视觉CV/模型拟合和优化/模型拟合和优化"
                 }
               ],
               "link": {
                 "type": "doc",
-                "id": "软件科研技能树/人工智能(AI)/计算机视觉CV/计算机视觉CV"
+                "id": "软件科研技能树/人工智能AI/计算机视觉CV/计算机视觉CV"
               }
             },
             {
               "label": "自然语言处理 NLP",
               "type": "doc",
-              "id": "软件科研技能树/人工智能(AI)/自然语言处理NLP/自然语言处理NLP"
+              "id": "软件科研技能树/人工智能AI/自然语言处理NLP/自然语言处理NLP"
             },
             {
               "label": "信息检索与挖掘",
               "type": "doc",
-              "id": "软件科研技能树/人工智能(AI)/信息检索与挖掘/信息检索与挖掘"
+              "id": "软件科研技能树/人工智能AI/信息检索与挖掘/信息检索与挖掘"
             },
             {
               "label": "时间序列数据",
               "type": "doc",
-              "id": "软件科研技能树/人工智能(AI)/时间序列数据/时间序列数据"
+              "id": "软件科研技能树/人工智能AI/时间序列数据/时间序列数据"
             },
             {
               "label": "强化学习",
               "type": "doc",
-              "id": "软件科研技能树/人工智能(AI)/强化学习/强化学习"
+              "id": "软件科研技能树/人工智能AI/强化学习/强化学习"
             },
             {
               "label": "Transformer",
               "type": "doc",
-              "id": "软件科研技能树/人工智能(AI)/Transformer/Transformer"
+              "id": "软件科研技能树/人工智能AI/Transformer/Transformer"
             },
             {
               "label": "Diffusion",
@@ -1011,123 +1526,218 @@ module.exports = {
                 {
                   "label": "Diffusion从入门到放弃",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(AI)/Diffusion/Diffusion从入门到放弃/Diffusion从入门到放弃"
+                  "id": "软件科研技能树/人工智能AI/Diffusion/Diffusion从入门到放弃/Diffusion从入门到放弃"
                 },
                 {
                   "label": "浅谈Diffusion微调",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(AI)/Diffusion/浅谈Diffusion微调/浅谈Diffusion微调"
+                  "id": "软件科研技能树/人工智能AI/Diffusion/浅谈Diffusion微调/浅谈Diffusion微调"
                 },
                 {
-                  "label": "DPM-Solver: A Fast ODE Solver for Diffusion",
+                  "label": "DPM-Solver",
                   "type": "doc",
-                  "id": "软件科研技能树/人工智能(AI)/Diffusion/DPMSolverAFastODESolverforDiffusion/DPMSolverAFastODESolverforDiffusion"
+                  "id": "软件科研技能树/人工智能AI/Diffusion/DPMSolver/DPMSolver"
                 }
               ],
               "link": {
                 "type": "doc",
-                "id": "软件科研技能树/人工智能(AI)/Diffusion/Diffusion"
+                "id": "软件科研技能树/人工智能AI/Diffusion/Diffusion"
               }
             }
           ],
           "link": {
             "type": "doc",
-            "id": "软件科研技能树/人工智能(AI)/人工智能(AI)"
+            "id": "软件科研技能树/人工智能AI/人工智能AI"
           }
         },
         {
-          "label": "计算机系统（System）",
+          "label": "计算机系统 System",
           "type": "category",
           "items": [
             {
               "label": "计算机网络",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(System)/计算机网络/计算机网络"
+              "id": "软件科研技能树/计算机系统System/计算机网络/计算机网络"
             },
             {
               "label": "高性能计算",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(System)/高性能计算/高性能计算"
+              "id": "软件科研技能树/计算机系统System/高性能计算/高性能计算"
             },
             {
               "label": "数据库",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(System)/数据库/数据库"
+              "id": "软件科研技能树/计算机系统System/数据库/数据库"
             },
             {
               "label": "操作系统",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(System)/操作系统/操作系统"
+              "id": "软件科研技能树/计算机系统System/操作系统/操作系统"
             },
             {
               "label": "计算机体系结构",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(System)/计算机体系结构/计算机体系结构"
+              "id": "软件科研技能树/计算机系统System/计算机体系结构/计算机体系结构"
             },
             {
               "label": "MLsys",
               "type": "doc",
-              "id": "软件科研技能树/计算机系统(System)/MLsys/MLsys"
+              "id": "软件科研技能树/计算机系统System/MLsys/MLsys"
             }
           ],
           "link": {
             "type": "doc",
-            "id": "软件科研技能树/计算机系统(System)/计算机系统(System)"
+            "id": "软件科研技能树/计算机系统System/计算机系统System"
           }
         },
         {
-          "label": "计算机理论（Theory）",
+          "label": "计算机理论 Theory",
           "type": "category",
           "items": [
             {
               "label": "密码学",
               "type": "doc",
-              "id": "软件科研技能树/计算机理论(Theory)/密码学/密码学"
+              "id": "软件科研技能树/计算机理论Theory/密码学/密码学"
             },
             {
               "label": "算法与复杂性",
               "type": "doc",
-              "id": "软件科研技能树/计算机理论(Theory)/算法与复杂性/算法与复杂性"
+              "id": "软件科研技能树/计算机理论Theory/算法与复杂性/算法与复杂性"
             }
           ],
           "link": {
             "type": "doc",
-            "id": "软件科研技能树/计算机理论(Theory)/计算机理论(Theory)"
+            "id": "软件科研技能树/计算机理论Theory/计算机理论Theory"
           }
         },
         {
-          "label": "交叉领域（Interdisciplinary）",
+          "label": "交叉领域 Interdisciplinary",
           "type": "category",
           "items": [
             {
               "label": "AI4Science",
               "type": "doc",
-              "id": "软件科研技能树/交叉领域(Interdisciplinary)/AI4Science/AI4Science"
+              "id": "软件科研技能树/交叉领域Interdisciplinary/AI4Science/AI4Science"
             },
             {
               "label": "计算机图形学 CG",
               "type": "doc",
-              "id": "软件科研技能树/交叉领域(Interdisciplinary)/计算机图形学CG/计算机图形学CG"
+              "id": "软件科研技能树/交叉领域Interdisciplinary/计算机图形学CG/计算机图形学CG"
             },
             {
               "label": "人机交互 HCI",
               "type": "doc",
-              "id": "软件科研技能树/交叉领域(Interdisciplinary)/人机交互HCI/人机交互HCI"
+              "id": "软件科研技能树/交叉领域Interdisciplinary/人机交互HCI/人机交互HCI"
             },
             {
               "label": "可视化",
               "type": "doc",
-              "id": "软件科研技能树/交叉领域(Interdisciplinary)/可视化/可视化"
+              "id": "软件科研技能树/交叉领域Interdisciplinary/可视化/可视化"
             },
             {
               "label": "机器人学 Robotics",
               "type": "doc",
-              "id": "软件科研技能树/交叉领域(Interdisciplinary)/机器人学Robotics/机器人学Robotics"
+              "id": "软件科研技能树/交叉领域Interdisciplinary/机器人学Robotics/机器人学Robotics"
             }
           ],
           "link": {
             "type": "doc",
-            "id": "软件科研技能树/交叉领域(Interdisciplinary)/交叉领域(Interdisciplinary)"
+            "id": "软件科研技能树/交叉领域Interdisciplinary/交叉领域Interdisciplinary"
+          }
+        },
+        {
+          "label": "学术写作",
+          "type": "category",
+          "items": [
+            {
+              "label": "写作",
+              "type": "category",
+              "items": [
+                {
+                  "label": "Latex",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "Latex Packages",
+                      "type": "doc",
+                      "id": "软件科研技能树/学术写作/写作/Latex/LatexPackages/LatexPackages"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件科研技能树/学术写作/写作/Latex/Latex"
+                  }
+                },
+                {
+                  "label": "Markdown",
+                  "type": "doc",
+                  "id": "软件科研技能树/学术写作/写作/Markdown/Markdown"
+                },
+                {
+                  "label": "Pandoc",
+                  "type": "doc",
+                  "id": "软件科研技能树/学术写作/写作/Pandoc/Pandoc"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件科研技能树/学术写作/写作/写作"
+              }
+            },
+            {
+              "label": "排版",
+              "type": "doc",
+              "id": "软件科研技能树/学术写作/排版/排版"
+            },
+            {
+              "label": "论文管理工具",
+              "type": "category",
+              "items": [
+                {
+                  "label": "Zotero",
+                  "type": "doc",
+                  "id": "软件科研技能树/学术写作/论文管理工具/Zotero/Zotero"
+                },
+                {
+                  "label": "EndNote",
+                  "type": "doc",
+                  "id": "软件科研技能树/学术写作/论文管理工具/EndNote/EndNote"
+                },
+                {
+                  "label": "小绿鲸",
+                  "type": "doc",
+                  "id": "软件科研技能树/学术写作/论文管理工具/小绿鲸/小绿鲸"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件科研技能树/学术写作/论文管理工具/论文管理工具"
+              }
+            },
+            {
+              "label": "引用规范",
+              "type": "category",
+              "items": [
+                {
+                  "label": "APA",
+                  "type": "doc",
+                  "id": "软件科研技能树/学术写作/引用规范/APA/APA"
+                },
+                {
+                  "label": "Chicago",
+                  "type": "doc",
+                  "id": "软件科研技能树/学术写作/引用规范/Chicago/Chicago"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件科研技能树/学术写作/引用规范/引用规范"
+              }
+            }
+          ],
+          "link": {
+            "type": "doc",
+            "id": "软件科研技能树/学术写作/学术写作"
           }
         }
       ],

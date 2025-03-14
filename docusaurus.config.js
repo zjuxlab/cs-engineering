@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'CS-Engineering',
   tagline: '浙江大学启真交叉学科创新创业实验室',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/xlab-logo.svg',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -102,9 +102,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'sidebar',
             position: 'left',
-            label: 'Tutoria',
+            label: '知识空间',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: '博客', position: 'left'},
           {
             href: 'https://github.com/zjuxlab/cs-engineering',
             label: 'GitHub',

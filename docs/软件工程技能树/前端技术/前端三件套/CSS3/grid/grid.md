@@ -1,8 +1,9 @@
 ---
 title: Grid
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/css3/grid/grid
+slug: Grid
 sidebar_position: 1
 ---
+
 
 # Grid
 
@@ -83,7 +84,7 @@ grid 的基础非常直观，简单来讲，grid就是首先在父级创造一�
 
 在介绍具体的属性之前，先把几个术语解释一下。
 
-<img src="/assets/Du4Xbm1T4oLbsDx9VAfcV4R7nTh.png" src-width="869" src-height="577" align="center"/>
+![](/assets/Du4Xbm1T4oLbsDx9VAfcV4R7nTh.png)
 
 ##### <b>grid container</b>
 
@@ -250,7 +251,7 @@ repeate (n , xx yy) 相当于写n 次后面的东西。
 
 效果就是这样，很直观。
 
-<img src="/assets/IVVybKcproHl4Wx3Mircj19dnPc.png" src-width="699" src-height="466" align="center"/>
+![](/assets/IVVybKcproHl4Wx3Mircj19dnPc.png)
 
 ##### <b>grid-template</b>
 
@@ -298,13 +299,13 @@ repeate (n , xx yy) 相当于写n 次后面的东西。
  }
 ```
 
-<img src="/assets/KAUWbQoBLoXFuRxrZmRcccdknDd.png" src-width="770" src-height="271" align="center"/>
+![](/assets/KAUWbQoBLoXFuRxrZmRcccdknDd.png)
 
-<img src="/assets/TyAAbpwino8TQ0xrEz9ctgeXnRe.png" src-width="774" src-height="277" align="center"/>
+![](/assets/TyAAbpwino8TQ0xrEz9ctgeXnRe.png)
 
-<img src="/assets/XptMb7eTpoIvg4xKaQlclbGAn7f.png" src-width="783" src-height="284" align="center"/>
+![](/assets/XptMb7eTpoIvg4xKaQlclbGAn7f.png)
 
-<img src="/assets/M9ULbdk97oDYK6xjxiccH7RRnyg.png" src-width="777" src-height="290" align="center"/>
+![](/assets/M9ULbdk97oDYK6xjxiccH7RRnyg.png)
 
 ##### <b>align-self</b>
 
@@ -316,15 +317,15 @@ repeate (n , xx yy) 相当于写n 次后面的东西。
  }
 ```
 
-<img src="/assets/TX6HbfOrIoVQusxTZuEcamT1nkb.png" src-width="775" src-height="276" align="center"/>
+![](/assets/TX6HbfOrIoVQusxTZuEcamT1nkb.png)
 
-<img src="/assets/WS3TbnacgoGQcPxhDPMcM6a8nsf.png" src-width="785" src-height="284" align="center"/>
+![](/assets/WS3TbnacgoGQcPxhDPMcM6a8nsf.png)
 
-<img src="/assets/H62fb3fieohsWfxFyb7czzoanNb.png" src-width="781" src-height="216" align="center"/>
+![](/assets/H62fb3fieohsWfxFyb7czzoanNb.png)
 
-<img src="/assets/CySEbOpxNoML94xfPYpccsE5nbe.png" src-width="767" src-height="139" align="center"/>
+![](/assets/CySEbOpxNoML94xfPYpccsE5nbe.png)
 
-<img src="/assets/SqocbhmXroRXCzxs0Jcc64MBn4f.png" src-width="783" src-height="289" align="center"/>
+![](/assets/SqocbhmXroRXCzxs0Jcc64MBn4f.png)
 
 ##### <b>place-self</b>
 
@@ -355,7 +356,7 @@ grid也支持gap，注意到有两种描述方式，一种是有前缀的一种�
  }
 ```
 
-<img src="/assets/XyTSbjTo8oG9tKxLPOPcNlVjnBf.png" src-width="684" src-height="555" align="center"/>
+![](/assets/XyTSbjTo8oG9tKxLPOPcNlVjnBf.png)
 
 ##### <b>gap grid-gap</b>
 
@@ -381,13 +382,13 @@ column-gap 和 row-gap的缩写，同样现在一般用gap
  }
 ```
 
-<img src="/assets/A4DRbYbWIoFug2xCoSNckHY6nIc.png" src-width="691" src-height="251" align="center"/>
+![](/assets/A4DRbYbWIoFug2xCoSNckHY6nIc.png)
 
-<img src="/assets/PDlLb6Qyuoh59oxsJ3Qcs5xZnQe.png" src-width="699" src-height="254" align="center"/>
+![](/assets/PDlLb6Qyuoh59oxsJ3Qcs5xZnQe.png)
 
-<img src="/assets/LTwUbXCDSoX1LmxHs7hcEuu2nNd.png" src-width="705" src-height="249" align="center"/>
+![](/assets/LTwUbXCDSoX1LmxHs7hcEuu2nNd.png)
 
-<img src="/assets/NnLTbxh9Po5tZVxwOIPcF8hjnAg.png" src-width="695" src-height="254" align="center"/>
+![](/assets/NnLTbxh9Po5tZVxwOIPcF8hjnAg.png)
 
 效果相当于所有子元素写justify-self
 
@@ -426,19 +427,19 @@ column-gap 和 row-gap的缩写，同样现在一般用gap
 
 效果已经截在这里了,注意和justify-items 的不同，justify-content 会在父级的主轴上调整列的分布。
 
-<img src="/assets/T8CMbDuRAoPAjdx77RucZxrwnnf.png" src-width="824" src-height="397" align="center"/>
+![](/assets/T8CMbDuRAoPAjdx77RucZxrwnnf.png)
 
-<img src="/assets/SMx7bYcDzorhtgxflUFcG0cMnMh.png" src-width="807" src-height="399" align="center"/>
+![](/assets/SMx7bYcDzorhtgxflUFcG0cMnMh.png)
 
-<img src="/assets/TMmNbBMT0oGsb2xO5FQcL81rnae.png" src-width="813" src-height="408" align="center"/>
+![](/assets/TMmNbBMT0oGsb2xO5FQcL81rnae.png)
 
-<img src="/assets/FPMebHgQforGkXxOmKgcMxUvnZe.png" src-width="806" src-height="409" align="center"/>
+![](/assets/FPMebHgQforGkXxOmKgcMxUvnZe.png)
 
-<img src="/assets/XXgObW0b3o2RmFxyfPFcHo5Onxh.png" src-width="819" src-height="414" align="center"/>
+![](/assets/XXgObW0b3o2RmFxyfPFcHo5Onxh.png)
 
-<img src="/assets/QGm0btVy1oNpqbx3NRBcpdEQnZj.png" src-width="813" src-height="410" align="center"/>
+![](/assets/QGm0btVy1oNpqbx3NRBcpdEQnZj.png)
 
-<img src="/assets/A943b7YlYo9g5fxdlkYcTGjAnBd.png" src-width="815" src-height="403" align="center"/>
+![](/assets/A943b7YlYo9g5fxdlkYcTGjAnBd.png)
 
 ##### <b>align-content</b>
 
@@ -450,17 +451,17 @@ column-gap 和 row-gap的缩写，同样现在一般用gap
  }
 ```
 
-<img src="/assets/Okl5bwSPDoQfQpxzuj1cGK7bnYd.png" src-width="805" src-height="731" align="center"/>
+![](/assets/Okl5bwSPDoQfQpxzuj1cGK7bnYd.png)
 
-<img src="/assets/NHSGbGj69oZfuBxS2Fxc21tinqf.png" src-width="795" src-height="719" align="center"/>
+![](/assets/NHSGbGj69oZfuBxS2Fxc21tinqf.png)
 
-<img src="/assets/P8CybKDUJoO9VRxCpnPckaWFnOh.png" src-width="824" src-height="737" align="center"/>
+![](/assets/P8CybKDUJoO9VRxCpnPckaWFnOh.png)
 
-<img src="/assets/ViVvbi5oootRRhxP7KCcgUNAn8f.png" src-width="809" src-height="726" align="center"/>
+![](/assets/ViVvbi5oootRRhxP7KCcgUNAn8f.png)
 
-<img src="/assets/HlYAbgiYzoflUYxYOk8csFlYnQf.png" src-width="800" src-height="727" align="center"/>
+![](/assets/HlYAbgiYzoflUYxYOk8csFlYnQf.png)
 
-<img src="/assets/VZcBb4xFRoBBZwx6BwtcGpjEn5e.png" src-width="808" src-height="733" align="center"/>
+![](/assets/VZcBb4xFRoBBZwx6BwtcGpjEn5e.png)
 
 效果还是比较一目了然的，这块就是和flex相互借鉴。也在很大程度上解释了为啥flex和grid可以相互替代使用。
 
@@ -493,7 +494,7 @@ column-gap 和 row-gap的缩写，同样现在一般用gap
 
 也就是这样（行同理，在扩展一维的时候如果另外一纬还在已知范围里，就会直接使用对应的宽或者高）
 
-<img src="/assets/E8XpbtHEBocPFAxaDXwcsUSRnBd.png" src-width="774" src-height="587" align="center"/>
+![](/assets/E8XpbtHEBocPFAxaDXwcsUSRnBd.png)
 
 如果我申明了 grid-auto-columns grid-auto-rows 又会发生什么呢？
 
@@ -505,7 +506,7 @@ column-gap 和 row-gap的缩写，同样现在一般用gap
 
 隐式构造的格子会按照auto里面的大小来
 
-<img src="/assets/BJmHbOdXEomFiHxG7sLcvAhMnQh.png" src-width="810" src-height="467" align="center"/>
+![](/assets/BJmHbOdXEomFiHxG7sLcvAhMnQh.png)
 
 ##### <b>grid-auto-flow</b>
 
@@ -553,11 +554,11 @@ auto-flow就是干这个的
 
 没有给 b c d 指定位置，结果会怎么样呢？
 
-<img src="/assets/LBDabs99Ao1ronxP7jCcKFbJnEd.png" src-width="806" src-height="256" align="center"/>
+![](/assets/LBDabs99Ao1ronxP7jCcKFbJnEd.png)
 
 假如改成column什么效果？
 
-<img src="/assets/Jj6pb4IpRoUAp8xpliGcnaJdnSf.png" src-width="801" src-height="244" align="center"/>
+![](/assets/Jj6pb4IpRoUAp8xpliGcnaJdnSf.png)
 
 ##### <b>grid</b>
 
@@ -668,11 +669,11 @@ auto 和 fr 很像，不过 fr在竞争空间的时候优于auto
  }
 ```
 
-<img src="/assets/N61jbb6UwokBKZxjxNDcisMEnlf.png" src-width="1239" src-height="829" align="center"/>
+![](/assets/N61jbb6UwokBKZxjxNDcisMEnlf.png)
 
 当子元素有content之后auto还是可以站起来的：
 
-<img src="/assets/ESOPbJRFaoth3xx4m8TcMg6xnkb.png" src-width="1246" src-height="829" align="center"/>
+![](/assets/ESOPbJRFaoth3xx4m8TcMg6xnkb.png)
 
 ##### <b>Sizing Functions</b>
 
@@ -750,7 +751,7 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 我们得到这样的结果（还要设置下子元素的格式，不过和布局没关系）
 
-<img src="/assets/VDF7bQFi0o370jxxwNocHfIRnGb.png" src-width="1052" src-height="724" align="center"/>
+![](/assets/VDF7bQFi0o370jxxwNocHfIRnGb.png)
 
 可以看到，grid自动生成了列，而且有几个元素就会生成多少。还有个可以使用gap的附加好处。
 
@@ -768,7 +769,7 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 思考一下这个代码是如何工作的，首先auto-fit尽量往一行里塞列，一开始的列都能取minmax的上界 1 fr，所以这些列都是等宽的，然后当列越来越多直到再增加列就会导致掉下200px的下界；这时候列就创建完成了，行会自动扩展不用去管。效果就是这样：
 
-<img src="/assets/A4W2buJ0So4ENcxrC07c5TEFnQD.png" src-width="2383" src-height="736" align="center"/>
+![](/assets/A4W2buJ0So4ENcxrC07c5TEFnQD.png)
 
 这种效果的场景是非常广的
 
@@ -784,7 +785,7 @@ repeat(auto-fill, minmax(min(10rem, 100%), 1fr))
 
 ###### <b>生成一个tags集合</b>
 
-<img src="/assets/X6f0bj1Eao8lSlxFxrnco6DinYf.png" src-width="1151" src-height="440" align="center"/>
+![](/assets/X6f0bj1Eao8lSlxFxrnco6DinYf.png)
 
 flex那边也实现过这个场景，这会就能看到grid 也一样行了，而且还简单些，直接使用上面的trick；
 
@@ -812,7 +813,7 @@ flex那边也实现过这个场景，这会就能看到grid 也一样行了，�
 
 还是对比flex，我们来实现导航栏；
 
-<img src="/assets/Q5yhbHtHGo5C59xa6TwcFUvnnKe.png" src-width="1235" src-height="66" align="center"/>
+![](/assets/Q5yhbHtHGo5C59xa6TwcFUvnnKe.png)
 
 ```css
 .navbr{
@@ -890,7 +891,7 @@ flex那边也实现过这个场景，这会就能看到grid 也一样行了，�
  /<em>重叠部分用z-index决定上下</em>/
 ```
 
-<img src="/assets/QPtnbhTjyosqclxjdlCc8Jl0n1j.png" src-width="1392" src-height="954" align="center"/>
+![](/assets/QPtnbhTjyosqclxjdlCc8Jl0n1j.png)
 
 #### <b>Grid advance以及案例</b>
 
@@ -900,17 +901,17 @@ flex那边也实现过这个场景，这会就能看到grid 也一样行了，�
 
 grid布局的基本思想是拆分，以下面的为例，第一张是flex的布局设计，第二张是grid的布局设计。
 
-<img src="/assets/SUWXbubZXoEcCdxHgR9cEXUanxY.png" src-width="1237" src-height="731" align="center"/>
+![](/assets/SUWXbubZXoEcCdxHgR9cEXUanxY.png)
 
-<img src="/assets/GxxsbH3GCo7PVxxem0Lc7WqRn8f.png" src-width="1237" src-height="742" align="center"/>
+![](/assets/GxxsbH3GCo7PVxxem0Lc7WqRn8f.png)
 
 这个有两个列，当时就说了用grid更加合适，当然用flex也是可以做的👇(当然不是强迫使用者所有圈框框的时候都必须使用grid，各种布局方法灵活切换才是关键)
 
-<img src="/assets/XYllbPbfmorN8NxilM4cOfA4npg.png" src-width="1243" src-height="655" align="center"/>
+![](/assets/XYllbPbfmorN8NxilM4cOfA4npg.png)
 
 这个就不太适合，原因是太空了，相比二维描述，不如一维描述快，flex更加适合这个布局（或者可以先用grid把轮廓分出来，然后对主体用flex，下方一堆图的地方用grid是极好的）👇
 
-<img src="/assets/RIMfb3qOkov0WbxFMw9cjyIKnz0.png" src-width="1230" src-height="652" align="center"/>
+![](/assets/RIMfb3qOkov0WbxFMw9cjyIKnz0.png)
 
 所以说flex grid要长短互补，那个场景适合用哪个。
 
@@ -925,7 +926,7 @@ grid布局的基本思想是拆分，以下面的为例，第一张是flex的布
 
 加强一下grid的使用能力，手作一个日历吧；
 
-<img src="/assets/FldfbA0R8oiQIaxbuWUclxeunGr.png" src-width="594" src-height="439" align="center"/>
+![](/assets/FldfbA0R8oiQIaxbuWUclxeunGr.png)
 
 像这样：
 
@@ -984,7 +985,7 @@ body {
 
 就可以得到这种效果了
 
-<img src="/assets/DuE7bFAPWoIlqzx7zTxcbjNLnvQ.png" src-width="810" src-height="794" align="center"/>
+![](/assets/DuE7bFAPWoIlqzx7zTxcbjNLnvQ.png)
 
 ##### <b>让trick中的area支起来</b>
 
@@ -994,7 +995,7 @@ body {
 
 假如一开始自动生成的格点是这样的
 
-<img src="/assets/FUC6buL2govCvjxej49ca7w6neh.png" src-width="1630" src-height="502" align="center"/>
+![](/assets/FUC6buL2govCvjxej49ca7w6neh.png)
 
 我们可以使用伪元素来撑大这些格子，而不产生额外的影响（伪元素的好处）
 
@@ -1011,7 +1012,7 @@ body {
  }
 ```
 
-<img src="/assets/DrlIbRpGco4BZox1Nw7cNNBEn2c.png" src-width="1658" src-height="1112" align="center"/>
+![](/assets/DrlIbRpGco4BZox1Nw7cNNBEn2c.png)
 
 padding-bottom:100% 意味着高至少是和宽一样的，可以换成具体的高度之类的，这部分其实就是控制伪元素的大小了，和正常元素没有任何区别。
 

@@ -1,8 +1,9 @@
 ---
 title: MySQL
-slug: ruan-jian-gong-cheng-ji-neng-shu/hou-duan-ji-shu/shu-ju-ku-cao-zuo/sql/mysql/mysql
+slug: MySQL
 sidebar_position: 1
 ---
+
 
 # MySQL
 
@@ -39,7 +40,7 @@ MySQL的基本信息：
     ```bash
 systemctl status mysql
 ```
-    <img src="/assets/Dtq6b9LYLonJ5yxF56CcYT06nBg.png" src-width="1202" src-height="366" align="center"/>
+    ![](/assets/Dtq6b9LYLonJ5yxF56CcYT06nBg.png)
 
 2. 初始化登录密码
 
@@ -49,7 +50,7 @@ USE mysql
 ALTER USER  'root'@'localhost' IDENTIFIED BY 'the-new-password';
 ```
 
-<img src="/assets/JyF9b5J53oKysSxM04tc9FFungT.png" src-width="1193" src-height="631" align="center"/>
+![](/assets/JyF9b5J53oKysSxM04tc9FFungT.png)
 
 将`”the-new-passwd”` 替换成你想要的密码。
 
@@ -78,7 +79,7 @@ user代表你的MySQL账户的用户名
 SELECT VERSION(), CURRENT_DATE;
 ```
 
-<img src="/assets/DeF2bvKiZo9HguxVyQMcNvJ1nxg.png" src-width="1171" src-height="392" align="center"/>
+![](/assets/DeF2bvKiZo9HguxVyQMcNvJ1nxg.png)
 
 这个查询说明了关于<b>mysql</b>的几件事。
 
@@ -101,7 +102,7 @@ SeLeCt vErSiOn(), current_DATE;
 
 下表显示了你可能看到的每个提示，并总结了它们对<b>mysql</b>所处状态的含义。
 
-<img src="/assets/MeRFb1hfsopI7RxFeOicKg7Enge.png" src-width="966" src-height="480" align="center"/>
+![](/assets/MeRFb1hfsopI7RxFeOicKg7Enge.png)
 
 知道提示的含义是很重要的，因为如果你错误地输入了一个未结束的字符串，你输入的任何其他行都会被<b>mysql</b><b>忽略，包括</b>包含`QUIT`的行。这可能相当令人困惑。
 
@@ -113,7 +114,7 @@ SeLeCt vErSiOn(), current_DATE;
 SHOW DATABASES;
 ```
 
-<img src="/assets/FlimbFDb8otHoaxIa9dcIhrYnff.png" src-width="1155" src-height="992" align="center"/>
+![](/assets/FlimbFDb8otHoaxIa9dcIhrYnff.png)
 
 `mysql`数据库描述了用户的访问权限。
 
@@ -166,7 +167,7 @@ mysql> DESCRIBE pet;
 
 假设你想把你的记录填充进去，就像这样：
 
-<img src="/assets/TVZCbnK9DoJ40VxttlacsN4tnwc.png" src-width="1081" src-height="473" align="center"/>
+![](/assets/TVZCbnK9DoJ40VxttlacsN4tnwc.png)
 
 一种简单的方法是创建一个文本文件（每行对应一只动物的信息），每一行的各个值由tab分离，各个值的顺序符合数据表的列的顺序。对于缺失值，您可以使用 `NULL`值。要在您的文本文件中表示这些，请使用 `\\N`（反斜杠，大写 N）。例如，Whistler the bird 的记录如下所示：
 
@@ -250,7 +251,7 @@ mysql -h 127.0.0.1 -u root -P 3307 -p
 
 其实不论客户端进程和服务器进程是采用哪种方式进行通信，最后实现的效果都是：客户端进程向服务器进程发送一段文本（MySQL语句），服务器进程处理后再向客户端进程发送一段文本（处理结果）。那服务器进程对客户端进程发送的请求做了什么处理，才能产生最后的处理结果呢？客户端可以向服务器发送增删改查各类请求，我们这里以比较复杂的查询请求为例来画个图展示一下大致的过程：
 
-<img src="/assets/CdIUbF4K3ooabIxn5gBcsVtFnHd.png" src-width="738" src-height="487" align="center"/>
+![](/assets/CdIUbF4K3ooabIxn5gBcsVtFnHd.png)
 
 从图中我们可以看出，服务器程序处理来自客户端的查询请求大致需要经过三个部分，分别是`连接管理`、`解析与优化`、`存储引擎`。下面我们来详细看一下这三个部分都干了什么。
 

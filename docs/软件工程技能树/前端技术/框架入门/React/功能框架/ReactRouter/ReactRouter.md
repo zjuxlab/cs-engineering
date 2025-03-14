@@ -1,8 +1,9 @@
 ---
 title: React Router
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/gong-neng-kuang-jia/reactrouter/reactrouter
+slug: React Router
 sidebar_position: 0
 ---
+
 
 # React Router
 

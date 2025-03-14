@@ -1,10 +1,11 @@
 ---
-title: <video>
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/html5/video/video
+title: video
+slug: video
 sidebar_position: 1
 ---
 
-# &lt;video&gt;
+
+# video
 
 Author：徐旻昶
 
@@ -12,7 +13,7 @@ Author：徐旻昶
 
 和audio一样，它有一个起始的自设样式，如下。
 
-<img src="/assets/NTYbbxMHlo6QrlxHEnAcW2rInFb.png" src-width="661" src-height="405" align="center"/>
+![](/assets/NTYbbxMHlo6QrlxHEnAcW2rInFb.png)
 
 上面的vedio让一段视频出现在了空白的页面上，并且自带了时长显示、播放按键、音量、屏幕大小等等功能，而这样一个较为完备的视频播放器仅用了两三行代码，这也得益于html为我们提供了很完备的组件。
 
@@ -79,7 +80,7 @@ autoplay在实际的项目中一般用在用户自发添加了一段视频或者
 
 controls属性会让vedio的下方显示一个如上面我们看到的一样的一个播放面板
 
-<img src="/assets/UQT5bdKCIo95GmxHdf0chTEOnMd.png" src-width="522" src-height="124" align="center"/>
+![](/assets/UQT5bdKCIo95GmxHdf0chTEOnMd.png)
 
 ```html
 <vedio src=".../xx.mp4" controls></vedio>
@@ -123,9 +124,9 @@ controllist用于关闭部分vedio播放器设定的值，一般作用有`contro
 <!--隐藏了control远程播放的功能!-->
 ```
 
-<img src="/assets/BDqybuNvAoWZw1xLG76coFUbnlb.png" src-width="527" src-height="242" align="center"/>
+![](/assets/BDqybuNvAoWZw1xLG76coFUbnlb.png)
 
-<img src="/assets/MYlKbq3UJo3Nh7xAQVJcREHpn2d.png" src-width="507" src-height="116" align="center"/>
+![](/assets/MYlKbq3UJo3Nh7xAQVJcREHpn2d.png)
 
 上述两张图片分别展示了下载和全屏被隐藏时的样式情况
 
@@ -135,7 +136,7 @@ controllist用于关闭部分vedio播放器设定的值，一般作用有`contro
 
 很直观地，直接翻译过来也读得懂的“关闭了画中画”功能。
 
-<img src="/assets/XipkbHFBPodx58xxDkJc3S6vnmf.png" src-width="1915" src-height="892" align="center"/>
+![](/assets/XipkbHFBPodx58xxDkJc3S6vnmf.png)
 
 上述为画中画情况下的演示
 
@@ -159,7 +160,7 @@ Muted属性在设置为true的时候会静音该音频，默认值为false
 
 看上去就是这样的，初始状态下的音频调节会被调整到静音状态
 
-<img src="/assets/IxMbbO4eLoMHaoxJRXZcB1Osnde.png" src-width="516" src-height="110" align="center"/>
+![](/assets/IxMbbO4eLoMHaoxJRXZcB1Osnde.png)
 
 ## Playsinline
 
@@ -169,7 +170,7 @@ Muted属性在设置为true的时候会静音该音频，默认值为false
 
 海报元素，也就是视频尚未开始播放时显示在窗口中的图片，是我们通常熟知的“视频封面”。设置poster时填入图片的url。下面的例子在不改动我们前文用作样例的视频源的同时添加了poster：
 
-<img src="/assets/DIhubIxehoKw7Zx04DAcuYA0nhh.png" src-width="290" src-height="288" align="center"/>
+![](/assets/DIhubIxehoKw7Zx04DAcuYA0nhh.png)
 
 ```html
 <video height="200" controls poster="../src/assets/IMG.png">

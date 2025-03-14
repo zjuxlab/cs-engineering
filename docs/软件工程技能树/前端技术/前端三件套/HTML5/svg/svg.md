@@ -1,10 +1,11 @@
 ---
-title: <svg>
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/html5/svg/svg
+title: svg
+slug: svg
 sidebar_position: 2
 ---
 
-# &lt;svg&gt;
+
+# svg
 
 Author：葛芸曦
 

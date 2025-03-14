@@ -1,7 +1,6 @@
 ---
 title: NodeJS
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-dfifwii6ri7cnjkbttrcqd8xnch-vfpuwmb9sion01kbbmpcfwbvnfc-px0fw77m2iqb27kjjhbcjg2anth-px0fw7
+slug: NodeJS
 sidebar_position: 4
 ---
 

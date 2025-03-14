@@ -1,12 +1,14 @@
 ---
 title: OpenAPI
-slug: ruan-jian-gong-cheng-ji-neng-shu/hou-duan-ji-shu/chang-jian-chang-jing/api-zhi-ding/openapi/openapi
+slug: OpenAPI
 sidebar_position: 2
 ---
+
 
 # OpenAPI
 
 Author：蒋旻昊
+
 
 OpenAPI 是一种 machine-readable 的接口规范.
 

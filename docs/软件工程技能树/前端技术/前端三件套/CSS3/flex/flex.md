@@ -1,8 +1,9 @@
 ---
 title: flex
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/css3/flex/flex
+slug: flex
 sidebar_position: 0
 ---
+
 
 # flex
 
@@ -70,11 +71,11 @@ flex的诞生主要是为了更好地在一个容器里以一维方式排列一�
 
 所有的（常用）flex属性其实都可以在下面👇这张海报里找到（来源于[https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)，免费下载）欢迎在使用的时候常常核对。
 
-<img src="/assets/RFDMbhlPGolSeTxjhuNcexRhnAd.png" src-width="7200" src-height="10800" align="center"/>
+![](/assets/RFDMbhlPGolSeTxjhuNcexRhnAd.png)
 
 接下来就是逐个介绍一下，各种属性的效果，以及实际应用，各位加深印象，但在开始之前必须介绍一下主轴的概念
 
-<img src="/assets/PjUMb4bblo2jAnx1MdicqujOnLd.png" src-width="1146" src-height="460" align="center"/>
+![](/assets/PjUMb4bblo2jAnx1MdicqujOnLd.png)
 
 flex盒子的主要理解难点就是主轴的概念，上图很好的展示了盒子的两个轴，主轴就是layout的核心轴，cross轴可以用于在另一个维度上微调布局而且永远垂直于主轴。主轴的方向允许人为指定。
 
@@ -128,7 +129,7 @@ flex盒子的主要理解难点就是主轴的概念，上图很好的展示了�
 
 grow=0 意味着子元素不会尝试去填充父元素的空隙，这种时候假如子元素没有指定大小会发生什么呢？
 
-<img src="/assets/Zn3YbQO9BofQPWxJHuNcnY3xnlg.png" src-width="426" src-height="114" align="center"/>
+![](/assets/Zn3YbQO9BofQPWxJHuNcnY3xnlg.png)
 
 ```css
 <div class="mid-container">
@@ -227,7 +228,7 @@ grow=0 意味着子元素不会尝试去填充父元素的空隙，这种时候�
 }
 ```
 
-<img src="/assets/SQiwbJaZtoCSF5xVVVLckf0Zndd.png" src-width="446" src-height="674" align="center"/>
+![](/assets/SQiwbJaZtoCSF5xVVVLckf0Zndd.png)
 
 效果已经截在这里了，不用去翻海报啦。个人觉得这是flex应用的关键点，利用好这种一键布局的机会，缩减工作量，（一提，我想到的最直接的达到相同效果的替代方案是流式布局里面猛算，欢迎补充）
 
@@ -241,7 +242,7 @@ grow=0 意味着子元素不会尝试去填充父元素的空隙，这种时候�
 }
 ```
 
-<img src="/assets/Qfh3bolOVoC5c6xvA50cf4kpnpg.png" src-width="421" src-height="540" align="center"/>
+![](/assets/Qfh3bolOVoC5c6xvA50cf4kpnpg.png)
 
 效果还是比较一目了然的，解决了css的一个布局痛点呢
 
@@ -255,7 +256,7 @@ grow=0 意味着子元素不会尝试去填充父元素的空隙，这种时候�
 }
 ```
 
-<img src="/assets/YRcgbXFPgovn45xMPagcd191n4t.png" src-width="407" src-height="534" align="center"/>
+![](/assets/YRcgbXFPgovn45xMPagcd191n4t.png)
 
 这里容易和align-item 搞混，只需记住content是操作<b>多行</b>的即可（说明一定是flex-wrap：wrap），当然了flex-start对单行也可以产生效果
 
@@ -274,7 +275,7 @@ grow=0 意味着子元素不会尝试去填充父元素的空隙，这种时候�
 }
 ```
 
-<img src="/assets/NzC3bjDZQoc5W5x8AfkcI8JwnCm.png" src-width="408" src-height="480" align="center"/>
+![](/assets/NzC3bjDZQoc5W5x8AfkcI8JwnCm.png)
 
 非常直观，照顾了使用flex的后续问题，允许你一懒到底。
 
@@ -298,7 +299,7 @@ flex负责的工作基本是相同的，故只统一举几例：
 
 这也是flex常用的的场景，由于tag本身长度不定，可以给tag加上一定的padding（否则tag大小就是内容的大小）然后父级容器加上wrap。这样就实现了自动调节的效果
 
-<img src="/assets/Kx0WbCasIoR652xNECucxVqSn9f.png" src-width="1008" src-height="406" align="center"/>
+![](/assets/Kx0WbCasIoR652xNECucxVqSn9f.png)
 
 ```css
 .mid-container{
@@ -328,7 +329,7 @@ flex负责的工作基本是相同的，故只统一举几例：
 
 嗯，就是这么个意思，大概形这不就有了（
 
-<img src="/assets/NLcMb2Fo4o5TJsxwoO7co75fnGf.png" src-width="2860" src-height="167" align="center"/>
+![](/assets/NLcMb2Fo4o5TJsxwoO7co75fnGf.png)
 
 ```css
 .body{
@@ -374,7 +375,7 @@ flex负责的工作基本是相同的，故只统一举几例：
 
 原理很像顶部导航栏
 
-<img src="/assets/C3VMbqKC2oDfVOxiEcfcj3LKnXe.png" src-width="2846" src-height="81" align="center"/>
+![](/assets/C3VMbqKC2oDfVOxiEcfcj3LKnXe.png)
 
 ```css
 .tabbar{
@@ -469,13 +470,13 @@ html,body{
 
 rt（
 
-<img src="/assets/Lh9MbKnnFoZ8xyxzeh5cKI6snbf.png" src-width="2840" src-height="1483" align="center"/>
+![](/assets/Lh9MbKnnFoZ8xyxzeh5cKI6snbf.png)
 
 ###### <b>生成并列文本介绍区</b>
 
 原理还是一样，横向划分空间即可
 
-<img src="/assets/VzFNbF6W3ouh7DxnfbSciaIBnLe.png" src-width="2398" src-height="789" align="center"/>
+![](/assets/VzFNbF6W3ouh7DxnfbSciaIBnLe.png)
 
 配色再次绝杀（
 
@@ -507,7 +508,7 @@ rt（
 
 有时候，即使使用了弹性盒子，仍然需要结合媒体查询来实现更加细致的UI效果，大致的思路是用媒体查询将屏幕大小划分为几种基本情况，然后在每个基本情况中利用好弹性盒子的灵活性。理解起来不难，不过很难举出例子，这里贴个代码片段防止糟糕的文字描述影响理解：
 
-<img src="/assets/AHlVbIpVwoXgKtx1bOAcmmk6nBd.png" src-width="1529" src-height="957" align="center"/>
+![](/assets/AHlVbIpVwoXgKtx1bOAcmmk6nBd.png)
 
 ##### <b>利用好flex-grow</b>
 
@@ -519,11 +520,11 @@ flex-grow 算是开袋即食的flex里面比较有开发价值的属性了，先
 
 第三条很有意思，比如说，它可以让你在一些情况下把flex-grow 当float用；想象在一个方形flex父元素里有两个子元素，把左边的子元素grow置1 然后右边的置0（当然这也是默认的），然后由于左边的元素会试图填满父元素的空白，而且1和零相比是超级碾压，所以左边的元素会一直变长...变长直到把右边的元素摁到右边界。
 
-<img src="/assets/NOrnb0gBjovXeKxFtnsc4vpZnyg.png" src-width="1703" src-height="313" align="center"/>
+![](/assets/NOrnb0gBjovXeKxFtnsc4vpZnyg.png)
 
 看起来就像是使用了float。而且更棒的是，这附带了一个wrap的功能，只要把父元素加上wrap，右边的元素会在位置不够的时候自动换行
 
-<img src="/assets/EIh4bVU2foz4g5xku4gcVEAvn3b.png" src-width="1701" src-height="430" align="center"/>
+![](/assets/EIh4bVU2foz4g5xku4gcVEAvn3b.png)
 
 ##### <b>文本省略</b>
 
@@ -533,15 +534,15 @@ flex-grow 算是开袋即食的flex里面比较有开发价值的属性了，先
 
 最后探讨一下flex布全局的可能性，总体来讲，在非常合适的情况下，flex也可以成为布局核心。那么条件是什么呢，就是页面有明显的轴线。看几个例子来理解
 
-<img src="/assets/AHnkbHPRHo3ytvxkGXTciNRanAb.png" src-width="2460" src-height="1450" align="center"/>
+![](/assets/AHnkbHPRHo3ytvxkGXTciNRanAb.png)
 
 这个就是可以做的，可以看到额外加了很多红圈，都是可以插入flex父元素的地方
 
-<img src="/assets/Dsgqb4HiSofXmBxFrl0cW0WOnkg.png" src-width="2869" src-height="1511" align="center"/>
+![](/assets/Dsgqb4HiSofXmBxFrl0cW0WOnkg.png)
 
 这个有两个列，用grid更加合适，当然用flex也是可以做的（多个列和使用wrap没有直接关系，你可以简单的横向放两个弹性盒子然后细分其中的一个）
 
-<img src="/assets/Ayzpb2uLCoiDabxSK0ccCKBPnAg.png" src-width="2849" src-height="1489" align="center"/>
+![](/assets/Ayzpb2uLCoiDabxSK0ccCKBPnAg.png)
 
 这个也可以👆
 

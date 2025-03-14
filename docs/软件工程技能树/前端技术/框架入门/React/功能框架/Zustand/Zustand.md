@@ -1,8 +1,9 @@
 ---
 title: Zustand
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/gong-neng-kuang-jia/zustand/zustand
+slug: Zustand
 sidebar_position: 2
 ---
+
 
 # Zustand
 

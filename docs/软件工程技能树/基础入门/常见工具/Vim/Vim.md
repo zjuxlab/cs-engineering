@@ -1,8 +1,9 @@
 ---
 title: Vim
-slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/chang-jian-gong-ju/vim/vim
+slug: Vim
 sidebar_position: 0
 ---
+
 
 # Vim
 
@@ -12,7 +13,7 @@ Author：NA
 
 下面是chatgpt给出的解释，大家可以看看哈哈哈
 
-<img src="/assets/RCTBbABf7oSfn1xvhZ7cPZaLngc.png" src-width="1450" src-height="1260" align="center"/>
+![](/assets/RCTBbABf7oSfn1xvhZ7cPZaLngc.png)
 
 那么我理解的Vim是什么，我记得我第一次见到Vim是一个油管的大佬用的，当时觉得很帅，像黑客一样，基本不需要用到鼠标就写完了所有的代码。
 
@@ -36,7 +37,7 @@ Vim 是从 vi 发展出来的一个文本编辑器。代码补全、编译及错
 
 对于Mac和Linux，直接利用终端输入Vim就可以启动Vim，打开类似于这个界面
 
-<img src="/assets/HZ2VbOXveo26Msx1yDbcg4e3n7K.png" src-width="1140" src-height="696" align="center"/>
+![](/assets/HZ2VbOXveo26Msx1yDbcg4e3n7K.png)
 
 对于Windows下，需要在官网上下载，具体就不阐述了哈哈哈
 

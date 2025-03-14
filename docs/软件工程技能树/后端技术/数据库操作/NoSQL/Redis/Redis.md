@@ -1,8 +1,9 @@
 ---
 title: Redis
-slug: ruan-jian-gong-cheng-ji-neng-shu/hou-duan-ji-shu/shu-ju-ku-cao-zuo/nosql/redis/redis
+slug: Redis
 sidebar_position: 1
 ---
+
 
 # Redis
 

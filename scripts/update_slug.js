@@ -1,85 +1,60 @@
-// update-slugs.js
 const fs = require('fs');
 const path = require('path');
-const matter = require('gray-matter');
-const { pinyin } = require('pinyin-pro');
 
-// 配置参数
-const DOCS_DIR = path.join(__dirname, '../docs'); // 文档根目录
-const SIDEBAR_PATH = path.join(__dirname, '../sidebars.js'); // sidebar 配置文件
+const folders = ['软件科研技能树', '软件工程技能树'];
+const docsPath = path.join(__dirname, '../docs');
 
-// 生成安全 slug 的辅助函数
-const generateSlug = (chineseStr) => {
-  // 转换为拼音
-  const pinyinStr = pinyin(chineseStr, {
-    toneType: 'none',
-    type: 'array',
-    nonZh: 'consecutive',
-  }).join('-');
+folders.forEach((folder) => {
+    const folderPath = path.join(docsPath, folder);
+    traverseFolder(folderPath);
+});
 
-  // 移除特殊字符并标准化
-  return pinyinStr
-    .toLowerCase()
-    .replace(/[^a-z0-9]/g, '-')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '');
-};
+function traverseFolder(folderPath) {
+    fs.readdirSync(folderPath).forEach((file) => {
+        const filePath = path.join(folderPath, file);
+        const stat = fs.statSync(filePath);
+        if (stat.isDirectory()) {
+            traverseFolder(filePath);
+        } else if (path.extname(file) === '.md') {
+            processMarkdownFile(filePath);
+        }
+    });
+}
 
-// 递归遍历 sidebar 提取所有文档 ID
-const collectDocIds = (sidebarItems) => {
-  const ids = [];
-  for (const item of sidebarItems) {
-    if (item.type === 'doc') {
-      ids.push(item.id);
-    } else if (item.type === 'category' && item.items) {
-      ids.push(...collectDocIds(item.items));
-    }
-  }
-  return ids;
-};
+function processMarkdownFile(filePath) {
+    let content = fs.readFileSync(filePath, 'utf8');
+    const lines = content.split('\n');
 
-// 主处理函数
-const processSlugs = async () => {
-  try {
-    // 读取 sidebar 配置
-    const sidebar = require(SIDEBAR_PATH);
-    const allDocIds = collectDocIds(sidebar.sidebar);
+    // 检查 Front Matter 是否存在
+    if (lines.length < 2 || lines[0] !== '---') return;
+    let endIndex = lines.indexOf('---', 1);
+    if (endIndex === -1) return;
 
-    // 处理每个文档
-    for (const docId of allDocIds) {
-      // 转换 ID 为文件路径
-      const filePath = path.join(
-        DOCS_DIR,
-        `${docId.replace(/\//g, path.sep)}.md`
-      );
+    // 提取关键字段
+    const frontMatter = lines.slice(1, endIndex);
+    let title = '';
+    let sidebarPos = '';
 
-      // 读取文件内容
-      const fileContent = fs.readFileSync(filePath, 'utf8');
-      const { data: frontmatter, content } = matter(fileContent);
-
-      // 生成新 slug（保留层级结构）
-      const slugParts = docId.split('/').map(generateSlug);
-      const newSlug = slugParts.join('/');
-
-      // 更新 frontmatter
-      frontmatter.slug = newSlug;
-
-      // 处理多行 slug 语法
-      const updatedContent = matter.stringify(content, frontmatter)
-        .replace(/slug: >-\n\s+/g, 'slug: ')
-        .replace(/\n{2,}/g, '\n\n');
-
-      // 写入文件
-      fs.writeFileSync(filePath, updatedContent);
-      console.log(`Updated: ${docId} -> slug: ${newSlug}`);
+    for (const line of frontMatter) {
+        if (line.startsWith('title:')) title = line.split(':')[1].trim();
+        if (line.startsWith('sidebar_position:')) sidebarPos = line.split(':')[1].trim();
     }
 
-    console.log('✅ All slugs updated successfully!');
-  } catch (err) {
-    console.error('❌ Error:', err.message);
-    process.exit(1);
-  }
-};
+    // 重建 Front Matter（强制只保留 title、slug、sidebar_position）
+    const newFrontMatter = [
+        `title: ${title}`,
+        `slug: ${title}`, // 确保 slug 直接等于 title
+        `sidebar_position: ${sidebarPos}`
+    ];
 
-// 执行脚本
-processSlugs();
+    // 替换整个 Front Matter 部分
+    const newContent = [
+        '---',
+        ...newFrontMatter,
+        '---',
+        ...lines.slice(endIndex + 1)
+    ].join('\n');
+
+    fs.writeFileSync(filePath, newContent, 'utf8');
+    console.log(`Rebuilt Front Matter in ${filePath}`);
+}

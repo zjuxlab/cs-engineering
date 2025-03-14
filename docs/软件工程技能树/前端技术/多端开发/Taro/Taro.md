@@ -1,8 +1,9 @@
 ---
 title: Taro
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/duo-duan-kai-fa/taro/taro
+slug: Taro
 sidebar_position: 1
 ---
+
 
 # Taro
 
@@ -124,7 +125,7 @@ $ taro init newApp
 </code></pre>
 </div>
 <div class="w-[31%]" width-ratio="31">
-<img src="/assets/I6XQbOhCnoFd1axgQnEcGEtVn1e.png" src-width="600" src-height="1256"/>
+![](/assets/I6XQbOhCnoFd1axgQnEcGEtVn1e.png)
 </div>
 </div>
 
@@ -285,7 +286,7 @@ Taro 3 支持将 Web 框架直接运行在各平台，开发者使用的是<u>�
 但是 Taro 在<b>组件、API、路由</b>等规范上，遵循微信小程序规范，所以在 Taro 中使用 Vue/Vue3 和开发者熟悉的 Web 端有一些差异：
 
 - <b>组件</b>：在 Taro 中需要“全部”使用来源于 `@tarojs/components` 的跨平台组件，如`<view />`。关于哪些组件能用，参考文档组件部分即可（这里的“全部”其实并不完全对，适用范围是存在平替跨平台组件的那些原生标签，而`<input />`这些就还是用原生组件；不过总之，参照文档就行啦）。
-    <img src="/assets/SBVwbN4aooSfxMxpxwCcGTVCnSf.png" src-width="812" src-height="288" align="center"/>
+    ![](/assets/SBVwbN4aooSfxMxpxwCcGTVCnSf.png)
         Ps. 这里使用组件有一个坑，就是从 `@tarojs/components` 引入的组件在 `<template />` 中只能使用 <b>kebab-case </b>命名的方式来使用，而不是组件库说明中的大驼峰写法（例如：应该是 `date-picker` ，而不是 `DatePicker`）
 
 - <b>API</b>：这里比较明显的一点就是网络请求的 API，默认使用的还是微信小程序那种 `request`+回调函数 的写法，使用起来的感觉比较落后，对于嵌套请求，格式上也不好看。如果了解异步相关处理，可以用`Promise`对象把这种原始的请求方法封装成同步的写法。

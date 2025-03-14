@@ -1,8 +1,9 @@
 ---
 title: BT种子
-slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/za-xiang-chang-shi/bt-zhong-zi/bt-zhong-zi
+slug: BT种子
 sidebar_position: 0
 ---
+
 
 # BT种子
 
@@ -34,7 +35,7 @@ BT 是通过BT种子文件进行下载部署的，BT种子文件放在一个普�
 `magnet` 为协议名；`xt` 表示资源定位点； `urn:btih` 表示 Hash 方法名，最主要的就是后面唯一的一串 40 位 16 进制的数字。磁力链接利用 DHT 技术（分布式哈希表，Distributed Hash Table）和 PEX （Peer Exchange）实现了资源的 “随意” 传播，根本无法禁止。（咳咳
 
 > 补充：DHT 分布式哈希表
-> <img src="/assets/ORhjbA1Hcoo8RHxfSr6cOg0Knpb.png" src-width="1922" src-height="800" align="center"/>
+> ![](/assets/ORhjbA1Hcoo8RHxfSr6cOg0Knpb.png)
 > 用于找到距离（逻辑距离而非物理距离，用异或算出）最近的 Tracker，例如1111的最近距离点为1110，距离为1111 xor 1110 = 0001 = (1)_{10}
 
 磁力链接下载的本质是将每一个人都变为 Tracker 服务器，将资源与下载者对应起来，每位下载者保存 部分 信息。这样，在下载资源时，只需寻找拥有所需资源的下载者。
@@ -73,7 +74,7 @@ http://www.nexushd.org/torrents.php（需要校网）
 
 尽量使用种子链接下载，比添加磁力链接快；如果只有磁力链接，可以先添加到迅雷/百度网盘等软件另存为种子文件；但一般不建议使用百度网盘（中央整治
 
-<img src="/assets/LRkNbVmZdoKZp5xUXvMcGAHbnPg.png" src-width="327" src-height="191" align="center"/>
+![](/assets/LRkNbVmZdoKZp5xUXvMcGAHbnPg.png)
 
 - 制作BT种子
 
@@ -81,7 +82,7 @@ http://www.nexushd.org/torrents.php（需要校网）
 
 然后，在制作Torrent界面，选择要分享的文件或者文件夹，根据需要进行设置，并可以根据需要添加<b>Tracker URL、web种子url、注释、源</b>等字段，当然也可以不添加，直接点击下面的“<b>制作torrent</b>”，即可将制作的BT种子文件保存到自己电脑中。如下图所示：
 
-<img src="/assets/I3Ikbr5JkowkWxxE5IZccbNDnLh.png" src-width="912" src-height="694" align="center"/>
+![](/assets/I3Ikbr5JkowkWxxE5IZccbNDnLh.png)
 
 制作好的BT种子文件分享后，自己的电脑需要保持开机，才能使种子文件正常下载。
 
@@ -98,7 +99,7 @@ http://www.nexushd.org/torrents.php（需要校网）
         https://torrents.io/tracker-list/
         https://github.com/ngosang/trackerslist
     - 复制以上网址的trackers地址，进入qBittorrent “<b>工具</b>”-“<b>选项</b>”-“<b>BitTorrent</b>”，粘贴进tracker输入框内，如下图所示：
-    <img src="/assets/C4zPbMiaYomFKmx7EWrci45ynVe.png" src-width="781" src-height="623" align="center"/>
+    ![](/assets/C4zPbMiaYomFKmx7EWrci45ynVe.png)
     - 同时，选中“<b>自动添加以下tracker 到新的torrent</b>”选项。
 
 - 连接 DHT 节点

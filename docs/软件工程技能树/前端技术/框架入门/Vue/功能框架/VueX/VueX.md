@@ -1,8 +1,9 @@
 ---
 title: VueX
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/vue/gong-neng-kuang-jia/vuex/vuex
+slug: VueX
 sidebar_position: 1
 ---
+
 
 # VueX
 

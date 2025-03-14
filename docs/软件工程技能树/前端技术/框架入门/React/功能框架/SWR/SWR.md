@@ -1,8 +1,9 @@
 ---
 title: SWR
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/gong-neng-kuang-jia/swr/swr
+slug: SWR
 sidebar_position: 3
 ---
+
 
 # SWR
 
@@ -190,6 +191,7 @@ function useUser() {
   };
 }
 
+
 // 页面组件
 
 function Page() {
@@ -275,7 +277,7 @@ function Profile() {
 }
 ```
 
-但是，如果你仔细阅读过 [必读] React Hooks的「<b>禁忌事项</b>」章节，那么就应当知道：这样是完全不正确的，甚至可能导致你的整个组件的状态直接崩掉。
+但是，如果你仔细阅读过 [必读] React hooks 的「<b>禁忌事项</b>」章节，那么就应当知道：这样是完全不正确的，甚至可能导致你的整个组件的状态直接崩掉。
 
 正确的做法有以下两种：
 
@@ -329,7 +331,6 @@ function MyProjects() {
 
 SWR 会在你重新聚焦页面的时候自动重新请求数据，来保证用户数据的实时性。
 
-
 这个特性是默认开启的，你也可以通过 `revalidateOnFocus` 选项禁用它。
 
 ### 定时重新请求（轮询）
@@ -337,7 +338,6 @@ SWR 会在你重新聚焦页面的时候自动重新请求数据，来保证用�
 在很多情况下，数据会因为多个设备、多个用户、多个选项卡而发生改变。我们可能需要随时确保数据的更新。
 
 SWR 会为你提供自动重新请求数据的选项。而且只有与 hook 相关的组件 <b>在屏幕上</b> 时，才会重新请求。
-
 
 你可以通过设置 `refreshInterval` 值来启用它：
 

@@ -1,7 +1,6 @@
 ---
 title: Python基础
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-dfifwii6ri7cnjkbttrcqd8xnch-vfpuwmb9sion01kbbmpcfwbvnfc-lq3zwnuaeigwvvkicclct2jqnzf-nwzpwgtbriymf4knzwacfecqnld-nwzpwg
+slug: Python基础
 sidebar_position: 3
 ---
 

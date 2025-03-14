@@ -1,8 +1,9 @@
 ---
 title: WEB3：区块链
-slug: ruan-jian-gong-cheng-ji-neng-shu/jin-jie-ji-shu/web3-qu-kuai-lian/web3-qu-kuai-lian
+slug: WEB3：区块链
 sidebar_position: 0
 ---
+
 
 # WEB3：区块链
 
@@ -75,13 +76,13 @@ npm install --save-dev hardhat
 
 运行`npx hardhat`创建hardhat项目，之后根据hardhat的提示进行依赖安装
 
-<img src="/assets/MWLabr2GIo68sAxgXcNcRdjGn8g.png" src-width="1164" src-height="404" align="center"/>
+![](/assets/MWLabr2GIo68sAxgXcNcRdjGn8g.png)
 
 完成项目创建后，你可以通过`npx hardhat compile`来编译contracts文件夹下的合约代码，编译出来的abi等会被放在`sample\artifacts\contracts`目录下
 
 你可以运行`npx hardhat test`来运行test文件夹下的测试文件，测试通过的样例如下
 
-<img src="/assets/Fx3LbvazWoxgAqxAmPqctVJknQX.png" src-width="775" src-height="515" align="center"/>
+![](/assets/Fx3LbvazWoxgAqxAmPqctVJknQX.png)
 
 你可以通过`npx hardhat run scripts/deploy.js`运行scripts目录下的deploy.js文件来部署你的合约，之后我们通过`npx hardhat node`命令在本地运行一个hardhat测试网络，你可以通过`npx hardhat run scripts/deploy.js--network localhost `指定合约部署的网络
 

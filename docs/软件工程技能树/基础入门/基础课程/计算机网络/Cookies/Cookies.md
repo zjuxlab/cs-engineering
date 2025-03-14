@@ -1,8 +1,9 @@
 ---
 title: Cookies
-slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/ji-chu-ke-cheng/ji-suan-ji-wang-luo/cookies/cookies
+slug: Cookies
 sidebar_position: 0
 ---
+
 
 # Cookies
 
@@ -189,13 +190,13 @@ CHIPS引入了一个新的 cookie 属性， `Partitioned`。
 
 <div class="flex gap-3 columns-3" column-size="3">
 <div class="w-[36%]" width-ratio="36">
-<img src="/assets/V1q6b3gDzoX8HuxObKpcEGR4nUc.png" src-width="845" src-height="476" align="center"/>
+![](/assets/V1q6b3gDzoX8HuxObKpcEGR4nUc.png)
 </div>
 <div class="w-[36%]" width-ratio="36">
-<img src="/assets/F6DhbkVISoeBkOxAua8c4nxWn9b.png" src-width="845" src-height="468" align="center"/>
+![](/assets/F6DhbkVISoeBkOxAua8c4nxWn9b.png)
 </div>
 <div class="w-[27%]" width-ratio="27">
-<img src="/assets/TQ8Tbi4Ygo8LKkxuGt0c4hU0nsc.png" src-width="439" src-height="333" align="center"/>
+![](/assets/TQ8Tbi4Ygo8LKkxuGt0c4hU0nsc.png)
 </div>
 </div>
 
@@ -222,7 +223,7 @@ Set-Cookie: __Host-name=value; Secure; Path=/; SameSite=None; Partitioned;
 </ul>
 </div>
 <div class="w-[50%]" width-ratio="50">
-<img src="/assets/T1qBbWV1soghrXxOh72cdOoPnMt.png" src-width="439" src-height="398" align="center"/>
+![](/assets/T1qBbWV1soghrXxOh72cdOoPnMt.png)
 </div>
 </div>
 

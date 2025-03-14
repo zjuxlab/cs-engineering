@@ -1,10 +1,11 @@
 ---
-title: <audio>
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/html5/audio/audio
+title: audio
+slug: audio
 sidebar_position: 0
 ---
 
-# &lt;audio&gt;
+
+# audio
 
 Author：徐旻昶
 
@@ -12,7 +13,7 @@ Author：徐旻昶
 
 (高中给mp3下音乐时因为不想花钱找到一些犄角旮旯中的免费网站)
 
-<img src="/assets/IgmYbeLJtoxN14xMrhncMMPXnge.png" src-width="730" src-height="333" align="center"/>
+![](/assets/IgmYbeLJtoxN14xMrhncMMPXnge.png)
 
 这就是`<audio controls>`带来的最直观的效果，使用`src`属性指定音频，并使用`controls`属性显示直观的播放器。
 
@@ -56,7 +57,7 @@ autoplay属性在被添加后会使得audio在生成的同时自动开始播放�
 
 controls属性会让audio显示一个如上面我们看到的一样的一个播放面板，包含播放/暂停键，时间进度条，音量调整和其他。
 
-<img src="/assets/DeMtbXVskoIsm3x9zkPcPIkJnvc.png" src-width="386" src-height="85" align="center"/>
+![](/assets/DeMtbXVskoIsm3x9zkPcPIkJnvc.png)
 
 ```html
 <audio controls src=".../xx.mp3"></audio>
@@ -66,7 +67,7 @@ controls属性会让audio显示一个如上面我们看到的一样的一个播�
 
 currentTime用于查询当前这个audio的时间条在哪个位置，比如时间条处于1时前去查询：
 
-<img src="/assets/D2TVbaO2koItWGxGLNDcLCwWnYf.png" src-width="390" src-height="80" align="center"/>
+![](/assets/D2TVbaO2koItWGxGLNDcLCwWnYf.png)
 
 ```html
 <audio id="Audio" controls>
@@ -86,7 +87,7 @@ function getCurTime(){
 
 根据id查找到audio对象后，script将通过对象的currentTime属性获取这个对象的当前时间，并alert：
 
-<img src="/assets/F7H7bsT1Xo3DuSx4lhacQrcPnEF.png" src-width="540" src-height="100" align="center"/>
+![](/assets/F7H7bsT1Xo3DuSx4lhacQrcPnEF.png)
 
 - 您当然可以通过函数修改currentTime的值，但是当它超出上限或者下限的时候，它会变成上限/下限，有些浏览器可能会直接显示错误。
 
@@ -98,7 +99,7 @@ DisableRemotePlayback是一个布尔量，用来禁用在远程设备上进行�
 
 这是一个双精度浮点数，指明了音频在时间轴中的持续时间（总长度），以秒为单位。
 
-<img src="/assets/LzDMbNeUNoh7yIxYTCPcXXEvnlf.png" src-width="390" src-height="80" align="center"/>
+![](/assets/LzDMbNeUNoh7yIxYTCPcXXEvnlf.png)
 
 ```html
 <audio id="Audio" controls>
@@ -118,11 +119,11 @@ function getDurationTime(){
 
 原理同上，结果如下
 
-<img src="/assets/VZuTbBYyNoN9uvxWp8XcjqZMnbg.png" src-width="558" src-height="98" align="center"/>
+![](/assets/VZuTbBYyNoN9uvxWp8XcjqZMnbg.png)
 
 如果元素上没有媒体，或者媒体是不可用的，那么会返回 `NaN`。
 
-<img src="/assets/TdE8b7yYSoiqCHxD7XycQ3s1nab.png" src-width="384" src-height="68" align="center"/>
+![](/assets/TdE8b7yYSoiqCHxD7XycQ3s1nab.png)
 
 ```html
 <audio id="Audio" controls>
@@ -140,7 +141,7 @@ function getDurationTime(){
 </script>
 ```
 
-<img src="/assets/UdNwbg0B9oLw5Mx0xLGcOm3jnjd.png" src-width="541" src-height="94" align="center"/>
+![](/assets/UdNwbg0B9oLw5Mx0xLGcOm3jnjd.png)
 
 <em>如果媒体找不到确切的结尾（比如不确定长度的直播流，网络电台，或者是通过 </em><em>WebRTC</em><em> 连接的流），那么这个值将返回 </em><em>+Infinity</em><em>。</em>
 
@@ -161,7 +162,7 @@ Muted属性在设置为true的时候会静音该音频，默认值为false
 
 看上去就是这样的，初始状态下的音频调节会被调整到静音状态
 
-<img src="/assets/FTMQbaRwOoL723xlSkNcfXAsn7e.png" src-width="389" src-height="70" align="center"/>
+![](/assets/FTMQbaRwOoL723xlSkNcfXAsn7e.png)
 
 ## preload
 

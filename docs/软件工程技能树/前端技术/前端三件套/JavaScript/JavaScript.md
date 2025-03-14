@@ -1,8 +1,9 @@
 ---
 title: JavaScript
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/qian-duan-san-jian-tao/javascript/javascript
+slug: JavaScript
 sidebar_position: 2
 ---
+
 
 # JavaScript
 
@@ -17,7 +18,7 @@ sidebar_position: 2
 <p>根对象称为<code>window</code>，它是JS代码的<a href="https://zh.javascript.info/global-object">全局对象</a>（全局变量是它的属性，function定义的函数是它的方法，标签的id值会成为它的属性……），同时也代表了“浏览器窗口”，提供相应的属性和方法（如窗口高度等）。</p>
 </div>
 <div class="w-[37%]" width-ratio="37">
-<img src="/assets/IDF4by4HLoVSUuxTsBwcfZ2Mnfe.png" src-width="470" src-height="420" align="right"/>
+![](/assets/IDF4by4HLoVSUuxTsBwcfZ2Mnfe.png)
 </div>
 </div>
 
@@ -239,7 +240,7 @@ const res = window.confirm(message);
 <p>根对象称为<code>window</code>，它是JS代码的<a href="https://zh.javascript.info/global-object">全局对象</a>（全局变量是它的属性，function定义的函数是它的方法，标签的id值会成为它的属性……），同时也代表了“浏览器窗口”，提供相应的属性和方法（如窗口高度等）。</p>
 </div>
 <div class="w-[34%]" width-ratio="34">
-<img src="/assets/C3e2b15kGoovfOx29MycaqAdntf.png" src-width="470" src-height="420" align="right"/>
+![](/assets/C3e2b15kGoovfOx29MycaqAdntf.png)
 </div>
 </div>
 
@@ -247,7 +248,7 @@ const res = window.confirm(message);
 
 DOM（Document Object Model），又称文档对象模型，将所有页面内容表示为可以修改的对象，每个文档被表示为一个DOM树（node tree）。在浏览器开发者工具中，元素选项卡下，就是DOM（经过简化的，突出元素节点）。旁边侧栏也有关于样式，事件等栏。
 
-<img src="/assets/Fn39bNXcMoqrBUxnJspcqWCmncc.png" src-width="1877" src-height="494" align="center"/>
+![](/assets/Fn39bNXcMoqrBUxnJspcqWCmncc.png)
 
 浏览器对象模型（Browser Object Model），简称 BOM，表示由浏览器（主机环境）提供的用于处理文档(document)之外的所有内容的其他对象。
 
@@ -269,7 +270,7 @@ DOM是将一个HTML的编程接口，将一个HTML文件表示为由节点组成
 </code></pre>
 </div>
 <div class="w-[50%]" width-ratio="50">
-<img src="/assets/ReWkb3sKXorpW7xehrWcWWB8ncd.png" src-width="525" src-height="364" align="center"/>
+![](/assets/ReWkb3sKXorpW7xehrWcWWB8ncd.png)
 </div>
 </div>
 
@@ -292,7 +293,7 @@ DOM是将一个HTML的编程接口，将一个HTML文件表示为由节点组成
 
 ### 抽象DOM层次结构
 
-<img src="/assets/URa9b1T7royAbyxnyCmctMUingb.png" src-width="730" src-height="471"/>
+![](/assets/URa9b1T7royAbyxnyCmctMUingb.png)
 
 通过原型链查找，可以获得一个类继承的层次结构。各个节点拥有的属性和方法，都是继承链的结果。
 
@@ -373,7 +374,7 @@ interface HTMLInputElement: HTMLElement {
 
 </div>
 <div class="w-[40%]" width-ratio="40">
-<img src="/assets/B54YbOzKCo6RhJxeL9UcTfyWnRe.png" src-width="548" src-height="537" align="center"/>
+![](/assets/B54YbOzKCo6RhJxeL9UcTfyWnRe.png)
 </div>
 </div>
 
@@ -511,7 +512,7 @@ document.body.sayHi(); // Hello, I'm BODY
 </ul>
 </div>
 <div class="w-[48%]" width-ratio="48">
-<img src="/assets/DHwtbFMsPoIIphxUG99cYpUinUL.png" src-width="543" src-height="273" align="center"/>
+![](/assets/DHwtbFMsPoIIphxUG99cYpUinUL.png)
 </div>
 </div>
 
@@ -564,7 +565,7 @@ document.body.sayHi(); // Hello, I'm BODY
 </ul>
 </div>
 <div class="w-[21%]" width-ratio="21">
-<img src="/assets/LmM3b6gMmoeEYqx5FhAcHhQcn3b.png" src-width="176" src-height="199" align="center"/>
+![](/assets/LmM3b6gMmoeEYqx5FhAcHhQcn3b.png)
 </div>
 </div>
 

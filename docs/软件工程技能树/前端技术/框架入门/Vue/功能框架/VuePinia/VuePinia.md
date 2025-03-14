@@ -1,8 +1,9 @@
 ---
 title: Vue Pinia
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/vue/gong-neng-kuang-jia/vuepinia/vuepinia
+slug: Vue Pinia
 sidebar_position: 3
 ---
+
 
 # Vue Pinia
 
@@ -10,15 +11,15 @@ Author：NA
 
 #### <b>啥是pinia</b>
 
-<img src="/assets/DIbFb26bqouHWTxcK0Pc47WEnhf.png" src-width="474" src-height="491" align="center"/>
+![](/assets/DIbFb26bqouHWTxcK0Pc47WEnhf.png)
 
 pinia就是这个很可爱的菠萝（x，pinia是一个用于vue的状态管理（state management）的解决方案。在vue中，组件之间传输信息遵从下级到上级使用`emit`上级到下级使用`props`这样的的常规，当组件越来越多的时候，这种传输的结构就会越来越复杂，如下，同时你还需要额外考虑每一个传输过程中究竟如何组织对象，使得最后的结果兼顾效率与灵活性。
 
-<img src="/assets/HOhgbQaYpoWAHGxMQxvcT66bnBe.png" src-width="793" src-height="1024" align="center"/>
+![](/assets/HOhgbQaYpoWAHGxMQxvcT66bnBe.png)
 
 总之，当组件的数量达到临界，设计这样的复杂传输会变得非常折磨，这时候就需要一种类似于<b>全局状态</b>的东西来简化局面，重新组织信息的传递。
 
-<img src="/assets/Y93AblyQCoy74xxNFupcXSM1n3g.png" src-width="1503" src-height="989" align="center"/>
+![](/assets/Y93AblyQCoy74xxNFupcXSM1n3g.png)
 
 这时候就不得不提`vuex`了，这种建立全局状态的工作什么的，好像`vuex`已经完成了呀，这话没错，使用`vuex` 和`pinia`都可以解决状态管理问题，不过pinia更新，而且拥有特别的优势，具体来讲是：
 
@@ -1415,3 +1416,4 @@ import { useStore } from '~/stores/myStore'
 #### <b>文档和引用</b>
 
 官方文档：[https://pinia.vuejs.org/core-concepts/#using-the-store](https://pinia.vuejs.org/core-concepts/#using-the-store)
+

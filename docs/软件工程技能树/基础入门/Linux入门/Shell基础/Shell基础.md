@@ -1,8 +1,9 @@
 ---
 title: Shell 基础
-slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/linux-ru-men/shell-ji-chu/shell-ji-chu
+slug: Shell 基础
 sidebar_position: 1
 ---
+
 
 # Shell 基础
 
@@ -38,7 +39,7 @@ It is named a <b>shell</b> because it is the outermost layer around the <b>opera
 
 在现代的计算机系统中，想要使用 Shell，你需要借助 Terminal，即终端（更准确的说，是 terminal emulator，不过在本文中我们并不会就此展开）。Terminal 之于 Shell，就好像电话之于通讯服务。
 
-<img src="/assets/BjD5bzA0soVjnVxABmzc0MhGnWg.png" src-width="1650" src-height="1045" align="center"/>
+![](/assets/BjD5bzA0soVjnVxABmzc0MhGnWg.png)
 
 例如，图中打开的这个“窗口”就是一个叫做 iTerm2 的 terminal emulator，而我使用的 `fish` 则是一种 Shell。
 
@@ -296,7 +297,7 @@ $ tail -c 20 <filename>
 $ tail -f <filename>
 ```
 
-<img src="/assets/NsHgbSDlXoUgSPxRaylc1QOVnzf.gif" src-width="493" src-height="600" align="center"/>
+![](/assets/NsHgbSDlXoUgSPxRaylc1QOVnzf.gif)
 
 注意，这里的 echo 开头的语句是在做追加操作，之后会讲到。
 
@@ -696,7 +697,7 @@ $ find . -name "xxx"  | xargs rm -f
 
 可以发现，重定向的功能非常强大。同时，这里也有很多筛选器供你选择，他们经常搭配管道符使用，以辅助管道符进行一些更复杂的工作。
 
-<img src="/assets/BEujbolXXolVjqxXDOQckymtnqy.png" src-width="2018" src-height="1412" align="center"/>
+![](/assets/BEujbolXXolVjqxXDOQckymtnqy.png)
 
 Source: [https://linuxcommand.org/lc3_lts0070.php](https://linuxcommand.org/lc3_lts0070.php)
 
@@ -916,7 +917,7 @@ cd $curDir
 
 # 其他
 
-<img src="/assets/QE6bbxPNso6mYux8IBMc0F3xnse.png" src-width="1456" src-height="740" align="center"/>
+![](/assets/QE6bbxPNso6mYux8IBMc0F3xnse.png)
 
 命令行常见快捷键，Source: [https://lym.readthedocs.io/en/latest/startingcommands.html?highlight=mkdir#moving-around-in-the-command-line](https://lym.readthedocs.io/en/latest/startingcommands.html?highlight=mkdir#moving-around-in-the-command-line)
 

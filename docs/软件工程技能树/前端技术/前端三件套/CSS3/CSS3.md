@@ -1,7 +1,6 @@
 ---
 title: CSS 3
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-it1gwwgjriq0w0k7bptcbr4bn8g-ruhywty6risxg9kbqu4ceuwynmd-ruhywt
+slug: CSS 3
 sidebar_position: 1
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: Redux
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/gong-neng-kuang-jia/redux/redux
+slug: Redux
 sidebar_position: 1
 ---
+
 
 # Redux
 
@@ -190,4 +191,7 @@ connect 的第二个参数是 mapDispatchToProps，它的功能是，将 action 
 不管是 stateProps 还是 dispatchProps，都需要和 ownProps merge 之后才会被赋给组件。connect 的第三个参数就是用来做这件事。通常情况下，你可以不传这个参数，connect 就会使用 Object.assign 替代该方法。
 
 `[options] (Object) `如果指定这个参数，可以定制 connector 的行为。一般不用。
+
+
+
 

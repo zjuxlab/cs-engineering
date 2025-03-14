@@ -1,7 +1,6 @@
 ---
 title: Clean Code
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-fasnwakyoija5ikb6xicihlunnc-evj8w37hgiaqckk8l8hcumx3nbd-gbsnwz8uni1s74kd0oscpiq7nog-gbsnwz
+slug: Clean Code
 sidebar_position: 0
 ---
 
@@ -16,7 +15,7 @@ Author：NA
 <p>全书的示例语言是 Java。</p>
 </div>
 
-<img src="/assets/RsyEblyskolRfhxeP6WctCY3nzh.png" src-width="902" src-height="338" align="center"/>
+![](/assets/RsyEblyskolRfhxeP6WctCY3nzh.png)
 
 # 想说的
 
@@ -25,6 +24,4 @@ Author：NA
 但是鲍勃大叔在书中的干货非常的多，存在的“废话”少之又少。所以我的工作就更接近于反刍这些知识，在尽量不删减原书的知识内容的前提下，把整本书以更高可读性的方式在知识树上呈现。
 
 这个工作不像是总结或者读后感，更贴近重写，所以每个章节我写的都很长。
-
-# 原版资源
 

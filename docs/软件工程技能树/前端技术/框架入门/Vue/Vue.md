@@ -1,7 +1,6 @@
 ---
 title: Vue
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-rmxtwu9geip5o8kkeawck6dnn6e-deqcwvlndiaindkf0ikczjaunwq-deqcwv
+slug: Vue
 sidebar_position: 1
 ---
 
@@ -30,9 +29,9 @@ Vue是尤雨溪在吸收了React、Angular的部分内容后开发的轻量级�
 
 我们使用 `npm init vue@latest` 命令来构建我们的vue项目（个人感觉这个是最好上手的，实际上已经在使用vite框架了）
 
-<img src="/assets/M0kFbrxXnoufgjxsRIVca7B8nB1.png" src-width="639" src-height="234" align="center"/>
+![](/assets/M0kFbrxXnoufgjxsRIVca7B8nB1.png)
 
-<img src="/assets/OWOmb0igLoUc2xxORwmcbxcTnEb.png" src-width="664" src-height="226" align="center"/>
+![](/assets/OWOmb0igLoUc2xxORwmcbxcTnEb.png)
 
 文件基本架构如图所示
 
@@ -192,11 +191,11 @@ app.mount('#app')
 
 我们再来看一下打包后的文件
 
-<img src="/assets/AT8WbIVFboeNA7x54ducHeFbnDb.png" src-width="640" src-height="173" align="center"/>
+![](/assets/AT8WbIVFboeNA7x54ducHeFbnDb.png)
 
 其中index.html如下图所示
 
-<img src="/assets/NIwvbK3umoXvBwxosgFcjFrLnCf.png" src-width="813" src-height="366" align="center"/>
+![](/assets/NIwvbK3umoXvBwxosgFcjFrLnCf.png)
 
 index.html中留有
 

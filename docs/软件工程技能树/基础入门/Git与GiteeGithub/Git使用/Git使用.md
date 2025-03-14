@@ -1,8 +1,9 @@
 ---
 title: Git 使用
-slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/git-yu-giteegithub/git-shi-yong/git-shi-yong
+slug: Git 使用
 sidebar_position: 1
 ---
+
 
 # Git 使用
 

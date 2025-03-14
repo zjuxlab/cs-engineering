@@ -1,8 +1,9 @@
 ---
 title: Vue Router
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/vue/gong-neng-kuang-jia/vuerouter/vuerouter
+slug: Vue Router
 sidebar_position: 0
 ---
+
 
 # Vue Router
 
@@ -30,7 +31,7 @@ Author：李予谦
 
 下面是一个示例：
 
-<img src="/assets/LoW2bPiiFoaC0fx4yf0czoyRnbh.png" src-width="1183" src-height="592" align="center"/>
+![](/assets/LoW2bPiiFoaC0fx4yf0czoyRnbh.png)
 
 正是通过对浏览器历史栈变化的监听和操作，<b>Vue Router</b> 得以为用户渲染出对应的界面，提供和多页应用程序相同的导航体验。事实上，Vue Router 在浏览器自带的前进后退操作之外还提供了丰富的方法来对历史栈进行篡改。因此，当我们在脑海中建立起历史栈的概念时，之后介绍的一系列 API 就变得易于理解。
 
@@ -148,7 +149,7 @@ function login() {
 
 `go` 是一个强大的方法，可以让我们在历史栈中自由穿梭。`go` 方法接受一个整数，表示要在历史栈中前进（如果是负数即为后退）的步数。如果我们当前的历史栈如下：
 
-<img src="/assets/WRACb5epyoNlsbxlD1uckW3qncM.png" src-width="212" src-height="364" align="center"/>
+![](/assets/WRACb5epyoNlsbxlD1uckW3qncM.png)
 
 那么我们可以用 `router.go(2)` 前进至 D 页面，也可以用 `router.go(-1)` 回到A页面。如果你传入了一个不可能达到的参数（如 `router.go(100)`），则会静默失败（无事发生）。
 
@@ -196,7 +197,7 @@ Vue Router 的路径对象提供了 `redirect` 字段，传入的参数就是将
 
 有时候，我们会看到这样的页面布局：
 
-<img src="/assets/YLCEbaAKIopNAfxt9iGc8D8knGd.png" src-width="1281" src-height="578" align="center"/>
+![](/assets/YLCEbaAKIopNAfxt9iGc8D8knGd.png)
 
 我们通过点击侧边栏的目录条目来更改主界面的内容。在这样的布局中，只有主界面的内容在不断发生变化，而侧边栏和顶栏的内容都保持不变。要实现这样的效果，我们可能想到两种方案：
 

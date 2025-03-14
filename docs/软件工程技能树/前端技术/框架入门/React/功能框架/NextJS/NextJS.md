@@ -1,8 +1,9 @@
 ---
 title: NextJS
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kuang-jia-ru-men/react/gong-neng-kuang-jia/nextjs/nextjs
+slug: NextJS
 sidebar_position: 5
 ---
+
 
 # NextJS
 
@@ -225,5 +226,5 @@ y
 
 完成后的监控台截图如下
 
-<img src="/assets/YLBubb8LRonGv1xp3mVcJV9xnvb.png" src-width="2518" src-height="825" align="center"/>
+![](/assets/YLBubb8LRonGv1xp3mVcJV9xnvb.png)
 

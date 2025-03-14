@@ -1,7 +1,6 @@
 ---
 title: HTML 5
-slug: >-
-  ynzowezexiygx0kbdlyco9pgnxe-ejb3wlaaeiqiumkxpozcbvopnfh-it1gwwgjriq0w0k7bptcbr4bn8g-vdpkwydvti5nuxkq4eaclkdzndg-vdpkwy
+slug: HTML 5
 sidebar_position: 0
 ---
 
@@ -62,7 +61,7 @@ HTML5 引入了许多新的表单控件和属性，增强了表单功能和用�
 
 - 全局属性
 
-<img src="/assets/ZIubb83R7ojyrGx46NUctlkEnNh.png" src-width="1695" src-height="1519" align="center"/>
+![](/assets/ZIubb83R7ojyrGx46NUctlkEnNh.png)
 
 事件属性：
 
@@ -85,7 +84,7 @@ HTML5 引入了 `<audio>` 和 `<video>` 标签，允许在网页中直接嵌入�
 <audio controls src=".../xx.mp3" autoplay></audio>
 ```
 
-<img src="/assets/ZPejbHxWEoY0B8xm7MtcixoVntd.png" src-width="1432" src-height="761" align="center"/>
+![](/assets/ZPejbHxWEoY0B8xm7MtcixoVntd.png)
 
 - <b>&lt;video&gt;</b>：用于嵌入视频文件，支持播放控制、暂停、调整音量等功能，支持多种格式（如 MP4、WebM、Ogg 等）。
 
@@ -96,7 +95,7 @@ HTML5 引入了 `<audio>` 和 `<video>` 标签，允许在网页中直接嵌入�
 </video>
 ```
 
-<img src="/assets/CZoDbDD1toC3pexebRnctkFWnvh.png" src-width="1831" src-height="1112" align="center"/>
+![](/assets/CZoDbDD1toC3pexebRnctkFWnvh.png)
 
 ### 4. <b>Canvas和SVG绘图</b>
 

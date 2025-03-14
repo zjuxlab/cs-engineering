@@ -1,8 +1,9 @@
 ---
 title: CMake
-slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/gou-jian-gong-ju/cmake/cmake
+slug: CMake
 sidebar_position: 1
 ---
+
 
 # CMake
 

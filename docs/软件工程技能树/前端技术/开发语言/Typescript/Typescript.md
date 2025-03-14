@@ -1,8 +1,9 @@
 ---
 title: Typescript
-slug: ruan-jian-gong-cheng-ji-neng-shu/qian-duan-ji-shu/kai-fa-yu-yan/typescript/typescript
+slug: Typescript
 sidebar_position: 1
 ---
+
 
 # Typescript
 

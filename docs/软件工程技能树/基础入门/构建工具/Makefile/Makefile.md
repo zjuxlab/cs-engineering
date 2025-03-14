@@ -1,8 +1,9 @@
 ---
 title: Makefile
-slug: ruan-jian-gong-cheng-ji-neng-shu/ji-chu-ru-men/gou-jian-gong-ju/makefile/makefile
+slug: Makefile
 sidebar_position: 0
 ---
+
 
 # Makefile
 

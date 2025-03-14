@@ -515,7 +515,7 @@ module.exports = {
                     {
                       "label": "Grid",
                       "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/Grid/Grid"
+                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/grid/grid"
                     },
                     {
                       "label": "Animations module",

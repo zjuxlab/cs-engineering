@@ -103,17 +103,17 @@ module.exports = {
                       "id": "软件工程技能树/基础入门/基础课程/计算机网络/Cookies/Cookies"
                     },
                     {
-                      "label": "三层|网络层",
+                      "label": "三层-网络层",
                       "type": "doc",
                       "id": "软件工程技能树/基础入门/基础课程/计算机网络/三层网络层/三层网络层"
                     },
                     {
-                      "label": "四层|传输层",
+                      "label": "四层-传输层",
                       "type": "doc",
                       "id": "软件工程技能树/基础入门/基础课程/计算机网络/四层传输层/四层传输层"
                     },
                     {
-                      "label": "五层|应用层",
+                      "label": "五层-应用层",
                       "type": "category",
                       "items": [
                         {
@@ -479,53 +479,173 @@ module.exports = {
               "type": "category",
               "items": [
                 {
-                  "label": "HTML 5",
+                  "label": "HTML",
                   "type": "category",
                   "items": [
                     {
-                      "label": "audio",
-                      "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/HTML5/audio/audio"
+                      "label": "HTML基础",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "HTML和XHTML基础",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML基础/HTML和XHTML基础/HTML和XHTML基础"
+                        },
+                        {
+                          "label": "外部资源引用",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML基础/外部资源引用/外部资源引用"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML基础/HTML基础"
+                      }
                     },
                     {
-                      "label": "video",
-                      "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/HTML5/video/video"
-                    },
-                    {
-                      "label": "svg",
-                      "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/HTML5/svg/svg"
+                      "label": "HTML 5",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "HTML5 新特性",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML5/HTML5新特性/HTML5新特性"
+                        },
+                        {
+                          "label": "audio",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML5/audio/audio"
+                        },
+                        {
+                          "label": "video",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML5/video/video"
+                        },
+                        {
+                          "label": "svg",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML5/svg/svg"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML5/HTML5"
+                      }
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/前端技术/前端三件套/HTML5/HTML5"
+                    "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML"
                   }
                 },
                 {
-                  "label": "CSS 3",
+                  "label": "CSS",
                   "type": "category",
                   "items": [
                     {
-                      "label": "flex",
-                      "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/flex/flex"
+                      "label": "CSS基础",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "CSS selector",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS基础/CSSselector/CSSselector"
+                        },
+                        {
+                          "label": "CSS pseudo element",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS基础/CSSpseudoelement/CSSpseudoelement"
+                        },
+                        {
+                          "label": "Box Model",
+                          "type": "category",
+                          "items": [
+                            {
+                              "label": "标准盒模型",
+                              "type": "doc",
+                              "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS基础/BoxModel/标准盒模型/标准盒模型"
+                            },
+                            {
+                              "label": "IE盒模型",
+                              "type": "doc",
+                              "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS基础/BoxModel/IE盒模型/IE盒模型"
+                            }
+                          ],
+                          "link": {
+                            "type": "doc",
+                            "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS基础/BoxModel/BoxModel"
+                          }
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS基础/CSS基础"
+                      }
                     },
                     {
-                      "label": "Grid",
-                      "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/grid/grid"
+                      "label": "CSS 3",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "flex",
+                          "type": "category",
+                          "items": [
+                            {
+                              "label": "flex应用实践",
+                              "type": "doc",
+                              "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS3/flex/flex应用实践/flex应用实践"
+                            }
+                          ],
+                          "link": {
+                            "type": "doc",
+                            "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS3/flex/flex"
+                          }
+                        },
+                        {
+                          "label": "Grid",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS3/Grid/Grid"
+                        },
+                        {
+                          "label": "Animations module",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS3/Animationsmodule/Animationsmodule"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS3/CSS3"
+                      }
                     },
                     {
-                      "label": "Animations module",
-                      "type": "doc",
-                      "id": "软件工程技能树/前端技术/前端三件套/CSS3/Animationsmodule/Animationsmodule"
+                      "label": "CSS拓展",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "Tailwind CSS",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS拓展/TailwindCSS/TailwindCSS"
+                        },
+                        {
+                          "label": "Sass",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS拓展/Sass/Sass"
+                        },
+                        {
+                          "label": "Less",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS拓展/Less/Less"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS拓展/CSS拓展"
+                      }
                     }
                   ],
                   "link": {
                     "type": "doc",
-                    "id": "软件工程技能树/前端技术/前端三件套/CSS3/CSS3"
+                    "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS"
                   }
                 },
                 {
@@ -680,28 +800,43 @@ module.exports = {
               }
             },
             {
-              "label": "多端开发",
+              "label": "跨平台与多端开发",
               "type": "category",
               "items": [
                 {
                   "label": "Uni-app",
                   "type": "doc",
-                  "id": "软件工程技能树/前端技术/多端开发/Uniapp/Uniapp"
+                  "id": "软件工程技能树/前端技术/跨平台与多端开发/Uniapp/Uniapp"
                 },
                 {
                   "label": "Taro",
                   "type": "doc",
-                  "id": "软件工程技能树/前端技术/多端开发/Taro/Taro"
+                  "id": "软件工程技能树/前端技术/跨平台与多端开发/Taro/Taro"
                 },
                 {
                   "label": "Ionic",
                   "type": "doc",
-                  "id": "软件工程技能树/前端技术/多端开发/Ionic/Ionic"
+                  "id": "软件工程技能树/前端技术/跨平台与多端开发/Ionic/Ionic"
                 }
               ],
               "link": {
                 "type": "doc",
-                "id": "软件工程技能树/前端技术/多端开发/多端开发"
+                "id": "软件工程技能树/前端技术/跨平台与多端开发/跨平台与多端开发"
+              }
+            },
+            {
+              "label": "前端进阶",
+              "type": "category",
+              "items": [
+                {
+                  "label": "图形渲染与动画",
+                  "type": "doc",
+                  "id": "软件工程技能树/前端技术/前端进阶/图形渲染与动画/图形渲染与动画"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/前端技术/前端进阶/前端进阶"
               }
             }
           ],
@@ -1236,8 +1371,148 @@ module.exports = {
             },
             {
               "label": "CG",
-              "type": "doc",
-              "id": "软件工程技能树/进阶技术/CG/CG"
+              "type": "category",
+              "items": [
+                {
+                  "label": "渲染管道",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "延迟渲染",
+                      "type": "doc",
+                      "id": "软件工程技能树/进阶技术/CG/渲染管道/延迟渲染/延迟渲染"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/进阶技术/CG/渲染管道/渲染管道"
+                  }
+                },
+                {
+                  "label": "优化",
+                  "type": "doc",
+                  "id": "软件工程技能树/进阶技术/CG/优化/优化"
+                },
+                {
+                  "label": "几何",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "曲线与曲面",
+                      "type": "doc",
+                      "id": "软件工程技能树/进阶技术/CG/几何/曲线与曲面/曲线与曲面"
+                    },
+                    {
+                      "label": "摄像机与坐标变换",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": " 四元数基础",
+                          "type": "doc",
+                          "id": "软件工程技能树/进阶技术/CG/几何/摄像机与坐标变换/四元数基础/四元数基础"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/进阶技术/CG/几何/摄像机与坐标变换/摄像机与坐标变换"
+                      }
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/进阶技术/CG/几何/几何"
+                  }
+                },
+                {
+                  "label": "部分CV",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "抗混淆",
+                      "type": "doc",
+                      "id": "软件工程技能树/进阶技术/CG/部分CV/抗混淆/抗混淆"
+                    },
+                    {
+                      "label": "滤波/卷积",
+                      "type": "doc",
+                      "id": "软件工程技能树/进阶技术/CG/部分CV/滤波卷积/滤波卷积"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/进阶技术/CG/部分CV/部分CV"
+                  }
+                },
+                {
+                  "label": "光追",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "实现与优化",
+                      "type": "doc",
+                      "id": "软件工程技能树/进阶技术/CG/光追/实现与优化/实现与优化"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/进阶技术/CG/光追/光追"
+                  }
+                },
+                {
+                  "label": "Shader着色器",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "Pixel Shader",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "Shadertoy",
+                          "type": "doc",
+                          "id": "软件工程技能树/进阶技术/CG/Shader着色器/PixelShader/Shadertoy/Shadertoy"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/进阶技术/CG/Shader着色器/PixelShader/PixelShader"
+                      }
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/进阶技术/CG/Shader着色器/Shader着色器"
+                  }
+                },
+                {
+                  "label": "API",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "历史",
+                      "type": "doc",
+                      "id": "软件工程技能树/进阶技术/CG/API/历史/历史"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/进阶技术/CG/API/API"
+                  }
+                },
+                {
+                  "label": "光栅化和反走样简介",
+                  "type": "doc",
+                  "id": "软件工程技能树/进阶技术/CG/光栅化和反走样简介/光栅化和反走样简介"
+                },
+                {
+                  "label": "阴影",
+                  "type": "doc",
+                  "id": "软件工程技能树/进阶技术/CG/阴影/阴影"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/进阶技术/CG/CG"
+              }
             },
             {
               "label": "客户端开发",

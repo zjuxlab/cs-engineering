@@ -7,6 +7,8 @@ sidebar_position: 2
 
 # JavaScript
 
+> 有关JavaScript的更多内容也可在开发语言/JavaScript中找到
+
 # BOM是什么？
 
 ## 前言

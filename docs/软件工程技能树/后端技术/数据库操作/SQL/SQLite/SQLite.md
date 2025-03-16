@@ -250,7 +250,7 @@ sqlite> select *
 
 ## 基础语法
 
-学了《数据库系统》课程后，发现 SQLite 只是 SQL 的其中一种实现，它支持大多数的 SQL 语句，因此这里就不再列出详细的语法规则。对此不太了解的读者可以阅读我的数据库笔记的 Lec 3-5（已完更！）。
+学了《数据库系统》课程后，发现 SQLite 只是 SQL 的其中一种实现，它支持大多数的 SQL 语句，因此这里就不再列出详细的语法规则。对此不太了解的读者可以阅读我的数据库笔记的 Lec 3-5（正在更新中）。
 
 - [Lec 3: Introduction to SQL](https://note.noughtq.top/system/db/3)
 - [Lec 4: Intermediate SQL](https://note.noughtq.top/system/db/4)

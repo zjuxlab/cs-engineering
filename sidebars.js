@@ -466,8 +466,48 @@ module.exports = {
           "items": [
             {
               "label": "前端入门",
-              "type": "doc",
-              "id": "软件工程技能树/前端技术/前端入门/前端入门"
+              "type": "category",
+              "items": [
+                {
+                  "label": "浏览器",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "BOM",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/前端入门/浏览器/BOM/BOM"
+                    },
+                    {
+                      "label": "DOM",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/前端入门/浏览器/DOM/DOM"
+                    },
+                    {
+                      "label": "Cookie",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/前端入门/浏览器/Cookie/Cookie"
+                    },
+                    {
+                      "label": "Fetch API",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/前端入门/浏览器/FetchAPI/FetchAPI"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/前端技术/前端入门/浏览器/浏览器"
+                  }
+                },
+                {
+                  "label": "前端COC",
+                  "type": "doc",
+                  "id": "软件工程技能树/前端技术/前端入门/前端COC/前端COC"
+                }
+              ],
+              "link": {
+                "type": "doc",
+                "id": "软件工程技能树/前端技术/前端入门/前端入门"
+              }
             },
             {
               "label": "前端入门实践",
@@ -665,8 +705,73 @@ module.exports = {
               "items": [
                 {
                   "label": "JavaScript",
-                  "type": "doc",
-                  "id": "软件工程技能树/前端技术/开发语言/JavaScript/JavaScript"
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "JS语言基础",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/开发语言/JavaScript/JS语言基础/JS语言基础"
+                    },
+                    {
+                      "label": "ES6和ES Next",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/开发语言/JavaScript/ES6和ESNext/ES6和ESNext"
+                    },
+                    {
+                      "label": "异步编程",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/开发语言/JavaScript/异步编程/异步编程"
+                    },
+                    {
+                      "label": "Node.js",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "Node.js基础",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/开发语言/JavaScript/Nodejs/Nodejs基础/Nodejs基础"
+                        },
+                        {
+                          "label": "进阶框架和库",
+                          "type": "category",
+                          "items": [
+                            {
+                              "label": "Sequelize",
+                              "type": "doc",
+                              "id": "软件工程技能树/前端技术/开发语言/JavaScript/Nodejs/进阶框架和库/Sequelize/Sequelize"
+                            },
+                            {
+                              "label": "Axios",
+                              "type": "doc",
+                              "id": "软件工程技能树/前端技术/开发语言/JavaScript/Nodejs/进阶框架和库/Axios/Axios"
+                            },
+                            {
+                              "label": "Mock.js",
+                              "type": "doc",
+                              "id": "软件工程技能树/前端技术/开发语言/JavaScript/Nodejs/进阶框架和库/Mockjs/Mockjs"
+                            }
+                          ],
+                          "link": {
+                            "type": "doc",
+                            "id": "软件工程技能树/前端技术/开发语言/JavaScript/Nodejs/进阶框架和库/进阶框架和库"
+                          }
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/前端技术/开发语言/JavaScript/Nodejs/Nodejs"
+                      }
+                    },
+                    {
+                      "label": "JS开发Harmony 实践",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/开发语言/JavaScript/JS开发Harmony实践/JS开发Harmony实践"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/前端技术/开发语言/JavaScript/JavaScript"
+                  }
                 },
                 {
                   "label": "Typescript",
@@ -817,6 +922,26 @@ module.exports = {
                   "label": "Ionic",
                   "type": "doc",
                   "id": "软件工程技能树/前端技术/跨平台与多端开发/Ionic/Ionic"
+                },
+                {
+                  "label": "移动端适配",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "UserAgent",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/跨平台与多端开发/移动端适配/UserAgent/UserAgent"
+                    },
+                    {
+                      "label": "Viewport",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/跨平台与多端开发/移动端适配/Viewport/Viewport"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/前端技术/跨平台与多端开发/移动端适配/移动端适配"
+                  }
                 }
               ],
               "link": {
@@ -830,8 +955,108 @@ module.exports = {
               "items": [
                 {
                   "label": "图形渲染与动画",
-                  "type": "doc",
-                  "id": "软件工程技能树/前端技术/前端进阶/图形渲染与动画/图形渲染与动画"
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "CSS动画",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "transition",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端进阶/图形渲染与动画/CSS动画/transition/transition"
+                        },
+                        {
+                          "label": "transform",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端进阶/图形渲染与动画/CSS动画/transform/transform"
+                        },
+                        {
+                          "label": "Filter",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端进阶/图形渲染与动画/CSS动画/Filter/Filter"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/前端技术/前端进阶/图形渲染与动画/CSS动画/CSS动画"
+                      }
+                    },
+                    {
+                      "label": "Canvas基础&WebGL",
+                      "type": "category",
+                      "items": [
+                        {
+                          "label": "Canvas基础",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端进阶/图形渲染与动画/Canvas基础WebGL/Canvas基础/Canvas基础"
+                        },
+                        {
+                          "label": "Three.js",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端进阶/图形渲染与动画/Canvas基础WebGL/Threejs/Threejs"
+                        },
+                        {
+                          "label": "Fabric.js",
+                          "type": "doc",
+                          "id": "软件工程技能树/前端技术/前端进阶/图形渲染与动画/Canvas基础WebGL/Fabricjs/Fabricjs"
+                        }
+                      ],
+                      "link": {
+                        "type": "doc",
+                        "id": "软件工程技能树/前端技术/前端进阶/图形渲染与动画/Canvas基础WebGL/Canvas基础WebGL"
+                      }
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/前端技术/前端进阶/图形渲染与动画/图形渲染与动画"
+                  }
+                },
+                {
+                  "label": "搜索引擎优化",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "搜索引擎语法",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/前端进阶/搜索引擎优化/搜索引擎语法/搜索引擎语法"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/前端技术/前端进阶/搜索引擎优化/搜索引擎优化"
+                  }
+                },
+                {
+                  "label": "测试",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "Selenium",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/前端进阶/测试/Selenium/Selenium"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/前端技术/前端进阶/测试/测试"
+                  }
+                },
+                {
+                  "label": "可视化",
+                  "type": "category",
+                  "items": [
+                    {
+                      "label": "Streamlit",
+                      "type": "doc",
+                      "id": "软件工程技能树/前端技术/前端进阶/可视化/Streamlit/Streamlit"
+                    }
+                  ],
+                  "link": {
+                    "type": "doc",
+                    "id": "软件工程技能树/前端技术/前端进阶/可视化/可视化"
+                  }
                 }
               ],
               "link": {

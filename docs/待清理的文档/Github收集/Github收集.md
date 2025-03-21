@@ -1,6 +1,6 @@
 ---
 title: Github收集
-slug: pxhdw9gctipif7ks5ebcpzaxnjh-bfo4wnrnvieffsk4ip1c7sdznxh-bfo4wn
+slug: pxhdw9gctipif7ks5ebcpzaxnjhbfo4wnrnvieffsk4ip1c7sdznxh-bfo4wn
 sidebar_position: 3
 ---
 

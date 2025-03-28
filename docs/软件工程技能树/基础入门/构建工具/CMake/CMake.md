@@ -9,8 +9,11 @@ sidebar_position: 1
 
 Author：龙毅豪
 
-https://cmake.org/cmake/help/latest/guide/tutorial/index.html
+CMake Tutorial：https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 
+CMake 是一个跨平台的自动化构建系统生成工具，用于管理软件编译过程。它不直接构建项目，而是根据 CMakeLists.txt 配置文件生成标准的构建文件（如 Makefile、Visual Studio 项目、Xcode 项目等），从而适配不同平台和编译器。
+
+它可以生成适用于 Linux（Makefile）、Windows（Visual Studio）、macOS（Xcode）等的构建文件，避免手动维护多套配置。
 # CMakeLists.txt 基本格式
 
 ```cmake
@@ -24,7 +27,8 @@ add_executable(answer main.cpp answer.cpp)
 
 - 生成构建目录
     - `cmake -B build      # 生成构建目录，-B 指定生成的构建系统代码放在 build 目录 `         ` ccmake -B build   #ccmake和cmake命令用法一样，但是ccmake会有命令行下的UI`
-    -         ```bash
+    -        
+```bash
 mkdir build_dir   # 自己手动创建构建目录
 cd build_dir
 cmake ..

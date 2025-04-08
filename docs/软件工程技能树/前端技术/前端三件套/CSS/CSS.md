@@ -7,6 +7,7 @@ sidebar_position: 1
 
 # CSS
 
+<<<<<<< HEAD
 ## 为什么我们需要CSS
 
 1994年，当网景浏览器刚刚问世时，网页设计师们正深陷「标签地狱」：
@@ -50,3 +51,5 @@ box-sizing: content-box; /* width仅内容区 */
 
 ### 2010至今：CSS3
 
+=======
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29

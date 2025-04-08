@@ -11,7 +11,11 @@ Author：李予谦
 
 # 写在前面
 
+<<<<<<< HEAD
 关于为什么突然选择Selenium，主要的原因是：
+=======
+关于为什么突然选择Selenium作为第一个写的每月积累内训，主要的原因是：
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 软件工程的软件质量保证与测试一课中的project是6个爬虫/1个炼丹 二选一，其中爬虫强行要求使用模拟人类操作浏览器行为的方式来进行，因此迫不得已需要使用Selenium。
 
@@ -264,7 +268,14 @@ el = WebDriverWait(driver, timeout=3).until(lambda d: d.find_element(By.TAG_NAME
 from selenium.webdriver.support import expected_conditions as EC
 ```
 
+<<<<<<< HEAD
 <i>警告:</i> 不要混合使用隐式和显式等待。这样做会导致不可预测的等待时间。例如，将隐式等待设置为10秒，将显式等待设置为15秒，可能会导致在20秒后发生超时。
+=======
+<div class="callout callout-bg-2 callout-border-2">
+<div class='callout-emoji'>📌</div>
+<p><i>警告:</i> 不要混合使用隐式和显式等待。这样做会导致不可预测的等待时间。例如，将隐式等待设置为10秒，将显式等待设置为15秒，可能会导致在20秒后发生超时。</p>
+</div>
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 ## 查找元素
 

@@ -11,12 +11,15 @@ Author:李予谦/李宇轩
 
 # BOM是什么？
 
+<<<<<<< HEAD
 ## Web开发的"控制面板"
 
 当你坐进汽车的驾驶座，面前是方向盘、仪表盘和各种控制按钮——这些构成了你与车辆交互的界面。在Web开发的世界里，<b>浏览器对象模型(Browser Object Model, BOM)</b> 就扮演着类似的角色，它是JavaScript与浏览器本身进行交互的编程接口。与专注于文档内容的DOM不同，BOM提供了控制浏览器窗口、导航历史、屏幕尺寸等浏览器层面功能的能力。
 
 BOM的概念最早可以追溯到1995年Netscape Navigator 2.0浏览器和JavaScript的诞生时期。当时的开发者意识到，除了操作页面内容外，还需要一种方式来控制浏览器行为本身。有趣的是，与DOM不同，BOM从未成为正式的W3C标准，这使得不同浏览器在实现上存在差异，但也赋予了它灵活适应各种浏览器特性的能力。
 
+=======
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 ## 前言
 
 <div class="flex gap-3 columns-2" column-size="2">
@@ -194,7 +197,14 @@ const lockedAllowed = window.screen.lockOrientation(orientation);
 
 orientation是需要锁定屏幕的方向。这个参数是一个字符串或者是一个由字符串组成的数组。
 
+<<<<<<< HEAD
 但是这个方法`screen.lockOrientation()`<b>正在被弃用，所以尽量不要使用</b>，应该使用下面介绍的`screen.orientation.lock()`，虽然它的兼容性也一般，<b>目前主要支持移动设备</b>，不过确实一般方向锁定也只用于移动设备。
+=======
+<div class="callout callout-bg-4 callout-border-2">
+<div class='callout-emoji'>💥</div>
+<p>但是这个方法<code>screen.lockOrientation()</code><b>正在被弃用，所以尽量不要使用</b>，应该使用下面介绍的<code>screen.orientation.lock()</code>，虽然它的兼容性也一般，<b>目前主要支持移动设备</b>，不过确实一般方向锁定也只用于移动设备。</p>
+</div>
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 `screen.orientation.lock(orientation)`是新的用于锁定方向的api，需要传递一个参数orientation：
 - "natural"：来自底层操作系统的屏幕自然方向： `portrait-primary` 或 `landscape-primary` 。

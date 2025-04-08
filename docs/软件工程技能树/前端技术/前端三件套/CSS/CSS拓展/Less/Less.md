@@ -16,6 +16,7 @@ Author:舒靖
 > 建议的阅读方式为打开配置Vscode后，自己编译一下相关代码，帮助理解
 > 水平所限，欢迎修订
 
+<<<<<<< HEAD
 ## 从「样式表」到「动态样式语言」的蜕变
 
 2009年，当Alexis Sellier（又名"CloudHead"）首次发布Less（Leaner Style Sheets）时，前端开发者正面临CSS的诸多限制。当时典型的开发场景：
@@ -39,6 +40,8 @@ Author:舒靖
 
 Less的诞生为CSS带来了<b>变量</b>、<b>嵌套</b>、<b>运算</b>等编程特性，同时保持了CSS的原有语法风格，使开发者能够更优雅地编写和维护样式代码。
 
+=======
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 ## 什么是Less
 
 Less 是一门 CSS 预处理语言，它扩充了 CSS 语言，增加了诸如变量、混合、函数等功能，让 CSS 更易维护、方便制作主题、扩充。
@@ -50,8 +53,11 @@ Less 是一门 CSS 预处理语言，它扩充了 CSS 语言，增加了诸如�
 - 使用变量，可以更快地实现维护
 - 可以定义样式并重复使用
 
+<<<<<<< HEAD
 Less作为CSS预处理器的先驱之一，为前端样式开发带来了革命性的改进。它平衡了功能增强与语法简洁性，特别适合需要渐进式改进现有CSS代码库的项目。正如Less官网所述："It's CSS, with just a little more"——这正是Less的设计哲学，在保持CSS本质的同时，提供恰到好处的增强功能。
 
+=======
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 # 快速上手
 
 本节参考：[Less 入门文档](https://www.runoob.com/manual/lessguide/)

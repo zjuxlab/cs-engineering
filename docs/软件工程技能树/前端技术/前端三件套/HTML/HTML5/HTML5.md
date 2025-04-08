@@ -1,12 +1,17 @@
 ---
 title: HTML 5
 slug: HTML 5
+<<<<<<< HEAD
 sidebar_position: 0
+=======
+sidebar_position: 1
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 ---
 
 
 # HTML 5
 
+<<<<<<< HEAD
 2004年6月，在苹果、Mozilla、Opera等公司的开发者聚会上，一场针对W3C的"技术叛乱"正在酝酿。当时W3C（万维网联盟）正全力推进XHTML 2.0标准，这个严格而理想化的标准有一个致命问题——<b>它不向后兼容现有网页</b>。这意味着：
 
 - 全球99%的网站需要重写
@@ -57,3 +62,5 @@ Ian Hickson（后来成为HTML5规范主要作者）当场画出了著名的<b>�
 
 1. 引入多特性，详见字文档：HTML5新特性
 
+=======
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29

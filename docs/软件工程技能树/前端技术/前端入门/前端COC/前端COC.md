@@ -7,6 +7,7 @@ sidebar_position: 1
 
 # 前端COC
 
+<<<<<<< HEAD
 Author:NA/张书怀
 
 ## 什么是COC？——开发者社区的"宪法"
@@ -27,12 +28,15 @@ Author:NA/张书怀
 
 COC在前端领域的体现如下：
 
+=======
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 ## 异常处理
 
 每逢`obj.xyz`都要注意是否有空指针
 
 每逢I/O操作都要注意是否有异常抛出
 
+<<<<<<< HEAD
 空指针example：
 
 ```
@@ -73,6 +77,8 @@ async function fetchData() {
 }
 ```
 
+=======
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 ## 善用 const
 
 一个好习惯：在所有不需要修改的变量处设定const
@@ -80,6 +86,7 @@ async function fetchData() {
 - 一方面：避免误改导致错误（特别是map等引用类型）
 - 一方面：明确只读变量的语义
 
+<<<<<<< HEAD
 example：
 
 ```
@@ -136,6 +143,13 @@ const formatDate = (timestamp) => {
     OrderDetail.js
 ```
 
+=======
+## 模块划分
+
+- 横向：按照不同对象和功能划分
+- 纵向：按照运行的流程划分
+
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 ## 命名规范
 
 - 禁止在函数或变量中使用`ALL_UPPER_CASE`（枚举量姑且还可以接受）
@@ -154,6 +168,7 @@ const formatDate = (timestamp) => {
 - 每个特性开发后进行单独的调试
 - 善用log进行bug定位
 
+<<<<<<< HEAD
 测试金字塔模式：
 
 ```
@@ -199,6 +214,8 @@ export const createUser = (overrides = {}) => ({
 const adminUser = createUser({ role: 'admin' });
 ```
 
+=======
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 # 注释和文档
 
 ## 注释
@@ -272,6 +289,11 @@ if(user!=null) uid = user.id; // user找不到时为null
 
 ### 接口文档
 
+<<<<<<< HEAD
+=======
+本部分内容可与[原生 JavaScript](wikcn3LB0VHRe2WBEnj1TENeqlg) 中HTTP章节、前后端通信结合。
+
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 接口文档存在的目的是使前后端有一个规范化的交流途径，优秀的接口文档能极大提高前后端的协作效率。前端需要会读接口文档，并且能根据文档完成对应的请求操作。
 
 - 在讲文档内容前，实际上已经有一些手写文档的替代方案，例如 Swagger 等。

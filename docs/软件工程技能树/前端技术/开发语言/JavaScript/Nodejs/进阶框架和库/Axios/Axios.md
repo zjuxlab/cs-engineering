@@ -15,6 +15,7 @@ Author:李予谦/张志心/蒋旻昊
 
 Axios 是一款基于 Promise 的可以用于浏览器和 node.js 的网络请求库。
 
+<<<<<<< HEAD
 在Axios前，前端开发者需要这么写：
 
 ```
@@ -85,6 +86,8 @@ async function fetchUsers() {
 - 腾讯：基于Axios封装的内部请求库
 - Airbnb：结合Redux管理API状态
 
+=======
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 <b>Axios 的特性：</b>
 
 - 从浏览器中创建 XMLHttpRequests

@@ -15,6 +15,7 @@ Author:邱至松
 
 按照官网文档的介绍，即<em>Sequelize 是一个基于 promise 的 Node.js ORM数据库框架</em><em>,  </em>可以帮助我们在node.js中操作数据库。
 
+<<<<<<< HEAD
 ## 为什么我们需要Sequelize
 
 在Node.js诞生后的头两年，开发者操作数据库的方式堪称"西部荒野"：
@@ -59,6 +60,14 @@ const product = await Product.create({
 ## 安装
 
 请确保电脑已有node.js与npm/yarn
+=======
+## 安装
+
+<div class="callout callout-bg-2 callout-border-2">
+<div class='callout-emoji'>💡</div>
+<p>请确保电脑已有node.js与npm/yarn</p>
+</div>
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 1. sequelize安装
     ```bash
@@ -207,7 +216,14 @@ User.sync({ alter: true });//检查数据库中的表，使其与模型中的表
 sequelize.sync({ force: true })
 ```
 
+<<<<<<< HEAD
 模型同步都可能对原有的数据库产生破坏，我们也可以使用Sequelize CLI中的迁移功能来进行同步
+=======
+<div class="callout callout-bg-2 callout-border-2">
+<div class='callout-emoji'>❗</div>
+<p>模型同步都可能对原有的数据库产生破坏，我们也可以使用Sequelize CLI中的迁移功能来进行同步</p>
+</div>
+>>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 #### 数据类型
 

@@ -1,11 +1,7 @@
 ---
 title: API
 slug: API
-<<<<<<< HEAD
 sidebar_position: 4
-=======
-sidebar_position: 6
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 ---
 
 

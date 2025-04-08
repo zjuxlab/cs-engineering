@@ -9,7 +9,6 @@ sidebar_position: 2
 
 Author:NA
 
-<<<<<<< HEAD
 ## Cookie的诞生背景
 
 1994年，当网景通信（Netscape Communications）的工程师Lou Montulli正在开发最早的电子商务网站时，他遇到了一个根本性问题——<b>HTTP协议的无状态特性</b>。就像每次见面都把你当作陌生人的服务员，早期的Web服务器无法记住之前的任何请求。这意味着：
@@ -86,61 +85,16 @@ Cookie 主要用于以下三个方面：
 2. 服务器看到请求中未携带Cookie，在HTTP的响应头中加入`Set-Cookie`。
 
 ```css
-=======
-# 简介与定义
-
-为什么每次打开网页都会保持登录状态？Cookie 使基于无状态的 HTTP 协议记录稳定的状态信息成为了可能。
-
-HTTP Cookie（也叫 Web Cookie 或浏览器 Cookie）是服务器发送到用户浏览器并保存在本地的一小块数据。浏览器会存储 cookie 并在下次向同一服务器再发起请求时携带并发送到服务器上。通常，它用于告知服务端两个请求是否来自同一浏览器——如保持用户的登录状态。
-
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>🍪</div>
-<p>至于为什么叫cookie，一种说法是在一个童话故事中，主角在森林中通过洒下cookie crumbs来标识走过的路，所以就给具有类似功效的这块数据起名为cookie。</p>
-</div>
-
-Cookie 主要用于以下三个方面：
-
-1. 会话状态管理
-
-如用户登录状态、购物车、游戏分数或其他需要记录的信息
-
-1. 个性化设置
-
-如用户自定义设置、主题和其他设置
-
-1. 浏览器行为跟踪
-
-如跟踪分析用户行为等
-
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>🚫</div>
-<p>曾经由于没有更合适的方法，cookie被用来存储客户端数据。但由于浏览器的每次请求都会携带 Cookie 数据，会带来额外的性能开销，再加上现在有了新的存储数据的API（<em>localStorage</em>等），所以就不要再用cookie存储客户端数据了。</p>
-</div>
-
-既然cookie是存储于本地的一小块数据，那么这块数据以何格式从服务器获取，作用域和生命周期怎么定义，数据有无大小限制，又该如何保证cookie的安全传输呢？接下来逐条说。
-
-# 创建cookie
-
-1. 在首次访问网站时，浏览器发送请求中并未携带Cookie。
-2. 服务器看到请求中未携带Cookie，在HTTP的响应头中加入`Set-Cookie`。
-    ```js
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 HTTP/1.0 200 OK
 Content-type: text/html
 Set-Cookie: yummy_cookie=choco
 Set-Cookie: tasty_cookie=strawberry
 ```
 
-<<<<<<< HEAD
 1. 浏览器收到`Set-Cookie`后，会将Cookie保存下来
 2. 下次再访问该网站时，HTTP请求头就会携带Cookie。
 
 ```css
-=======
-3. 浏览器收到`Set-Cookie`后，会将Cookie保存下来
-4. 下次再访问该网站时，HTTP请求头就会携带Cookie。
-    ```js
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 GET /sample_page.html HTTP/1.1
 Host: www.example.org
 Cookie: yummy_cookie=choco; tasty_cookie=strawberry
@@ -159,18 +113,9 @@ cookie始于一个cookie的名称/值对，&lt;cookie-value&gt;是可选的。�
 此外还存在特殊的cookie名称前缀：名称中包含 `__Secure-` 或 `__Host-` 前缀的 cookie，只可以应用在使用了安全连接（HTTPS）的域中，需要同时设置 `secure` 属性。
 另外，假如 cookie 以 `__Host-` 为前缀，那么 path 属性的值必须为 `/`（表示整个站点），且不能含有 `Domain` 属性。
 
-<<<<<<< HEAD
 fetch默认对服务端通过`Set-Cookie`头设置的cookie会忽略
 
 ## 生命周期
-=======
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>💥</div>
-<p>fetch默认对服务端通过<code>Set-Cookie</code>头设置的cookie会忽略</p>
-</div>
-
-# 生命周期
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 Cookie 的生命周期可以通过两种方式定义：
 
@@ -182,11 +127,7 @@ Cookie 的生命周期可以通过两种方式定义：
 Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT;
 ```
 
-<<<<<<< HEAD
 ## 作用域
-=======
-# 作用域
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 ## Domain 属性
 
@@ -230,7 +171,6 @@ Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT;
 
 跨站是比跨域更宽松的一种限制。可以这么说如果跨站，那么肯定会跨域，但如果跨域，那么不一定会跨站。如端口不同，子域名不同（`a.baidu.com.cn`与`b.baidu.com.cn`）都属于跨 域，但不属于跨站。
 
-<<<<<<< HEAD
 ## 其它规则
 
 ### 大小限制
@@ -238,15 +178,6 @@ Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT;
 不同浏览器对cookie限制不同，个数上限大多在20-50个，总大小上限在4kb左右。
 
 ### js修改cookie
-=======
-# 其它规则
-
-## 大小限制
-
-不同浏览器对cookie限制不同，个数上限大多在20-50个，总大小上限在4kb左右。
-
-## js修改cookie
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 在浏览器中用js修改cookie，相当于重新设置。并且js中没有直接删除Cookie的方法。如果需要删除某个Cookie，需要重新设置该Cookie，将它的有效期直接设置为过期，即可实现删除功能。
 
@@ -264,15 +195,9 @@ document.cookie
 
 而在读取cookie时，也只能读取到名称和值，而不能读取到属性。
 
-<<<<<<< HEAD
 ## 第三方cookie
 
 ### 现状与漏洞
-=======
-# 第三方cookie
-
-## 现状与漏洞
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 目前第三方cookie有可能被利用于CSRF攻击，即在第三方网站中，利用不显示的图片，或`iframe`等，调用本地的cookie，伪造用户给服务器发送恶意请求。如下就是一个利用`iframe`的CSRF攻击例子，用户只要点进网站，恶意网站就会提交表单，给bank-example发送使用第三方cookie的转账POST请求。
 
@@ -290,11 +215,7 @@ document.cookie
 
 CSRF攻击的存在，是因为服务器验证不充分，所以一种解决方法就是上面提到的，在设置cookie时添加`SameSite`属性，这样就阻止了部分第三方cookie的发送。还有其它方法如：验证码，核对referer（但某些浏览器也可以篡改referer），加入随机token等。
 
-<<<<<<< HEAD
 ### 未来
-=======
-## 未来
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 因上面说到的安全漏洞，为了保护用户的隐私，浏览器供正在逐步停止对第三方 <b>Cookie</b> 的支持。目前 <b>Safari</b> 已经完全禁止了三方 <b>Cookie</b>，<b>Chrome</b> 也宣布将逐步弃用。一个叫<b>Privacy Sandbox</b>的计划正在为解决第三方cookie的方案进行试验，有不少提议方案，如`CHIPS`（拥有独立分区状态的Cookies）和`First-Party Set`。
 

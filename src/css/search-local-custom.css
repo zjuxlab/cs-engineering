@@ -1,32 +1,305 @@
-/* 本地搜索样式自定义 */
+/* 搜索组件高级自定义 */
 
-/* 搜索框和搜索模态框基本样式 */
+/* 1. 基本颜色和形状自定义 */
 :root {
-    --search-local-modal-width: 600px;
-    --search-local-highlight-color: var(--ifm-color-primary);
-    --search-local-modal-background: #f5f6f7;
-    --search-local-hit-active-color: #fff;
-    --search-local-hit-background: #fff;
-    --search-local-hit-shadow: 0 1px 3px 0 #d4d9e1;
-    --search-local-spacing: 14px;
+  /* 主色调 */
+  --aa-primary-color-rgb: 0, 120, 212 !important;
+  --aa-muted-color-rgb: 128, 126, 163 !important;
+  
+  /* 面板样式 */
+  --aa-panel-shadow: 0 0 0 1px rgba(35, 38, 59, 0.1), 0 8px 20px -4px rgba(35, 38, 59, 0.15) !important;
+  --aa-panel-border-radius: 8px !important;
+  --aa-panel-max-height: 650px !important;
+  
+  /* 输入框样式 */
+  --aa-input-border-color-rgb: 220, 220, 220 !important;
+  --aa-input-border-color-alpha: 1 !important;
+  --aa-input-border-radius: 6px !important;
+  
+  /* 搜索图标和其他图标 */
+  --aa-icon-color-rgb: 119, 119, 119 !important;
+  --aa-icon-size: 18px !important;
+  
+  /* 搜索结果样式 */
+  --aa-spacing: 16px !important;
+  --aa-spacing-half: 8px !important;
+  --aa-font-size: 0.95rem !important;
+  --aa-font-family: var(--ifm-font-family-base) !important;
+}
+
+/* 2. 暗色主题适配 */
+html[data-theme='dark'] {
+  --aa-primary-color-rgb: 138, 180, 248 !important;
+  --aa-muted-color-rgb: 147, 147, 147 !important;
+  --aa-input-background-color-rgb: 38, 38, 38 !important;
+  --aa-input-border-color-rgb: 60, 60, 60 !important;
+  --aa-background-color-rgb: 32, 32, 32 !important;
+  --aa-selected-color-rgb: 45, 45, 45 !important;
+  --aa-panel-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.35) !important;
+  --aa-text-color-rgb: 220, 220, 220 !important;
+  --aa-icon-color-rgb: 180, 180, 180 !important;
+  --aa-description-highlight-background-color-rgb: 70, 70, 70 !important;
+  --aa-description-highlight-background-color-alpha: 0.25 !important;
+}
+
+/* 3. 高级样式自定义 */
+/* 搜索输入框样式 */
+.aa-Form {
+  border: 1px solid rgba(var(--aa-input-border-color-rgb), var(--aa-input-border-color-alpha)) !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.aa-Form:focus-within {
+  box-shadow: 0 0 0 2px rgba(var(--aa-primary-color-rgb), 0.3) !important;
+  border-color: rgba(var(--aa-primary-color-rgb), 0.8) !important;
+}
+
+/* 搜索按钮样式 */
+.aa-SubmitButton {
+  padding: 0 14px !important;
+}
+
+.aa-SubmitIcon {
+  width: var(--aa-icon-size) !important;
+  height: var(--aa-icon-size) !important;
+}
+
+/* 清除按钮样式 */
+.aa-ClearButton {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: row !important; /* 确保按钮内容水平排列 */
+  padding: 0 8px !important;
+}
+.aa-ClearButton svg {
+  width: calc(var(--aa-icon-size) - 2px) !important;
+  height: calc(var(--aa-icon-size) - 2px) !important;
+}
+
+/* 搜索面板动画效果 */
+.aa-Panel {
+  transition: opacity 0.15s ease, transform 0.15s ease !important;
+  transform-origin: top center !important;
+}
+
+.aa-PanelLayout {
+  width: max(500px, 65vw) !important;
+  max-width: 800px !important; /* 更宽的搜索结果面板 */
+}
+
+/* 搜索结果项美化 */
+.aa-Item {
+  border-radius: 4px !important;
+  padding: 8px 12px !important;
+  transition: background 0.15s ease !important;
+}
+
+.aa-Item[aria-selected=true] {
+  background: rgba(var(--aa-selected-color-rgb), 1) !important;
+}
+
+/* 搜索结果高亮文本 */
+.aa-ItemContentTitle mark,
+.aa-ItemContentDescription mark {
+  position: relative !important;
+  color: rgba(var(--aa-primary-color-rgb), 1) !important;
+  background: transparent !important;
+  padding: 0 2px !important;
+  font-weight: bold !important;
+}
+
+.aa-ItemContentTitle mark::after,
+.aa-ItemContentDescription mark::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  height: 0.2em !important;
+  border-radius: 1px !important;
+  background-color: rgba(var(--aa-primary-color-rgb), 0.2) !important;
+}
+
+.aa-Item[aria-selected=true] .aa-ItemContentTitle mark,
+.aa-Item[aria-selected=true] .aa-ItemContentDescription mark {
+  color: rgba(var(--aa-primary-color-rgb), 1) !important;
+}
+
+.aa-Item[aria-selected=true] .aa-ItemContentTitle mark::after,
+.aa-Item[aria-selected=true] .aa-ItemContentDescription mark::after {
+  background-color: rgba(var(--aa-primary-color-rgb), 0.3) !important;
+}
+
+/* 搜索分类标题样式 */
+.aa-SourceHeader {
+  margin: 8px 0 !important;
+  padding: 0 16px !important;
+  color: rgba(var(--aa-primary-color-rgb), 0.8) !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* 搜索快捷键提示样式 */
+.aa-GradientBottom {
+  background: linear-gradient(
+    0deg,
+    rgba(var(--aa-background-color-rgb), 1) 0%,
+    rgba(var(--aa-background-color-rgb), 0) 100%
+  ) !important;
+  padding: 12px !important;
+}
+/* 修复取消按钮的布局问题 */
+.aa-DetachedCancelButton {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: row !important; /* 强制水平排列 */
+  white-space: nowrap !important; /* 防止文本换行 */
+  padding: 0 8px !important;
+  font-size: 14px !important;
+  height: 100% !important;
+  border: none !important;
+  background: transparent !important;
+  color: rgba(var(--aa-text-color-rgb), 0.8) !important;
+  cursor: pointer !important;
+  min-width: 60px !important; /* 确保按钮有足够宽度 */
+  min-height: 35px;
+}
+
+/* 确保按钮容器有足够空间 */
+.aa-DetachedFormContainer {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
+
+/* 确保取消按钮文本不会被截断 */
+.aa-DetachedCancelButton span {
+  display: inline-block !important;
+  overflow: visible !important;
+}
+/* 快捷键样式 */
+.aa-DetachedSearchButton kbd {
+  background: rgba(var(--aa-muted-color-rgb), 0.2) !important;
+  color: rgba(var(--aa-text-color-rgb), 0.8) !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  font-size: 0.8rem !important;
+  margin: 0 2px !important;
+  border: 1px solid rgba(var(--aa-muted-color-rgb), 0.3) !important;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 4. 优化移动端体验 */
+@media (max-width: 768px) {
+  .aa-DetachedSearchButtonPlaceholder {
+    display: none !important;
   }
   
-  /* 暗色模式样式 */
-  html[data-theme="dark"] {
-    --search-local-modal-background: var(--ifm-background-color);
-    --search-local-hit-background: var(--ifm-color-emphasis-100);
-    --search-local-hit-shadow: none;
-    --search-local-muted-color: var(--ifm-color-secondary-darkest);
+  .aa-PanelLayout {
+    width: 92vw !important;
+    max-width: none !important;
   }
   
-  /* 搜索结果高亮样式 */
-  .search-result-match {
-    font-weight: bold;
-    color: var(--search-local-highlight-color);
+  .aa-Form {
+    height: 44px !important;
   }
-  
-  /* 搜索框激活状态样式 */
-  .navbar__search-input:focus {
-    border-color: var(--search-local-input-active-border-color);
-    outline: none;
+}
+
+/* 5. 用户路径指示器 */
+.aa-ItemContentPath {
+  display: flex !important;
+  align-items: center !important;
+  font-size: 0.75rem !important;
+  margin-top: 4px !important;
+  color: rgba(var(--aa-muted-color-rgb), 0.8) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  max-width: 100% !important;
+}
+
+.aa-ItemContentPath::before {
+  content: "→" !important;
+  margin-right: 4px !important;
+  font-size: 0.8rem !important;
+  flex-shrink: 0 !important;
+}
+
+/* 6. 自定义滚动条 */
+.aa-ScrollbarEnabled {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(var(--aa-muted-color-rgb), 0.4) transparent !important;
+}
+
+.aa-ScrollbarEnabled::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+.aa-ScrollbarEnabled::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.aa-ScrollbarEnabled::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--aa-muted-color-rgb), 0.4) !important;
+  border-radius: 3px !important;
+}
+
+.aa-ScrollbarEnabled::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(var(--aa-muted-color-rgb), 0.6) !important;
+}
+
+
+/* 搜索索引加载进度条 */
+.aa-LoadingIndicator {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 3px !important;
+  background: rgba(var(--aa-primary-color-rgb), 0.2) !important;
+  overflow: hidden !important;
+}
+
+.aa-LoadingIndicator::after {
+  content: "" !important;
+  position: absolute !important;
+  height: 100% !important;
+  width: 30% !important;
+  background: rgba(var(--aa-primary-color-rgb), 1) !important;
+  left: -30% !important;
+  animation: aa-loading 1.5s ease infinite !important;
+}
+
+@keyframes aa-loading {
+  0% {
+    left: -30%;
   }
+  50% {
+    left: 130%;
+  }
+  100% {
+    left: -30%;
+  }
+}
+
+/* 搜索输入框字符限制 */
+.aa-Input {
+  max-width: 100% !important;
+  text-overflow: ellipsis !important;
+}
+
+/* 限制输入框容器宽度 */
+.aa-InputWrapperPrefix,
+.aa-InputWrapperSuffix {
+  flex-shrink: 0 !important;
+}
+
+.aa-InputWrapper {
+  max-width: calc(100% - 70px) !important; /* 减去图标空间 */
+  overflow: hidden !important;
+}

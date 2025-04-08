@@ -7,7 +7,6 @@ sidebar_position: 3
 
 # Fetch API
 
-<<<<<<< HEAD
 Author:李宇谦/陆俊宇/任炜烨/蒋旻昊/张书怀
 
 在Fetch API出现之前的"远古时代"，开发者只能依靠笨重的`XMLHttpRequest`（XHR）来发送网络请求。这就像每次寄快递都要亲自跑到邮局填一堆表格——虽然能完成任务，但效率极低。2015年，随着Fetch API的诞生，Web数据获取终于迎来了"顺丰时代"——简单、快速、可靠。
@@ -83,11 +82,6 @@ async function loadData() {
   }
 }
 ```
-=======
-Author:李宇谦/陆俊宇/任炜烨/蒋旻昊
-
-Fetch API 是 XMLHttpRequest 的一个理想的替代方案。它更易上手，使用了 Promise而非回调函数，支持更现代的异步写法；且功能完备，完全能够让我们抛弃对第三方网络请求库的依赖。
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 ## fetch() 方法
 
@@ -134,7 +128,6 @@ Response 对象也提供了一些方法，用于获取返回数据。需要注�
 - text()
     将返回数据解析为纯文本。
 
-<<<<<<< HEAD
 ## 基础配置选项
 
 ```
@@ -151,8 +144,6 @@ fetch(url, {
 });
 ```
 
-=======
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 ## 示例
 
 下面的代码封装了一个通用的请求函数：

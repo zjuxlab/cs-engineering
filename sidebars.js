@@ -503,28 +503,17 @@ module.exports = {
                   "label": "前端COC",
                   "type": "doc",
                   "id": "软件工程技能树/前端技术/前端入门/前端COC/前端COC"
-<<<<<<< HEAD
                 },
                 {
                   "label": "前端入门实践",
                   "type": "doc",
                   "id": "软件工程技能树/前端技术/前端入门/前端入门实践/前端入门实践"
-=======
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
                 }
               ],
               "link": {
                 "type": "doc",
                 "id": "软件工程技能树/前端技术/前端入门/前端入门"
               }
-<<<<<<< HEAD
-=======
-            },
-            {
-              "label": "前端入门实践",
-              "type": "doc",
-              "id": "软件工程技能树/前端技术/前端入门实践/前端入门实践"
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
             },
             {
               "label": "前端三件套",
@@ -535,29 +524,6 @@ module.exports = {
                   "type": "category",
                   "items": [
                     {
-<<<<<<< HEAD
-=======
-                      "label": "HTML基础",
-                      "type": "category",
-                      "items": [
-                        {
-                          "label": "HTML和XHTML基础",
-                          "type": "doc",
-                          "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML基础/HTML和XHTML基础/HTML和XHTML基础"
-                        },
-                        {
-                          "label": "外部资源引用",
-                          "type": "doc",
-                          "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML基础/外部资源引用/外部资源引用"
-                        }
-                      ],
-                      "link": {
-                        "type": "doc",
-                        "id": "软件工程技能树/前端技术/前端三件套/HTML/HTML基础/HTML基础"
-                      }
-                    },
-                    {
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
                       "label": "HTML 5",
                       "type": "category",
                       "items": [
@@ -690,14 +656,11 @@ module.exports = {
                           "label": "Less",
                           "type": "doc",
                           "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS拓展/Less/Less"
-<<<<<<< HEAD
                         },
                         {
                           "label": "Bootstrap",
                           "type": "doc",
                           "id": "软件工程技能树/前端技术/前端三件套/CSS/CSS拓展/Bootstrap/Bootstrap"
-=======
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
                         }
                       ],
                       "link": {
@@ -1075,14 +1038,11 @@ module.exports = {
                     "type": "doc",
                     "id": "软件工程技能树/前端技术/前端进阶/可视化/可视化"
                   }
-<<<<<<< HEAD
                 },
                 {
                   "label": "数据埋点",
                   "type": "doc",
                   "id": "软件工程技能树/前端技术/前端进阶/数据埋点/数据埋点"
-=======
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
                 }
               ],
               "link": {
@@ -2044,7 +2004,6 @@ module.exports = {
               "type": "category",
               "items": [
                 {
-<<<<<<< HEAD
                   "label": "光栅化",
                   "type": "category",
                   "items": [
@@ -2052,20 +2011,10 @@ module.exports = {
                       "label": "光栅化和反走样简介",
                       "type": "doc",
                       "id": "软件工程技能树/进阶技术/CG/光栅化/光栅化和反走样简介/光栅化和反走样简介"
-=======
-                  "label": "渲染管道",
-                  "type": "category",
-                  "items": [
-                    {
-                      "label": "延迟渲染",
-                      "type": "doc",
-                      "id": "软件工程技能树/进阶技术/CG/渲染管道/延迟渲染/延迟渲染"
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
                     }
                   ],
                   "link": {
                     "type": "doc",
-<<<<<<< HEAD
                     "id": "软件工程技能树/进阶技术/CG/光栅化/光栅化"
                   }
                 },
@@ -2093,15 +2042,6 @@ module.exports = {
                     "type": "doc",
                     "id": "软件工程技能树/进阶技术/CG/着色/着色"
                   }
-=======
-                    "id": "软件工程技能树/进阶技术/CG/渲染管道/渲染管道"
-                  }
-                },
-                {
-                  "label": "优化",
-                  "type": "doc",
-                  "id": "软件工程技能树/进阶技术/CG/优化/优化"
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
                 },
                 {
                   "label": "几何",
@@ -2134,29 +2074,6 @@ module.exports = {
                   }
                 },
                 {
-<<<<<<< HEAD
-=======
-                  "label": "部分CV",
-                  "type": "category",
-                  "items": [
-                    {
-                      "label": "抗混淆",
-                      "type": "doc",
-                      "id": "软件工程技能树/进阶技术/CG/部分CV/抗混淆/抗混淆"
-                    },
-                    {
-                      "label": "滤波/卷积",
-                      "type": "doc",
-                      "id": "软件工程技能树/进阶技术/CG/部分CV/滤波卷积/滤波卷积"
-                    }
-                  ],
-                  "link": {
-                    "type": "doc",
-                    "id": "软件工程技能树/进阶技术/CG/部分CV/部分CV"
-                  }
-                },
-                {
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
                   "label": "光追",
                   "type": "category",
                   "items": [
@@ -2164,7 +2081,6 @@ module.exports = {
                       "label": "实现与优化",
                       "type": "doc",
                       "id": "软件工程技能树/进阶技术/CG/光追/实现与优化/实现与优化"
-<<<<<<< HEAD
                     },
                     {
                       "label": "阴影",
@@ -2185,8 +2101,6 @@ module.exports = {
                         "type": "doc",
                         "id": "软件工程技能树/进阶技术/CG/光追/渲染管道/渲染管道"
                       }
-=======
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
                     }
                   ],
                   "link": {
@@ -2195,34 +2109,6 @@ module.exports = {
                   }
                 },
                 {
-<<<<<<< HEAD
-=======
-                  "label": "Shader着色器",
-                  "type": "category",
-                  "items": [
-                    {
-                      "label": "Pixel Shader",
-                      "type": "category",
-                      "items": [
-                        {
-                          "label": "Shadertoy",
-                          "type": "doc",
-                          "id": "软件工程技能树/进阶技术/CG/Shader着色器/PixelShader/Shadertoy/Shadertoy"
-                        }
-                      ],
-                      "link": {
-                        "type": "doc",
-                        "id": "软件工程技能树/进阶技术/CG/Shader着色器/PixelShader/PixelShader"
-                      }
-                    }
-                  ],
-                  "link": {
-                    "type": "doc",
-                    "id": "软件工程技能树/进阶技术/CG/Shader着色器/Shader着色器"
-                  }
-                },
-                {
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
                   "label": "API",
                   "type": "category",
                   "items": [
@@ -2236,19 +2122,6 @@ module.exports = {
                     "type": "doc",
                     "id": "软件工程技能树/进阶技术/CG/API/API"
                   }
-<<<<<<< HEAD
-=======
-                },
-                {
-                  "label": "光栅化和反走样简介",
-                  "type": "doc",
-                  "id": "软件工程技能树/进阶技术/CG/光栅化和反走样简介/光栅化和反走样简介"
-                },
-                {
-                  "label": "阴影",
-                  "type": "doc",
-                  "id": "软件工程技能树/进阶技术/CG/阴影/阴影"
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
                 }
               ],
               "link": {

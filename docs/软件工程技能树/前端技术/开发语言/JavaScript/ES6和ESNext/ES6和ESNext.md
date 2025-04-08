@@ -7,7 +7,6 @@ sidebar_position: 1
 
 # ES6和ES Next
 
-<<<<<<< HEAD
 ## Why ES6
 
 想象一下2014年的JavaScript开发场景：
@@ -181,8 +180,6 @@ async function renderDashboard() {
 }
 ```
 
-=======
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 <b>📌 学习路线：</b>
 
 1. ES6核心新特性

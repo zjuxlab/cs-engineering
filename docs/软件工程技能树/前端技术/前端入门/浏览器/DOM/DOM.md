@@ -24,7 +24,6 @@ Author:李宇轩
 </div>
 </div>
 
-<<<<<<< HEAD
 ## 静态文档到动态界面的蜕变
 
 在早期的Web时代，网页仅仅是静态的文档展示。当Netscape在1995年推出JavaScript时，开发者们面临一个根本性问题：如何让程序与网页内容交互？这个需求催生了文档对象模型（DOM）——一种将HTML文档表示为结构化对象模型的标准。
@@ -36,19 +35,12 @@ DOM的发展经历了几个关键阶段：
 - 2004年DOM Level 3：扩展了XPath支持和键盘事件
 - 2015年DOM Living Standard：转为持续更新的现代标准
 
-=======
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 ## DOM和浏览器
 
 DOM（Document Object Model），又称文档对象模型，将所有页面内容表示为可以修改的对象，每个文档被表示为一个DOM树（node tree）。在浏览器开发者工具中，元素选项卡下，就是DOM（经过简化的，突出元素节点）。旁边侧栏也有关于样式，事件等栏。
 
 ![](/assets/FbNubPOazok877xs5Xtc1uRUnoc.png)
 
-<<<<<<< HEAD
-=======
-浏览器对象模型（Browser Object Model），简称 BOM，表示由浏览器（主机环境）提供的用于处理文档(document)之外的所有内容的其他对象。
-
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 ## DOM定义
 
 DOM是将一个HTML的编程接口，将一个HTML文件表示为由节点组成的<b>树状结构。</b>树的每一个节点都是一个JS对象，节点有[不少种类](https://dom.spec.whatwg.org/#node)，但是较常用的有四种：document，注释，<b>标签节点和文本节点</b>。其中document是文档的入口点，注释则可以通过JS在其中读取信息。标签节点由标签包含关系形成了树状结构，如`<head>`和`<body>`是`<html>`子项；文本节点则记录了所有的文本（包括换行，注释），并且没有子项（总是树的叶子）。<b>HTML中所有的东西都在DOM中有自己的位置。</b>
@@ -71,26 +63,11 @@ DOM是将一个HTML的编程接口，将一个HTML文件表示为由节点组成
 </div>
 </div>
 
-<<<<<<< HEAD
 注意
 
 - 表格永远会有&lt;tbody&gt;标签，即使没有在HTML文本中创建。
 - 即使所有空格或者换行都会被记录在文本节点中，但浏览器通常不会在文本的开始/结尾显示空格，并且在标签之间也不会显示空文本节点（换行符）。
 - 浏览器在生成DOM时会自动处理一些小问题，如没有关闭标签，省略部分标签等。
-=======
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'></div>
-<p>注意</p>
-<ul>
-<li><p>表格永远会有&lt;tbody&gt;标签，即使没有在HTML文本中创建。</p>
-</li>
-<li><p>即使所有空格或者换行都会被记录在文本节点中，但浏览器通常不会在文本的开始/结尾显示空格，并且在标签之间也不会显示空文本节点（换行符）。</p>
-</li>
-<li><p>浏览器在生成DOM时会自动处理一些小问题，如没有关闭标签，省略部分标签等。</p>
-</li>
-</ul>
-</div>
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 # DOM结构
 
@@ -172,17 +149,8 @@ interface HTMLInputElement: HTMLElement {
 <p><b>&lt;html&gt;</b><b> = </b><b>document.documentElement</b></p>
 <p>作为document的属性，对应了&lt;html&gt;标签，也即它一定返回文档的根元素&lt;html&gt;。它的子节点为<code>document.body</code>, <code>document.head</code>。</p>
 <p><code>document.body</code>节点就是<code>&lt;body&gt;</code>元素。</p>
-<<<<<<< HEAD
 <p>注意在<code>&lt;head&gt;</code>标签中的脚本无法访问<code>document.body</code>,其值为null。</p>
 </div>
-=======
-<div class="callout callout-bg-1 callout-border-2">
-<div class='callout-emoji'>👾</div>
-<p>注意在<code>&lt;head&gt;</code>标签中的脚本无法访问<code>document.body</code>,其值为null。</p>
-</div>
-
-</div>
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 <div class="w-[40%]" width-ratio="40">
 ![](/assets/Fq7hbQ5n1ocsFbxY4aschSGBnEd.png)
 </div>
@@ -208,14 +176,7 @@ interface HTMLInputElement: HTMLElement {
 - `previousElementSibling`：上一个兄弟元素
 - `nextElementSibling`：下一个兄弟元素 
 
-<<<<<<< HEAD
 对于集合（如childNodes，getElementsBy*)，不能用数组的属性和方法。要用`for…of`而非`for..in`进行迭代。
-=======
-<div class="callout callout-bg-4 callout-border-2">
-<div class='callout-emoji'>🙉</div>
-<p>对于集合（如childNodes，getElementsBy*)，不能用数组的属性和方法。要用<code>for…of</code>而非<code>for..in</code>进行迭代。</p>
-</div>
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 ### 搜索元素
 
@@ -301,14 +262,7 @@ document.body.sayHi(); // Hello, I'm BODY
 - `node.after(...nodes or strings)` —— 在 `node` <b>后面</b> 插入节点或字符串，
 - `node.replaceWith(...nodes or strings)` —— 将 `node` 替换为给定的节点或字符串。
 
-<<<<<<< HEAD
 注意，以上5钟方法插入字符串时，都是将字符串安全地作为”文本“插入，即使字符串包含`<p></p>`等标签，也不会被显示为元素。
-=======
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>🐵</div>
-<p>注意，以上5钟方法插入字符串时，都是将字符串安全地作为”文本“插入，即使字符串包含<code>&lt;p&gt;&lt;/p&gt;</code>等标签，也不会被显示为元素。</p>
-</div>
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 ### `insertAdjacentHTML/Text/Element`
 
@@ -395,14 +349,7 @@ document.body.sayHi(); // Hello, I'm BODY
 
 像 `-moz-border-radius` 和 `-webkit-border-radius` 这样的浏览器前缀属性，也遵循同样的规则：连字符 `-` 表示大写。例如`button.style.MozBorderRadius = '5px';`
 
-<<<<<<< HEAD
 style特性是只读的，我们可以对`style.cssText`赋值来对其进行完全替换重写。`element.setAttribute('style', 'color: red...')`也可以达到同样的效果。
-=======
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'></div>
-<p>style特性是只读的，我们可以对<code>style.cssText</code>赋值来对其进行完全替换重写。<code>element.setAttribute(&#39;style&#39;, &#39;color: red...&#39;)</code>也可以达到同样的效果。</p>
-</div>
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 ### 获取样式
 
@@ -433,12 +380,5 @@ style特性是只读的，我们可以对`style.cssText`赋值来对其进行完
 </body>
 ```
 
-<<<<<<< HEAD
 <b>getComputedStyle</b><b> 需要完整的属性名，</b>如`getComputedStyle(elem).padding`没有一个明确的标准规定会返回什么，而使用`paddingLeft`则可避免误解。
-=======
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>💥</div>
-<p><b>getComputedStyle</b><b> 需要完整的属性名，</b>如<code>getComputedStyle(elem).padding</code>没有一个明确的标准规定会返回什么，而使用<code>paddingLeft</code>则可避免误解。</p>
-</div>
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 

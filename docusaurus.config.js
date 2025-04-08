@@ -40,23 +40,37 @@ const config = {
     }
   },
 
-  themes: [
+  plugins: [
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({
-        hashed: true,
-        language: ["en", "zh"], // 支持中文搜索
-        docsRouteBasePath: "/",
+      require.resolve('@cmfcmf/docusaurus-search-local'),
+      {
+        // 基本配置
         indexDocs: true,
         indexBlog: true,
-        indexPages: true,
-        searchResultLimits: 10, // 搜索结果数量限制
-        searchResultContextMaxLength: 80, // 搜索结果上下文最大长度
-        searchBarPosition: "right", // 搜索栏位置
-        highlightSearchTermsOnTargetPage: true, // 在目标页面高亮搜索词
-        // 自定义搜索栏样式可以在自定义CSS中定义
-      }),
+        indexPages: false,
+        language: ["zh", "en"],
+
+        maxSearchResults: 10,
+        
+        
+        // 侧边栏索引配置
+        indexDocSidebarParentCategories: 2, // 索引两级侧边栏父类别
+        includeParentCategoriesInPageTitle: true, // 在页面标题中包含父类别
+        
+        // lunr 搜索引擎配置
+        lunr: {
+          // 中文分词的正则表达式
+          tokenizerSeparator: /[\s\-\u4e00-\u9fa5\u3000-\u303f\uff00-\uffef]+/,
+          // 相似度调整
+          b: 0.75, // 文档长度重要性
+          k1: 1.2, // 词频重要性
+          // 搜索提升权重
+          titleBoost: 5,
+          contentBoost: 1,
+          tagsBoost: 3,
+          parentCategoriesBoost: 2,
+        }
+      },
     ],
   ],
 

@@ -7,7 +7,6 @@ sidebar_position: 3
 
 # Node.js
 
-<<<<<<< HEAD
 2009年，Ryan Dahl做了一件当时看来极其叛逆的事——<b>把JavaScript从浏览器的沙箱中"劫持"出来</b>，让它能在服务器上自由奔跑。这就像给动物园里的猎豹解开了项圈，突然发现它能在野外生存得更好。
 
 当时的服务器端生态由Java、PHP和Ruby主导，典型的Web服务器代码是这样的：
@@ -77,5 +76,3 @@ app.post('/register', (req, res) => {
 - <b>企业级支持</b>
 AWS Lambda、Google Cloud Functions等均优先支持Node.js
 
-=======
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29

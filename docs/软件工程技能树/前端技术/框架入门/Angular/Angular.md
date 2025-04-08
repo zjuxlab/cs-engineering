@@ -11,7 +11,6 @@ Angular 是由谷歌开发的一款基于TypeScript的开源前端框架，用�
 
 Angular 提供了完整的前端解决方案，包括组件化、依赖注入、路由、表单处理、HTTP通信等功能，适用于中大型前端项目，尤其是企业级应用开发。
 
-<<<<<<< HEAD
 在AngularJS（Angular 1.x）诞生之前，构建动态Web应用是这样的：
 
 ```
@@ -91,8 +90,6 @@ describe('UserComponent', () => {
 
 从Google AdWords到IBM Watson，Angular已经证明了其构建复杂企业应用的能力。它可能不是最简单的框架，但提供了<b>最完整的体系</b>来应对大规模前端开发的挑战。正如Angular团队所说："一个平台，多种可能"——无论是渐进式Web应用、企业后台还是移动端混合开发，Angular都提供了经过验证的解决方案。
 
-=======
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 <b>官方教程及推荐学习网站</b>
 
 - <b>Angular 官方中文文档</b>

@@ -7,7 +7,6 @@ sidebar_position: 0
 
 # HTML
 
-<<<<<<< HEAD
 ## 从核物理实验室诞生的革命
 
 1989年，欧洲核子研究中心（CERN）的物理学家<b>蒂姆·伯纳斯-李</b>面对一个看似简单却困扰科学界的难题：<b>如何让分布在全球的研究者轻松共享粒子对撞机产生的海量数据？</b> 当时的网络世界还是一片荒漠——你需要记住复杂的FTP命令，文件格式互不兼容，更别提超链接了。
@@ -102,5 +101,3 @@ HTML文档常需要引用外部的JavaScript文件和CSS文件。
 -  [MDN - script标签](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/script)
 -  [MDN - link标签](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link)
 
-=======
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29

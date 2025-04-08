@@ -9,7 +9,6 @@ sidebar_position: 1
 
 Author: 陈岩/潘瑞哲
 
-<<<<<<< HEAD
 # Why we need Typescript
 
 在TypeScript诞生之前，大型JavaScript项目常常陷入这样的困境：
@@ -36,20 +35,6 @@ TS 本身的文档和参考资料十分优秀，本文只是作为大纲，具�
 - https://learnxinyminutes.com/docs/typescript/
 - https://wangdoc.com/typescript/
 - https://www.typescriptlang.org/docs/handbook/intro.html
-=======
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>💡</div>
-<p>TS 本身的文档和参考资料十分优秀，本文只是作为大纲，具体可以参考</p>
-<ul>
-<li><p><a href="https://learnxinyminutes.com/docs/typescript/">https://learnxinyminutes.com/docs/typescript/</a></p>
-</li>
-<li><p><a href="https://wangdoc.com/typescript/">https://wangdoc.com/typescript/</a></p>
-</li>
-<li><p><a href="https://www.typescriptlang.org/docs/handbook/intro.html">https://www.typescriptlang.org/docs/handbook/intro.html</a></p>
-</li>
-</ul>
-</div>
->>>>>>> 0ad3f6286ec5beaab9cca8122ad2d90d7cafec29
 
 依赖：nodejs，tsc（请自行搜索安装），ts-node（可选）
 

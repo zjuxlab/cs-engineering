@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.039 424.385">
+  <defs>
+    <radialGradient id="c" cx="18.203" cy="467.789" r="325.181" fx="18.203" fy="467.789" gradientTransform="scale(1.16007 .86202)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00BC85"/>
+      <stop offset="100%" stop-color="#149D91"/>
+    </radialGradient>
+    <radialGradient id="d" cx="186.547" cy="-20.413" r="577.192" fx="186.547" fy="-20.413" gradientTransform="scale(.78963 1.26642)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00BC85"/>
+      <stop offset="100%" stop-color="#149D91"/>
+    </radialGradient>
+    <radialGradient id="e" cx="31.718" cy="-54.535" r="949.259" fx="31.718" fy="-54.535" gradientTransform="scale(.92193 1.08469)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#004473"/>
+      <stop offset="100%" stop-color="#00345F"/>
+    </radialGradient>
+    <linearGradient id="a" x1="77.768" x2="77.768" y1="-7.69" y2="691.076" gradientTransform="scale(1.64044 .6096)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#002E3B"/>
+      <stop offset="100%" stop-color="#002639"/>
+    </linearGradient>
+    <linearGradient id="b" x1="79.122" x2="79.122" y1="-4.443" y2="678.485" gradientTransform="scale(1.61146 .62055)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#002E3B"/>
+      <stop offset="100%" stop-color="#002639"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" d="M65.7 330.3.107 362.385l127.292 62 127.64-62.194-65.76-32.539-61.928 30.754z" style="fill:url(#a)"/>
+  <path fill="url(#b)" d="M57.602 98.175v-.02l69.93-34.107 69.934 34.106L255.004 62.2 127.484 0 0 62.18v.055l57.554 35.964.048-.024z" style="fill:url(#b)"/>
+  <path fill="url(#c)" d="m.156 298.428 62.915-30.803 64.714 32.042L.156 362.462z" style="fill:url(#c)"/>
+  <path fill="url(#d)" d="M196.678 99.41v100.768l-70.342 34.424 64.686 32.339 62.979-30.797V62.19l-57.323 35.976z" style="fill:url(#d)"/>
+  <path fill="url(#e)" d="m255.004 298.216-197.415-98.25V98.182L0 62.23v173.702l255.004 126.321z" style="fill:url(#e)"/>
+</svg>

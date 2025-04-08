@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 520.249">
+  <defs>
+    <filter id="a" width="2" height="2" x="-.5" y="-.5" filterUnits="objectBoundingBox">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.243359375 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path fill="#92c83e" d="m157.067 308.071 35.27-67.787 28.107 47.396-35.822 57.316z"/>
+  <path fill="#4b843d" d="m179.662 339.484 67.236-131.164 36.373 68.338-51.804 89.83z"/>
+  <path fill="#92c83e" d="m222.098 363.182 93.138-190.133s30.31 34.72 37.475 50.702c6.613 14.88 4.96 47.947-5.511 73.849s-31.964 45.191-44.089 50.151c-50.151 22.045-81.013 15.431-81.013 15.431z"/>
+  <path fill="#fff" d="M248 124C248 55.662 192.338 0 124 0S0 55.662 0 124c0 62.827 47.396 115.182 108.569 122.898v13.226l25.902-12.675C197.85 242.489 248 189.03 248 124zM124 225.956c-52.907 0-101.956-49.05-101.956-101.956 0-52.907 49.05-101.956 101.956-101.956 52.907 0 101.956 49.05 101.956 101.956 0 52.907-49.05 101.956-101.956 101.956z" filter="url(#a)" transform="translate(124 130.062)"/>
+</svg>

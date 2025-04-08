@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.595 328.974">
+  <defs>
+    <linearGradient id="b" x1="94.413" x2="319.761" y1="-8.022" y2="134.502" gradientTransform="scale(.8664 1.1542)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6C8A55"/>
+      <stop offset="100%" stop-color="#5E7A44"/>
+    </linearGradient>
+    <linearGradient id="d" x1="276.269" x2="170.444" y1="80.049" y2="26.995" gradientTransform="scale(.85061 1.17562)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#90C567"/>
+      <stop offset="58.976%" stop-color="#A2CE7F"/>
+      <stop offset="100%" stop-color="#98C871"/>
+    </linearGradient>
+    <radialGradient id="a" cx="182.117" cy="78.48" r="160.909" fx="182.117" fy="78.48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8D5391"/>
+      <stop offset="100%" stop-color="#56185B"/>
+      <stop offset="100%" stop-color="#55175A"/>
+    </radialGradient>
+    <filter id="c" width="2" height="2" x="-.5" y="-.5" filterUnits="objectBoundingBox">
+      <feOffset dx="4" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.21 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path fill="url(#a)" d="M256 128c0 70.692-57.308 128-128 128C57.308 256 0 198.692 0 128 0 57.308 57.308 0 128 0c70.692 0 128 57.308 128 128" style="fill:url(#a)" transform="translate(0 72.974)"/>
+  <path fill="url(#b)" d="M127.002.008c57.887-.083 129.081 58.303 101.801 145.965-64.54-13.14-113.611-69.697-101.801-145.965" filter="url(#c)" style="fill:url(#b)" transform="translate(0 72.974)"/>
+  <path fill="url(#d)" d="M146.493 2.096c51.495 9.764 97.905 61.413 86.864 124.41-52.086-9.289-97.302-57.563-86.864-124.41" style="fill:url(#d)" transform="translate(0 72.974)"/>
+</svg>

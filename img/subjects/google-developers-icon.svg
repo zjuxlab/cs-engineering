@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 258.965 190.21">
+  <defs>
+    <radialGradient id="c" cx="35.77" cy="37.366" r="26.54" fx="35.77" fy="37.366" gradientTransform="scale(.85528 1.1692)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3E2723" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#3E2723" stop-opacity=".02"/>
+    </radialGradient>
+    <radialGradient id="f" cx="265.431" cy="124.257" r="26.54" fx="265.431" fy="124.257" gradientTransform="scale(.85528 1.1692)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#BF360C" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#BF360C" stop-opacity=".02"/>
+    </radialGradient>
+    <filter id="b" width="1.068" height="1.053" x="-.033" y="-.028" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".2" result="shadowSpreadOuter1"/>
+      <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+    </filter>
+    <filter id="e" width="1.068" height="1.053" x="-.035" y="-.025" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".2" result="shadowSpreadOuter1"/>
+      <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+    </filter>
+    <path id="a" d="M5.296 85.953a17.16 17.16 0 0 0 0 17.148l47.855 82.953h59.854L30.267 42.646z"/>
+    <path id="d" d="M252.41 103.115a17.16 17.16 0 0 0 0-17.148L204.553 3.014h-59.855l82.738 143.423 24.972-43.322z"/>
+  </defs>
+  <path fill="#db4437" d="m60.832 95.105 52.804-91.534h-59.87L30.898 43.217z"/>
+  <g transform="translate(.63 .571)">
+    <use width="100%" height="100%" filter="url(#b)" xlink:href="#a"/>
+    <use width="100%" height="100%" fill="#4285f4" xlink:href="#a"/>
+  </g>
+  <path fill="#1a237e" d="M5.926 102.257C4.524 99.81 3.795 97.122 3.68 94.39c-.128 3.204.6 6.422 2.246 9.297L53.78 186.64h59.855l-.83-1.43h-59.04l-47.84-82.953z" opacity=".2"/>
+  <path fill="#fff" d="m112.806 5.001.83-1.43h-59.87L30.898 43.217l.415.73L53.767 5z" opacity=".2"/>
+  <path fill="#3e2723" d="m60.832 95.105 52.804-91.534h-.83L60.431 94.376z" opacity=".2"/>
+  <path fill="#fff" d="m5.926 87.954 24.986-43.307 81.894 141.993h.83L30.897 43.217 5.926 86.524c-1.66 2.875-2.389 6.093-2.246 9.297.1-2.718.83-5.421 2.246-7.867z" opacity=".2"/>
+  <path fill="url(#c)" d="M68.225 80.632 30.31 42.702l29.892 51.832z" style="fill:url(#c)" transform="translate(.63 .571)"/>
+  <path fill="#ffc107" d="M198.133 95.105 145.33 186.64h59.87l22.869-39.646z"/>
+  <g transform="translate(.63 .571)">
+    <use width="100%" height="100%" filter="url(#e)" xlink:href="#d"/>
+    <use width="100%" height="100%" fill="#0f9d58" xlink:href="#d"/>
+  </g>
+  <path fill="#fff" d="M253.04 87.954c1.4 2.446 2.13 5.135 2.245 7.867.128-3.204-.6-6.422-2.246-9.297L205.184 3.571H145.33l.83 1.43h59.04zM198.133 95.105 145.33 186.64h.83l52.389-90.805z" opacity=".2"/>
+  <path fill="#263238" d="m253.04 102.257-24.987 43.307L146.16 3.57h-.83l82.739 143.423 24.971-43.307c1.66-2.875 2.389-6.093 2.246-9.297-.1 2.718-.83 5.42-2.246 7.867z" opacity=".2"/>
+  <path fill="url(#f)" d="m189.48 108.436 37.915 37.93-29.892-51.832z" style="fill:url(#f)" transform="translate(.63 .571)"/>
+</svg>

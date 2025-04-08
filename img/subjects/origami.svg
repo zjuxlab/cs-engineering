@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 256">
+  <defs>
+    <radialGradient id="a" cx="67.185" cy="23.915" r="269.577" fx="67.185" fy="23.915" gradientTransform="scale(.99804 1.00196)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#51C3F7"/>
+      <stop offset="100%" stop-color="#046CF4"/>
+    </radialGradient>
+    <radialGradient id="d" cx="-7.3" cy="-1.357" r="93.656" fx="-7.3" fy="-1.357" gradientTransform="scale(.40796 2.45125)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#5CB5FF"/>
+    </radialGradient>
+    <radialGradient id="e" cx="178" cy="28.911" r="215.298" fx="178" fy="28.911" gradientTransform="scale(.75957 1.31654)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#7AC2FF"/>
+    </radialGradient>
+    <radialGradient id="f" cx="75.438" cy="67.647" r="185.49" fx="75.438" fy="67.647" gradientTransform="scale(.85037 1.17596)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#CBE7FF"/>
+    </radialGradient>
+    <path id="b" d="M127.755 256c70.416 0 127.5-57.307 127.5-128 0-70.692-57.084-128-127.5-128C57.338 0 .255 57.308.255 128c0 70.693 57.083 128 127.5 128z"/>
+  </defs>
+  <g transform="translate(-.255)">
+    <path fill="url(#a)" d="M127.755 256c70.416 0 127.5-57.307 127.5-128 0-70.692-57.084-128-127.5-128C57.338 0 .255 57.308.255 128c0 70.693 57.083 128 127.5 128z" style="fill:url(#a)"/>
+    <mask id="c" fill="#fff">
+      <use width="100%" height="100%" xlink:href="#b"/>
+    </mask>
+    <path fill="#e8f5ff" d="m144.989 108.218-8.007-49.454 57.763 61.09z" mask="url(#c)"/>
+    <path fill="#64a4d8" d="m138.379 67.243 14.525 42.993-8.211-2.018z" mask="url(#c)"/>
+    <path fill="url(#d)" d="M6.172 35.907 21.364 140.8-94 13.964z" mask="url(#c)" style="fill:url(#d)"/>
+    <path fill="url(#e)" d="m79.735 127.88 79.753 69.117-22.985-138.233z" mask="url(#c)" style="fill:url(#e)"/>
+    <path fill="#4492d2" d="m89.116 116.735 34.936 43.464-37.688-40.054z" mask="url(#c)"/>
+    <path fill="url(#f)" d="m4.621 35.49 155.09 161.684-102.986 138.41-97.279-226.845z" mask="url(#c)" style="fill:url(#f)"/>
+  </g>
+</svg>

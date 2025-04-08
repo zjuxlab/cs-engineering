@@ -9,15 +9,7 @@ sidebar_position: 0
 
 Author：NA
 
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>🔔</div>
-<p>本文为 React Hooks 初级入门指南。如果您想了解高级用法或者想深入学习 React 哲学，那这里可能没有你想要的东西 :(</p>
-</div>
-
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>📗</div>
-<p>必读文档是你完成进阶项目所必需的技术知识，阅读文档有助于完成进阶项目</p>
-</div>
+本文为 React Hooks 初级入门指南。如果您想了解高级用法或者想深入学习 React 哲学，那这里可能没有你想要的东西 :(
 
 ## Class component vs. Function component
 
@@ -54,10 +46,7 @@ class MyConponent extends React.Component {
 
 在 Hooks 推出之前，在 React 中使用状态（state）、生命周期方法（lifecycle methods）、上下文（context）等等重要 React 特性的唯一方法就是通过 <b>class component</b>。所以在当时，类定义组件是编写 React 组件的标准方法。我们虽然可以用函数编写组件，但是它必须是一个<b>纯函数（Pure function）</b>，所以我们没法使用状态等功能。
 
-<div class="callout callout-bg-5 callout-border-5">
-<div class='callout-emoji'>💡</div>
-<p><b>纯函数（Pure function）</b>指的是仅依赖于传入的参数且不会对外界造成副作用的函数。</p>
-</div>
+<b>纯函数（Pure function）</b>指的是仅依赖于传入的参数且不会对外界造成副作用的函数。
 
 随着 Hooks 在 React v16.8 版本中正式推出，<b>函数式组件（function component）</b>成为了编写组件的最佳实践。Hooks 意为“钩子”，指的是可以在函数内部把外部状态和功能“钩”进来。借助 hooks 我们可以在保持组件为纯函数的情况下使用状态、副作用等等功能。
 
@@ -196,10 +185,7 @@ function App() {
 
 ## useReducer
 
-<div class="callout callout-bg-5 callout-border-5">
-<div class='callout-emoji'>💡</div>
-<p>这是一个高级 hook。如果你的时间不是很充裕，可以先跳过不看。</p>
-</div>
+这是一个高级 hook。如果你的时间不是很充裕，可以先跳过不看。
 
 你用过 JavaScript 中的一个数组方法 [reduce](https://javascript.info/array-methods#reduce-reduceright) 吗？`useReducer` 和它有一样的名字，作用也类似。它是一个高级钩子，可以帮助我们更好地管理状态。我们在这里简单讲讲使用的方法。
 
@@ -261,11 +247,6 @@ function Counter() {
 
 ## useEffect
 
-<div class="callout callout-bg-3 callout-border-3">
-<div class='callout-emoji'>🌞</div>
-<p>本文重点介绍对象—— <code>useEffect</code>。</p>
-</div>
-
 之前我们提到，函数式组件应当是一个没有副作用的纯函数。但通过 Effect hook，我们可以实现副作用操作。它的格式是这样的：
 
 ```js
@@ -281,10 +262,7 @@ useEffect(effect, deps);
 - 有时我们希望在重新执行副作用之前消除前一次副作用。解决的办法是在 `effect` 参数中写上返回值。
 - 有时某些副作用的重复执行是不必要的且可能影响性能。解决办法就是为副作用加入依赖项。这样做其实是在告诉 React：“这个副作用只依赖于这些值，如果这些值没有改变，那就没有必要重复执行副作用”。那么 React 在每次重新渲染时，就会把每个副作用的依赖项与上次渲染时的值进行比较。当有值发生了改变时，React 才会重新执行副作用。如果依赖项为 undefined，那么每次 re-render 时都会执行副作用。
 
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>🔔</div>
-<p>React 在比较依赖项时，使用的是<b>浅比较</b>。所以尽量不要把整个对象、数组等直接作为依赖项。</p>
-</div>
+React 在比较依赖项时，使用的是<b>浅比较</b>。所以尽量不要把整个对象、数组等直接作为依赖项。
 
 ### 一个栗子
 
@@ -360,10 +338,7 @@ function App() {
 
 在上面的例子中，第一次点击 +1 按钮后，React 进行一次重新渲染，并产生了一个“副本”。在这个“副本”当中，`count` 的值为 1。然后 React 执行副作用，设置了一个定时器，在 1 秒后打印 `count` 的值。而 1 秒后，不论你点击了多少次 +1 按钮，`count` 的值对于这个“副本”来说，值始终都是 1。
 
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>🔔</div>
-<p>这样的性质对于 class component 并<b>不成立</b>。如果你感兴趣的话，可以实现一个看似等价的组件，<a href="https://codepen.io/deluxurousCodePen/pen/GRGRbqY">执行一下</a>看看效果。</p>
-</div>
+这样的性质对于 class component 并<b>不成立</b>。如果你感兴趣的话，可以实现一个看似等价的组件，[执行一下](https://codepen.io/deluxurousCodePen/pen/GRGRbqY)看看效果。
 
 事实上，不只有 states 和 effects，“副本”中所有的函数（自定义函数、计时器等等）都会捕获它所在的那次渲染中的 states 和 props，而这些 states 和 props 对于他们所在的“副本”来说都是常量。这也解释了为什么不能对 states 直接赋值。
 
@@ -674,15 +649,9 @@ const App = () => {
 
 在这个例子中，使用 number 计算 answer 的函数耗时很长，所以我们要尽可能避免不必要的额外计算。使用 `useMemo` 后，只有 `number` 的值发生改变时才会重新调用 `slowFunction` 进行计算；如果只是点击 +1 按钮更新 `count`，那么 `answer` 的值会被记忆，无需每次重新计算。
 
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>🔔</div>
-<p><code>useMemo</code> 应当只用来减少不必要的计算，优化性能。所有的副作用都应该写在 <code>useEffect</code> 中，不应出现在 <code>useMemo</code> 中。</p>
-</div>
+`useMemo` 应当只用来减少不必要的计算，优化性能。所有的副作用都应该写在 `useEffect` 中，不应出现在 `useMemo` 中。
 
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>🔔</div>
-<p>在未来，React 可能还会在某些特定情况下重新计算 memo 值，不管依赖项是否发生变化。</p>
-</div>
+在未来，React 可能还会在某些特定情况下重新计算 memo 值，不管依赖项是否发生变化。
 
 ## useCallback
 

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 255.49">
+  <defs>
+    <linearGradient id="a" x1="42.841" x2="55.248" y1="40.539" y2="59.711" gradientTransform="scale(1.35963 .7355)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#DB221A"/>
+      <stop offset="100%" stop-color="#9E020B"/>
+    </linearGradient>
+    <linearGradient id="b" x1="35.067" x2="72.149" y1="144.08" y2="135.412" gradientTransform="scale(.73897 1.35324)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#87D152"/>
+      <stop offset="100%" stop-color="#5CA82C"/>
+    </linearGradient>
+    <linearGradient id="c" x1="137.403" x2="132.467" y1="320.483" y2="293.942" gradientTransform="scale(1.40755 .71045)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#39BE90"/>
+      <stop offset="100%" stop-color="#2C8A72"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#a)" d="m25.549 25.331 1.123 4.457 41.545 41.77L110.66 28.89l.344-3.559H25.549" style="fill:url(#a)"/>
+  <path fill="#f6b937" d="m68.131 67.84-.663 2.595 23.206 96.788 39.524-39.523-59.286-59.511-2.781-.349"/>
+  <path fill="#ffd500" d="m185.89 67.59 40.422-40.572 4.357-1.251v84.192l-3.458-.449-41.321-41.92"/>
+  <path fill="#fff67d" d="m136.189 0 94.48 25.767-42.29 41.854-8.907 4.805-80.85 20.64-7.142-1.869L68.131 67.84z"/>
+  <path fill="#5acda5" d="m188.379 67.621-3.387 1.616-21.259 20.66.48 1.89-.63 2.751 22.457 89.828 1.902 3.139.194 2.25 39.524 39.374 2.936 1.031L256 135.388l-67.621-67.767"/>
+  <path fill="url(#b)" d="M25.913 145.433v84.872l5.026-1.101 41.32-41.917-43.341-40.948-3.005-.906" style="fill:url(#b)"/>
+  <path fill="#afe682" d="m25.913 230.305 42.436-43.018 3.91-1.986 92.297-22.906 23.386 25.11-1.041 2.4-37.391 38.738-3.504 1.436-25.03 25.411-95.063-25.185"/>
+  <path fill="#7dd769" d="m164.213 91.787-3.362 1.891-32.113 31.551-.629 2.662 59.833 59.614-23.729-95.718"/>
+  <path fill="#aadc50" d="m188.379 67.621-60.27 60.27L91.48 91.197z"/>
+  <path fill="url(#c)" d="m146.088 230.16 41.854-42.655 42.654 42.655h-84.508" style="fill:url(#c)"/>
+  <path fill="#dc4b1e" d="m0 120.248 68.349 67.039 3.236-1.761 20.773-18.078-.789-3.235L68.131 67.84 25.549 25.331 0 120.248"/>
+  <path fill="#aabe55" d="m68.349 187.287 59.76-59.396 36.395 36.249-96.155 23.147"/>
+</svg>

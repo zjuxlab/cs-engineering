@@ -19,10 +19,8 @@ SWR 是由 [Next.js](https://nextjs.org/)（React 框架）背后的同一团队
 
 ## 特性
 
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>✅</div>
-<p>使用 SWR，组件将会<b>不断地</b>、<b>自动</b>获得最新数据流。<br/>UI 也会一直保持<b>快速响应</b>。</p>
-</div>
+使用 SWR，组件将会<b>不断地</b>、<b>自动</b>获得最新数据流。
+UI 也会一直保持<b>快速响应</b>。
 
 - 通过 key 去除重复的请求，做到请求缓存和共享
 - 在用户重新 focus 网页和网络重连时自动重新请求数据、自动定期重新请求

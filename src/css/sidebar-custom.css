@@ -1,0 +1,131 @@
+/* 侧边栏整体样式 */
+.theme-doc-sidebar-container {
+  --ifm-font-family-base: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* 调整菜单链接的基本样式 */
+.menu__link {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* 侧边栏标题样式 */
+.theme-doc-sidebar-menu .menu__list-item {
+  white-space: nowrap; /* 防止换行 */
+}
+
+/* 父级类别样式 */
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible .menu__link {
+  font-weight: 800; /* 顶级分类使用粗体 */
+  font-size: 1.2rem; /* 顶级分类字体大小 */
+}
+.theme-doc-sidebar-item-category-level-2 > .menu__list-item-collapsible .menu__link {
+  font-weight: 600; /* 二级分类使用中等粗体 */
+}
+.theme-doc-sidebar-item-category-level-3 > .menu__list-item-collapsible .menu__link,
+.theme-doc-sidebar-item-link-level-3 .menu__link {
+  font-weight: 500; /* 三级及以下使用常规粗体 */
+}
+
+
+/* 在二级类别之间添加分隔线 */
+.theme-doc-sidebar-item-category-level-2:not(:first-child) {
+  position: relative;
+  margin-top: 0.2rem;
+  padding-top: 0.2rem;
+}
+
+.theme-doc-sidebar-item-category-level-2:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0.1rem;
+  right: 0.1rem;
+  height: 0.1px;
+  background-color: var(--ifm-color-emphasis-200);
+}
+.theme-doc-sidebar-item-category-level-2:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0.1rem;
+  right: 0.1rem;
+  height: 1px;
+  /* background: linear-gradient(90deg, 
+    transparent, 
+    var(--ifm-color-emphasis-300), 
+    transparent
+  ); */
+  /* background-color: var(--ifm-color-primary-lighter); */
+  
+}
+
+/* 针对顶级类别的emoji样式 */
+/* 以后也许可以兼容svg，但是还没有找到合适的svg组 */
+/* 软件工程 */
+.software_engineering_sidebar > .menu__list-item-collapsible > .menu__link::before {
+  content: "🛠️";
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+/* 前端技术 */
+.frontend_sidebar > .menu__list-item-collapsible > .menu__link::before {
+  content: "🖥️";
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+/* 后端技术 */
+.backend_sidebar > .menu__list-item-collapsible > .menu__link::before {
+  content: "⚙️";
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+/* 基础入门 */
+.basic_sidebar > .menu__list-item-collapsible > .menu__link::before {
+  content: "📚";
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+/* 运维技术 */
+.devops_sidebar > .menu__list-item-collapsible > .menu__link::before {
+  content: "🚀";
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+/* 进阶技术 */
+.advanced_sidebar > .menu__list-item-collapsible > .menu__link::before {
+  content: "🔬";
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+/* 开发工具 */
+.tools_sidebar > .menu__list-item-collapsible > .menu__link::before {
+  content: "🧰";
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+/* 侧边栏子项目样式 */
+.theme-doc-sidebar-menu .theme-doc-sidebar-item-link-level-2 .menu__link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-left: 2rem;
+}
+
+/* 侧边栏项目hover效果 */
+.theme-doc-sidebar-menu .menu__link:hover {
+  background-color: var(--ifm-menu-color-background-hover);
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+/* 选中项目样式 */
+.theme-doc-sidebar-menu .menu__link--active {
+  font-weight: 700;
+}

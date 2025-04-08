@@ -7,7 +7,7 @@ sidebar_position: 7
 
 # Swift
 
-Author：江临益
+Author：江林益
 
 # <b>简介</b>
 

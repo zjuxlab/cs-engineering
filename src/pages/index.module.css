@@ -21,3 +21,10 @@
   align-items: center;
   justify-content: center;
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* 确保标题和按钮垂直排列 */
+}

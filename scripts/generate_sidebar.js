@@ -5,19 +5,6 @@ const path = require('path');
 const DOCS_JSON_PATH = path.resolve(__dirname, '../dist/docs.json');
 const OUTPUT_SIDEBAR_PATH = path.resolve(__dirname, '../sidebars.js');
 
-// 安全目录名生成函数（需与文档处理逻辑完全一致）
-// function createSafeDirName(title) {
-//   return title
-//     .normalize('NFKC')
-//     // .toLowerCase()
-//     .replace(/[^\p{L}\p{N}_-～]/gu, '')
-//     .replace(/\s+/g, '-')
-//     .replace(/-+/g, '-')
-//     .substring(0, 50)
-//     .replace(/^[-]+|[-]+$/g, '');
-// }
-
-
 function createSafeDirName(title) {
   return title
     .normalize('NFKC')
@@ -78,7 +65,7 @@ function processNodes(nodes, parentPath = '', suffixScope = 'hierarchy') {
 /**
  * 生成Docusaurus侧边栏配置
  */
-function generateSidebarItems(nodes) {
+function generateSidebarItems(nodes, parentTitle = '') {
   return nodes.map(node => {
     // 基础配置
     const item = {
@@ -90,10 +77,28 @@ function generateSidebarItems(nodes) {
     
     if (hasChildren) {
       item.type = 'category';
-      item.items = generateSidebarItems(node._children);
+      item.items = generateSidebarItems(node._children, node.title);
       // 如果本节点有对应文档，则添加链接
       if (node.filename) {
         item.link = { type: 'doc', id: node._path };
+      }
+      // 根据层级和标题添加类名
+      if (node.title === '软件工程技能树') {
+        item.className = 'software_engineering_sidebar';
+      } else if (parentTitle === '软件工程技能树') {
+        // 二级分类映射
+        const secondLevelClassMap = {
+          '基础入门': 'basic_sidebar',
+          '前端技术': 'frontend_sidebar',
+          '后端技术': 'backend_sidebar',
+          '运营维护': 'devops_sidebar',
+          '开发工具': 'tools_sidebar',
+          '进阶技术': 'advanced_sidebar'
+        };
+        
+        if (secondLevelClassMap[node.title]) {
+          item.className = secondLevelClassMap[node.title];
+        }
       }
     } else {
       item.type = 'doc';

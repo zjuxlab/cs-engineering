@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 498.232 498.232">
+  <defs>
+    <filter id="a" width="2" height="2" x="-.5" y="-.5" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/>
+      <feOffset dx="1" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="c" width="2" height="2" x="-.5" y="-.5" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/>
+      <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="b">
+      <path d="M19.92 28.011 194.686.331C207.413-1.685 219.365 7 221.38 19.726l27.68 174.765c2.016 12.727-6.667 24.679-19.394 26.695L54.9 248.866c-12.727 2.016-24.678-6.668-26.694-19.395L.526 54.706C-1.49 41.979 7.193 30.027 19.92 28.01z"/>
+    </clipPath>
+  </defs>
+  <path fill="#f5f5f5" d="M19.92 28.011 194.686.331C207.413-1.685 219.365 7 221.38 19.726l27.68 174.765c2.016 12.727-6.667 24.679-19.394 26.695L54.9 248.866c-12.727 2.016-24.678-6.668-26.694-19.395L.526 54.706C-1.49 41.979 7.193 30.027 19.92 28.01z" filter="url(#a)" transform="translate(124.323 124.518)"/>
+  <g clip-path="url(#b)" transform="translate(124.323 124.518)">
+    <circle cx="129.582" cy="128.848" r="116.671" fill="#fbfbfb" filter="url(#c)"/>
+    <circle cx="129.582" cy="128.848" r="72.924" fill="#fcfcfc" filter="url(#c)"/>
+    <circle cx="129.582" cy="128.848" r="29.169" fill="#fff" filter="url(#c)"/>
+  </g>
+  <path fill-opacity=".2" d="m144.285 152.796 174.766-27.68c12.58-1.993 24.393 6.59 26.386 19.17l27.68 174.765c1.992 12.58-6.59 24.393-19.17 26.386l-174.766 27.68c-12.58 1.992-24.393-6.59-26.385-19.17l-27.68-174.766c-1.993-12.58 6.59-24.393 19.17-26.385zm-.084-.534c-12.874 2.04-21.658 14.13-19.619 27.004l27.68 174.765c2.04 12.875 14.13 21.658 27.003 19.62l174.766-27.681c12.875-2.039 21.658-14.129 19.62-27.003L345.97 144.2c-2.039-12.874-14.129-21.658-27.003-19.619L144.2 152.262z"/>
+</svg>

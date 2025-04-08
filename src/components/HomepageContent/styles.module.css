@@ -1,0 +1,144 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .featuresSection {
+    padding: 4rem 0;
+    overflow: hidden;
+    background-color: var(--ifm-background-color);
+  }
+  
+  .sectionHeader {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  
+  .sectionDescription {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--ifm-color-emphasis-700);
+  }
+  
+  .featureGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .featureGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .sectionTitle {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .featureItem {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .featureIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: var(--ifm-color-primary);
+    color: white;
+    flex-shrink: 0;
+  }
+  
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .featureContent {
+    margin-left: 1rem;
+  }
+  
+  .featureTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .featureDescription {
+    color: var(--ifm-color-emphasis-700);
+    line-height: 1.6;
+  }
+  
+  .howItWorksSection {
+    padding: 4rem 0;
+    background-color: var(--ifm-color-emphasis-100);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .howItWorksSection::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: var(--ifm-background-color);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+  }
+  
+  .stepsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  
+  @media (min-width: 768px) {
+    .stepsContainer {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .stepItem {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .stepImageContainer {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stepImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .stepTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--ifm-color-emphasis-900);
+  }
+  
+  .stepDescription {
+    color: var(--ifm-color-emphasis-700);
+    line-height: 1.6;
+  }

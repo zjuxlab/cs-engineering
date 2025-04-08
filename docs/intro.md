@@ -1,4 +1,6 @@
 ---
+title: intro
+slug: intro
 sidebar_position: 0
 ---
 

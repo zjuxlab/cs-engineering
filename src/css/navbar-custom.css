@@ -1,0 +1,32 @@
+/* 导航栏整体居中设置 */
+.navbar__inner {
+    margin: 0 auto;
+    max-width: 1700px; /* 可根据需要调整宽度 */
+    padding: 0 20px; /* 两侧留出一些内边距 */
+  }
+  
+  /* 导航栏项目居中显示 */
+  .navbar__items {
+    justify-content: left;
+  }
+  
+  /* 右侧导航项目靠右显示 */
+  .navbar__items--right {
+    justify-content: flex-end;
+  }
+  
+  /* 调整导航栏项目之间的间距 */
+  .navbar__item {
+    padding: 0 16px; /* 可根据需要调整间距 */
+  }
+  
+  /* 可选：让导航栏在移动设备上也保持一定的居中效果 */
+  @media (max-width: 996px) {
+    .navbar__inner {
+      padding: 0 10px;
+    }
+    
+    .navbar__item {
+      padding: 0 8px;
+    }
+  }

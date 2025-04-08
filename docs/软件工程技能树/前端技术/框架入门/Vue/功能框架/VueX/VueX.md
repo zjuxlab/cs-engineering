@@ -190,10 +190,7 @@ export default {
 
 可以向 `store.commit` 传入额外的参数，建议写成一个参数，即 mutation 的载荷（payload）如上面例子中的`addWithArgu`，如果要传入多个参数，应该写成一个对象传入[Mutation | Vuex](https://vuex.vuejs.org/zh/guide/mutations.html#%E6%8F%90%E4%BA%A4%E8%BD%BD%E8%8D%B7%EF%BC%88payload%EF%BC%89)
 
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>❗</div>
-<p>mutation必须是<b>同步函数</b>，这保证了调试的可行性。<b>处理异步操作请看下面的action</b>。</p>
-</div>
+mutation必须是<b>同步函数</b>，这保证了调试的可行性。<b>处理异步操作请看下面的action</b>。
 
 同样的，可以在组件中使用`mapMutations` 辅助函数将组件中的 methods 映射为`store.commit` 调用（需要在根节点注入 `store`）。
 

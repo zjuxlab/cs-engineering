@@ -28,3 +28,113 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+#hero {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  
+  overflow: visible; /* 确保内容可以溢出容器 */
+}
+
+/* 修复背景位置 */
+#hero > div:first-child {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  padding-bottom: 50px;
+}
+
+/* 内容位置居中 */
+.hero-content-wrapper {
+  z-index: 4;
+  position: relative;
+  text-align: center;
+  padding: 0 1rem;
+  max-width: 800px;
+  margin-top: -180px;
+}
+
+/* 按钮容器样式 */
+.button-container {
+  z-index: 10 !important; /* 提高z-index覆盖背景 */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* 按钮样式 */
+.hero-button {
+  padding: 0.85rem 2.5rem !important;
+  font-size: 1.125rem !important;
+  border-radius: 0.5rem !important;
+  background: linear-gradient(145deg, #4477b3, #5588c4) !important; /* 渐变背景 */
+  color: white !important;
+  border: none !important;
+  box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.2),
+    0 4px 6px -2px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15) !important; /* 内阴影增加立体感 */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important; /* 文字阴影 */
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+  width: auto !important;
+  min-width: 200px !important;
+  text-align: center !important;
+  position: relative !important;
+  z-index: 10 !important; /* 确保按钮在曲线背景之上 */
+  transform: translateY(0) !important; /* 初始状态 */
+}
+
+.hero-button:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 
+    0 20px 25px -5px rgba(0, 0, 0, 0.2),
+    0 10px 10px -5px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  background: linear-gradient(145deg, #5588c4, #4477b3) !important; /* 悬停时反转渐变 */
+}
+
+.hero-button:active {
+  transform: translateY(1px) !important; /* 点击时微微下沉 */
+  box-shadow: 
+    0 5px 10px -3px rgba(0, 0, 0, 0.2),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+
+.hero-button::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 10px;
+  bottom: -10px;
+  left: 5%;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  filter: blur(4px);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover::after {
+  bottom: -12px;
+  filter: blur(6px);
+}
+
+/* 覆盖 Hero 组件可能的样式 */
+[class*='cta-container'],
+[class*='heroCta'] {
+  width: auto !important;
+  max-width: 600px !important;
+}

@@ -1,0 +1,32 @@
+/* 本地搜索样式自定义 */
+
+/* 搜索框和搜索模态框基本样式 */
+:root {
+    --search-local-modal-width: 600px;
+    --search-local-highlight-color: var(--ifm-color-primary);
+    --search-local-modal-background: #f5f6f7;
+    --search-local-hit-active-color: #fff;
+    --search-local-hit-background: #fff;
+    --search-local-hit-shadow: 0 1px 3px 0 #d4d9e1;
+    --search-local-spacing: 14px;
+  }
+  
+  /* 暗色模式样式 */
+  html[data-theme="dark"] {
+    --search-local-modal-background: var(--ifm-background-color);
+    --search-local-hit-background: var(--ifm-color-emphasis-100);
+    --search-local-hit-shadow: none;
+    --search-local-muted-color: var(--ifm-color-secondary-darkest);
+  }
+  
+  /* 搜索结果高亮样式 */
+  .search-result-match {
+    font-weight: bold;
+    color: var(--search-local-highlight-color);
+  }
+  
+  /* 搜索框激活状态样式 */
+  .navbar__search-input:focus {
+    border-color: var(--search-local-input-active-border-color);
+    outline: none;
+  }

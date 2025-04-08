@@ -7,7 +7,7 @@ sidebar_position: 0
 
 # RabbitMQ
 
-Author：NA
+Author：江林益
 
 > 参考链接：
 > https://blog.csdn.net/JokerLJG/article/details/123007557

@@ -9,7 +9,126 @@ sidebar_position: 0
 
 Author：NA
 
-### <b>react及其生态简介</b>
+### What and Why React
+
+在React诞生之前，Facebook的工程师们在写这样的代码：
+
+```
+// 传统的DOM操作方式
+function updateUserList(users) {
+  const container = document.getElementById('user-container');
+  container.innerHTML = '';
+  
+  users.forEach(user => {
+    const div = document.createElement('div');
+    div.className = 'user';
+    div.innerHTML = `
+      <h3>${user.name}</h3>
+      <p>${user.email}</p>
+    `;
+    container.appendChild(div);
+  });
+}
+
+// 每次数据变化时
+socket.on('user-updated', () => {
+  fetchUsers().then(updateUserList); 
+});
+```
+
+这种模式导致了：
+
+- <b>性能灾难</b>：频繁的DOM操作使新闻流卡顿
+- <b>状态同步问题</b>：数据与UI容易不同步
+- <b>代码复杂度</b>：事件监听与DOM操作交织难解
+
+2013年，Jordan Walke和他的团队推出了React，带来了<b>声明式UI</b>和<b>虚拟DOM</b>两大核心理念。这就像给前端开发戴上了VR眼镜——开发者只需描述"UI应该是什么样子"，而不必操心"如何达到这个状态"。
+
+## 为什么React改变了前端开发？
+
+- 声明式编程：UI即函数
+
+<b>对比命令式与声明式</b>：
+
+```
+// 命令式（怎么做）
+function updateButton(active) {
+  const btn = document.getElementById('myBtn');
+  if (active) {
+    btn.classList.add('active');
+    btn.textContent = 'Active';
+  } else {
+    btn.classList.remove('active');
+    btn.textContent = 'Inactive';
+  }
+}
+
+// 声明式（做什么）
+function Button({ active }) {
+  return (
+    <button className={active ? 'active' : ''}>
+      {active ? 'Active' : 'Inactive'}
+    </button>
+  );
+}
+```
+
+- 组件化：乐高积木式的开发
+- 跨平台渲染能力：
+
+```js
+// Web端（React DOM）
+ReactDOM.render(<App />, document.getElementById('root'));
+
+// 移动端（React Native）
+ReactNative.render(<App />);
+
+// VR（React 360）
+React360.render(<VRScene />);
+
+// 命令行（Ink）
+render(<CLIApp />);
+```
+
+## 为什么选择React？
+
+1. <b>市场需求</b>：2023年全球75%的前端岗位要求React经验
+2. <b>社区生态</b>：npm上周下载量超过2000万次
+3. <b>长期支持</b>：Facebook持续投入开发
+4. <b>学习价值</b>：掌握的思维范式可迁移到其他技术
+
+从最初的"Facebook内部项目"到如今驱动着数百万网站的UI开发，React已经证明了其作为现代前端开发基石的不可替代性。它不仅仅是一个库或框架，更代表了一种构建用户界面的思维方式——将UI分解为独立、可复用的组件，通过声明式代码描述界面状态，让开发者能够专注于创造更好的用户体验。正如React的官方文档所言："用于构建用户界面的JavaScript库"——这个简单的定义背后，是改变了整个前端开发范式的强大力量。
+
+## React生态系统
+
+- 状态管理方案
+
+- 样式方案
+
+```
+// CSS-in-JS (styled-components)
+const Button = styled.button`
+  background: ${props => props.primary ? 'blue' : 'white'};
+  padding: 1em 2em;
+`;
+
+// CSS Modules
+import styles from './Button.module.css';
+function Button() {
+  return <button className={styles.primary}>Click</button>;
+}
+
+// Utility-First (Tailwind)
+function Button() {
+  return (
+    <button className="bg-blue-500 px-4 py-2 rounded">
+      Click
+    </button>
+  );
+}
+```
+
+### <b>react简介</b>
 
 这篇文章的主要目的是介绍react社区中各种插件/包,并为创建一个react应用提供相应的建议，由于整篇文章是综述性质的，因此不会过多涉及每个插件/包的高级用法，我们在这里只展示初级用法，如果你想要更进一步，你可以阅读本文的推荐阅读或直接去官网看文档
 

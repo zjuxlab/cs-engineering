@@ -9,11 +9,6 @@ sidebar_position: 2
 
 Author：陈儒
 
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>📍</div>
-<p>这篇知识树关于命令的部分尽量省略了，看官方文档就够了。更多的是关于前端脚手架的个人理解，如有错误恳请批评指正。</p>
-</div>
-
 Vite是与Vue搭配使用的前端构建工具，在此之前我使用过vue-cli来进行开发，但是就开发的便捷性和环境配置的便捷性而言，Vite更加方便。
 
 总的来说Vite与webpack等工具类似，拥有模块与打包功能。

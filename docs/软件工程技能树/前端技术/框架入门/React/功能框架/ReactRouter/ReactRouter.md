@@ -9,16 +9,10 @@ sidebar_position: 0
 
 Author：李予谦
 
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>📌</div>
-<p>阅读本文需要：</p>
-<ul>
-<li><p>React框架基础</p>
-</li>
-<li><p>了解前端路由的基本概念</p>
-</li>
-</ul>
-</div>
+阅读本文需要：
+
+- React框架基础
+- 了解前端路由的基本概念
 
 # 官方文档
 
@@ -73,11 +67,9 @@ ReactDOM.render(
 , document.getElementById('app))
 ```
 
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>📌</div>
-<p>实际上你也可以紧跟潮流使用函数式组件的特色——hook来完成这个事情——<a href="https://reactrouter.com/en/main/routers/create-browser-router">createBrowserRouter v6.8.1</a>。</p>
-<p>（React Router作为官方的路由库，自然紧跟react函数式组件的潮流）</p>
-</div>
+实际上你也可以紧跟潮流使用函数式组件的特色——hook来完成这个事情——[createBrowserRouter v6.8.1](https://reactrouter.com/en/main/routers/create-browser-router)。
+
+（React Router作为官方的路由库，自然紧跟react函数式组件的潮流）
 
 ## 第一个路由
 
@@ -139,10 +131,7 @@ function App() {
 
 请注意Route中的path属性：'path'和'/path'的写法是不同的，前者是相对写法，后者是绝对写法（类似相对路径和绝对路径）
 
-<div class="callout callout-bg-2 callout-border-2">
-<div class='callout-emoji'>📌</div>
-<p>实际上你也可以紧跟潮流使用函数式组件的特色——hook来完成这个事情——<a href="https://reactrouter.com/en/main/hooks/use-routes">useRoutes v6.8.1</a>。</p>
-</div>
+实际上你也可以紧跟潮流使用函数式组件的特色——hook来完成这个事情——[useRoutes v6.8.1](https://reactrouter.com/en/main/hooks/use-routes)。
 
 ### Outlet
 

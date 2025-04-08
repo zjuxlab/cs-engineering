@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'CS-Engineering',
   tagline: '浙江大学启真交叉学科创新创业实验室',
-  favicon: 'img/xlab-logo.svg',
+  favicon: 'img/small-logo.svg',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -40,12 +40,33 @@ const config = {
     }
   },
 
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        language: ["en", "zh"], // 支持中文搜索
+        docsRouteBasePath: "/",
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+        searchResultLimits: 10, // 搜索结果数量限制
+        searchResultContextMaxLength: 80, // 搜索结果上下文最大长度
+        searchBarPosition: "right", // 搜索栏位置
+        highlightSearchTermsOnTargetPage: true, // 在目标页面高亮搜索词
+        // 自定义搜索栏样式可以在自定义CSS中定义
+      }),
+    ],
+  ],
+
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           exclude: [
             // 使用glob模式排除目录
@@ -80,7 +101,13 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/algolia-ui.css'),
+            require.resolve('./src/css/sidebar-custom.css'),
+            require.resolve('./src/css/navbar-custom.css'),
+            require.resolve('./src/css/search-local-custom.css'),
+          ],
         },
       }),
     ],
@@ -90,12 +117,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/small-logo.jpg',
       navbar: {
         title: 'CS-Engineering',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/small-logo.svg',
         },
         items: [
           {

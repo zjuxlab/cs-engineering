@@ -44,7 +44,7 @@ web3的实现载体，被称为DApp(decentralized application)，也就是去中
 
 什么是智能合约呢，要理解智能合约我们就要先了解一下以太坊的架构
 
-> <b>以太坊</b>（英文Ethereum）是一个[开源](https://baike.baidu.com/item/%E5%BC%80%E6%BA%90/246339)的有[智能合约](https://baike.baidu.com/item/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/19770937)功能的公共[区块链](https://baike.baidu.com/item/%E5%8C%BA%E5%9D%97%E9%93%BE/13465666)平台，通过其专用[加密货币](https://baike.baidu.com/item/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81)[以太币](https://baike.baidu.com/item/%E4%BB%A5%E5%A4%AA%E5%B8%81/20857686)（Ether，简称“ETH”）提供[去中心化](https://baike.baidu.com/item/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/8719532)的以太[虚拟机](https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E6%9C%BA/104440)（Ethereum Virtual Machine）来处理[点对点](https://baike.baidu.com/item/%E7%82%B9%E5%AF%B9%E7%82%B9/7452984)合约。
+> <b>以太坊</b>（英文Ethereum）是一个开源的有[智能合约](https://baike.baidu.com/item/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/19770937)功能的公共[区块链](https://baike.baidu.com/item/%E5%8C%BA%E5%9D%97%E9%93%BE/13465666)平台，通过其专用[加密货币](https://baike.baidu.com/item/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81)[以太币](https://baike.baidu.com/item/%E4%BB%A5%E5%A4%AA%E5%B8%81/20857686)（Ether，简称“ETH”）提供[去中心化](https://baike.baidu.com/item/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/8719532)的以太[虚拟机](https://baike.baidu.com/item/%E8%99%9A%E6%8B%9F%E6%9C%BA/104440)（Ethereum Virtual Machine）来处理[点对点](https://baike.baidu.com/item/%E7%82%B9%E5%AF%B9%E7%82%B9/7452984)合约。
 
 与经典的由中本聪提出的区块链架构不同，以太坊在区块中加入了可执行代码，这些代码可以被<b>任何</b>外部用户调用，外部用户可以通过调用这些代码完成转账交易等功能。这些代码就被称为智能合约，智能合约主要由solidity编写，负责交易发行的资产与储存链上状态
 

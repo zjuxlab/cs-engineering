@@ -15,6 +15,45 @@ Author：李予谦
 
 Vue是尤雨溪在吸收了React、Angular的部分内容后开发的轻量级前端框架。与React相比，Vue的官方文档质量更好，也更简单易上手。React在编码上更加OOP，有用到js class、state、函数式编程等概念，由后端入手会更容易理解。并且由于React是Facebook开发的，在全球范围内的生态更好，各个大厂基本上用的前端技术栈都是React。
 
+```
+// AngularJS的复杂指令
+<div ng-controller="TodoController">
+  <ul>
+    <li ng-repeat="todo in todos" ng-class="{completed: todo.done}">
+      <input type="checkbox" ng-model="todo.done">
+      <span ng-bind="todo.text"></span>
+    </li>
+  </ul>
+</div>
+
+// React的JSX语法
+function TodoList({ todos }) {
+  return (
+    <ul>
+      {todos.map(todo => (
+        <li className={todo.done ? 'completed' : ''}>
+          <input 
+            type="checkbox" 
+            checked={todo.done}
+            onChange={() => toggleTodo(todo.id)}
+          />
+          {todo.text}
+        </li>
+      ))}
+    </ul>
+  );
+}
+```
+
+## 为什么选择Vue？
+
+1. <b>渐进式采用</b>：适合各种规模项目
+2. <b>开发者体验</b>：详尽的文档/友好的错误提示
+3. <b>性能表现</b>：小巧高效（运行时仅20KB gzip）
+4. <b>社区生态</b>：中文文档完善/国内企业广泛采用
+
+从个人作品集网站到阿里巴巴这样的大型电商平台，Vue已经证明了其作为现代前端框架的卓越适应力。它既不像React那样需要完全转变思维模式，也不像早期Angular那样沉重复杂，而是找到了一条<b>渐进增强</b>的黄金路径。正如其官方口号所描述的："渐进式JavaScript框架"——Vue真正实现了从简单交互到复杂应用的平滑过渡，让每个开发者都能找到适合自己的使用方式。
+
 因此我个人推荐的学习路线是，自己使用Vue进行轻量级的网页开发，再转而使用React，从而对js和oop有更深的理解，在就业面试大厂上也有更大优势。
 
 # 开发环境配置
@@ -23,7 +62,7 @@ Vue是尤雨溪在吸收了React、Angular的部分内容后开发的轻量级�
 
 # Vite框架
 
-进行较大规模的vue项目开发时，建议使用vite脚手架，参见
+进行较大规模的vue项目开发时，建议使用vite脚手架
 
 # Vue是怎么组织的
 

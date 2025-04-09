@@ -182,6 +182,65 @@ html[data-theme='dark'] {
   display: inline-block !important;
   overflow: visible !important;
 }
+
+/* 导航栏搜索按钮样式 - 针对顶部未展开状态 */
+.aa-DetachedSearchButton {
+  display: flex !important;
+  align-items: center !important;
+  height: 36px !important;
+  padding: 0 12px !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(var(--aa-input-border-color-rgb), var(--aa-input-border-color-alpha)) !important;
+  background: rgba(var(--aa-input-background-color-rgb, 255, 255, 255), 1) !important;
+  color: rgba(var(--aa-text-color-rgb, 38, 38, 38), 1) !important;
+  font-family: var(--aa-font-family) !important;
+  font-size: 0.95rem !important;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+  max-width: 300px !important;
+  min-width: 150px !important;
+  width: auto !important;
+}
+
+/* 搜索按钮悬停效果 */
+.aa-DetachedSearchButton:hover {
+  background: rgba(var(--aa-input-background-color-rgb, 255, 255, 255), 0.95) !important;
+  border-color: rgba(var(--aa-primary-color-rgb), 0.6) !important;
+}
+
+/* 搜索按钮图标 */
+.aa-DetachedSearchButtonIcon {
+  /* color: rgba(var(--aa-icon-color-rgb), 1) !important; */
+  margin-left: -10px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* 搜索按钮文字 */
+.aa-DetachedSearchButtonPlaceholder {
+  font-weight: normal !important;
+  color: rgba(var(--aa-text-color-rgb, 38, 38, 38), 0.7) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* 暗色主题适配 */
+html[data-theme='dark'] .aa-DetachedSearchButton {
+  background: rgba(var(--aa-input-background-color-rgb, 28, 28, 28), 1) !important;
+  border-color: rgba(var(--aa-input-border-color-rgb), var(--aa-input-border-color-alpha)) !important;
+}
+
+html[data-theme='dark'] .aa-DetachedSearchButton:hover {
+  background: rgba(var(--aa-input-background-color-rgb, 38, 38, 38), 1) !important;
+  border-color: rgba(var(--aa-primary-color-rgb), 0.6) !important;
+}
+
+html[data-theme='dark'] .aa-DetachedSearchButtonPlaceholder {
+  color: rgba(var(--aa-text-color-rgb, 220, 220, 220), 0.7) !important;
+}
+
 /* 快捷键样式 */
 .aa-DetachedSearchButton kbd {
   background: rgba(var(--aa-muted-color-rgb), 0.2) !important;
@@ -192,6 +251,7 @@ html[data-theme='dark'] {
   margin: 0 2px !important;
   border: 1px solid rgba(var(--aa-muted-color-rgb), 0.3) !important;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05) !important;
+  height: 20px !important;
 }
 
 /* 4. 优化移动端体验 */

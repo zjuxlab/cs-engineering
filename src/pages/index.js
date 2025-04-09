@@ -29,7 +29,7 @@ function HomepageHeader() {
         <div className="button-container">
           <Button 
             key="get-started" 
-            href={withBaseUrl('docs/intro')}
+            href={withBaseUrl('intro')}
             // color="white"
             className="hero-button"
           >
